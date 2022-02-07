@@ -22,7 +22,7 @@ subtitle                 : "Version 1.0" # site tagline that appears below site 
 name                     : "이성주"
 description              : "코딩일상 작성 블로그"
 url                      : "https://mmistakes.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "BurningFalls/burningfalls.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/night_view.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/brain.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
