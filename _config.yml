@@ -46,10 +46,7 @@ search_full_content      : false # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
 # SEO Related
 google_site_verification : "L61tGx8y3w-Vz6gl4YJ3gJNdiK0c3mkzTLxdoDNmMWE"
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+naver_site_verification  : "fe0415ee897c5ce5979ba498d4688187f0acc1f3"
 
 # Social Sharing
 twitter:
