@@ -45,7 +45,7 @@ search                   : true # true, false (default)
 search_full_content      : false # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
 # SEO Related
-google_site_verification : "google600ef9ec10c1c4b1.html"
+google_site_verification : "google600ef9ec10c1c4b1"
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
