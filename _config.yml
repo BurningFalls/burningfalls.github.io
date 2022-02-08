@@ -75,12 +75,11 @@ analytics:
 author:
   name             : "이성주"
   avatar           : "/assets/images/squirrel.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "AI Engineer를 꿈꾸는 평범한 대학생"
+  bio              : "AI Engineer를 꿈꾸는 평범한 대학생입니다"
   location         : "Somewhere, South Korea"
-  email            : "juscomputer@khu.ac.kr"
   links:
     - label: "Email"
-      icon: "juscomputer@khu.ac.kr"
+      icon: "fas fa-fw fa-envelope-square"
       url: "mailto:juscomputer@khu.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
