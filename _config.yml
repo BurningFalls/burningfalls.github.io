@@ -273,9 +273,12 @@ defaults:
       type: docs
     values:
       layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
+      read_time: true
+      show_date: true
+      author_profile: true
+      share: true
+      comments: true
+      toc: true
+      toc_sticky: true
       sidebar:
         nav: "docs"
