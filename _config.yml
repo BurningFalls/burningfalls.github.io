@@ -28,7 +28,7 @@ comments:
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
-    label                : "comment" # Optional - must be existing label.
+    label                : "comments" # Optional - must be existing label.
 reCaptcha:
   siteKey                :
   secret                 :
