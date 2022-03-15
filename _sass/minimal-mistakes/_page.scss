@@ -119,7 +119,7 @@ body {
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
-    line-height: 2;
+    line-height: 1.8;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
