@@ -13,15 +13,11 @@ main:
 
 # documentation links
 posts:
-# - title: Examples
-#   children:
-#     - title: "Example 1"
-#       url: /docs/example1/
-#     - title: "Example 2"
-#       url: /docs/example2/
-#     - title: "Example 3"
-#       url: /docs/example3/
-#     - title: "Example 4"
-#       url: /docs/example4/
-#     - title: "Example 5"
-#       url: /docs/example5/
+- title: Algorithm
+- title: Blog
+- title: Contest
+- title: Deep learning
+- title: Essay
+  children:
+   - title: "blog making"
+     url: /tags/#blog-making
