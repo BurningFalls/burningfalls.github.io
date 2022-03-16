@@ -254,7 +254,6 @@ defaults:
       type: posts
     values:
       layout: single
-      read_time: true
       show_date: true
       author_profile: true
       share: true
