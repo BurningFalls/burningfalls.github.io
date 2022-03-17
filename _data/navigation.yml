@@ -19,5 +19,7 @@ posts:
 - title: Deep learning
 - title: Essay
   children:
-   - title: "blog making"
-     url: /tags/#blog-making
+    - title: "blog making"
+      url: /tags/#blog-making
+    - title: "algorithm"
+      url: /tags/#algorithm 
