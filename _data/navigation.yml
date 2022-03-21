@@ -14,8 +14,21 @@ main:
 # documentation links
 posts:
 - title: Algorithm
+  children:
+    - title: "boj 23000~23999"
+      url: /tags/#boj-23000-23999
+    - title: "boj 24000~24999"
+      url: /tags/#boj-24000-24999
 - title: Blog
+  children:
+    - title: "blog making"
+      url: /tags/#blog-making
 - title: Contest
+  children:
+    - title: "programmers contest"
+      url: /tags/#programmers-contest
+    - title: "baekjoon contest"
+      url: /tags/#baekjoon-contest
 - title: Deep learning
 - title: Essay
   children:
@@ -23,3 +36,5 @@ posts:
       url: /tags/#blog-making
     - title: "algorithm"
       url: /tags/#algorithm 
+    - title: "web"
+      url: /tags/#web
