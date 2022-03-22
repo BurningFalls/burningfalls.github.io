@@ -23,6 +23,8 @@ posts:
   children:
     - title: "blog making"
       url: /tags/#blog-making
+    - title: "markdown"
+      url: /tags/#markdown
 - title: Contest
   children:
     - title: "programmers contest"
