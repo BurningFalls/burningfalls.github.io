@@ -2,11 +2,11 @@
 title: "[Markdown] Github blog에 Markdown으로 이미지 게시, 크기 조절, 가운데 정렬"
 excerpt: "Markdown으로 github blog에 이미지 게시, 이미지 크기 조절, 이미지 가운데 정렬을 한다."
 date: 2022-03-22
-last_modified_at: 2022-03-22
+last_modified_at: 2022-03-23
 categories:
   - Blog
 tags:
-  - blog_making
+  - blog-making
   - markdown
 ---
 
@@ -32,7 +32,7 @@ Github blog에 게시하고 싶은 이미지를 준비한다. 아래는 예시 �
 ![image](https://user-images.githubusercontent.com/30232837/159295800-196f73a7-91cd-4799-bcfc-98848c5e9f16.png "image"){: width="80%" height="80%"}
 
 ### 1.5. 이미지 경로 생성
-잠깐의 업로딩 이후, 이미지 경로가 생긴다.
+잠깐의 업로딩 이후, 이미지 경로가 생긴다. (아래에 Submit new issue를 누를 필요 없이 그냥 기다리면 뜬다.)
 
 ![image](https://user-images.githubusercontent.com/30232837/159296554-f2ad557f-0f06-4066-abc9-ca0b753f5f18.png "image"){: width="80%" height="80%"}
 

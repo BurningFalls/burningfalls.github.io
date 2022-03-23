@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-![baekjoon contest](https://user-images.githubusercontent.com/30232837/159193454-66c86f03-0843-40ef-9390-0fb218650d4a.png "baekjoon contest"){: width="100%" height="100%"}{: .align-center}
+![baekjoon-contest](https://user-images.githubusercontent.com/30232837/159193454-66c86f03-0843-40ef-9390-0fb218650d4a.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
 ## 1. 대회 후기
 
