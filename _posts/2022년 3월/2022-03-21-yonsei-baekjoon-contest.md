@@ -2,7 +2,7 @@
 title: "[백준 대회] 2022 연세대학교 신학기맞이 프로그래밍 경진대회 Open Contest"
 excerpt: "백준 대회 '2022 연세대학교 신학기맞이 프로그래밍 경진대회 Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-03-21
-last_modified_at: 2022-03-24
+last_modified_at: 2022-03-28
 categories:
   - contest
 tags:
