@@ -1,11 +1,15 @@
 # main links
 main:
-  - title: "Home"
-    url: /
-  - title: "Post by Category"
-    url: /categories
-  - title: "Post by Tag"
-    url: /tags
+  - title: "Algorithm"
+    url: /categories/algorithm
+  - title: "Blog"
+    url: /categories/blog
+  - title: "Contest"
+    url: /categories/contest
+  - title: "Deep Learning"
+    url: /categories/deep-learning
+  - title: "Essay"
+    url: /categories/essay
 
 # documentation links
 posts:
