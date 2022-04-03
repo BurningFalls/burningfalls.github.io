@@ -17,7 +17,7 @@ tags:
 
 > [대회 문제: 중급 (https://www.acmicpc.net/category/detail/3029)](https://www.acmicpc.net/category/detail/3029){: target="_blank"}
 
-2022/02/21 백준 내부 대회 '2022 ICPC Sinchon Winter Algorithm Camp Contest'에 참가했다. 적어도 골드 문제까지는 전부 풀어야겠다는 다짐을 한 채로 백준 대회를 참여하였다. 결과적으로는 $A,B,C,D,E,H$ 여섯 문제를 풀어냈다. 2월 21일 기준 티어 골드 이하인데 못 푼 문제는 $F$번 문제 정도였다. 또한, 아쉽게 못풀어낸 문제는 플레5 난이도의 $K$번 문제가 있었다. $F$와 $K$까지 풀어냈다면 꽤나 만족스러웠을 것 같은데 약간 아쉬운 대회였다.
+2022/02/20 백준 내부 대회 '2022 ICPC Sinchon Winter Algorithm Camp Contest'에 참가했다. 적어도 골드 문제까지는 전부 풀어야겠다는 다짐을 한 채로 백준 대회를 참여하였다. 결과적으로는 $A,B,C,D,E,H$ 여섯 문제를 풀어냈다. 2월 21일 기준 티어 골드 이하인데 못 푼 문제는 $F$번 문제 정도였다. 또한, 아쉽게 못풀어낸 문제는 플레5 난이도의 $K$번 문제가 있었다. $F$와 $K$까지 풀어냈다면 꽤나 만족스러웠을 것 같은데 약간 아쉬운 대회였다.
 
 ## 2. 공식 풀이 링크
 공식 풀이는 '백준 > 게시판 > 홍보 > 22w ICPC Sinchon Algorithm Camp Contest 종료'의 2022_icpc_sinchon_winter_camp_contest.pdf 파일을 통해 알 수 있다. 대회의 풀이 파일들이 주로 이곳에 게시된다. 해당 링크를 아래에 걸어두었다.
