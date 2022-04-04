@@ -35,6 +35,8 @@ posts:
       url: /tags/programmers-contest
     - title: "baekjoon contest"
       url: /tags/baekjoon-contest
+    - title: "etc"
+      url: /tags/etc
 - title: Deep learning
 - title: Essay
   children:
