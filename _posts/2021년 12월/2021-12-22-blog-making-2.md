@@ -2,7 +2,7 @@
 title: "[Github blog][Minimal-mistakes] Minimal-mistakes 테마 Github blog 만들기 2"
 excerpt: "minimal-mistakes 테마를 사용하여 github blog를 만드는 과정을 서술하였다."
 date: 2021-12-22
-last_modified_at: 2022-04-04
+last_modified_at: 2022-04-05
 categories:
   - blog
 tags:
@@ -61,3 +61,4 @@ Server address에 적힌 주소로 따라가면, 본인의 사이트를 볼 수 
 
 ![myblog](https://user-images.githubusercontent.com/30232837/161528547-4ba371fa-5bc2-447c-99e2-d161db60766e.png "myblog"){: width="80%" height="80%"}{: .align-center}
 
+> [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-2/){: target="_blank"}
