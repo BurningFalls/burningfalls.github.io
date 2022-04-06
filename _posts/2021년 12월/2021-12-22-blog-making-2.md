@@ -11,7 +11,7 @@ tags:
   - minimal-mistakes
 ---
 
-> [Minimal Mistakes - Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/){: target="_blank"}
+> [Minimal Mistakes - Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 
 해당 링크의 테마 가이드를 토대로 만들었으나, 내가 생각하는 중요도에 맞추어서 순서를 바꾸었기 때문에, 위에서부터 아래로 순서대로 쭉 가지 않고 중간중간 건너뛰고 돌아가는 방식으로 설명되어 있다. 
 
@@ -63,4 +63,4 @@ Server address에 적힌 주소로 따라가면, 본인의 사이트를 볼 수 
 
 ![myblog](https://user-images.githubusercontent.com/30232837/161528547-4ba371fa-5bc2-447c-99e2-d161db60766e.png "myblog"){: width="80%" height="80%"}{: .align-center}
 
-> [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-2/){: target="_blank"}
+> [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-2/)

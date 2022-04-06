@@ -17,9 +17,9 @@ tags:
 
 > 이 글은 내가 블로그를 만들면서 그 당시 겪은 일을 그대로 서술한 것이다. 그래서 초반 부 글에는 잘못된 내용까지 고쳐지지 않은 채로 서술되어 있다. 뒤에서 해당 내용을 조금씩 고쳐가긴 하지만, 만약에 깃헙 블로그를 만들고 싶어서 이 글을 읽으면서 따라한다면 조금 헤맬 수도 있다.
 
-> [이전 글: Minimal-mistakes 테마 Github blog 만들기 1](https://burningfalls.github.io/blog/blog-making-1/){: target="_blank"}
+> [이전 글: Minimal-mistakes 테마 Github blog 만들기 1](https://burningfalls.github.io/blog/blog-making-1/)
 
-> [이전 글: Minimal-mistakes 테마 Github blog 만들기 2](https://burningfalls.github.io/blog/blog-making-2/){: target="_blank"}
+> [이전 글: Minimal-mistakes 테마 Github blog 만들기 2](https://burningfalls.github.io/blog/blog-making-2/)
 
 ## _pages 폴더 복구
 

@@ -63,5 +63,5 @@ Minimal-mistakes의 버전도 뒤에 @를 붙여서 지정할 수 있는데, 일
 
 ![myblog](https://user-images.githubusercontent.com/30232837/161500604-bbad2fef-11ca-4ce7-b06d-c2ab4e80fe29.png "myblog"){: width="80%" height="80%"}{: .align-center}
 
-> [다음 글: Minimal-mistakes 테마 Github blog 만들기 2](https://burningfalls.github.io/blog/blog-making-2/){: target="_blank"}
+> [다음 글: Minimal-mistakes 테마 Github blog 만들기 2](https://burningfalls.github.io/blog/blog-making-2/)
 
