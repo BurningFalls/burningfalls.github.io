@@ -63,4 +63,4 @@ Server address에 적힌 주소로 따라가면, 본인의 사이트를 볼 수 
 
 ![myblog](https://user-images.githubusercontent.com/30232837/161528547-4ba371fa-5bc2-447c-99e2-d161db60766e.png "myblog"){: width="80%" height="80%"}{: .align-center}
 
-> [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-2/)
+> [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-3/)
