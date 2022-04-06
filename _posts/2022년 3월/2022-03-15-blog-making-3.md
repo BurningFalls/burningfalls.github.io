@@ -7,6 +7,8 @@ categories:
   - blog
 tags:
   - blog-making
+  - github-blog
+  - minimal-mistakes
 ---
 
 > [Minimal Mistakes - Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/){: target="_blank"}

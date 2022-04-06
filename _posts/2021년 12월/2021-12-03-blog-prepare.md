@@ -7,6 +7,7 @@ categories:
   - essay
 tags:
   - blog-making
+  - github-blog
   - minimal-mistakes
 ---
 
