@@ -21,21 +21,25 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
-### 0.7.0
+### 0.8.0
 
 * sidebar에 `POSTS BY CATEGORY`, `POSTS BY TAG` 추가
 
 * Tag에 알고리즘 분류 추가
 
-### 0.6.0
+### 0.7.0
 
 * Category와 Tag별 페이지 구분
 
-### 0.5.0
+### 0.6.0
 
 * google SEO 설정 (google_site_verification)
 
 * google gtag 설정 (analytics - tracking_id)
+
+### 0.5.0
+
+* mathjax 적용 (_includes/scripts.html 변경)
 
 ### 0.4.0
 
