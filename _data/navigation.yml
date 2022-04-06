@@ -31,18 +31,18 @@ posts:
       url: /tags/markdown
 - title: Contest
   children:
-    - title: "programmers contest"
-      url: /tags/programmers-contest
     - title: "baekjoon contest"
       url: /tags/baekjoon-contest
+    - title: "programmers contest"
+      url: /tags/programmers-contest
     - title: "etc"
       url: /tags/etc
 - title: Deep learning
 - title: Essay
   children:
-    - title: "blog making"
-      url: /tags/blog-making
     - title: "algorithm"
       url: /tags/algorithm 
+    - title: "blog making"
+      url: /tags/blog-making
     - title: "web"
       url: /tags/web
