@@ -18,18 +18,21 @@ posts:
 - title: Posts by Tag
   url: /tags
 - title: Algorithm
+  url: /categories/algorithm
   children:
     - title: "boj 23000~23999"
       url: /tags/boj-23000-23999
     - title: "boj 24000~24999"
       url: /tags/boj-24000-24999
 - title: Blog
+  url: categories/blog
   children:
     - title: "blog making"
       url: /tags/blog-making
     - title: "markdown"
       url: /tags/markdown
 - title: Contest
+  url: categories/contest
   children:
     - title: "baekjoon contest"
       url: /tags/baekjoon-contest
@@ -38,7 +41,9 @@ posts:
     - title: "etc"
       url: /tags/etc
 - title: Deep learning
+  url: categories/deep-learning
 - title: Essay
+  url: categories/essay
   children:
     - title: "algorithm"
       url: /tags/algorithm 
