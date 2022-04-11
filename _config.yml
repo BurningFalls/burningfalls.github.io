@@ -70,7 +70,7 @@ analytics:
 author:
   name             : "이성주"
   avatar           : "/assets/images/squirrel.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "AI Engineer를 꿈꾸는 평범한 대학생입니다"
+  bio              : "개발자를 꿈꾸는 평범한 컴퓨터공학과 대학생입니다. 블로그에 여러 일상 로그를 남기고 있습니다. 글에 대한 오류 지적 및 문의 환영합니다."
   location         : "South Korea"
   links:
     - label: "Email"
