@@ -15,6 +15,8 @@ tags:
 
 > 이 블로그는 [Minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/){: target="_blank"} 테마가 적용되어 이를 기반으로 서술되었음을 밝힌다.
 
+> `minimal-mistakes` 테마를 사용하면 [jekyll-spaceship](https://github.com/jeffreytse/jekyll-spaceship#additions-for-unlimited-github-pages){: target="_blank"}을 사용할 수 없어서, plugin으로 mathjax를 자동으로 적용시킬 수 없다.
+
 ## 1. config 파일 markdown 체크
 
 `_config.yml` 파일에 다음과 같이 적혀있는지 확인한다. (2022/04/12 기준으로 [github](https://github.com/mmistakes/minimal-mistakes){: target="_blank"}에서 그대로 다운받아 사용하는 경우, 해당 내용이 이미 기재되어 있다.)
