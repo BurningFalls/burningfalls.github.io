@@ -1,14 +1,14 @@
 ---
-title: "[Programmers][Dev-Survey][Google Search Console] Programmers Dev Survey 2022 읽고 느낀점"
+title: "[Programmers][Dev-Survey] Programmers Dev Survey 2022 읽고 느낀점"
 excerpt: "Programmers Dev Survey 2022 읽고 느낀점을 적고, 새롭게 얻어간 용어 및 개념을 정리하였다."
 date: 2022-04-07
 last_modified_at: 2022-04-07
 categories:
   - essay
 tags:
+  - tech-stack
   - programmers
   - dev-survey
-  - tech-stack
 ---
 
 > [Programmers Dev Survey 2022 (https://programmers.co.kr/pages/2022-dev-survey)](https://programmers.co.kr/pages/2022-dev-survey){: target="_blank"}
