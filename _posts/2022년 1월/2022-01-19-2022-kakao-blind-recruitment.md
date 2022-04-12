@@ -6,6 +6,7 @@ last_modified_at: 2022-03-31
 categories:
   - contest
 tags:
+  - contest-etc
   - programmers
   - kakao_blind_recruitment
 ---

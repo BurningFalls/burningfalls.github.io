@@ -20,39 +20,37 @@ posts:
 - title: Algorithm
   url: /categories/algorithm
   children:
-    - title: "boj 23000~23999"
+    - title: "boj 23000~23999 (42)"
       url: /tags/boj-23000-23999
-    - title: "boj 24000~24999"
+    - title: "boj 24000~24999 (53)"
       url: /tags/boj-24000-24999
 - title: Blog
   url: categories/blog
   children:
-    - title: "blog making"
+    - title: "blog making (8)"
       url: /tags/blog-making
-    - title: "markdown"
+    - title: "markdown (3)"
       url: /tags/markdown
     - title: "version"
       url: /blog/blog-version-control
 - title: Contest
   url: categories/contest
   children:
-    - title: "baekjoon contest"
+    - title: "baekjoon contest (6)"
       url: /tags/baekjoon-contest
-    - title: "programmers contest"
-      url: /tags/programmers-contest
-    - title: "contest etc"
+    - title: "contest etc (3)"
       url: /tags/contest-etc
 - title: Deep learning
   url: categories/deep-learning
 - title: Essay
   url: categories/essay
   children:
-    - title: "algorithm"
+    - title: "algorithm (3)"
       url: /tags/algorithm 
-    - title: "blog making"
+    - title: "blog making (8)"
       url: /tags/blog-making
-    - title: "tech stack"
+    - title: "tech stack (1)"
       url: /tags/tech-stack
-    - title: "essay etc"
+    - title: "essay etc (1)"
       url: /tags/essay-etc
     
