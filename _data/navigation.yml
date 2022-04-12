@@ -38,8 +38,8 @@ posts:
       url: /tags/baekjoon-contest
     - title: "programmers contest"
       url: /tags/programmers-contest
-    - title: "etc"
-      url: /tags/etc
+    - title: "contest etc"
+      url: /tags/contest-etc
 - title: Deep learning
   url: categories/deep-learning
 - title: Essay
@@ -49,5 +49,5 @@ posts:
       url: /tags/algorithm 
     - title: "blog making"
       url: /tags/blog-making
-    - title: "web"
-      url: /tags/web
+    - title: "essay etc"
+      url: /tags/essay-etc
