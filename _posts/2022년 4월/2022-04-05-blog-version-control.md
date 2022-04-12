@@ -25,6 +25,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.9.0
+
+* sidebar 각 tag에 글 개수 표시
+
 ### 0.8.0
 
 * sidebar에 `POSTS BY CATEGORY`, `POSTS BY TAG` 추가
