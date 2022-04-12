@@ -51,5 +51,8 @@ posts:
       url: /tags/algorithm 
     - title: "blog making"
       url: /tags/blog-making
+    - title: "tech stack"
+      url: /tags/tech-stack
     - title: "essay etc"
       url: /tags/essay-etc
+    
