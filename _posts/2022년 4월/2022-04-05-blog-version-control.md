@@ -1,14 +1,15 @@
 ---
-title: "[Github Blog][Semantic Versioning] Blog Version Control"
+title: "Blog Version Control"
 excerpt: "Blog를 변경하면서 변화하는 Blog Version을 기록하는 글"
 date: 2022-04-05
-last_modified_at: 2022-04-06
+last_modified_at: 2022-04-12
 toc: false
 categories:
   - blog
 tags:
-  - semantic versioning
-
+  - semantic-versioning
+  - github-blog
+  - minimal-mistakes
 ---
 
 ## Semantic Versioning

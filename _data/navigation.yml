@@ -31,6 +31,8 @@ posts:
       url: /tags/blog-making
     - title: "markdown"
       url: /tags/markdown
+    - title: "version"
+      url: /blog/blog-version-control
 - title: Contest
   url: categories/contest
   children:
