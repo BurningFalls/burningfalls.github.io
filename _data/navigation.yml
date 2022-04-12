@@ -31,8 +31,6 @@ posts:
       url: /tags/blog-making
     - title: "markdown (3)"
       url: /tags/markdown
-    - title: "version"
-      url: /blog/blog-version-control
 - title: Contest
   url: categories/contest
   children:
@@ -53,4 +51,6 @@ posts:
       url: /tags/tech-stack
     - title: "essay etc (1)"
       url: /tags/essay-etc
+- title: Version
+  url: /version
     
