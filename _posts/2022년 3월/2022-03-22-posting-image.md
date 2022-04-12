@@ -68,6 +68,7 @@ alt와 title은 생략 가능하기 때문에 이렇게만 작성해도 된다.
 
 ![squirrel](https://user-images.githubusercontent.com/30232837/159297324-8e9ab962-85e8-47d1-850e-1835bfda2dd8.png "squirrel")
 <br><br>
+
 ## 2. 이미지 크기 조절
 
 쉬운 설명을 위해 위의 완성된 코드를 다음과 같이 축약한다.
