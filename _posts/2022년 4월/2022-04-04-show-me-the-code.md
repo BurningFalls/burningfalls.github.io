@@ -6,7 +6,7 @@ last_modified_at: 2022-04-06
 categories:
   - contest
 tags:
-  - etc
+  - contest-etc
   - show-me-the-code
 ---
 
