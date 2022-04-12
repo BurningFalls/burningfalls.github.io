@@ -17,6 +17,7 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 ### 0.9.0
 
 * sidebar 각 tag에 글 개수 표시
+* version을 하나의 개별 카테고리로 분류
 
 ### 0.8.0
 
