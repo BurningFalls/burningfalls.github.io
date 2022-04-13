@@ -1,6 +1,6 @@
 ---
-title: "[vscode] vscode 유용한 단축키 모음"
-excerpt: "vscode를 사용하는데 있어 알아두면 좋은 단축키들을 정리하였다."
+title: "[VSCode] VSCode 유용한 단축키 모음"
+excerpt: "VSCode를 사용하는데 있어 알아두면 좋은 단축키들을 정리하였다."
 date: 2022-04-13
 last_modified_at: 2022-04-13
 categories:
@@ -10,7 +10,7 @@ tags:
   - vscode
 ---
 
-* 각 기능별 vscode 확장 프로그램을 설치해야 할 수도 있다.
+* 각 기능별 VSCode 확장 프로그램을 설치해야 할 수도 있다.
 
 * 전체 단축키 확인
 ```
