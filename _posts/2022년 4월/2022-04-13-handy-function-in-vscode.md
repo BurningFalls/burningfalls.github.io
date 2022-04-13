@@ -202,3 +202,7 @@ F10
 ```
 shift + F11
 ```
+
+## 7. 참고 사이트
+
+[블로그1](https://www.biew.co.kr/entry/Visual-Studio-CodeVS-Code-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95){: target="_blank"} $\quad$ [블로그2](https://jhnyang.tistory.com/408){: target="_blank"} $\quad$ [유튜브](https://www.youtube.com/watch?v=mh-0twurNRE){: target="_blank"}
