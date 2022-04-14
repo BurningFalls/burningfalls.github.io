@@ -53,15 +53,21 @@ gem "jekyll-include-cache"
 
 그런데 내 경우, `Gemfile`에 위와 같이 작성하지 않아도 아래와 같이 url을 입력해서 확인해보니 사이트를 정상적으로 확인할 수 있었다. 그래서 뭐가뭔지 모르겠지만, 일단 혹시 몰라서 `Gemfile`에 내용을 추가하였다. (추측상으로는 설치한 다른 gem에 이미 이 내용이 포함되어 있는 것 같다.)
 
-`(블로그 주소)/sitemap.xml`
+```
+(블로그 주소)/sitemap.xml
+```
 
 ![sitemap.xml](https://user-images.githubusercontent.com/30232837/162904009-37a5458a-1d77-4c65-b60f-79e923fe5e08.png "sitemap.xml"){: width="100%" height="100%"}{: .align-center}
 
-`(블로그 주소)/feed.xml`
+```
+(블로그 주소)/feed.xml
+```
 
 ![feed.xml](https://user-images.githubusercontent.com/30232837/162904823-a42b894c-7422-46dd-8ef1-681833ebcb55.png "feed.xml"){: width="100%" height="100%"}{: .align-center}
 
-`(블로그 주소)/robots.txt`
+```
+(블로그 주소)/robots.txt
+```
 
 ![robots.txt](https://user-images.githubusercontent.com/30232837/162904962-8d47494c-6dcf-4fc4-be34-8e58674ea9cd.png "robots.txt"){: width="100%" height="100%"}{: .align-center}
 
