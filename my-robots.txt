@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: httsp://burningfalls.github.io/my-sitemap.xml
