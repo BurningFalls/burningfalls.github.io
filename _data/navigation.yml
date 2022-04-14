@@ -27,7 +27,7 @@ posts:
 - title: Blog
   url: categories/blog
   children:
-    - title: "blog making (8)"
+    - title: "blog making (9)"
       url: /tags/blog-making
     - title: "markdown (3)"
       url: /tags/markdown
@@ -45,7 +45,7 @@ posts:
   children:
     - title: "algorithm (3)"
       url: /tags/algorithm 
-    - title: "blog making (8)"
+    - title: "blog making (9)"
       url: /tags/blog-making
     - title: "handy function (1)"
       url: /tags/handy-function
