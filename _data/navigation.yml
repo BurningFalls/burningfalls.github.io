@@ -18,40 +18,56 @@ posts:
 - title: Posts by Tag
   url: /tags
 - title: Algorithm
+  category: algorithm
   url: /categories/algorithm
   children:
-    - title: "boj 23000~23999 (42)"
+    - title: "boj 23000~23999"
+      tag: "boj-23000-23999"
       url: /tags/boj-23000-23999
-    - title: "boj 24000~24999 (53)"
+    - title: "boj 24000~24999"
+      tag: "boj-24000-24999"
       url: /tags/boj-24000-24999
 - title: Blog
+  category: blog
   url: categories/blog
   children:
-    - title: "blog making (9)"
+    - title: "blog making"
+      tag: "blog-making"
       url: /tags/blog-making
-    - title: "markdown (3)"
+    - title: "markdown"
+      tag: "markdown"
       url: /tags/markdown
 - title: Contest
+  category: contest
   url: categories/contest
   children:
-    - title: "baekjoon contest (6)"
+    - title: "baekjoon contest"
+      tag: "baekjoon-contest"
       url: /tags/baekjoon-contest
-    - title: "contest etc (3)"
+    - title: "contest etc"
+      tag: "contest-etc"
       url: /tags/contest-etc
 - title: Deep learning
+  category: deep-learning
   url: categories/deep-learning
 - title: Essay
+  category: essay
   url: categories/essay
   children:
-    - title: "algorithm (3)"
+    - title: "algorithm"
+      tag: "algorithm"
       url: /tags/algorithm 
-    - title: "blog making (9)"
+    - title: "blog making"
+      tag: "blog-making"
       url: /tags/blog-making
-    - title: "handy function (1)"
+    - title: "handy function"
+      tag: "handy-function"
       url: /tags/handy-function
-    - title: "tech stack (1)"
+    - title: "tech stack"
+      tag: "tech-stack"
       url: /tags/tech-stack
-    - title: "essay etc (1)"
+    - title: "essay etc"
+      tag: "essay-etc"
       url: /tags/essay-etc
 - title: Version
   url: /version
