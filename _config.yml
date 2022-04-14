@@ -41,7 +41,6 @@ search_provider          : lunr # lunr (default), algolia, google
 
 # SEO Related
 google_site_verification : "L61tGx8y3w-Vz6gl4YJ3gJNdiK0c3mkzTLxdoDNmMWE"
-naver_site_verification  : "fe0415ee897c5ce5979ba498d4688187f0acc1f3"
 
 # Social Sharing
 twitter:
