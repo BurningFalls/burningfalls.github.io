@@ -4,7 +4,7 @@ excerpt: "Github Blog(theme: minimal-mistakes)를 Google 검색 엔진에 노출
 date: 2022-04-07
 last_modified_at: 2022-04-14
 categories:
-  - essay
+  - blog
 tags:
   - blog-making
   - github-blog

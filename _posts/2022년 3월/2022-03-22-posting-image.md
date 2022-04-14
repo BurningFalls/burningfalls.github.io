@@ -6,7 +6,6 @@ last_modified_at: 2022-03-24
 categories:
   - blog
 tags:
-  - blog-making
   - markdown
 ---
 
