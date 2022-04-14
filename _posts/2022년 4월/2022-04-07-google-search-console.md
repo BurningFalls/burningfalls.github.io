@@ -19,9 +19,9 @@ tags:
 
 > 아직까지 Sitemap 등록을 성공시키지 못해서 계속 기다리는 중이다.
 
-## 1. sitemap, RSS feed, robots.txt 생성
+## 1. sitemap, robots.txt 생성
 
-[Minimal-mistakes Github](https://github.com/mmistakes/minimal-mistakes){: target="_blank"}에서 그대로 가져온 경우(2022/04/12 기준), `_config.yml` 파일의 plugins에 아래 코드와 같이 `jekyll-sitemap` `jekyll-feed`가 이미 적혀있기 때문에 `sitemap.xml`, `feed.xml`, `robots.txt`를 따로 추가하지 않아도 자동으로 생성된다. 실제로 주소를 입력해서 확인해볼 수 있다.
+[Minimal-mistakes Github](https://github.com/mmistakes/minimal-mistakes){: target="_blank"}에서 그대로 가져온 경우(2022/04/12 기준), `_config.yml` 파일의 plugins에 아래 코드와 같이 `jekyll-sitemap`가 이미 적혀있기 때문에 `sitemap.xml`를 따로 추가하지 않아도 자동으로 생성된다. 실제로 주소를 입력해서 확인해볼 수 있다. (robots.txt도 기본으로 있던데 그건 어느 부분에서 자동 생성되는지는 모르겠다. 네이버 등록을 위한 jekyll-feed도 있다.)
 
 ```yml
 # Plugins (previously gems:)
@@ -58,12 +58,6 @@ gem "jekyll-include-cache"
 ```
 
 ![sitemap.xml](https://user-images.githubusercontent.com/30232837/162904009-37a5458a-1d77-4c65-b60f-79e923fe5e08.png "sitemap.xml"){: width="100%" height="100%"}{: .align-center}
-
-```
-(블로그 주소)/feed.xml
-```
-
-![feed.xml](https://user-images.githubusercontent.com/30232837/162904823-a42b894c-7422-46dd-8ef1-681833ebcb55.png "feed.xml"){: width="100%" height="100%"}{: .align-center}
 
 ```
 (블로그 주소)/robots.txt
