@@ -57,9 +57,9 @@ posts:
     - title: "algorithm"
       tag: "algorithm"
       url: /tags/algorithm 
-    - title: "blog making"
-      tag: "blog-making"
-      url: /tags/blog-making
+    - title: "blog"
+      tag: "blog"
+      url: /tags/blog
     - title: "handy function"
       tag: "handy-function"
       url: /tags/handy-function
