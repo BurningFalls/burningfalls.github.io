@@ -125,6 +125,15 @@ $a_1\times(a_2\sim a_N$까지의 합$)+a_2\times(a_3\sim a_N$까지의 합$)$
 
 ---
 
+**절댓값: `\vert`**
+
+```
+$max(0, P-( \vert a-c \vert + \vert b-d \vert ))$
+```
+$max(0, P-( \vert a-c \vert + \vert b-d \vert ))$
+
+---
+
 **시그마: `\sum`**
 
 ```
