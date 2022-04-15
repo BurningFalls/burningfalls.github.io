@@ -60,7 +60,7 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 
 ### A1. 전체 글 수 세기
 
-```html
+```
 {% assign sum = site.posts | size %}
 ```
 
@@ -72,7 +72,7 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 
 ### B1. 카테고리별 글 수 세기
 
-```html
+```
 {% assign cattotal = 0 %}
 {% for category in site.categories %}
   {% if category[0] == nav.category  %}
@@ -91,7 +91,7 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 
 ### C1. 태그별 글 수 세기
 
-```html
+```
 {% assign tagtotal = 0 %}
 {% for tag in site.tags %}
   {% if tag[0] == child.tag  %}
@@ -110,7 +110,7 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 
 위의 `태그별 글 수 세기` 코드에서 볼 수 있듯이
 
-```html
+```
 {% assign tagtotal = 0 %}
 {% for tag in site.tags %}
   {% if tag[0] == child.tag  %}
