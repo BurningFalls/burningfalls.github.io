@@ -58,10 +58,12 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 
 해당 코드의 정확한 위치는 [최종 변경 파일](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_includes/nav_list){: target="_blank"}을 보는 것을 추천한다.
 
+> 아래 코드블럭에서 `%` 관련 문법을 사용할 경우, 블로그에 코드가 제대로 나타나지 않는 현상이 발생하였다. 다른 특수 문법과 겹치기 때문인 것 같은데 해결 방법을 모르겠다. 따라서 `%` 앞에 `\`을 하나씩 붙여서 작성하였다. 원래 코드에는 `%` 앞에 `\`가 전부 없다.
+
 ### A1. 전체 글 수 세기
 
 ```
-{% assign sum = site.posts | size %}
+{\% assign sum = site.posts | size \%}
 ```
 
 ### A2. 전체 글 수 표시
@@ -73,12 +75,12 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 ### B1. 카테고리별 글 수 세기
 
 ```
-{% assign cattotal = 0 %}
-{% for category in site.categories %}
-  {% if category[0] == nav.category  %}
-    {% assign cattotal = cattotal | plus: category[1].size %}
-  {% endif %}
-{% endfor %}
+{\% assign cattotal = 0 \%}
+{\% for category in site.categories \%}
+  {\% if category[0] == nav.category  \%}
+    {\% assign cattotal = cattotal | plus: category[1].size \%}
+  {\% endif \%}
+{\% endfor \%}
 ```
 
 ### B2. 카테고리별 글 수 표시
@@ -92,12 +94,12 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 ### C1. 태그별 글 수 세기
 
 ```
-{% assign tagtotal = 0 %}
-{% for tag in site.tags %}
-  {% if tag[0] == child.tag  %}
-    {% assign tagtotal = tagtotal | plus: tag[1].size %}
-  {% endif %}
-{% endfor %}
+{\% assign tagtotal = 0 \%}
+{\% for tag in site.tags \%}
+  {\% if tag[0] == child.tag  \%}
+    {\% assign tagtotal = tagtotal | plus: tag[1].size \%}
+  {\% endif \%}
+{\% endfor \%}
 ```
 
 ### C2. 태그별 글 수 표시
@@ -111,12 +113,12 @@ minimal-mistakes를 그대로 fork하거나 download 했을 경우, [Minimal-mis
 위의 `태그별 글 수 세기` 코드에서 볼 수 있듯이
 
 ```
-{% assign tagtotal = 0 %}
-{% for tag in site.tags %}
-  {% if tag[0] == child.tag  %}
-    {% assign tagtotal = tagtotal | plus: tag[1].size %}
-  {% endif %}
-{% endfor %}
+{\% assign tagtotal = 0 \%}
+{\% for tag in site.tags \%}
+  {\% if tag[0] == child.tag  \%}
+    {\% assign tagtotal = tagtotal | plus: tag[1].size \%}
+  {\% endif \%}
+{\% endfor \%}
 ```
 
 세 번째 줄에서 `child.tag` 변수가 필요하다. 따라서 `navigation` 파일의 각각의 tag에 아래와 같이 `tag` 변수와 그 값을 만들어주어야 한다.
@@ -152,8 +154,8 @@ category를 다루는 방식도 이와 마찬가지로 접근하면 된다.
 
 ### 1. _includes/nav_list
 
-[_includes/nav_list](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_includes/nav_list){: target="_blank"}
+> [_includes/nav_list](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_includes/nav_list){: target="_blank"}
 
 ### 2. _data/navigation.yml
 
-[_data/navigation.yml](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_data/navigation.yml){: target="_blank"}
+> [_data/navigation.yml](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_data/navigation.yml){: target="_blank"}
