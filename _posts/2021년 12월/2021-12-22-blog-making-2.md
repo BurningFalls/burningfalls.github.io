@@ -2,7 +2,7 @@
 title: "[Github blog][Minimal-mistakes] Minimal-mistakes 테마 Github blog 만들기 2"
 excerpt: "minimal-mistakes 테마를 사용하여 github blog를 만드는 과정을 서술하였다."
 date: 2021-12-22
-last_modified_at: 2022-04-05
+last_modified_at: 2022-04-15
 categories:
   - blog
 tags:
@@ -37,7 +37,7 @@ bundle exec jekyll serve
 
 이를 입력했더니 다음과 같은 `dependency error`가 떴다.
 
-![error](https://user-images.githubusercontent.com/30232837/161528062-ce01d61f-b8d5-4020-97f7-4c513e8d1894.png "error"){: width="80%" height="80%"}{: .align-center}
+![error](https://user-images.githubusercontent.com/30232837/161528062-ce01d61f-b8d5-4020-97f7-4c513e8d1894.png "error"){: width="100%" height="100%"}{: .align-center}
 
 이는 다음 명령어를 입력하여 해결하였다.
 
@@ -47,7 +47,7 @@ bundle add kramdown-parser-gfm
 
 이번엔 또 이런 에러가 떴다. (실제 에러 메시지는 훨씬 길고, 핵심만 캡쳐하였다.)
 
-![error](https://user-images.githubusercontent.com/30232837/161528261-bc3b967c-d919-45ff-8a9c-07010ea2a36d.png "error"){: width="80%" height="80%"}{: .align-center}
+![error](https://user-images.githubusercontent.com/30232837/161528261-bc3b967c-d919-45ff-8a9c-07010ea2a36d.png "error"){: width="100%" height="100%"}{: .align-center}
 
 이는 다음 명령어를 입력하여 해결하였다.
 
@@ -57,10 +57,10 @@ bundle add webrick
 
 이제 다시 서버를 구동시켰더니 정상적으로 로컬에서 작동함을 확인할 수 있었다.
 
-![run-server](https://user-images.githubusercontent.com/30232837/161528393-c75fff1d-4faf-4eba-8b8c-af37e270ee2c.png "run-server"){: width="80%" height="80%"}{: .align-center}
+![run-server](https://user-images.githubusercontent.com/30232837/161528393-c75fff1d-4faf-4eba-8b8c-af37e270ee2c.png "run-server"){: width="100%" height="100%"}{: .align-center}
 
 Server address에 적힌 주소로 따라가면, 본인의 사이트를 볼 수 있다.
 
-![myblog](https://user-images.githubusercontent.com/30232837/161528547-4ba371fa-5bc2-447c-99e2-d161db60766e.png "myblog"){: width="80%" height="80%"}{: .align-center}
+![myblog](https://user-images.githubusercontent.com/30232837/161528547-4ba371fa-5bc2-447c-99e2-d161db60766e.png "myblog"){: width="100%" height="100%"}{: .align-center}
 
 > [다음 글: Minimal-mistakes 테마 Github blog 만들기 3](https://burningfalls.github.io/blog/blog-making-3/)
