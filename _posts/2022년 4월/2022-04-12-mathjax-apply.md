@@ -2,7 +2,7 @@
 title: "[Github blog][Minimal-mistakes][Mathjax] Github blog에 수식 적용시키기"
 excerpt: "minimal-mistakes 테마 Github blog에 mathjax로 markdown 수식 사용을 가능하게 한다."
 date: 2022-04-12
-last_modified_at: 2022-04-12
+last_modified_at: 2022-04-15
 categories:
   - blog
 tags:
