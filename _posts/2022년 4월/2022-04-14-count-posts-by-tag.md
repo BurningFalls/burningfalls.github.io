@@ -2,7 +2,7 @@
 title: "[Github][Minimal-mistakes] Github blog sidebar에 tag별 post 개수 표기"
 excerpt: "Github blog sidebar에 category/tag 별로 글 개수가 자동으로 세어져 표기되도록 파일을 커스터마이징한다."
 date: 2022-04-14
-last_modified_at: 2022-04-14
+last_modified_at: 2022-04-15
 categories:
   - blog
 tags:
