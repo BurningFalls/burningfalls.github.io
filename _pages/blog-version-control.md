@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.10.1
+
+* Markdown 수식 반응형 웹에 맞춰 수정
+
 ### 0.10.0
 
 * sidebar 각 tag에 글 개수 표시 자동화
