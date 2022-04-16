@@ -2,7 +2,7 @@
 title: "[프로그래머스 대회] 2022 KAKAO BLIND RECRUITMENT 문제 풀어보기"
 excerpt: "프로그래머스에 있는 2022 KAKAO BLIND RECRUITMENT 문제를 풀어본 소감 및 간단한 풀이 작성"
 date: 2022-01-19
-last_modified_at: 2022-03-31
+last_modified_at: 2022-04-16
 categories:
   - contest
 tags:
@@ -17,11 +17,11 @@ tags:
 
 ## 2. 대회 공식 풀이 링크
 
-> [[대회 풀이 링크 (https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/) ]](https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/){: target="_blank"}
+> [대회 풀이 링크 (https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/) ](https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/){: target="_blank"}
 
 ## 3. 문제 풀이 코드
 
-> [[풀이 코드 깃헙 링크]](https://github.com/BurningFalls/Algorithm/tree/master/Programmers/2022%20KAKAO%20BLIND%20RECRUITMENT){: target="_blank"}
+> [풀이 코드 깃헙 링크](https://github.com/BurningFalls/Algorithm/tree/master/Programmers/2022%20KAKAO%20BLIND%20RECRUITMENT){: target="_blank"}
 
 ## 4. 대회 문제 풀이
 
@@ -51,8 +51,7 @@ tags:
 하나의 입차와 하나의 출차가 짝을 이루기 때문에, 출차 다음에 다음 입차가 발생한다. 이 특징을 이용하여 입차인 경우 해당 차(`key`)의 `value`로 입차 시간을 저장하고, 출차인 경우 해당 차(`key`)와 매칭된 `value` 시간 값(입차 시간)을 가져와서 출차 시간과의 차이 값을 계산하는 방식으로 구현하였다.
 
 ### 4.	양궁대회 
-> Time: 36분 17초
-WA: 1
+> Time: 36분 17초, WA: 1
 
 딱히 그리디한 방법이 존재하지 않는 거 같아서 완전탐색으로 구현하였다. $0\sim 10$점 중에 라이언이 가져갈 점수가 어떤 점수인지를 정하는 방식으로 비트마스킹을 사용하여 완전탐색을 진행하였다. 
 
@@ -87,8 +86,7 @@ kakao Tech에 공식적으로 2022 온라인 코테 문제해설이 올라와 �
 이런 방법을 떠올릴 수 있으려면 어떤 방식으로 더 공부를 해야 할지가 관건인데, 그냥 문제를 많이 풀어보는 것 말고는 딱히 다른 방법이 떠오르진 않는다.
 
 ### 7.	사라지는 발판
-> Time: 61분 46초 
-> WA: 2
+> Time: 61분 46초, WA: 2
 
 백준에서 여러 돌 가져가기 문제를 풀어보았지만, 이런 복잡한 유형은 처음이었다. 맵이 $5\times 5$ 사이즈여서 작아보일 수 있으나, $0$과 $1$ 두 가지 경우가 존재하므로 $2^{25}$의 경우가 존재한다. 
 
