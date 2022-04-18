@@ -1,0 +1,25 @@
+---
+layout: archive
+---
+
+{% if page.title == "BOJ 23000~23999" %}
+  {% assign posts = site.categories.boj-23000-23999 %}
+{% elsif page.title == "BOJ 24000~24999" %}
+  {% assign posts = site.categories.boj-24000-24999 %}
+{% elsif page.title == "Blog Making" %}
+  {% assign posts = site.categories.blog-making %}
+{% elsif page.title == "Markdown" %}
+  {% assign posts = site.categories.markdown %}
+{% elsif page.title == "Baekjoon Contest" %}
+  {% assign posts = site.categories.baekjoon-contest %}
+{% elsif page.title == "Contest etc" %}
+  {% assign posts = site.categories.contest-etc %}
+{% elsif page.title == "Essay" %}
+  {% assign posts = site.categories.essay %}
+{% elsif page.title == "Handy Function" %}
+  {% assign posts = site.categories.handy-function %}
+{% elsif page.title == "Tech Stack" %}
+  {% assign posts = site.categories.tech-stack %}
+{% endif %}
+
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
