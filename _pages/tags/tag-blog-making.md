@@ -1,8 +1,8 @@
 ---
 title: "Blog Making"
-layout: home
-permalink: /tags/blog-making/
-pagination:
-  enabled: true
-  tag: blog-making
+layout: archive
+permalink: tags/blog-making
 ---
+
+{% assign posts = site.tags.blog-making %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

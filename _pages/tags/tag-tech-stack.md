@@ -1,8 +1,8 @@
 ---
 title: "Tech Stack"
-layout: home
-permalink: /tags/tech-stack/
-pagination:
-  enabled: true
-  tag: tech-stack
+layout: archive
+permalink: tags/tech-stack
 ---
+
+{% assign posts = site.tags.tech-stack %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
