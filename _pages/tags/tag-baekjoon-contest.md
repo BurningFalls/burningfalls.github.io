@@ -1,5 +1,6 @@
 ---
 title: "Baekjoon Contest"
-layout: tag-archive
+layout: tag
 permalink: tags/baekjoon-contest
+taxonomy: baekjoon-contest
 ---

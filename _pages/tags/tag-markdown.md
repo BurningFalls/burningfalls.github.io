@@ -1,5 +1,6 @@
 ---
 title: "Markdown"
-layout: tag-archive
+layout: tag
 permalink: tags/markdown
+taxonomy: markdown
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Handy Function"
-layout: tag-archive
+layout: tag
 permalink: tags/handy-function
+taxonomy: handy-function
 ---

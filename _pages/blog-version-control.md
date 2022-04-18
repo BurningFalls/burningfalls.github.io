@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.11.1
+
+* category/tag-archive -> category/tag layout으로 변경
+
 ### 0.11.0
 
 * 각 category/tag page에 맨 위로 가기 UI 추가

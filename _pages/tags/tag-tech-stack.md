@@ -1,5 +1,6 @@
 ---
 title: "Tech Stack"
-layout: tag-archive
+layout: tag
 permalink: tags/tech-stack
+taxonomy: tech-stack
 ---

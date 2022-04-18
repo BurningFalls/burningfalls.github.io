@@ -1,5 +1,6 @@
 ---
 title: "ALGORITHM"
-layout: category-archive
+layout: category
 permalink: categories/algorithm
+taxonomy: algorithm
 ---

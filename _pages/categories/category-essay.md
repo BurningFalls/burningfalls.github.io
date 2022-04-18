@@ -1,5 +1,6 @@
 ---
 title: "ESSAY"
-layout: category-archive
+layout: category
 permalink: categories/essay
+taxonomy: essay
 ---

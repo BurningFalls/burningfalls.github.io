@@ -1,5 +1,6 @@
 ---
 title: "Essay"
-layout: tag-archive
+layout: tag
 permalink: tags/essay
+taxonomy: essay
 ---

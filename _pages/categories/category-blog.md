@@ -1,5 +1,6 @@
 ---
 title: "BLOG"
-layout: category-archive
+layout: category
 permalink: categories/blog
+taxonomy: blog
 ---

@@ -1,5 +1,6 @@
 ---
 title: "CONTEST"
-layout: category-archive
+layout: category
 permalink: categories/contest
+taxonomy: contest
 ---

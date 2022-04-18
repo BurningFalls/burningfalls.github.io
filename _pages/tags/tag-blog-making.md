@@ -1,5 +1,6 @@
 ---
 title: "Blog Making"
-layout: tag-archive
+layout: tag
 permalink: tags/blog-making
+taxonomy: blog-making
 ---
