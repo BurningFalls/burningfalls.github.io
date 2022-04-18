@@ -13,7 +13,7 @@ tags:
 
 ## 1. 특정 카테고리/태그 페이지 생성
 
-![search-machine](https://user-images.githubusercontent.com/30232837/163798102-e79ba063-3bbe-44c4-b958-d6b5a0455733.png "search-machine"){: width="80%" height="80%"}{: .align-center}
+![search-machine](https://user-images.githubusercontent.com/30232837/163798102-e79ba063-3bbe-44c4-b958-d6b5a0455733.png "search-machine"){: width="50%" height="50%"}{: .align-center}
 
 나는 위의 사진과 같이 `_pages`에 각 Category별 페이지를 담아놓는 `categories` 폴더와 각 Tag별 페이지를 담아놓는 `tags` 폴더를 만들고, 그 안에 파일들을 정리해두었다.
 
@@ -49,6 +49,8 @@ taxonomy: boj-23000-23999
 main:
   - title: "(적당한 제목)"
     url: (위에서 설정한 permalink)
+
+    
 posts:
   - title: "(적당한 제목)"
     url: (위에서 설정한 permalink)
