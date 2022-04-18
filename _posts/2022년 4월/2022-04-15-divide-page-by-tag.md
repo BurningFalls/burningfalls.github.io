@@ -1,8 +1,8 @@
 ---
-title: "[Github][Minimal-mistakes] Github blog category/tag별 페이지 구분"
+title: "[Github Blog][Minimal-mistakes] Github blog category/tag별 페이지 구분"
 excerpt: "Github blog Minimal-mistakes 테마를 가져오면, 글에 category와 tag를 적용할 수 있다. 이는 전부가 하나의 페이지에서 #으로 이동하는 형태인데, 보기 쉽도록 각각의 분류당 한 페이지로 구분시킨다."
 date: 2022-04-15
-last_modified_at: 2022-04-15
+last_modified_at: 2022-04-18
 categories:
   - blog
 tags:
