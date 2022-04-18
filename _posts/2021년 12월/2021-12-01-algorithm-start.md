@@ -2,10 +2,11 @@
 title: "[Algorithm] 알고리즘, 어떻게 시작해야 하는가"
 excerpt: "알고리즘 공부 방법, 언어, 백준 푸는 방법을 선택하는 과정"
 date: 2021-12-01
-last_modified_at: 2022-03-25
+last_modified_at: 2022-04-18
 categories:
   - essay
 tags:
+  - essay-etc
   - algorithm
   - baekjoon
 ---
