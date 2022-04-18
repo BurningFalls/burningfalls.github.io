@@ -1,8 +1,8 @@
 ---
 title: "Algorithm"
-layout: archive
-permalink: tags/algorithm
+layout: home
+permalink: /tags/algorithm/
+pagination:
+  enabled: true
+  tag: algorithm
 ---
-
-{% assign posts = site.tags.algorithm %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

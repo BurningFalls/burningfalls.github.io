@@ -1,8 +1,8 @@
 ---
 title: "Baekjoon Contest"
-layout: archive
-permalink: tags/baekjoon-contest
+layout: home
+permalink: /tags/baekjoon-contest/
+pagination:
+  enabled: true
+  tag: baekjoon-contest
 ---
-
-{% assign posts = site.tags.baekjoon-contest %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

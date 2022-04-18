@@ -1,8 +1,8 @@
 ---
 title: "Blog"
-layout: archive
-permalink: tags/blog
+layout: home
+permalink: /tags/blog/
+pagination:
+  enabled: true
+  tag: blog
 ---
-
-{% assign posts = site.tags.blog %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
