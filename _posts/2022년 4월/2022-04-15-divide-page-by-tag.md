@@ -11,34 +11,35 @@ tags:
   - minimal-mistakes
 ---
 
-## 1. 특정 카테고리 페이지 생성
+## 1. 특정 카테고리/태그 페이지 생성
 
-나는 이 파일을 `page`로 정의해서 `_pages` 폴더 안에 넣어 관리하고 있다. 무슨 종류로 지정하든 크게 상관은 없지만, `_config.yml`의 default 설정으로 미루어보아 `page`가 제일 적절하다. 본인 마음대로 커스터마이징하면 된다.
+![search-machine](https://user-images.githubusercontent.com/30232837/163798102-e79ba063-3bbe-44c4-b958-d6b5a0455733.png "search-machine"){: width="80%" height="80%"}{: .align-center}
 
-> 아래 코드블럭에서 `%` 관련 문법을 사용할 경우, 블로그에 코드가 제대로 나타나지 않는 현상이 발생하였다. 다른 특수 문법과 겹치기 때문인 것 같은데 해결 방법을 모르겠다. 따라서 `%` 앞에 `\`을 하나씩 붙여서 작성하였다. 원래 코드에는 `%` 앞에 `\`가 전부 없다.
+나는 위의 사진과 같이 `_pages`에 각 Category별 페이지를 담아놓는 `categories` 폴더와 각 Tag별 페이지를 담아놓는 `tags` 폴더를 만들고, 그 안에 파일들을 정리해두었다.
 
 ```md
----
-title: "(적당한 제목)"
-layout: archive
-permalink: (적당한 링크)
----
+# _pages/categories/category-algorithm.md
 
-{\% assign posts = site.categories.(카테고리명) \%}
-{\% for post in posts \%} {\% include archive-single.html type=page.entries_layout \%} {\% endfor \%}
+---
+title: "ALGORITHM"
+layout: category
+permalink: categories/algorithm
+taxonomy: algorithm
+---
 ```
 
-**(적당한 제목)**에는 이 페이지의 적당한 제목을 아무거나 쓰면 된다.
+다음과 같이 `layout: category`로 `taxonomy: algorithm` 코드를 넣은 파일을 생성하면, minimal-mistakes에 이미 있는 `_layouts/category.html`에서 `taxonomy` 값을 받아서 해당 category(algorithm) 값을 갖는 posts만 페이지에 띄워준다. 특정 tag 페이지를 생성할 때도 마찬가지이다.
 
-**(적당한 링크)**에는 이 페이지의 링크를 적당히 설정해준다. 단, 링크이므로 띄어쓰기나 특정 특수문자들을 사용하면 오류가 날 수 있다. (대표적으로 `-`는 사용 가능, 한글도 복사시 깨지므로 비추천)
+```md
+# _pages/tags/tag-boj-23000-23999.md
 
-**(카테고리명)**에는 반드시 본인 블로그 posts에서 생성한 정확한 카테고리 명칭이 들어가야 한다.
-
-> [내가 만들어서 사용하고 있는 예시](https://github.com/BurningFalls/burningfalls.github.io/blob/master/_pages/categories/category-algorithm.md?plain=1){: target="_blank"}
-
-이렇게 만들면, (본인 블로그)/(설정한 permalink)로 들어갔을 때, (카테고리명)의 category를 갖는 글들만 해당 페이지에 표시되는 것을 볼 수 있다.
-
-tag별로 페이지를 구분할 때도 이와 똑같은 방식으로 하면 된다. 다만, 위 코드의 `site.categories`를 `site.tags`로 바꿔주면 된다.
+---
+title: "BOJ 23000~23999"
+layout: tag
+permalink: tags/boj-23000-23999
+taxonomy: boj-23000-23999
+---
+```
 
 ## 2. 링크 설정
 
@@ -71,6 +72,7 @@ defaults:
 ![github-blog](https://user-images.githubusercontent.com/30232837/163506247-56ad1149-97f4-4dbe-af06-4b5e507090d1.png "github-blog"){: width="100%" height="100%"}{: .align-center}
 
 `Essay`를 누르니 `essay` category를 가진 글만 뜨는 별개의 페이지가 표시됨을 볼 수 있다.
+
 
 
 
