@@ -18,6 +18,8 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 * post pagination 이전/다음 -> 글 제목 표시 변경
 
+* breadcrumb 표시
+
 ### 0.11.1
 
 * category/tag-archive -> category/tag layout으로 변경
