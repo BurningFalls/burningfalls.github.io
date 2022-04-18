@@ -56,10 +56,7 @@ posts:
   children:
     - title: "algorithm"
       tag: "algorithm"
-      url: /tags/algorithm 
-    - title: "blog"
-      tag: "blog"
-      url: /tags/blog
+      url: /tags/algorithm
     - title: "handy function"
       tag: "handy-function"
       url: /tags/handy-function
