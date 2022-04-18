@@ -1,8 +1,8 @@
 ---
 title: "ESSAY"
-layout: archive
-permalink: categories/essay
+layout: home
+permalink: /categories/essay/
+pagination:
+  enabled: true
+  category: essay
 ---
-
-{% assign posts = site.categories.essay %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

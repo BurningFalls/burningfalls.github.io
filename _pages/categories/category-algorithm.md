@@ -1,8 +1,8 @@
 ---
 title: "ALGORITHM"
-layout: archive
-permalink: categories/algorithm
+layout: home
+permalink: /categories/algorithm/
+pagination:
+  enabled: true
+  category: algorithm
 ---
-
-{% assign posts = site.categories.algorithm %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
