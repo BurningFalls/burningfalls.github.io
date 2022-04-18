@@ -54,15 +54,15 @@ posts:
   category: essay
   url: categories/essay
   children:
+    - title: "essay"
+      tag: "essay"
+      url: /tags/essay
     - title: "handy function"
       tag: "handy-function"
       url: /tags/handy-function
     - title: "tech stack"
       tag: "tech-stack"
       url: /tags/tech-stack
-    - title: "essay etc"
-      tag: "essay-etc"
-      url: /tags/essay-etc
 - title: Version
   url: /version
     

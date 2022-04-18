@@ -6,7 +6,7 @@ last_modified_at: 2022-04-18
 categories:
   - essay
 tags:
-  - essay-etc
+  - essay
   - algorithm
   - codeforces
 ---

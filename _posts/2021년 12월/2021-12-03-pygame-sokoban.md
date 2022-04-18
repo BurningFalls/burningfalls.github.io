@@ -6,7 +6,7 @@ last_modified_at: 2022-03-25
 categories:
   - essay
 tags:
-  - essay-etc
+  - essay
   - pygame
   - python
 ---
