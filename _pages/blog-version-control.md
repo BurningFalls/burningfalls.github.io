@@ -14,6 +14,12 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.11.0
+
+* 각 category/tag page에 맨 위로 가기 UI 추가
+
+* category/tag-archive 파일 생성 -> 중복 제거 및 functioning
+
 ### 0.10.2
 
 * jekyll-paginate-v2 적용 실패
