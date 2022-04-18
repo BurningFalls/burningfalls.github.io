@@ -6,7 +6,7 @@ gem "minimal-mistakes-jekyll"
 gem "kramdown-parser-gfm", "~> 1.1"
 gem "webrick", "~> 1.7"
 
-gem "jekyll-paginate"
+gem "jekyll-paginate-v2"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-feed"

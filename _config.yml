@@ -12,7 +12,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "LogLife"
 title_separator          : "-"
-subtitle                 : "Version 0.10.1" # site tagline that appears below site title in masthead
+subtitle                 : "Version 0.11.0" # site tagline that appears below site title in masthead
 name                     : "이성주"
 description              : "코딩일상 작성 블로그"
 url                      : "https://burningfalls.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -179,15 +179,29 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+# timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+
+pagination:
+  enabled: true
+  per_page: 6
+  title: ':title'
+  sort_field: 'date'
+  sort_reverse: true
+  permalink: /:num/
+  trail:
+    before: 2
+    after: 2
+
+autopages:
+  enabled: false
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -195,7 +209,7 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed

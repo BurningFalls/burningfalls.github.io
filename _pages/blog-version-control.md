@@ -14,6 +14,12 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.11.0
+
+* jekyll-paginate-v2 적용
+
+* category, tag별 페이지에 paginate 기능 적용
+
 ### 0.10.1
 
 * Markdown 수식 반응형 웹에 맞춰 수정
