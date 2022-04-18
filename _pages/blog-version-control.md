@@ -14,6 +14,12 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.10.2
+
+* jekyll-paginate-v2 적용 실패
+
+* blog tag 수정 및 삭제
+
 ### 0.10.1
 
 * Markdown 수식 반응형 웹에 맞춰 수정
