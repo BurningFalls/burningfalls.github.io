@@ -2,11 +2,11 @@
 title: "[Github Blog] 블로그가 필요한 이유"
 excerpt: "깃헙 블로그를 만들게 된 동기와 만드는 중에 겪은 시행착오 및 앞으로 나아갈 방향"
 date: 2021-12-01
-last_modified_at: 2022-03-25
+last_modified_at: 2022-04-18
 categories:
-  - essay
-tags:
   - blog
+tags:
+  - blog-making
   - baekjoon
 ---
 

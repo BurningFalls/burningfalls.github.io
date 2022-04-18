@@ -2,11 +2,11 @@
 title: "[Github Blog][Minimal-mistakes] 블로그 만들 준비"
 excerpt: "깃헙 블로그를 minimal-mistakes로 만들 준비 과정"
 date: 2021-12-03
-last_modified_at: 2022-03-25
+last_modified_at: 2022-04-18
 categories:
-  - essay
-tags:
   - blog
+tags:
+  - blog-making
   - github-blog
   - minimal-mistakes
 ---
