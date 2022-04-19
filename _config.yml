@@ -12,7 +12,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "LogLife"
 title_separator          : "-"
-subtitle                 : "Version 0.12.1" # site tagline that appears below site title in masthead
+subtitle                 : "Version 0.13.0" # site tagline that appears below site title in masthead
 name                     : "이성주"
 description              : "코딩일상 작성 블로그"
 url                      : "https://burningfalls.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

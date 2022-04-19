@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 0.13.0
+
+* FLUTTER category 추가
+
 ### 0.12.1
 
 * category/tag 클릭 시 이동하는 페이지 변경

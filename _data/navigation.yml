@@ -10,6 +10,8 @@ main:
     url: /categories/deep-learning
   - title: "Essay"
     url: /categories/essay
+  - title: "Flutter"
+    url: /categories/flutter
 
 # documentation links
 posts:
@@ -63,6 +65,13 @@ posts:
     - title: "tech stack"
       tag: "tech-stack"
       url: /tags/tech-stack
+- title: Flutter
+  category: flutter
+  url: categories/flutter
+  children:
+    - title: "dart"
+      tag: "dart"
+      url: /tags/dart
 - title: Version
   url: /version
     
