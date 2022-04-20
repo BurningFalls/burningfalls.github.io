@@ -2,12 +2,21 @@
 title: "[백준 대회] 2022 연세대학교 신학기맞이 프로그래밍 경진대회 Open Contest"
 excerpt: "백준 대회 '2022 연세대학교 신학기맞이 프로그래밍 경진대회 Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-03-21
-last_modified_at: 2022-03-28
+last_modified_at: 2022-04-20
 categories:
   - contest
 tags:
   - baekjoon-contest
 ---
+
+|||[2022 연세대학교 신학기맞이 프로그래밍 경진대회](https://burningfalls.github.io/contest/yonsei-baekjoon-contest/) 풀이|
+|:---:|:---:|:---|
+|**A**||**[[BOJ 24723] 녹색거탑](https://burningfalls.github.io/algorithm/boj-24723/)**|
+|**B**||**[[BOJ 24724] 현대모비스와 함께하는 부품 관리](https://burningfalls.github.io/algorithm/boj-24724/)**|
+|**C**||**[[BOJ 24725] 엠비티아이](https://burningfalls.github.io/algorithm/boj-24725/)**|
+|**D**||**[[BOJ 24726] 미적분학 입문하기 2](https://burningfalls.github.io/algorithm/boj-24726/)**|
+|**E**||**[[BOJ 24727] 인지융~](https://burningfalls.github.io/algorithm/boj-24727/)**|
+|**I**||**[[BOJ 24731] XOR-ABC](https://burningfalls.github.io/algorithm/boj-24731/)**|
 
 ![baekjoon-contest](https://user-images.githubusercontent.com/30232837/159193454-66c86f03-0843-40ef-9390-0fb218650d4a.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
