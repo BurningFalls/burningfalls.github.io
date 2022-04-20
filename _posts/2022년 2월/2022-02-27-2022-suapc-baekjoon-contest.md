@@ -2,12 +2,21 @@
 title: "[백준 대회] 2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회 (SUAPC 2022 Winter) Open Contest"
 excerpt: "백준 대회 '2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회 (SUAPC 2022 Winter) Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-27
-last_modified_at: 2022-04-03
+last_modified_at: 2022-04-20
 categories:
   - contest
 tags:
   - baekjoon-contest
 ---
+
+|||[2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회](https://burningfalls.github.io/contest/2022-suapc-baekjoon-contest/) 풀이|
+|:---:|:---:|:---|
+|**A**||**[[BOJ 24542] 튜터-튜티 관계의 수](https://burningfalls.github.io/algorithm/boj-24542/)**|
+|**C**||**[[BOJ 24544] 카카오뷰 큐레이팅 효용성 분석](https://burningfalls.github.io/algorithm/boj-24544/)**|
+|**D**||**[[BOJ 24545] Y](https://burningfalls.github.io/algorithm/boj-24545/)**|
+|**G**||**[[BOJ 24548] 도로 정보](https://burningfalls.github.io/algorithm/boj-24548/)**|
+|**K**||**[[BOJ 24552] 올바른 괄호](https://burningfalls.github.io/algorithm/boj-24552/)**|
+|**L**||**[[BOJ 24553] 팰린드롬 게임](https://burningfalls.github.io/algorithm/boj-24553/)**|
 
 ![baekjoon-contest](https://user-images.githubusercontent.com/30232837/161429766-46a7e5a1-4458-40ea-9cc5-0cde921168c3.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
