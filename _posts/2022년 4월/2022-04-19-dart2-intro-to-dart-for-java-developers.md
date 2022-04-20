@@ -1,6 +1,6 @@
 ---
 title: "[Dart] Intro to Dart for Java Developers"
-excerpt: "Samples & tutorials > Codelabs > Intro to Dart for Java Developers"
+excerpt: "Samples & tutorials > Codelabs > List of Dart codelabs > Intro to Dart for Java Developers"
 date: 2022-04-19
 last_modified_at: 2022-04-19
 categories:
