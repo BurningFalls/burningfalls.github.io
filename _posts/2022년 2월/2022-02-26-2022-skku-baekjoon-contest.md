@@ -2,12 +2,20 @@
 title: "[백준 대회] 2022 성균관대학교 프로그래밍 경진대회 Open Contest"
 excerpt: "백준 대회 '2022 성균관대학교 프로그래밍 경진대회 Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-26
-last_modified_at: 2022-04-03
+last_modified_at: 2022-04-20
 categories:
   - contest
 tags:
   - baekjoon-contest
 ---
+
+|||[2022 성균관대학교 프로그래밍 경진대회 Open Contest](https://burningfalls.github.io/contest/2022-skku-baekjoon-contest/) 풀이|
+|:---:|:---:|:---|
+|**A**||**[[BOJ 24523] 내 뒤에 나와 다른 수](https://burningfalls.github.io/algorithm/boj-24523/)**|
+|**B**||**[[BOJ 24524] 아름다운 문자열](https://burningfalls.github.io/algorithm/boj-24524/)**|
+|**C**||**[[BOJ 24525] SKK 문자열](https://burningfalls.github.io/algorithm/boj-24525/)**|
+|**D**||**[[BOJ 24526] 전화 돌리기](https://burningfalls.github.io/algorithm/boj-24526/)**|
+|**E**||**[[BOJ 24527] 이상한 나라의 갈톤보드](https://burningfalls.github.io/algorithm/boj-24527/)**|
 
 ![baekjoon-contest](https://user-images.githubusercontent.com/30232837/161427311-27bb8c43-712a-4f5e-b4f0-b596c3b688f8.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
