@@ -2,12 +2,18 @@
 title: "[백준 대회] 제 1회 블롭컵"
 excerpt: "백준 대회 '제 1회 블롭컵'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-22
-last_modified_at: 2022-04-03
+last_modified_at: 2022-04-20
 categories:
   - contest
 tags:
   - baekjoon-contest
 ---
+
+|||[제 1회 블롭컵](https://burningfalls.github.io/contest/blobcup1-baekjoon-contest/) 풀이|
+|:---:|:---:|:---|
+|**A**||**[[BOJ 24498] blobnom](https://burningfalls.github.io/algorithm/boj-24498/)**|
+|**B**||**[[BOJ 24499] blobyum](https://burningfalls.github.io/algorithm/boj-24499/)**|
+|**C**||**[[BOJ 24500] blobblush](https://burningfalls.github.io/algorithm/boj-24500/)**|
 
 ![baekjoon-contest](https://user-images.githubusercontent.com/30232837/161426054-604c2200-5221-44f4-b5d9-27878e14bf40.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
