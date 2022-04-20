@@ -2,12 +2,25 @@
 title: "[백준 대회] 2022 ICPC Sinchon Winter Algorithm Camp Contest"
 excerpt: "백준 대회 '2022 ICPC Sinchon Winter Algorithm Camp Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-21
-last_modified_at: 2022-04-01
+last_modified_at: 2022-04-20
 categories:
   - contest
 tags:
   - baekjoon-contest
 ---
+
+|||[2022 ICPC Sinchon Winter Algorithm Camp Contest](https://burningfalls.github.io/contest/2022-swac-baekjoon-contest/) 풀이|
+|:---:|:---:|:---|
+|**A**||**[[BOJ 24510] 시간복잡도를 배운 도도](https://burningfalls.github.io/algorithm/boj-24510/)**|
+|**B**||**[[BOJ 24509] 상품의 주인은?](https://burningfalls.github.io/algorithm/boj-24509/)**|
+|**C**||**[[BOJ 24511] queuestack](https://burningfalls.github.io/algorithm/boj-24511/)**|
+|**D**||**[[BOJ 24512] Bottleneck Travelling Salesman Problem (Small)](https://burningfalls.github.io/algorithm/boj-24512/)**|
+|**E**||**[[BOJ 24513] 좀비 바이러스](https://burningfalls.github.io/algorithm/boj-24513/)**|
+|**F**||**[[BOJ 24514] n번째 숫자 찾기](https://burningfalls.github.io/algorithm/boj-24514/)**|
+|**G**||**[[BOJ 24515] 히히 못가](https://burningfalls.github.io/algorithm/boj-24515/)**|
+|**H**||**[[BOJ 24516] 잘 알려진 수열 구하기](https://burningfalls.github.io/algorithm/boj-24516/)**|
+|**J**||**[[BOJ 24517] 카드 게임과 쿼리](https://burningfalls.github.io/algorithm/boj-24517/)**|
+|**K**||**[[BOJ 24519] Bottleneck Travelling Salesman Problem (Large)](https://burningfalls.github.io/algorithm/boj-24519/)**|
 
 ![baekjoon-contest](https://user-images.githubusercontent.com/30232837/161176211-fd722c46-65b5-4e13-b238-558d38f64abc.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
