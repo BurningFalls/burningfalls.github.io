@@ -2,7 +2,7 @@
 title: "[Dart] Intro to Dart for Java Developers"
 excerpt: "Samples & tutorials > Codelabs > List of Dart codelabs > Intro to Dart for Java Developers"
 date: 2022-04-19
-last_modified_at: 2022-04-19
+last_modified_at: 2022-04-21
 categories:
   - flutter
 tags:
@@ -19,6 +19,8 @@ tags:
 
 ## 2. Create a simple Dart class
 
+### public (default)
+
 * 모든 identifier는 `public`이 default이다.
 
 ```dart
@@ -31,6 +33,8 @@ class Bicycle {
 ```
 
 ---
+
+### this (constructor)
 
 * constructor의 parameter list에서 `this`를 사용하는 것은 instance variable에 값을 할당하는 편리한 기능이다.
 
@@ -45,6 +49,8 @@ Bicycle(this.cadence, this.speed, this.gear);
 
 ---
 
+### new (option)
+
 * 'new' keyword는 Dart 2에서 옵션이 되었다.
 
 ```dart
@@ -55,9 +61,13 @@ var bike = Bicycle(2, 0, 1);
 
 ---
 
+### final
+
 * variable의 값이 변하지 않는다는 것을 안다면, `var` 대신 `final`을 사용할 수 있다.
 
 ---
+
+### print()
 
 * `print()` 함수는 string 뿐만 아니라 모든 object를 허용한다. 이 함수는 object의 `toString()` method를 사용하여 `String`으로 변환한다.
 
@@ -72,6 +82,8 @@ Instance of 'Bicycle'
 
 ---
 
+### toString() (override) and ${expression}
+
 * 모든 Dart class에는 더 유용한 output을 제공하기 위해 override할 수 있는 `toString()` method가 있다.
 
 * string interpolation을 사용하여 expression의 value를 string literal: `${expression}`안에 넣는다. expression이 identifier인 경우, 중괄호를 스킵하고 `$variableName`으로 사용 가능하다.
@@ -84,6 +96,8 @@ String toString() => 'Bicycle: $speed mph';
 ```
 
 ---
+
+### private ('_') and getter&setter
 
 * Dart identifier를 library에서 private로 만들려면, 이름을 underscore(`_`)로 시작한다. (Make identifier a private, read-only instance variable)
 
