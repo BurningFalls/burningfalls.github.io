@@ -1,5 +1,5 @@
 ---
-title: "[Dart] Dart 0 - Dark SDK 설치"
+title: "[Dart] Dart 0 - Install Dark SDK"
 excerpt: "Flutter를 배우기 위해 chocolatey를 사용하여 Dart SDK를 설치한다."
 date: 2022-04-19
 last_modified_at: 2022-04-21
