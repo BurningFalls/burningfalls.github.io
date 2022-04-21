@@ -138,7 +138,7 @@ void main() {
 }
 ```
 
-## 4. Checking conditions (any() & every())
+## 4. Checking conditions: any() & every()
 
 `Iterable`로 작업할 때, collectionn의 모든 element가 특정 조건을 충족하는지 확인해야 하는 경우가 있다. 이를 `every()` method를 사용하여 가능하게 할 수 있다.
 
@@ -253,7 +253,7 @@ void main() {
 }
 ```
 
-## 6. Mapping (map())
+## 6. Mapping: map()
 
 `map()` method로 `Iterable`을 mapping하면, 각 element에 함수를 적용하여 각 element를 새로운 element로 교체할 수 있다.
 

@@ -19,7 +19,7 @@ tags:
 
 > [Language Samples](https://dart.dev/samples){: target="_blank"}
 
-## 1. Hello World (main & print)
+## 1. Hello World: main & print
 
 ```dart
 void main() {
@@ -40,7 +40,7 @@ var iamge = {
 };
 ```
 
-## 3. Control flow statements (if & for & while)
+## 3. Control flow statements: if & for & while
 
 ```dart
 if (year >= 2001) {
