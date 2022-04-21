@@ -1,5 +1,5 @@
 ---
-title: "[Dart] Dart 3 - Dart cheatsheet codelab"
+title: "[Dart] Dart 3 - Dart Cheatsheet Codelab"
 excerpt: "Samples & tutorials > Codelabs > Language cheatsheet"
 date: 2022-04-19
 last_modified_at: 2022-04-21
