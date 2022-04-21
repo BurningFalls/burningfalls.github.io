@@ -39,7 +39,7 @@ choco
 
 ![cmd](https://user-images.githubusercontent.com/30232837/163899061-f8dc3e41-04df-4354-b11b-0470ea38bb30.png "cmd"){: width="100%" height="100%"}{: .align-center}
 
-___
+---
 
 * choco version check
 
