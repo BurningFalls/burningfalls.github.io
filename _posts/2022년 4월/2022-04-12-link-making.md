@@ -2,7 +2,7 @@
 title: "[Markdown] Github blog에 Markdown으로 링크 걸기"
 excerpt: "Markdown으로 github blog에 링크를 만든다."
 date: 2022-04-12
-last_modified_at: 2022-04-12
+last_modified_at: 2022-04-22
 categories:
   - blog
 tags:
@@ -61,7 +61,9 @@ tags:
 <https://github.com/BurningFalls/burningfalls.github.io/commit/2df07d8958303396ddb85f3786d1c90e609ec89e>
 ```
 
-<https://github.com/BurningFalls/burningfalls.github.io/commit/2df07d8958303396ddb85f3786d1c90e609ec89e>
+![link](https://user-images.githubusercontent.com/30232837/164583300-2113db89-427a-470a-a284-69c39b0f75e6.png "link"){: width="100%" height="100%"}{: .align-center}
+
+(저렇게 마크다운을 작성하면 링크가 페이지를 넘어가버려서 보기 불편하다. 따라서 결과를 사진으로 첨부하였다.)
 
 둘 모두 결국에는 똑같은 정보를 담고 있지만, 유저에게 보여지는 방식이 다르다. 
 
