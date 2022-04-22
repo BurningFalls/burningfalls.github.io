@@ -66,7 +66,7 @@ Your order is: Instance of '_Future<String>'
 
 * 대신, `createOrderMessage()`는 완료되지 않은 미래의 보류중인 작업을 나타낸다.
 
-* `createOrderMessage()`는 사용자의 주문을 설명하는 값을 가져오지 못하기 때문에, 예시는 console에 "Large Latte"를 출력하는데 실패하고, 대신 "Your order is: Instance of '_Future<String>'"을 출력한다.
+* `createOrderMessage()`는 사용자의 주문을 설명하는 값을 가져오지 못하기 때문에, 예시는 console에 "Large Latte"를 출력하는데 실패하고, 대신 "Your order is: Instance of '_Future$<$String$>$'"을 출력한다.
 
 다음 section에서는 `fetchUserOrder()`가 원하는 값("Large Latte")을 console에 출력하도록 하는 데 필요한 코드를 작성할 수 있도록, futures와 futures 작업 (`async` 및 `await` 사용)에 대해 배운다.
 
