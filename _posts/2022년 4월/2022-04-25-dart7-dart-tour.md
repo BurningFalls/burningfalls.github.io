@@ -170,7 +170,7 @@ late String temperature = _readThermometer(); // Lazily initialized.
 
 ### C. Final and const
 
-변수를 변경하지 않으려면, `var` 대신 또는 type에 추가하여, `final`이나 `const`를 사용한다. final 변수는 한 번만 설정할 수 있다. const 변수는 compile-time 상수이다. (const 변수는 내재적으로 final이다.)
+변수를 변경하지 않으려면, `var` 대신 또는 type에 추가하여, `final`이나 `const`를 사용한다. final 변수는 한 번만 설정할 수 있다. const 변수는 compile-time constant이다. (const 변수는 내재적으로 final이다.)
 
 > instance 변수는 `final`은 될 수 있지만, `const`는 될 수 없다.
 
@@ -188,14 +188,14 @@ final String nickname = 'Bobby';
 name = 'Alice'; // Error: a final variable can only be set once.
 ```
 
-compile-time 상수를 원할 때, 변수에 `const`를 사용한다. const 변수가 class level에 있으면, `static const`로 표기한다. 변수를 선언할 때, number, string literal, const variable, 상수 숫자에 대한 산술 연산 결과와 같은 것들은 compile-time 상수로 설정한다.
+compile-time constant를 원할 때, 변수에 `const`를 사용한다. const 변수가 class level에 있으면, `static const`로 표기한다. 변수를 선언할 때, number, string literal, const variable, constant 숫자에 대한 산술 연산 결과와 같은 것들은 compile-time constant로 설정한다.
 
 ```dart
 const bar = 1000000;  // Unit of pressure (dynes/cm2)
 const double atm = 1.01325 * bar; // Standard atmosphere
 ```
 
-`const` keyword는 상수 변수를 선언하기 위한 것만은 아니다. 상수 값을 생성할 수 있을 뿐만 아니라, 상수 값을 생성하는 생성자를 선언할 수도 있다. 모든 변수는 상수 값을 가질 수 있다.
+`const` keyword는 constant 변수를 선언하기 위한 것만은 아니다. constant 값을 생성할 수 있을 뿐만 아니라, constant 값을 생성하는 생성자를 선언할 수도 있다. 모든 변수는 constant 값을 가질 수 있다.
 
 ```dart
 var foo = const [];
@@ -218,7 +218,7 @@ foo = [1, 2, 3];  // Was const []
 baz = [42]; // Error: Constant variables can't be assigned a value.
 ```
 
-type 검사 및 cast (`is` and `as`), collection `if`, spread operator(`...` and `...?`)에서 상수를 정의할 수 있다.
+type 검사 및 cast (`is` and `as`), collection `if`, spread operator(`...` and `...?`)에서 constant를 정의할 수 있다.
 
 ```dart
 const Object i = 3; // Where i is a const Object with an int value...
@@ -324,7 +324,7 @@ assert((3 | 4) == 7);   // 0011 | 0100 == 0111
 assert((3 & 4) == 0);   // 0011 & 0100 == 0000
 ```
 
-literal numbers는 compile-time 상수이다. 피연산자가 numbers로 평가되는 compile-time 상수인 한, 많은 산술 expression도 compile-time 상수이다.
+literal numbers는 compile-time constant이다. 피연산자가 numbers로 평가되는 compile-time constant인 한, 많은 산술 expression도 compile-time constant이다.
 
 ```dart
 const msPerSecond = 1000;
@@ -389,7 +389,7 @@ multi-line string.""";
 var s = r'In a raw string, not even \n gets special treatment.';
 ```
 
-interpolate된 expression이 null, numeric, string, boolean 값으로 평가되는 compile-time 상수인 literal string은 compile-time 상수이다.
+interpolate된 expression이 null, numeric, string, boolean 값으로 평가되는 compile-time constant인 literal string은 compile-time constant이다.
 
 ```dart
 // These work in a const string.
@@ -409,7 +409,7 @@ const validConstString = '$aConstNum $aConstBool $aConstString';
 
 ### C. Booleans
 
-boolean 값을 나타내기 위해, Dart에는 `bool`이라는 type이 있다. bool type이 있는 객체는 두 개뿐이다: compile 상수인 boolean literals `true`와 `false`
+boolean 값을 나타내기 위해, Dart에는 `bool`이라는 type이 있다. bool type이 있는 객체는 두 개뿐이다: compile constant인 boolean literals `true`와 `false`
 
 Dart의 type safety는 `if (nonbooleanValue)` 또는 `assert (nonbooleanValue)`와 같은 code를 사용할 수 없음을 의미한다. 대신, 다음과 같이 명시적으로 값을 확인한다:
 
@@ -464,7 +464,7 @@ list[1] = 1;
 assert(list[1] == 1);
 ```
 
-compile-time 상수인 list를 만들려면, list literal 앞에 `const`를 추가한다.
+compile-time constant인 list를 만들려면, list literal 앞에 `const`를 추가한다.
 
 ```dart
 var constantList = const [1, 2, 3];
@@ -543,7 +543,7 @@ elements.addAll(halogens);
 assert(elements.length == 5);
 ```
 
-compile-time 상수인 set을 만들려면, set literal 앞에 `const`를 추가한다:
+compile-time constant인 set을 만들려면, set literal 앞에 `const`를 추가한다:
 
 ```dart
 final constantSet = const {
@@ -626,7 +626,7 @@ gifts['fourth'] = 'calling birds';
 assert(gifts.length == 2);
 ```
 
-compile-time 상수인 map을 만들려면, map literal 앞에 `const`를 추가한다.
+compile-time constant인 map을 만들려면, map literal 앞에 `const`를 추가한다.
 
 ```dart
 final constantMap = const {
@@ -677,7 +677,7 @@ the last character: 🇩🇰
 #bar
 ```
 
-symbol literal은 compile-time 상수이다.
+symbol literal은 compile-time constant이다.
 
 ## 6. Functions
 
@@ -773,7 +773,7 @@ assert(say('Bob', 'Howdy', 'smoke signal') ==
 
 #### A-3. Default parameter values
 
-함수는 `=`을 사용하여 optional named parameter와 optional positional parameter 모두에 대한 default 값을 정의할 수 있다. default 값은 compile-time 상수여야 한다. default 값이 제공되지 않은 경우, default 값은 `null`이다.
+함수는 `=`을 사용하여 optional named parameter와 optional positional parameter 모두에 대한 default 값을 정의할 수 있다. default 값은 compile-time constant여야 한다. default 값이 제공되지 않은 경우, default 값은 `null`이다.
 
 다음은 named parameter의 default 값을 설정하는 예이다:
 
@@ -1253,73 +1253,1370 @@ assert((-value >>> 4) > 0);  // Unsigned Shift left
 
 ### G. Conditional expressions
 
-[작성중](https://dart.dev/guides/language/language-tour#conditional-expressions){: target = "_blank"}
+Dart에는 if-else문이 필요할 수 있는 expression을 간결하게 평가할 수 있는 두 개의 연산자가 있다.
+
+`condition ? expr1 : expr2`: 조건이 참이면 expr1의 값을 평가하고 그 값을 return 한다. 조건이 거짓이면 expr2의 값을 평가하고 그 값을 return 한다.
+
+`expr1 ?? expr2`: expr1이 null이 아니면 그 값을 return 한다. expr1이 null이면 expr2의 값을 평가하고 그 값을 return 한다.
+
+boolean expression을 기반으로 값을 할당해야 하는 경우, `?`나 `:`의 사용을 고려한다:
+
+```dart
+var visibility = isPublic ? 'public' : 'private';
+```
+
+boolean expression이 null에 대해 test하는 경우, `??`의 사용을 고려한다:
+
+```dart
+String playerName(String? name) => name ?? 'Guest';
+```
+
+이전 예제는 적어도 두 가지 다른 방법으로 작성되었을 수 있지만, 간결하지는 않다.
+
+```dart
+// Slightly longer version uses ?: operator.
+String playerName(String? name) => name != null ? name : 'Guest';
+
+// Very long version uses if-else statement.
+String playerName(String? name) {
+  if (name != null) {
+    return name;
+  } else {
+    return 'Guest';
+  }
+}
+```
 
 ### H. Cascade notation
 
+Cascades(`..`, `?..`)는 동일한 객체에 대해 일련의 작업을 수행할 수 있게 해준다. 함수 호출 외에도 동일한 객체의 field에 접근할 수도 있다. 이렇게 하면 임시 변수를 생성하는 단계를 줄일 수 있고, 보다 유동적인 코드를 작성할 수 있다.
+
+```dart
+var paint = Paint()
+  ..color = Colors.black
+  ..strokeCap = StrokeCap.round
+  ..strokeWidth = 5.0;
+```
+
+생성자 `Paint()`는 `Paint` 객체를 return 한다. Cascade 표기법을 따르는 code는, return 될 수 있는 값을 무시하고 이 객체에서 작동한다.
+
+이전 예제는 다음 코드와 동일하다.
+
+```dart
+var paint = Paint();
+paint.color = Colors.black;
+paint.strokeCap = StrokeCap.round;
+paint.strokeWidth = 5.0;
+```
+
+cascade가 작동하는 객체가 null일 수 있는 경우, 첫 번째 작업에 null-shorting cascade (`?..`)를 사용한다. `?..`로 시작하면 해당 null 객체에 대해 cascade 연산이 시도되지 않음을 보장한다.
+
+```dart
+querySelector('#confirm') // Get an object.
+  ?..text = 'Confirm' // Use its members.
+  ..classes.add('important')
+  ..onClick.listen((e) => window.alert('Confirmed!'));
+```
+
+> `?..` syntax는 2.12 이상의 language version이 필요하다.
+
+이전 코드는 다음과 동일하다:
+
+```dart
+var button = querySelector('#confirm');
+button?.text = 'Confirm';
+button?.classes.add('important');
+button?.conClick.listen((e) => window.alert('Confirmed!'));
+```
+
+cascade를 중첩할 수도 있다. 예를 들어:
+
+```dart
+final addressBook = (AddressBookBuilder()
+    ..name = 'jenny'
+    ..email = 'jenny@example.com'
+    ..phone = (PhoneNumberBuilder()
+        ..number = '415-555-0100'
+        ..label = 'home')
+      .build())
+  .build();
+```
+
+실제 객체를 return 하는 함수에서 cascade를 구성할 때 주의해야 한다. 예를 들어 다음 코드는 실패한다:
+
+```dart
+var sb = StringBuffer();
+sb.write('foo')
+  ..write('bar'); // Error: method 'write' isn't defined for 'void'.
+```
+
+`sb.write()` 호출은 void를 return 하고, `void`에서는 cascade를 구성할 수 없다.
+
+> 엄밀히 말하면, cascade에 대한 "double dot" 표기법은 연산자가 아니다. 이것은 Dart syntax의 일부일 뿐이다.
+
 ### I. Other operators
+
+다른 예에서 나머지 연산자의 대부분을 보았다:
+
+`()` - Function application: 함수 호출을 나타낸다.
+
+`[]` - Subscript access: overriding이 가능한 `[]` 연산자의 호출을 나타낸다. 예를 들어, `fooList[1]`은 index `1`의 element에 접근하기 위해서 `fooList`에 `1`을 전달한다.
+
+`?[]` - Conditional subscript access: `[]`와 비슷하지만, 맨 왼쪽 피연산자는 null일 수 있다. 예를 들어, `fooList?[1]`은 `fooList`가 null이 아닐 경우에 index `1`의 element에 접근하기 위해서 `fooList`에 `1`을 전달한다.
+
+`.` - Member access: expression의 property를 나타낸다. 예를 들어, `foo.bar`는 expression `foo`에서 property `bar`를 선택한다.
+
+`?.` - Conditional member access: `.`과 비슷하지만, 맨 왼쪽 피연산자는 null일 수 있다. 예를 들어, `foo?.bar`는 `foo`가 null이 아닐 경우에 expression `foo`에서 property `bar`를 선택한다.
+
+`!` - Null assertion operator: non-nullable type으로 expression을 casting하고, casting이 실패하면 runtime 예외를 throw 한다. 예를 들어, `foo!.bar`는 `foo`가 null이 아님을 주장하고, `bar` property를 선택한다. 만약 `foo`가 null이면, runtime 예외가 throw 된다.
 
 ## 8. Control flow statements
 
+다음 중 하나를 사용하여 Dart code의 flow를 제어할 수 있다.
+
+* `if` and `else`
+* `for` loops
+* `while` and `do-while` loops
+* `break` and `continue`
+* `switch` and `case`
+* `assert`
+
+Exception chapter에서 설명된 대로, `try-catch`와 `throw`를 사용하여 control flow에 영향을 줄 수도 있다.
+
 ### A. If and else
+
+Dart는 다음 sample에서 볼 수 있듯이, 선택적 `else`문이 있는 `if`문을 지원한다.
+
+```dart
+if (isRaining()) {
+  you.bringRainCoat();
+} else if (isSnowing()) {
+  you.wearJacket();
+} else {
+  car.putTopDown();
+}
+```
+
+JavaScript와 달리, 조건은 무조건 boolean 값을 사용해야 한다.
 
 ### B. For loops
 
+표준 `for` loop로 iterate 할 수 있다. 예를 들어:
+
+```dart
+var message = StringBuffer('Dart is fun');
+for (var i = 0; i < 5; i++) {
+  message.write('!');
+}
+```
+
+Dart `for` loop 내부의 closure는 index의 값을 capture하여, JavaScript에서 발견되는 일반적인 함정을 방지한다. 예를 들어 다음을 고려한다:
+
+```dart
+var callbacks = [];
+for (var i = 0; i < 2; i++) {
+  callbacks.add(() => print(i));
+}
+callbacks.forEach((c) => c());
+```
+
+예상대로 출력은 `0` 다음 `1`이다. 이와는 대조적으로, JavaScript에서는 `2` 다음 `2`를 출력한다.
+
+반복하는 객체가 Iterable(List 또는 Set)이고 현재 iteration counter를 알 필요가 없는 경우, iteration 형식의 `for-in`을 사용할 수 있다.
+
+```dart
+for (final candidate in candidates) {
+  candidate.interview();
+}
+```
+
+반복 가능한 class에는 또 다른 option으로 `forEach()` method가 있다.
+
+```dart
+var collection = [1, 2, 3];
+collection.forEach(print);
+```
+
 ### C. While and do-while
+
+`while` loop는 loop를 시작하기 전에 조건을 평가한다.
+
+```dart
+while (!isDone()) {
+  doSomething();
+}
+```
+
+`do-while` loop는 loop 이후에 조건을 평가한다.
+
+```dart
+do {
+  printLine();
+} while (!atEndOfPage());
+```
 
 ### D. Break and continue
 
+loop 중지에 `break`를 사용한다:
+
+```dart
+while (true) {
+  if (shutDownRequested()) break;
+  processIncomingRequests();
+}
+```
+
+다음 loop iteration으로 건너뛸 때 `continue`를 사용한다:
+
+```dart
+for (int i = 0; i < candidates.length; i++) {
+  var candidate = candidates[i];
+  if (candidate.yearsExperience < 5) {
+    continue;
+  }
+  candidate.interview();
+}
+```
+
+list와 set과 같은 `Iterable`을 사용한다면, 해당 예제를 다르게 작성할 수도 있다:
+
+```dart
+candidates
+    .where((c) => c.yearsExperience >= 5)
+    .forEach((c) => c.interview());
+```
+
 ### E. Switch and case
+
+Dart의 switch 문은 `==`을 사용하여 정수, 문자열, compile-time constant를 비교한다. 비교되는 객체는 모두 동일한 class의 instance여야 하며 (해당 subtype이 아님), class는 `==`를 override 해서는 안 된다. Enumerated types는 `switch`문에서 잘 작동한다.
+
+비어 있지 않은 `case` 절은 일반적으로 `break`문으로 끝난다. 비어 있지 않은 `case` 절을 끝내는 다른 유효한 방법은 `continue`, `throw`, `return`문이 있다.
+
+어떤 `case`절과도 일치하지 않을 때, `default`절을 사용하여 code를 실행한다:
+
+```dart
+var command = 'OPEN';
+switch (command) {
+  case 'CLOSED':
+    executeClosed();
+    break;
+  case 'PENDING':
+    executePending();
+    break;
+  case 'APPROVED':
+    executeApproved();
+    break;
+  case 'DENIED':
+    executeDenied();
+    break;
+  case 'OPEN':
+    executeOpen();
+    berak;
+  default:
+    executeUnknown();
+}
+```
+
+다음 예에서는 `case` 절에서 `break`문을 생략하여서 error가 발생한다:
+
+```dart
+var command = 'OPEN';
+switch (command) {
+  case 'OPEN':
+    executeOpen();
+    // ERROR: Missing break
+
+  case 'CLOSED':
+    executeClosed();
+    break;
+}
+```
+
+그러나 Dart는 다음과 같은 fall-through 형식을 허용하는 빈 `case`절을 지원한다.
+
+```dart
+var command = 'CLOSED';
+switch (command) {
+  case 'CLOSED': // Empty case falls through.
+  case 'NOW_CLOSED':
+    // Runs for both CLOSED and NOW_CLOSED.
+    executeNOWClosed();
+    break;
+}
+```
+
+fall-through를 원할 경우, `continue`문과 label을 사용할 수 있다.
+
+```dart
+var command = 'CLOSED';
+switch (command) {
+  case 'CLOSED':
+    executeClosed();
+    continue nowClosed;
+  // Continues executing at the nowClosed label.
+
+  nowClosed:
+  case 'NOW_CLOSED':
+    // Runs for both CLOSED and NOW_CLOSED.
+    executeNowCLosed();
+    break;
+}
+```
+
+`case`절은 해당 절의 버위 내에서만 볼 수 있는 지역 변수가 있을 수 있다.
 
 ### F. Assert
 
+개발하는 동안, boolean 조건이 false인 경우 정상적인 실행을 방해하기 위해 `assert(condition, ooptionalMessage)`문을 사용한다. 이 tour 전체에서 assert문의 예를 찾을 수 있다. 몇 가지 예시가 더 있다:
+
+```dart
+// Make sure the variable has a non-null value.
+assert(text != null);
+
+// Make sure the value is less than 100.
+assert(number < 100);
+
+// Make sure this is an https URL.
+assert(urlString.startsWith('https'));
+```
+
+assertion에 message를 붙이려면, `assert`의 두 번째 argument로 string을 추가한다. (optionally with a trailing comma)
+
+```dart
+assert(urlString.startsWith('https'),
+    'URL ($urlString) should start with "https".');
+```
+
+`assert`의 첫 번째 argument는 boolean 값으로 해석되는 모든 expression이 될 수 있다. expression의 값이 true이면 assertion이 성공하고 실행이 계속된다. 만일 false이면 assertion이 실패하고 예외(`AssertionError`)가 발생한다.
+
+assertion은 정확히 언제 작동하는가? 이는 사용 중인 tool과 framework에 따라 다르다.
+
+* Flutter는 debug mode에서 assertion을 활성화한다.
+* dartdevc와 같은 개발 전용 tool은 일반적으로 default로 assertion을 활성화한다.
+* `dart run` 및 dart2js와 같은 일부 tool은 command-line flag: `--enable-asserts`를 통해 assertion을 지원한다.
+
+production code에서, assertion은 무시되고, `assert`에 대한 argument는 평가되지 않는다.
+
 ## 9. Exceptions
+
+Dart code는 exception(예외)을 throw and catch 할 수 있다. 예외는 예상치 못한 일이 발생했음을 나타내는 error이다. 예외가 catch 되지 않으면, 예외를 발생시킨 isolate가 일시 중단되고, 일반적으로 isolate 및 program이 종료된다.
+
+Java와 달리, Dart의 모든 예외는 확인되지 않은 예외이다. method는 throw 할 수 있는 예외를 선언하지 않으며, 예외를 catch 할 필요가 없다.
+
+Dart는 미리 정의된 수많은 subtype 뿐만 아니라, `Exception`과 `Error` type을 제공한다. 또한, 자신의 예외를 정의할 수 있다. 그러나, Dart program은 Exception 및 Error 객체뿐만 아니라 null이 아닌 모든 객체를 예외로 throw 할 수 있다.
 
 ### A. Throw
 
+다음은 예외를 throw 하거나 발생시키는 예이다:
+
+```dart
+throw FormatException('Expected at least 1 section');
+```
+
+임의의 객체를 던질 수도 있다.
+
+```dart
+throw 'Out of llamas!';
+```
+
+> Production-quality code는 일반적으로 `Error` 또는 `Exception`을 실행시키는 type을 throw 한다.
+
+예외를 throw 하는 것은 expression이기 때문에, =>문 뿐만 아니라 expression을 허용하는 다른 모든 곳에서 예외를 throw 할 수 있다.
+
+```dart
+void distanceTo(Point other) => throw UnimplementedError();
+```
+
 ### B. Catch
+
+예외를 catching 하거나 capturing 하면, exception을 다시 throw 하지 않는 이상 error propagating(전파)이 중지된다. 예외를 catching 하는 것은 당신에게 그것을 처리할 기회를 준다.
+
+```dart
+try {
+  breedMoreLlamas();
+} on OutofLlamasException {
+  buyMoreLlamas();
+}
+```
+
+둘 이상의 예외 type을 throw 할 수 있는 code를 처리하기 위해, 여러 catch절을 지정할 수 있다. throw된 객체의 유형ㅇ과 일치하는 첫 번째 catch절이 예외를 처리한다. catch절이 유형을 지정하지 않으면, 해당 절은 모든 type의 throw된 객체를 처리할 수 있다.
+
+```dart
+try {
+  breedMoreLlamas();
+} on OutOfLlamasException {
+  // A specific exception
+  buyMoreLlamas();
+} on Exception catch (e) {
+  // anything else that is an exception
+  print('Unknown exception: $e');
+} catch (e) {
+  // No specified type, handles all
+  print('Something really unknown: $e');
+}
+```
+
+앞의 코드에서 볼 수 있듯이, `on`과 `catch` 중 하나 또는 둘 다를 사용할 수 있다. 예외 type을 지정해야 할 때 `on`을 사용한다. 예외 처리에 예외 객체가 필요할 때 `catch`를 사용한다.
+
+`catch()`에 하나 또는 두 개의 parameter를 지정할 수 있다. 첫 번째는 throw된 예외이고, 두 번째는 stack trace(`StackTrace` 객체)이다.
+
+```dart
+try {
+  // ...
+} on Exception catch (e) {
+  print('Exception details:\n $e');
+} catch (e, s) {
+  print('Exception details:\n $e');
+  print('Stack trace:\n $s');
+}
+```
+
+예외가 전파되도록 허용하면서 부분적으로 예외를 처리하려면, `rethrow` keyword를 사용한다.
+
+```dart
+void misbehave() {
+  try {
+    dynamic foo = true;
+    print(foo++); // Runtime error
+  } catch (e) {
+    print('misbehave() partially handled ${e.runtimeType}.');
+    rethrow;  // Allow callers to see the exception.
+  }
+}
+
+void main() {
+  try {
+    misbehave();
+  } catch (e) {
+    print('main() finished handling ${e.runtimeType}.');
+  }
+}
+```
 
 ### C. Finally
 
+예외가 발생했는지 여부에 관계없이 일부 코드가 실행되도록 하려면, `finally`절을 사용한다. 예외와 일치하는 `catch`절이 없으면, `finally`절이 실행된 후 예외가 전파된다.
+
+```dart
+try {
+  breedMoreLlamas();
+} finally {
+  // Always clean up, even if an exception is thrown.
+  cleanLlamaStalls();
+}
+```
+
+`finally`절은 일치하는 `catch`절 다음에 실행된다.
+
+```dart
+try {
+  breedMoreLlamas();
+} catch (e) {
+  print('Error: $e'); // Handle the exception first.
+} finally {
+  cleanLlamaStalls(); // Then clean up.
+}
+```
+
+
 ## 10. Classes
+
+Dart는 class와 mixin 기반 상속이 있는 객체 지향 언어이다. 모든 객체는 class의 instance이며, `Null`을 제외한 모든 class는 `Object`의 자손이다. mixin 기반 상속은 모든 class(top class인 `Object?`를 제외한)에 정확히 하나의 superclass가 있지만, class 본문은 여러 class 계층에서 재사용될 수 있음을 의미한다. `Extension method`는 class를 변경하거나 subclass를 만들지 않고 class에 기능을 추가하는 방법이다.
 
 ### A. Using class members
 
+객체에는 함수와 data(각각 method와 instance 변수)로 구성된 member가 있다. method를 호출할 때, 객체에서 호출한다: method는 해당 객체의 함수와 data에 접근할 수 있다.
+
+dot(`.`)을 사용하여 instance 변수 또는 method를 참조한다:
+
+```dart
+var p = Point(2, 2);
+
+// Get the value of y.
+assert(p.y == 2);
+
+// Invoke distanceTo() on p.
+double distance = p.distanceTo(Point(4, 4));
+```
+
+가장 왼쪽 피연산자가 null일 때 예외를 방지하려면 `.` 대신 `?.`를 사용한다.
+
+```dart
+// If p is non-null, set a variabel equal to its y value.
+var a = p?.y;
+```
+
 ### B. Using constructors
+
+생성자를 사용하여 객체를 만들 수 있다. 생성자 이름은 `ClassName`또는 `ClassName.identifier`가 될 수 있다. 예를 들어, 다음 코드는 `Point()`와 `Point.fromJson()` 생성자를 사용하여 `Point` 객체를 만든다.
+
+```dart
+var p1 = Point(2, 2);
+var p2 = Point.fromJson({'x': 1, 'y': 2});
+```
+
+다음 코드는 동일한 효과를 갖지만, 생성자 이름 앞에 option으로 `new` keyword를 사용한다:
+
+```dart
+var p1 = new Point(2, 2);
+var p2 = new Point.fromJson({'x': 1, 'y': 2});
+```
+
+일부 class는 constant 생성자를 제공한다. constant 생성자를 사용하여 compile-time constant를 생성하려면, 생성자 이름 앞에 `const` keyword를 입력한다.
+
+```dart
+var p = const ImmutablePoint(2, 2);
+```
+
+두 개의 동일한 compile-time constant를 구성하면, 단일 표준 instance가 생성된다.
+
+```dart
+var a = const ImmutablePoint(1, 1);
+var b = const ImmutablePoint(1, 1);
+
+assert(identical(a, b));  // They are the same instance!
+```
+
+constant context에서, 생성자나 literal 앞에 `const`를 생략할 수 있다. 예를 들어, `const` map을 생성하는 다음 code가 있다:
+
+```dart
+// Lots of const keywords here.
+const pointAndLine = const {
+  'point': const [const ImmutablePoint(0, 0)],
+  'line': const [const ImmutablePoint(1, 10), const ImmutablePoint(-2, 11)],
+};
+```
+
+첫 번째로 사용하는 `const` keyword를 제외하고 나머지는 생략 가능하다:
+
+```dart
+// Only one const, which establishes the constant context.
+const pointAndLine = {
+  'point': [ImmutablePoint(0, 0)],
+  'line': [ImmutablePoint(1, 10), ImmutablePoint(-2, 11)],
+};
+```
+
+constant 생성자가 constant context 외부에 있고 `const` 없이 호출되면, non-constant 객체를 생성한다:
+
+```dart
+var a = const ImmutablePoint(1, 1); // Creates a constant
+var b = ImmutablePoint(1, 1); // Does NOT create a constant
+
+assert(!identical(a, b)); // NOT the same instance!
+```
 
 ### C. Getting an object's type
 
+runtime에 객체의 type을 가져오려면, `Type` 객체를 return하는 `Object`의 property `runtimeType`을 사용한다.
+
+```dart
+print('The type of a is ${a.runtimeType}');
+```
+
+> `runtimeType`으로 객체의 type을 test하는 대신 type test operator(`as`, `is`)를 사용한다. production 환경에서는, `object is Type` test가 `object.runtimeType == Type` test  보다 더 안정적이다.
+
 ### D. Instance variables
+
+instance 변수를 선언하는 방법은 다음과 같다.
+
+```dart
+class Point {
+  double? x;  // Declare instance variable x, initially null.
+  double? y;  // Declare y, initially null.
+  double z = 0; // Declare z, initially 0.
+}
+```
+
+초기화되지 않은 모든 instance 변수에는 `null` 값이 있다.
+
+모든 instance 변수는 암시적으로 getter method를 생성한다. non-final instasnce 변수와 initializer가 없는 `late final` instance 변수도 암시적 setter method를 생성한다.
+
+`late`가 아닌 instance variable을 초기화하는 경우, 값은 instance가 생성될 때 설정되며, 이는 생성자와 initializer list가 실행되기 전이다.
+
+```dart
+class Point {
+  double? x;  // Declare instance variable x, initially null.
+  double? y;  // Declare y, initially null.
+}
+
+void main() {
+  var point = Point();
+  point.x = 4;  // Use the setter method for x.
+  assert(point.x == 4);  // Use the getter method for x.
+  assert(point.y == null);  // Values default to null.
+}
+```
+
+instance 변수는 `final`이 될 수 있는데, 이 경우 정확히 한 번 설정해야 한다. 생성자 parameter를 사용하거나 생성자의 initializer list를 사용하여 선언 시, `final`이면서 `late`가 아닌 instance 변수를 초기화한다.
+
+```dart
+class ProfileMark {
+  final String name;
+  final DateTime start = DateTime.now();
+
+  ProfileMark(this.name);
+  ProfileMark.unnamed() : name = '';
+}
+```
+
+생성자 본문이 시작된 후에 `final` instance 변수의 값을 할당하려면, 다음 중 하나를 사용할 수 있다.
+
+* factory 생성자를 사용한다.
+* `late final`을 사용하지만, 주의해야 한다: initializer가 없는 `late final`은 API에 setter가 추가된다.
 
 ### E. Constructors
 
+class와 이름이 같은 함수를 생성하여 생성자를 선언한다. (또는 선택적으로 Named constructor에 설명된 추가 식별자) 생성자의 가장 일반적인 형태인 generative constructor는 class의 새로운 instance를 만든다.
+
+```dart
+class Point {
+  double x = 0;
+  double y = 0;
+
+  Point(double x, double y) {
+    // See initializing parameters for a better way
+    // to initialize instance variables.
+    this.x = x;
+    this.y = y;
+  }
+}
+```
+
+`this` keyword는 현재 instance를 나타낸다.
+
+> 이름 충돌이 있는 경우에만 `this`를 사용한다. 그렇지 않으면, Dart style은 `this`를 생략한다.
+
+#### E-1. Initializing parameters
+
+instance 변수에 생성자 argument를 할당하는 패턴은 매우 일반적이므로, Dart는 이를 쉽게 하기 위해 초기화 parameter가 있다.
+
+초기화 parameter는 non-nullable이거나 `final`인 instance 변수를 초기화하는데 사용할 수 있다. 둘 다 초기화되어 있거나 default 값을 제공해야 한다.
+
+```dart
+class Point {
+  final double x;
+  final double y;
+
+  // Sets the x and y instance variables
+  // before the constructor body runs.
+  Point(this.x, this.y);
+}
+```
+
+#### E-2. Default constructors
+
+생성자를 선언하지 않으면, default 생성자가 제공된다. default 생성자는 argument가 없으며, superclass에서 argument가 없는 생성자를 호출한다.
+
+#### E-3. Constructors aren't inherited
+
+subclass는 superclass에서 생성자를 상속하지 않는다. 생성자를 선언하지 않는 subclass에는 default(no argument, no name) 생성자만 있다.
+
+#### E-4. Named constructors
+
+named constructor를 사용하여 class에 대해 여러 생성자를 구현하거나 추가 명확성을 제공한다.
+
+```dart
+const double xOrigin = 0;
+const double yOrigin = 0;
+
+class Point {
+  final double x;
+  final double y;
+
+  Point(this.x, this.y);
+
+  // Named constructor
+  Point.origin()
+    : x = xOrigin,
+      y = yOrigin;
+}
+```
+
+생성자는 상속되지 않는다는 것을 기억해야 한다. 이는 superclass의 named constructor가 subclass에 의해 상속되지 않는다는 것을 의미한다. superclass에 정의된 named constructor로 subclass를 생성하려면, subclass에서 해당 생성자를 구현해야 한다.
+
+#### E-5. Invoking a non-default superclass constructor
+
+default로, subclass의 생성자는 superclass의 name과 argument가 없는 생성자를 호출한다. superclass의 생성자는 생성자 본문의 시작 부분에서 호출된다. initializer list를 사용 중인 경우, superclass가 호출되기 전에 실행된다. 요약하면 실행 순서는 다음과 같다.
+
+1. initializer list
+1. superclass's no-arg constructor
+1. main class's no-arg constructor
+
+superclass에 이름과 argument가 없는 생성자가 없으면, superclass의 생성자 중 하나를 수동으로 호출해야 한다. colon(:) 뒤, 생성자 본문(있는 경우) 바로 앞에 superclass 생성자를 지정한다.
+
+다음 예제에서 Employee class의 생성자는 superclass인 Person에 대한 named constructor를 호출한다.
+
+```dart
+class Person {
+  String? firstName;
+
+  Person.fromJson(Map data) {
+    print('in Person');
+  }
+}
+
+class Employee extends Person {
+  // Person does not have a default constructor;
+  // you must call super.fromJson(data).
+  Employee.fromJson(Map data) : super.fromJson(data) {
+    print('in Employee');
+  }
+}
+
+void main() {
+  var employee = Employee.fromJson({});
+  print(employee);
+  // Prints:
+  // inPerson
+  // in Employee
+  // Instance of 'Employee'
+}
+```
+
+superclass 생성자에 대한 argument는 생성자를 호출하기 전에 평가되기 때문에, argument는 함수 호출과 같은 expression이 될 수 있다:
+
+```dart
+class Employee() extends Person {
+  Employ() : super.fromJson(fetchDefaultData());
+  // ...
+}
+```
+
+> superclass 생성자에 대한 argument에는 `this`에 대한 접근 권한이 없다. 예를 들어, argument는 static method를 호출할 수 있지만, instance method는 호출할 수 없다.
+
+#### E-6. Initializer list
+
+superclass 생성자를 호출하는 것 외에도, 생성자 본문이 실행되기 전에 instance 변수를 초기화할 수도 있다. initializer는 comma로 구분한다.
+
+```dart
+// Initializer list sets instance variables before
+// the constructor body runs.
+Point.fromJson(Map<String, double> json)
+    : x = json['x']!,
+      y = json['y']! {
+  print('In Point.fromJson(): ($x, $y)');
+}
+```
+
+> initializer의 오른쪽에는 `this`에 대한 접근 권한이 없다.
+
+개발 중에, initializer list에 `assert`를 입력하여 입력의 유효성을 검사할 수 있다.
+
+```dart
+Point.withAssert(this.x this.y) : assert(x >= 0) {
+  print('In Point.withAssert(): ($x, $y)');
+}
+```
+
+initializer list는 최종 field를 설정할 때 편리하다. 다음 예제에서는 initializer list에서 세 개의 final field를 설정한다.
+
+```dart
+import 'dart:math';
+
+class Point {
+  final double x;
+  final double y;
+  final double distanceFromOrigin;
+
+  Point(double x, double y)
+      : x = x,
+        y = y,
+        distanceFromOrigin = sqrt(x * x + y * y);
+}
+
+void main() {
+  var p = Point(2, 3);
+  print(p.distanceFromOrigin);
+}
+```
+
+#### E-7. Redirecting constructors
+
+때때로 생성자의 유일한 목적은 동일한 class의 다른 생성자로 redirection 하는 것이다. rediriection constructor의 본문은 비어 있으며, 생성자 호출(class 이름 대신에 `this`를 사용)이 콜론(:) 뒤에 표시된다.
+
+```dart
+class Point {
+  double x, y;
+
+  // The main constructor for this class.
+  Point(this.x, this.y);
+
+  // Delegates to the main constructor.
+  Point.alongXAxis(double x) : this(x, 0);
+}
+```
+
+#### E-8. Constant constructors
+
+class가 절대 변경되지 않는 객체를 생성하는 경우, 이러한 객체를 compile-time constant로 만들 수 있다. 이렇게 하려면, `const` constructor를 정의하고 모든 instasnce 변수가 `final`이어야 한다.
+
+```dart
+class ImmutablePoint {
+  static const ImmutablePoint origin = ImmutablePoint(0, 0);
+
+  final double x, y;
+
+  const ImmutablePoint(this.x, this.y);
+}
+```
+
+constant constructor가 항상 constant를 생성하는 것은 아니다.
+
+#### E-9. Factory Constructors
+
+항상 해당 class의 새 instance를 생성하지 않는 생성자를 구현할 때, `factory` keyword를 사용한다. 예를 들어, factory constructor는 cache에서 instance를 return하거나, subtype의 instance를 return할 수 있다. factory constructor의 또 다른 사용 사례는 initializer list에서 처리할 수 없는 논리를 사용하여 final 변수를 초기화하는 것이다.
+
+> final 변수의 늦은 초기화를 처리하는 또 다른 방법은 `late final`을 사용하는 것이다. (carefully!)
+
+다음 예제에서, `Logger` factory constructor는 cache에서 객체를 return 하고, `Logger.fromJson` factory constructor는 JSON 객체에서 final 변수를 초기화한다.
+
+```dart
+class Logger {
+  final String name;
+  bool mute = false;
+
+  // _cache is library-private, thanks to
+  // the _ in front of its name.
+  static final Map<String, Logger> _cache = <String, Logger>{};
+
+  factory Logger(String name) {
+    return _cache.putIfAbsent(name, () => Logger._internal(name));
+  }
+
+  factory Logger.fromJson(Map<String, Object> json) {
+    return Logger(json['name'].toString());
+  }
+
+  Logger._internal(this.name);
+
+  void log(String msg) {
+    if (!mute) print(msg);
+  }
+}
+```
+
+> factory constructor는 `this`에 접근할 수 없다.
+
+다른 생성자와 마찬가지로 factory constructor를 호출한다.
+
+```dart
+var logger = Logger('UI');
+logger.log('Button clicked');
+
+var logMap = {'name': 'UI'};
+var loggerJson = Logger.fromJson(logMap);
+```
+
 ### F. Methods
+
+method는 객체에 대한 동작을 제공하는 함수이다.
+
+#### F-1. Instance methods
+
+객체의 instance method는 instance 변수 및 `this`에 접근할 수 있다. 다음 예시의 `distanceTo()` method는 instance method의 예이다:
+
+```dart
+import 'dart:math';
+
+class Point {
+  final double x;
+  final double y;
+
+  Point(this.x, this.y);
+
+  double distanceTo(Point other) {
+    var dx = x - other.x;
+    var dy = y - other.y;
+    return sqsrt(dx * dx + dy * dy);
+  }
+}
+```
+
+#### F-2. Operators
+
+연산자는 특별한 이름을 가진 instance method이다. Dart를 사용하면 다음 이름으로 연산자를 정의할 수 있다.
+
+|||||
+|:---|:---|:---|:---|:---|
+|`<`|`+`|`|`|`>>>`|
+|`>`|`/`|`^`|`[]`|
+|`<=`|`~/`|`&`|`[]=`|
+|`>=`|`*`|`<<`|`~`|
+|`-`|`%`|`>>`|`==`|
+
+> `!=`와 같은 일부 연산자가 이름 목록에 없는 것을 확인할 수 있다. 이들은 단지 syntactic sugar이기 때문이다. 예를 들어, `e1 != e2` expression은 `!(e1 == e2)`에 대한 syntactic sugar이다.
+
+연산자 선언은 내장 식별자 `operator`를 사용하여 선언한다. 다음 예제에서는 vector addition(`+`)과 subtraction(`-`)를 정의한다.
+
+```dart
+class Vector {
+  final int x, y;
+
+  Vector(this.x, this.y);
+
+  Vector operator +(Vector v) => Vector(x + v.x, y + v.y);
+  Vector operator -(Vector v) => Vector(x - v.x, y - v.y);
+
+  // Operator == and hashCode not shown.
+  // ...
+}
+
+void main() {
+  final v = Vector(2, 3);
+  final w = Vector(2, 2);
+
+  assert(v + w == Vector(4, 5));
+  assert(v - w == Vector(0, 1));
+}
+```
+
+#### F-3. Getters and setters
+
+Getter와 Setter는 객체 property에 대한 읽기 및 쓰기 접근을 제공하는 특수 method이다. 각 instance 변수에는 암시적 getter와 적절한 경우 setter가 있다. `get`와 `set` keyword를 사용하여 getter 및 setter를 구현하여 추가 property를 만들 수 있다.
+
+```dart
+class Rectangle {
+  double left, top, width, height;
+
+  Rectangle(this.left, this.top, this.width, this.height);
+
+  // Define two calculated properties: right and bottom.
+  double get right => left + width;
+  set right(double value) => left = value - width;
+  double get bottom => top + height;
+  set bottom(double value) => top = value - height;
+}
+
+void main() {
+  var rect = Rectangle(3, 4, 20, 15);
+  assert(rect.left == 3);
+  rect.right = 12;
+  assert(rect.left == -8);
+}
+```
+
+getter 및 setter를 사용하면, client code를 변경하지 않고 instance 변수로 시작하여 나중에 method로 wrapping 할 수 있다.
+
+> increment(`++`)와 같은 연산자는 getter가 명시적으로 정의되었는지 여부에 관계없이 예상한 방식으로 작동한다. 예기치 않은 부작용을 피하기 위해, 연산자는 getter를 정확히 한 번 호출하여 값을 임시 변수에 저장한다.
+
+#### F-4. Abstract methods
+
+instance, getter, setter method는 추상(abstract)일 수 있으며, interface를 정의하지만 구현은 다른 class에 맡긴다. 추상 method는 추상 class에만 존재할 수 있다.
+
+method를 추상화하려면, method 본문 대신 semicolon(`;`)을 사용한다.
+
+```dart
+abstract class Doer {
+  // Define instance variables and methods...
+
+  void doSomething(); // Define an abstract method.
+}
+
+class EffectiveDoer extends Doer {
+  void doSomething() {
+    // Provide an implementation, so the method is not abstract here...
+  }
+}
+```
 
 ### G. Abstract classes
 
+`abstract` modifier를 사용하여 instance화 할 수 없는 class인 abstract class를 정의한다. 추상 클래스는 종종 일부 구현과 함께 interface를 정의하는 데 유용하다. 추상 클래스를 instance화 할 수 있도록 표시하려면 factory constructor를 정의한다.
+
+추상 class에는 종종 추상 method가 있다. 다음은 추상 method가 있는 추상 class를 선언하는 예이다:
+
+```dart
+// This class is declared abstract and thus
+// can't be instantiated.
+abstract class AbstractContainer {
+  // Define constructors, fields, methods...
+
+  void updateChildren();  // Abstract method.
+}
+```
+
 ### H. Implicit interfaces
+
+모든 class는 class의 모든 instance member와 class가 implement하는 모든 interface를 포함하는 interface를 암시적으로 정의한다. B의 implement를 상속하지 않고 B class의 API를 지원하는 A class를 생성하려면, A class가 B interface를 implement 해야 한다.
+
+class는 하나 이상의 interface를 `implements`절에서 선언한 다음, interface에 필요한 API를 제공하여 implement 한다. 예를 들어:
+
+```dart
+// A person. The implicit interface contains greet().
+class Person {
+  // In the interface, but visible only in this library.
+  final String _name;
+
+  // Not in the interface, since this is a constructor.
+  Person(this._name);
+
+  // In the interface.
+  String greet(String who) => 'Hello, $who. I am $_name.';
+}
+
+// An implementation of the Person interface.
+class Impostor implements Person {
+  String get _name => '';
+
+  String greet(String who) => 'Hi $who. Do you know who I am?';
+}
+
+String greetBob(Person person) => person.greet('Bob');
+
+void main() {
+  print(greetBob(Person('Kathy')));
+  print(greetBob(Impostor()));
+}
+
+/* result
+Hello, Bob. I am Kathy.
+Hi Bob. Do you know who I am?
+*/
+```
+
+다음은 class가 여러 interface를 구현하도록 지정하는 예이다:
+
+```dart
+class Point implements Comparable, Location {...}
+```
 
 ### I. Extending a class
 
+subclass를 만들기 위해 `extends`를 사용하고, superclass를 참조하는 데 `super`를 사용한다.
+
+```dart
+class Television {
+  void turnOn() {
+    _illuminateDisplay();
+    _activateIrSensor();
+  }
+  // ...
+}
+
+class SmartTelevision extends Television {
+  void turnOn() {
+    super.turnOn();
+    _bootNetworkInterface();
+    _initializeMemory();
+    _upgradeApps();
+  }
+  // ...
+}
+```
+
+#### I-1. Overriding members
+
+subclass의 instance method(연산자 포함), getter, setter를 재정의할 수 있다. `@override` annotation을 사용하여 의도적으로 member를 재정의할 수 있다:
+
+```dart
+class Television {
+  // ...
+  set contrast(int value) {...}
+}
+
+class SmartTelevision extends Television {
+  @override
+  set contrast(num value) {...}
+  // ...
+}
+```
+
+overriding method 선언은 이러한 방식으로 override 하는 method(혹은 methods)와 일치해야 한다.
+
+* return type은 override된 method의 return type과 동일한 type(or a subtype of)이어야 한다.
+* argument type은 override된 method의 argument type과 동일한 type(or a subtype of)이어야 한다. 앞의 예에서, `SmartTelevision`의 `contrast` setter는 argument type을 `int`에서 supertype인 `num`으로 변경한다.
+* override된 method가 n개의 positional parameter를 수락하면, override 하는 method도 n개의 positional parameter를 수락해야 한다.
+* generic method는 generic이 아닌 method를 override 할 수 없고, generic이 아닌 method는 generic method를 override 할 수 없다.
+
+때로는 method parameter 또는 instance 변수의 type을 좁히고 싶을 수 있다. 이는 일반 규칙을 위반하며, runtime시 type error를 일으킬 수 있다는 점에서 downcast와 유사하다. 그러나, code에서 type error가 발생하지 않도록 보장할수 있는 경우, type을 좁힐 수 있다. 이 경우, parameter 선언에 `convariant` keyword를 사용할 수 있다.
+
+> `==`을 override 하는 경우, Object의 `hashCode` getter도 override 해야 한다.
+
+#### I-2. noSuchMethod()
+
+code가 존재하지 않는 method나 instance 변수를 사용하려고 할 때마다 감지하거나 반응하기 위해, `noSuchMethod()`를 override 할 수 있다.
+
+```dart
+class A {
+  // Unless you override noSuchMethod, using a
+  // non-existent member results in a NoSuchMethodError.
+  @override
+  void noSuchMethod(Invocation invocation) {
+    print('You tried to use a non-existent member: '
+        '${invocation.memberName}');
+  }
+}
+```
+
+다음 중 하나에 해당하지 않는 한 구현되지 않은 method를 호출할 수 없다.
+
+* receiver가 static type `dynamic`을 가지고 있다
+* receiver에는 구현되지 않은 method를 정의하는 static type이 있고(abstract is OK), receiver의 dynamic type에는  `Object` class에 있는 것과는 다른 `noSuchMethod()`의 구현이 있다.
+
 ### J. Extension methods
+
+extension method는 기존 library에 기능을 추가하는 방법이다. 자신도 모르는 사이에 extension method를 사용할 수 있다. 예를 들어, IDE에서 code completion을 사용하면, 일반 method와 함께 extension method를 제안한다.
+
+다음은 `string_apis.dart`에 정의된 `parseInt()`라는 이름의 `String` extension method를 사용하는 예시이다:
+
+```dart
+import 'string_apis.dart';
+...
+print('42'.padLeft(5)); // Use a String method.
+print('42'.parseInt()); // Use an extension method.
+```
 
 ### K. Enumerated types
 
+enumerations 또는 enums라고도 하는 열거형 type은 고정된 수의 constant 갑승ㄹ 나타내는 데 사용되는 특별한 종류의 class이다.
+
+`enum` keyword를 사용하여 열거형을 선언한다.
+
+```dart
+enum Color { red, green, blue }
+```
+
+열거형을 선언할 때 trailing comma를 사용할 수 있다.
+
+열거형의 각 값에는 열거형 선언에 있는 값의 0부터 시작하는 위치를 반환하는 `index` getter가 있다. 예를 들어 첫 번째 값의 index는 0이고, 두 번째 값의 index는 1이다.
+
+```dart
+assert(Color.red.index == 0);
+assert(Color.green.index == 1);
+assert(Color.blue.index == 2);
+```
+
+열거형의 모든 값 list를 얻으려면, 열거형의 `values` constant를 사용한다.
+
+```dart
+list<Color> colors = Color.values;
+assert(colors[2] == Color.blue);
+```
+
+switch문에서 열거형을 사용할 수 있으며, 열거형의 모든 값을 처리하지 않으면 warning이 표시된다.
+
+```dart
+var aColor = Color.blue;
+
+switch (aColor) {
+  case Color.red:
+    print('Red as roses!');
+    break;
+  case Color.green:
+    print('Green as grass!');
+    break;
+  default:  // Without thisk, you see a WARNING.
+    print(aColor);  // 'Color.blue'
+}
+```
+
+열거형에는 다음과 같은 제한이 있다.
+
+* 열거형을 subclass화 하거나 mix in 하거나, implement 할 수 없다.
+* 열거형을 명시적으로 instance화 할 수 없다.
+
 ### L. Adding features to a class: mixins
+
+mixin은 여러 class 계층에서 class code를 재사용하는 방법이다.
+
+mixin을 사용하려면, `with` keyword 뒤에 하나 이상의 mixin 이름을 입력한다. 다음 예제에서는 mixin을 사용하는 두 개의 class를 보여준다.
+
+```dart
+class Musician extends Performer with Musical {
+  // ...
+}
+
+class Maestro extends Person with Musical, Aggressive, Demented {
+  Maestro(String maestroName) {
+    name = maestroName;
+    canConduct = true;
+  }
+}
+```
+
+mixin을 구현하려면, Object를 extend하고 생성자를 선언하지 않는 class를 만든다. mixin을 일반 class로 사용하지 않으려면, `class` 대신 `mixin` keyword를 사용한다. 예를 들어:
+
+```dart
+mixin Musical {
+  bool canPlayPiano = false;
+  bool canCompose = false;
+  bool canConduct = false;
+
+  void entertainMe() {
+    if (canPlayPiano) {
+      print('Playing piano');
+    } else if (canConduct) {
+      print('Waving hands');
+    } else {
+      print('Humming to self');
+    }
+  }
+}
+```
+
+때때로 mixin을 사용할 수 있는 type을 제한하고 싶을 수 있다. 예를 들어, mixin은 mixin이 정의하지 않은 method를 호출할 수 있는지 여부에 따라 달라질 수 있다. 다음 예제에서 볼 수 있듯이, `on` keyword를 사용하여 필요한 superclass를 지정하여 mixin의 사용을 제한할 수 있다.
+
+```dart
+class Musician {
+  // ...
+}
+mixin MusicalPerformer on Musician {
+  // ...
+}
+class SingerDancer extends Musician with MusicalPerformer {
+  // ...
+}
+```
+
+앞의 code에서 class를 extend하거나 implement하는 `Musician` class만 mixin `MusicalPerformer`를 사용할 수 있다. `SingerDancer`가 `Musician`을 extend 했기 때문에, `SingerDancer`는 `MusicalPerformer`를 mixin 할 수 있다.
 
 ### M. Class variables and methods
 
+`static` keyword를 사용하여 class-wide 변수 및 method를 구현한다.
+
+#### M-1. Static variables
+
+static 변수(class 변수)는 class-wide state 및 constant에 유용하다.
+
+```dart
+class Queue {
+  static const initialCapacity = 16;
+  // ...
+}
+
+void main() {
+  assert(Queue.initialCapacity == 16);
+}
+```
+
+static 변수는 사용될 때까지 초기화되지 않는다.
+
+#### M-2. Static methods
+
+static method(class method)는 instance에서 작동하지 않으므로, `this`에 접근할 수 없다. 그러나, static 변수에는 접근할 수 있다. 다음 예제에서 볼 수 있듯이, class에서 직접 static method를 호출한다.
+
+```dart
+import 'dart:math';
+
+class Point {
+  double x, y;
+  Point(this.x, this.y);
+
+  static double distanceBetween(Point a, Point b) {
+    var dx = a.x - b.x;
+    var dy = a.y - b.y;
+    return sqrt(dx * dx + dy * dy);
+  }
+}
+
+void main() {
+  var a = Point(2, 2);
+  var b = Point(4, 4);
+  var distance = Point.distanceBetween(a, b);
+  assert(2.8 < distance && distance < 2.9);
+  print(distance);
+}
+```
+
+> 일반적이거나 널리 사용되는 utility 및 기능에 대해 static method 대신 top-level 함수를 사용하는 것을 고려해봐야 한다.
+
 ## 11. Generics
+
+기본 array type에 대한 API 문서를 보면, `List` type이 실제로는 `List<E>`임을 볼 수 있다. <...> 표기법은 List를 formal type parameter를 갖는 type인 generic(or parameterized) type으로 표시한다. 규칙에 따라, 대부분의 type 변수에는 E, T, S, K, V와 같은 단일 문자 이름이 있다.
 
 ### A. Why use generics?
 
+generic은 종종 type safety를 위해 필요하지만, code 실행을 허용하는 것보다 더 많은 이점이 있다.
+
+* generic type을 적절하게 지정하면, code가 더 잘 생성된다.
+* generic을 사용하여 code 중복을 줄일 수 있다.
+
+list에 string만 포함하려는 경우, `List<String>`과 같이 선언할 수 있다(이는 "list of string"으로 읽는다). 그렇게 하면, 당신, 동료 programmer, 당신의 tool이 list에 string이 아닌 것을 할당하는 것이 실수일 수 있음을 감지할 수 있다. 다음은 예이다:
+
+```dart
+// static analysis: error/warning
+var names = <String>[];
+names.addAll(['Seth', 'Kathy', 'Lars']);
+named.add(42);  // Error
+```
+
+generic을 사용하는 또 다른 이유는 code 중복을 줄이기 위해서이다. generic을 사용하면 static 분석을 계속 활용하면서, 여러 type 간에 단일 interface 및 implement를 공유할 수 있다. 예를 들어, 객체 caching을 위한 interface를 생성한다고 가정해 본다:
+
+```dart
+abstract class ObjectCache {
+  Object getByKey(String key);
+  void setByKey(String key, Object value);
+}
+```
+
+이 interface의 string-specific version이 필요하다는 것을 발견하고, 다른 interface를 생성한다:
+
+```dart
+abstract class StringCache {
+  String getByKey(String key);
+  void setByKey(String key, String value);
+}
+```
+
+나중에, 이 interface의 number-specific version을 원한다고 결정했다면 어떻게 해야 하는가...
+
+generic type을 사용하면 이러한 모든 interface를 만드는 수고를 덜 수 있다. 대신, type parameter를 사용하는 single interface를 만들 수 있다.
+
+```dart
+abstract class Cache<T> {
+  T getByKey(String key);
+  void setByKey(String key, T value);
+}
+```
+
+이 code에서 `T`는 stand-in type이다. 나중에 개발자가 정의할 type으로 생각할 수 있는 placeholder이다.
+
 ### B. Using collection literals
+
+list, set, map literal을 parameter화 할 수 있다. parameter화된 literal은 여는 대괄호 앞에 `<type>`(list나 set인 경우) 또는 `<keyType, valueType>`(map의 경우)를 추가한다는 점을 제외하고는 이미 본 literal과 같다. 다음은 typed literal을 사용하는 예이다:
+
+```dart
+var names = <String>['Seth', 'Kathy', 'Lars'];
+var uniqueNames = <String>{'Seth', 'Kathy', 'Lars'};
+var pages = <String, String>{
+  'index.html': 'Homepage',
+  'robots.txt': 'Hints for web robots',
+  'humans.txt': 'We are people, not machines'
+};
+```
 
 ### C. Using parameterized types with constructors
 
+생성자를 사용할 때 하나 이상의 type을 지정하려면, type을 class 이름 바로 뒤 angle brackets(`<...>`)에 넣는다. 예를 들어:
+
+```dart
+var nameSet = Set<String>.from(names);
+```
+
+다음 code는 integer key와 View type의 value가 있는 map을 생성한다:
+
+```dart
+var views = Map<int, View>();
+```
+
 ### D. Generic collections and the types they contain
 
+Dart generic type은 reified되어, runtime에 type 정보를 전달한다. 예를 들어, collection type을 test할 수 있다.
+
+```dart
+var names = <String>[];
+names.addAll(['Seth', 'Kathy', 'Lars']);
+print(names is List<String>); // true
+```
+
+> 대조적으로, Java의 generic은 erasure를 사용한다. 즉, runtime에 generic type parameter가 제거된다. Java에서는 객체가 List인지 여부를 test할 수 있지만, `List<String>`인지는 test할 수 없다.
+
 ### E. Restricting the parameterized type
+
+generic type을 구현할 때, argument로 제공할 수 있는 형식을 제한하여 argument가 특정 type의 subtype이어야 한다. 이를 `extend`를 사용하여 할 수 있다.
+
+일반적인 사용 사례는 type을 (`Object?` default 대신) `Object`
 
 ### F. Using generic methods
 
