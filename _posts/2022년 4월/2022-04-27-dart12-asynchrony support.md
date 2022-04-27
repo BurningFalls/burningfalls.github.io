@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Asynchrony support](https://dart.dev/guides/language/language-tour#asynchrony-support){: target="_blank"}
-
 ## Asynchrony support
+
+> [Dart - Asynchrony support](https://dart.dev/guides/language/language-tour#asynchrony-support){: target="_blank"}
 
 Dart library는 `Future` 또는 `Stream` 객체를 반환하는 함수로 가득 차 있다. 이러한 함수는 asynchronous(비동기식)이다: 시간이 많이 소요될 수 있는 작업(such as I/O)을 설정한 후, 해당 작업이 완료될 때까지 기다리지 않고 반환된다.
 

@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Comments](https://dart.dev/guides/language/language-tour#comments){: target="_blank"}
-
 ## Comments
+
+> [Dart - Comments](https://dart.dev/guides/language/language-tour#comments){: target="_blank"}
 
 Dart는 single-line 주석, multi-line 주석 및 documentation 주석을 지원한다.
 

@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Isolates](https://dart.dev/guides/language/language-tour#isolates){: target="_blank"}
-
 ## Isolates
+
+> [Dart - Isolates](https://dart.dev/guides/language/language-tour#isolates){: target="_blank"}
 
 mobile platform을 포함한 대부분의 computer에는 multi-core CPU가 있다. 이러한 모든 core를 활용하기 위해, 개발자는 전통적으로 동시에 실행되는 shared-memory thread를 사용한다. 그러나, shared-state 동시성은 error가 발생하기 쉽고 복잡한 code로 이어질 수 있다.
 

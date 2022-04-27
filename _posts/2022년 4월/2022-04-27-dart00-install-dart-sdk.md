@@ -33,9 +33,9 @@ tags:
 
 ## Install Dart SDK
 
-### 1. Install Chocolatey
+> [Dart - Install Chocolatey](https://docs.chocolatey.org/en-us/choco/setup){: target="_blank"}
 
-> [Install Chocolatey](https://docs.chocolatey.org/en-us/choco/setup){: target="_blank"}
+### 1. Install Chocolatey
 
 $\;1.\;$관리자 권한으로 cmd를 실행시켜, 웹사이트에 있는 Command를 입력한다.
 

@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Callable classes](https://dart.dev/guides/language/language-tour#callable-classes){: target="_blank"}
-
 ## Callable classes
+
+> [Dart - Callable classes](https://dart.dev/guides/language/language-tour#callable-classes){: target="_blank"}
 
 Dart class의 instance가 함수처럼 호출되도록 하려면, `call()` method를 구현한다.
 

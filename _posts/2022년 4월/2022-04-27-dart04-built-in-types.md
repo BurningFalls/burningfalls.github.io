@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Built-in types](https://dart.dev/guides/language/language-tour#built-in-types){: target="_blank"}
-
 ## Built-in types
+
+> [Dart - Built-in types](https://dart.dev/guides/language/language-tour#built-in-types){: target="_blank"}
 
 Dart 언어는 다음을 특별히 지원한다.
 

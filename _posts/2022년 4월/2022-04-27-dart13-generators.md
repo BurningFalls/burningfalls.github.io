@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Generators](https://dart.dev/guides/language/language-tour#generators){: target="_blank"}
-
 ## Generators
+
+> [Dart - Generators](https://dart.dev/guides/language/language-tour#generators){: target="_blank"}
 
 값 sequence를 느리게 생성해야 하는 경우, generator function을 고려할 수 있다. Dart는 두 가지 동류의 generator 함수를 기본적으로 지원한다:
 

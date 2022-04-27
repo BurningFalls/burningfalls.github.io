@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Classes](https://dart.dev/guides/language/language-tour#classes){: target="_blank"}
-
 ## Classes
+
+> [Dart - Classes](https://dart.dev/guides/language/language-tour#classes){: target="_blank"}
 
 Dart는 class와 mixin 기반 상속이 있는 객체 지향 언어이다. 모든 객체는 class의 instance이며, `Null`을 제외한 모든 class는 `Object`의 자손이다. mixin 기반 상속은 모든 class(top class인 `Object?`를 제외한)에 정확히 하나의 superclass가 있지만, class 본문은 여러 class 계층에서 재사용될 수 있음을 의미한다. `Extension method`는 class를 변경하거나 subclass를 만들지 않고 class에 기능을 추가하는 방법이다.
 

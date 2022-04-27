@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Metadata](https://dart.dev/guides/language/language-tour#metadata){: target="_blank"}
-
 ## Metadata
+
+> [Dart - Metadata](https://dart.dev/guides/language/language-tour#metadata){: target="_blank"}
 
 metadata를 사용하여 code에 대한 추가 정보를 제공한다. metadata annotation은 문자 `@`로 시작하고, 그 뒤에 compile-time constant(such as `deprecated`)에 대한 참조 또는 constant constructor에 대한 호출이 온다.
 

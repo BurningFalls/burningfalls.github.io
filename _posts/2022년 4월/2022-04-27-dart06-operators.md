@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Functions](https://dart.dev/guides/language/language-tour#operators){: target="_blank"}
-
 ## Operators
+
+> [Dart - Functions](https://dart.dev/guides/language/language-tour#operators){: target="_blank"}
 
 Dart는 다음 표에 표시된 연산자를 지원한다. 이러한 연산자 중 많은 부분을 class member로 구현할 수 있다.
 

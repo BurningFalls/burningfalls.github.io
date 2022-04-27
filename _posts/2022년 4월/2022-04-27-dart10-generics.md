@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Generics](https://dart.dev/guides/language/language-tour#generics){: target="_blank"}
-
 ## Generics
+
+> [Dart - Generics](https://dart.dev/guides/language/language-tour#generics){: target="_blank"}
 
 기본 array type에 대한 API 문서를 보면, `List` type이 실제로는 `List<E>`임을 볼 수 있다. <...> 표기법은 List를 formal type parameter를 갖는 type인 generic(or parameterized) type으로 표시한다. 규칙에 따라, 대부분의 type 변수에는 E, T, S, K, V와 같은 단일 문자 이름이 있다.
 

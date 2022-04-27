@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Important concepts](https://dart.dev/guides/language/language-tour#important-concepts){: target="_blank"}
-
 ## Important concepts
+
+> [Dart - Important concepts](https://dart.dev/guides/language/language-tour#important-concepts){: target="_blank"}
 
 Dart 언어에 대해 배울 때, 다음 사실을 염두에 두어야 한다.
 

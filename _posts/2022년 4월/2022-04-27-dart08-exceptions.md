@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Exceptions](https://dart.dev/guides/language/language-tour#exceptions){: target="_blank"}
-
 ## Exceptions
+
+> [Dart - Exceptions](https://dart.dev/guides/language/language-tour#exceptions){: target="_blank"}
 
 Dart code는 exception(예외)을 throw and catch 할 수 있다. 예외는 예상치 못한 일이 발생했음을 나타내는 error이다. 예외가 catch 되지 않으면, 예외를 발생시킨 isolate가 일시 중단되고, 일반적으로 isolate 및 program이 종료된다.
 

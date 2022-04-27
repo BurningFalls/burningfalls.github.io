@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Functions](https://dart.dev/guides/language/language-tour#functions){: target="_blank"}
-
 ## Functions
+
+> [Dart - Functions](https://dart.dev/guides/language/language-tour#functions){: target="_blank"}
 
 Dart는 진정한 objected-oriented language(객체 지향 언어)이므로, 함수도 객체이며 `Function`이라는 type을 갖는다. 즉, 함수를 변수에 할당하거나 다른 함수에 argument(인수)로 전달할 수도 있다. Dart class의 instance를 마치 함수처럼 호출할 수도 있다.
 

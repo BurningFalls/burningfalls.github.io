@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Libraries and visibility](https://dart.dev/guides/language/language-tour#libraries-and-visibility){: target="_blank"}
-
 ## Libraries and visibility
+
+> [Dart - Libraries and visibility](https://dart.dev/guides/language/language-tour#libraries-and-visibility){: target="_blank"}
 
 `import` 및 `library` 지시문은 modular와 공유 가능한 code base를 만드는 데 도움이 될 수 있다. library는 API를 제공할 뿐만 아니라, privacy의 단위이다: underscore(_)로 시작하는 식별자는 library 내부에서만 볼 수 있다. 모든 Dart app은 `library` 지시문을 사용하지 않더라도 library이다.
 

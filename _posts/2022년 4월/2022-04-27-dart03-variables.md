@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Variables](https://dart.dev/guides/language/language-tour#variables){: target="_blank"}
-
 ## Variables
+
+> [Dart - Variables](https://dart.dev/guides/language/language-tour#variables){: target="_blank"}
 
 다음은 변수를 생성하고 초기화 하는 예시이다.
 

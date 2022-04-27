@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Typedefs](https://dart.dev/guides/language/language-tour#typedefes){: target="_blank"}
-
 ## Typedefs
+
+> [Dart - Typedefs](https://dart.dev/guides/language/language-tour#typedefes){: target="_blank"}
 
 `typedef` keyword로 선언되기 때문에 typedef로 불리는 type alias는 type을 참조하는 간결한 방법이다. 다음은 `IntList`라는 type alias를 선언하고 사용하는 예이다:
 

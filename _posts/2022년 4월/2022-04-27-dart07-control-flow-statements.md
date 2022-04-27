@@ -31,9 +31,9 @@ tags:
 |Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
 |Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-> [Functions](https://dart.dev/guides/language/language-tour#control-flow-statements){: target="_blank"}
-
 ## Control flow statements
+
+> [Dart - Functions](https://dart.dev/guides/language/language-tour#control-flow-statements){: target="_blank"}
 
 다음 중 하나를 사용하여 Dart code의 flow를 제어할 수 있다.
 
