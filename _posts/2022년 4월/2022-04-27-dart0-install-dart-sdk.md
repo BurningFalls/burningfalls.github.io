@@ -1,8 +1,8 @@
 ---
 title: "[Dart] Dart 0 - Install Dark SDK"
 excerpt: "Flutter를 배우기 위해 chocolatey를 사용하여 Dart SDK를 설치한다."
-date: 2022-04-19
-last_modified_at: 2022-04-22
+date: 2022-04-27
+last_modified_at: 2022-04-27
 categories:
   - flutter
 tags:
@@ -12,14 +12,28 @@ tags:
 |||Dart 배우기|
 |:---:|:---:|:---|
 |Dart 0||**[Install Dart SDK](https://burningfalls.github.io/flutter/dart0-install-dart-sdk/)**|
-|Dart 1||**[Language Samples](https://burningfalls.github.io/flutter/dart1-language-samples/)**|
-|Dart 2||**[Intro to Dart for Java Developers](https://burningfalls.github.io/flutter/dart2-intro-to-dart-for-java-developers/)**|
-|Dart 3||**[Dart Cheatsheet Codelab](https://burningfalls.github.io/flutter/dart3-dart-cheatsheet-codelab/)**|
-|Dart 4||**[Iterable Collections](https://burningfalls.github.io/flutter/dart4-iterable-collections/)**|
-|Dart 5||**[Asynchronous Programming](https://burningfalls.github.io/flutter/dart5-asynchronous-programming/)**|
-|Dart 6||**[Null Safety](https://burningfalls.github.io/flutter/dart6-null-safety/)**|
+|Dart 1||**[Important concepts](https://burningfalls.github.io/flutter/dart1-important-concepts/)**|
+|Dart 2||**[Keywords](https://burningfalls.github.io/flutter/dart2-keywords/)**|
+|Dart 3||**[Variables](https://burningfalls.github.io/flutter/dart3-variables/)**|
+|Dart 4||**[Built-in types](https://burningfalls.github.io/flutter/dart4-built-in-types/)**|
+|Dart 5||**[Functions](https://burningfalls.github.io/flutter/dart5-functions/)**|
+|Dart 6||**[Operators](https://burningfalls.github.io/flutter/dart6-operators/)**|
+|Dart 7||**[Control flow statements](https://burningfalls.github.io/flutter/dart7-control-flow-statements/)**|
+|Dart 8||**[Exceptions](https://burningfalls.github.io/flutter/dart8-exceptions/)**|
+|Dart 9||**[Classes](https://burningfalls.github.io/flutter/dart9-classes/)**|
+|Dart 10||**[Generics](https://burningfalls.github.io/flutter/dart10-generics/)**|
+|Dart 11||**[Libraries and visibility](https://burningfalls.github.io/flutter/dart11-libraries-and-visibility/)**|
+|Dart 12||**[Asynchrony support](https://burningfalls.github.io/flutter/dart12-asynchrony-support/)**|
+|Dart 13||**[Generators](https://burningfalls.github.io/flutter/dart13-generators/)**|
+|Dart 14||**[Callable classes](https://burningfalls.github.io/flutter/dart14-callable-classes/)**|
+|Dart 15||**[Isolates](https://burningfalls.github.io/flutter/dart15-isolates/)**|
+|Dart 16||**[Typedefs](https://burningfalls.github.io/flutter/dart16-typedefs/)**|
+|Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
+|Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
 
-## 1. Install Chocolatey
+## Install Dart SDK
+
+### 1. Install Chocolatey
 
 > [Install Chocolatey](https://docs.chocolatey.org/en-us/choco/setup){: target="_blank"}
 
@@ -56,7 +70,7 @@ choco --version
 choco upgrade chocolatey
 ```
 
-## 2. Install Dart SDK
+### 2. Install Dart SDK
 
 > [Get the Dart SDK](https://dart.dev/get-dart#install){: target="_blank"}
 

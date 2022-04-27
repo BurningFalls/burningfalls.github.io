@@ -1,0 +1,70 @@
+---
+title: "[Dart] Dart 13 - Generators"
+excerpt: "A tour of the Dart language > 13. Generators"
+date: 2022-04-27
+last_modified_at: 2022-04-27
+categories:
+  - flutter
+tags:
+  - dart
+---
+
+|||Dart 배우기|
+|:---:|:---:|:---|
+|Dart 0||**[Install Dart SDK](https://burningfalls.github.io/flutter/dart0-install-dart-sdk/)**|
+|Dart 1||**[Important concepts](https://burningfalls.github.io/flutter/dart1-important-concepts/)**|
+|Dart 2||**[Keywords](https://burningfalls.github.io/flutter/dart2-keywords/)**|
+|Dart 3||**[Variables](https://burningfalls.github.io/flutter/dart3-variables/)**|
+|Dart 4||**[Built-in types](https://burningfalls.github.io/flutter/dart4-built-in-types/)**|
+|Dart 5||**[Functions](https://burningfalls.github.io/flutter/dart5-functions/)**|
+|Dart 6||**[Operators](https://burningfalls.github.io/flutter/dart6-operators/)**|
+|Dart 7||**[Control flow statements](https://burningfalls.github.io/flutter/dart7-control-flow-statements/)**|
+|Dart 8||**[Exceptions](https://burningfalls.github.io/flutter/dart8-exceptions/)**|
+|Dart 9||**[Classes](https://burningfalls.github.io/flutter/dart9-classes/)**|
+|Dart 10||**[Generics](https://burningfalls.github.io/flutter/dart10-generics/)**|
+|Dart 11||**[Libraries and visibility](https://burningfalls.github.io/flutter/dart11-libraries-and-visibility/)**|
+|Dart 12||**[Asynchrony support](https://burningfalls.github.io/flutter/dart12-asynchrony-support/)**|
+|Dart 13||**[Generators](https://burningfalls.github.io/flutter/dart13-generators/)**|
+|Dart 14||**[Callable classes](https://burningfalls.github.io/flutter/dart14-callable-classes/)**|
+|Dart 15||**[Isolates](https://burningfalls.github.io/flutter/dart15-isolates/)**|
+|Dart 16||**[Typedefs](https://burningfalls.github.io/flutter/dart16-typedefs/)**|
+|Dart 17||**[Metadata](https://burningfalls.github.io/flutter/dart17-metadata/)**|
+|Dart 18||**[Comments](https://burningfalls.github.io/flutter/dart18-comments/)**|
+
+> [Generators](https://dart.dev/guides/language/language-tour#generators){: target="_blank"}
+
+## Generators
+
+값 sequence를 느리게 생성해야 하는 경우, generator function을 고려할 수 있다. Dart는 두 가지 동류의 generator 함수를 기본적으로 지원한다:
+
+* Synchronous generator: `Iterable` 객체를 return 한다.
+* Asynchronous generator: `Stream` 객체를 return 한다.
+
+동기 generator 함수를 구현하려면, 함수 본문을 `sync*`로 표시하고, `yield`를 사용하여 값을 전달한다.
+
+```dart
+Iterable<int> naturalsTo(int n) sync* {
+  int k = 0;
+  while (k < n) yield k++;
+}
+```
+
+비동기 generator 함수를 구현하려면, 함수 본문을 `async*`로 표시하고, `yield`를 사용하여 값을 전달한다.
+
+```dart
+Stream<int> asynchronousNaturalsTo(int n) async* {
+  int k = 0;
+  while(k < n) yield k++;
+}
+```
+
+generator가 재귀적이라면, `yield*`를 사용하여 성능을 향상시킬 수 있다:
+
+```dart
+Iterable<int> naturalsDownFrom(int n) sync* {
+  if (n > 0) {
+    yield n;
+    yield* naturalsDownFrom(n - 1);
+  }
+}
+```
