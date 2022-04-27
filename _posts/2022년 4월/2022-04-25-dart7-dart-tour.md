@@ -2614,42 +2614,481 @@ print(names is List<String>); // true
 
 ### E. Restricting the parameterized type
 
-generic type을 구현할 때, argument로 제공할 수 있는 형식을 제한하여 argument가 특정 type의 subtype이어야 한다. 이를 `extend`를 사용하여 할 수 있다.
+generic type을 구현할 때, argument로 제공할 수 있는 형식을 제한하여 argument가 특정 type의 subtype이길 원한다. 이를 `extend`를 사용하여 할 수 있다.
 
-일반적인 사용 사례는 type을 (`Object?` default 대신) `Object`
+일반적인 사용 사례는 type을 `Object`의 subtype(default인 `Object?` 대신)으로 만들어 type이 null을 허용하지 않도록 하는 것이다.
+
+```dart
+class Foo<T extends Object> {
+  // Any type provided to Foo for T must be non-nullable.
+}
+```
+
+`Object` 이외의 다른 type과 함께 `extends`를 사용할 수 있다. 다음은 `T` type의 객체에서 `SomeBaseClass`의 member를 호출할 수 있도록 `SomeBaseClass`를 확장하는 예이다:
+
+```dart
+class Foo<T extends SomeBaseClass> {
+  // Implementation goes here...
+  String toString() => "Instance of 'Foo<$T>'";
+}
+
+class Extender extends SomeBaseClass {...}
+``` 
+
+`SomeBaseClass` 또는 그 subtype을 generic argument로 사용하는 것이 허용된다.
+
+```dart
+var someBaseClassFoo = Foo<SomeBaseClass>();
+var extenderFoo = Foo<Extender>();
+```
+
+generic argument를 지정하지 않아도 된다.
+
+```dart
+var foo = Foo();
+print(foo); // Instance of 'Foo<SomeBaseClass>'
+```
+
+`SomeBaseClass` type이 아닌 type을 지정하면 error가 발생한다.
+
+```dart
+// static analysis: error/warning
+var foo = Foo<Object>();
+```
 
 ### F. Using generic methods
 
+처음에, Dart의 generic 지원은 class로 제한되었다. generic methods 라고 하는 새로운 syntax는, method와 함수에 대한 type argument를 허용한다:
+
+```dart
+T first<T>(List<T> ts) {
+  // Do some initial work or error checking, then...
+  T tmp = ts[0];
+  // Do some additional checking or processing...
+  return tmp;
+}
+```
+
+이처럼 `first`(`<T>`)의 generic type parameter를 사용하면, 여러 위치에서 type argument `T`를 사용할 수 있다.
+
+* 함수의 return type (`T`).
+* argument의 type (`List<T>`).
+* 지역 변수의 type (`T tmp`).
+
 ## 12. Libraries and visibility
+
+`import` 및 `library` 지시문은 modular와 공유 가능한 code base를 만드는 데 도움이 될 수 있다. library는 API를 제공할 뿐만 아니라, privacy의 단위이다: underscore(_)로 시작하는 식별자는 library 내부에서만 볼 수 있다. 모든 Dart app은 `library` 지시문을 사용하지 않더라도 library이다.
+
+library는 package를 사용하여 배포할 수 있다.
 
 ### A. Using libraries
 
+한 library의 namespace가 다른 library의 범위에서 사용되는 방식을 지정하는 데 `import`를 사용한다.
+
+예를 들어, Dart web app은 일반적으로 다음과 같이 import 가능한 `dart:html` library를 사용한다:
+
+```dart
+import 'dart:html';
+```
+
+유일한 필요 argument `import`는 library를 지정하는 URI이다. 내장 library의 경우, URI에는 특수  `dart:` scheme가 있다. 다른 library의 경우, file system path나 `package:` scheme를 사용할 수 있다. `package:` scheme는 pub tool과 같은 package manager에서 제공하는 library를 지정한다.
+
+```dart
+import 'package:test/test.dart';
+```
+
+> URI는 uniform resource identifier를 나타낸다. URLs(uniform resource locators)는 일반적인 종류의 URI이다.
+
+#### A-1. Specifying a library prefix
+
+충돌하는 식별자가 있는 두 개의 library를 import 하는 경우, 하나 또는 두 library 모두에 대해 prefix(접두사)를 지정할 수 있다. 예를 들어, library1과 library2 모두에 Element class가 있는 경우, 다음과 같은 code가 있을 수 있다:
+
+```dart
+import 'package:lib1/lib1.dart';
+import 'package:lib2/lib2.dart' as lib2;
+
+// Uses Element from lib1.
+Element element1 = Element();
+
+// Uses Element from lib2.
+lib2.Element element2 = lib2.Element();
+```
+
+#### A-2. Importing only part of a library
+
+library의 일부만 사용하려는 경우, library를 선택적으로 가져올 수 있다. 예를 들어:
+
+```dart
+// Import only foo.
+import 'package:lib1/lib1.dart' show foo;
+
+// Import all names EXCEPT foo.
+import 'package:lib2/lib2.dart' hide foo;
+```
+
+#### A-3. Lazily loading a library
+
+Deferred loading(지연 로딩: lazy loading이라고도 함)을 사용하면 library가 필요한 경우, web app이 요청 시 library를 load 할 수 있다. 다음은 지연 로딩을 사용할 수 있는 몇 가지 경우이다:
+
+* web app의 초기 시작 시간을 줄인다.
+* 예를 들어, algorithm의 대안 구현을 시도하는 A/B test를 수행한다.
+* 선택적 screen 및 dialog와 같이 거의 사용되지 않는 기능을 로드한다.
+
+> dart2js만 지연 로딩을 지원한다. Flutter, Dart VM, dartdevc는 지연 로딩을 지원하지 않는다.
+
+library를 느리게 load 하려면, `deferred as`를 사용하여 library를 import 해야 한다.
+
+```dart
+import 'package:greetings/hello.dart' deffered as hello;
+```
+
+library가 필요할 때, library의 식별자를 사용하여 `loadLibrary()`를 호출한다.
+
+```dart
+Future<void> greet() async {
+  await hello.loadLibrary();
+  hello.printGreeting();
+}
+```
+
+앞의 code에서, `await` keyword는 library가 load될 때까지 실행을 일시 중지한다.
+
+문제 없이 `loadLibrary()`를 library에서 여러 번 호출할 수 있다. library는 한 번만 load 된다.
+
+지연 로딩을 사용할 때 다음 사항에 유의해야 한다:
+
+* 지연된 library의 constant는 importing file의 constant가 아니다. 이러한 constant는 지연된 library가 load될 때까지 존재하지 않는다.
+* importing file에서 지연된 library의 type을 사용할 수 없다. 대신, 지연된 library와 importing file 모두에서 가져온 library로 interface type을 이동하는 것이 좋다.
+* Dart는 `deferred as namespace`를 사용하여 정의한 namespace에 `loadLibrary()`를 암시적으로 삽입한다. `loadLibrary()` 함수는 `Future`을 반환한다.
+
 ### B. Implementing libraries
+
+다음에서 library package를 구현하는 방법에 대한 조언을 참조할 수 있다:
+
+* library source code를 구성하는 방법
+* `export` 지시문을 사용하는 방법
+* `part` 지시문을 사용하는 때
+* `library` 지시문을 사용할 때
+* 조건부 import 및 export를 사용하여 여러 platform을 지원하는 library를 구현하는 방법
 
 ## 13. Asynchrony support
 
+Dart library는 `Future` 또는 `Stream` 객체를 반환하는 함수로 가득 차 있다. 이러한 함수는 asynchronous(비동기식)이다: 시간이 많이 소요될 수 있는 작업(such as I/O)을 설정한 후, 해당 작업이 완료될 때까지 기다리지 않고 반환된다.
+
+`async` 및 `await` keyword는 비동기 programming을 지원하므로, 동기 code와 유사한 비동기 code를 작성할 수 있다.
+
 ### A. Handling Futures
+
+completed Future의 결과가 필요한 경우, 두 가지 option이 있다.
+
+* `async` 및 `await`를 사용한다.
+* Future API를 사용한다.
+
+`async`와 `await`를 사용하는 code는 비동기식이지만, 동기식 code와 많이 유사해 보인다. 예를 들어, 비동기 함수의 결과를 기다리는 데 `await`를 사용하는 몇 가지 code가 있다:
+
+```dart
+await lookUpVersion();
+```
+
+`await`를 사용하려면, code가 `async`라고 표시된 함수인 `async` 함수에 있어야 한다.
+
+```dart
+Future<void> checkVersion() async {
+  var version = await lookUpVersion();
+  // Do something with version
+}
+```
+
+> `async` 함수는 시간이 많이 걸리는 작업을 수행할 수 있지만, 해당 작업을 기다리지는 않는다. 대신, `async` 함수는 첫 번째 `await` expression을 만날 때까지만 실행된다. 그런 다음 `await` expression이 complete된 후에만 실행을 재개하는 Future 객체를 반환한다.
+
+`await`를 사용하는 code에서 error를 정리 및 처리하려면, `try`, `catch`, `finally`를 사용한다:
+
+```dart
+try {
+  version = await lookUpVersion();
+} catch (e) {
+  // React to inability to look up the version
+}
+```
+
+`async` 함수 안에서 `await`를 여러 번 사용할 수 있다. 예를 들어, 다음 코드는 함수의 결과를 세 번 기다린다:
+
+```dart
+var entrypoint = await findEntryPoint();
+var exitCode = await runExecutable(entrypoint, args);
+await flushThenExit(exitCode);
+```
+
+`await expression`에서, `expression`의 값은 일반적으로 Future이다. 그렇지 않은 경우, 값은 자동으로 Future에 wrapp 된다. 이 Future 객체는 객체를 return 하겠다는 약속을 나타낸다. `await expression`의 값은 return된 객체이다. await expression은 해당 객체를 사용할 수 있을 때까지 실행을 일시 중지한다.
+
+`await`를 사용할 때 compile-time error가 발생하면, `async` 함수 안에 `await`가 있는지 확인한다. 예를 들어, app의 `main()` 함수에 `await`를 사용하기 위해서는, `main()`의 본문에 `async`를 표시해야 한다:
+
+```dart
+void main() async {
+  checkVersion();
+  print('In main: version is ${await lookUpVersion()}');
+}
+```
+
+> 앞의 예제에서는 결과를 기다리지 않고 `async` 함수 (`checkVersion()`)을 사용한다. code에서 함수 실행이 완료되었다고 가정하면 문제가 발생할 수 있다. 문제를 방지하려면, unawaited_futures linter rule을 사용한다.
 
 ### B. Declaring async functions
 
+`async` 함수는 본문이 `async` modifier로 표시된 함수이다.
+
+함수에 `async` keyword를 추가하면, 그 함수는 Future를 return 한다. 예를 들어, String을 return하는 다음 동기 함수를 생각해볼 수 있다:
+
+```dart
+String lookUpVersion() => '1.0.0';
+```
+
+예를 들어, future 구현에 시간이 많이 걸리기 때문에, `async` 함수로 변경하면, return 값은 Future이다:
+
+```dart
+Future<String> lookUpVersion() async => '1.0.0';
+```
+
+함수의 본문은 Future API를 사용할 필요가 없다. Dart는 필요한 경우 Future 객체를 생성한다. 함수가 유용한 값을 return 하지 않으면, return type을 `Future<void>`로 지정한다.
+
 ### C. Handling Streams
+
+Stream에서 값을 가져와야 하는 경우, 두 가지 option이 있다.
+
+* `async`와 asynchronous for loop(`await for`)을 사용한다.
+* Stream API를 사용한다.
+
+> `await for`를 사용하기 전에, code를 더 명확하게 만들고 Stream의 모든 결과를 정말로 기다리고 싶은지 확인해야 한다. 예를 들어, UI framework는 event의 끝없는 stream을 보내기 때문에, 일반적으로 UI event listener에 `await for`를 사용해서는 안 된다.
+
+비동기 loop의 형식은 다음과 같다:
+
+```dart
+await for (varOrType identifier in expression) {
+  // Executes each time the stream emits a value.
+}
+```
+
+`expression`의 값은 Stream type이어야 한다. 실행은 다음과 같이 진행된다:
+
+1. stream이 값을 방출할 때까지 기다린다.
+1. 변수가 방출된 값으로 설정된 상태에서, for loop의 본문을 실행한다.
+1. stream이 닫힐 때까지 1과 2를 반복한다.
+
+stream listening을 중지하려면, for loop에서 벗어나 stream을 unsubscribe하는 `break`나 `return`문을 사용할 수 있다.
+
+asynchronous for loop를 구현할 때 compile-time error가 발생하면, `async` 함수 안에 `await for`이 있는지 확인한다. 예를 들어, app의 `main()` 함수에서 asynchronous for loop를 사용하려면, `main()`의 본문에 `async`를 표시해야 한다:
+
+```dart
+void main() async {
+  // ...
+  await for (final request in requestServer) {
+    handleRequest(request);
+  }
+  // ...
+}
+```
 
 ## 14. Generators
 
+값 sequence를 느리게 생성해야 하는 경우, generator function을 고려할 수 있다. Dart는 두 가지 동류의 generator 함수를 기본적으로 지원한다:
+
+* Synchronous generator: `Iterable` 객체를 return 한다.
+* Asynchronous generator: `Stream` 객체를 return 한다.
+
+동기 generator 함수를 구현하려면, 함수 본문을 `sync*`로 표시하고, `yield`를 사용하여 값을 전달한다.
+
+```dart
+Iterable<int> naturalsTo(int n) sync* {
+  int k = 0;
+  while (k < n) yield k++;
+}
+```
+
+비동기 generator 함수를 구현하려면, 함수 본문을 `async*`로 표시하고, `yield`를 사용하여 값을 전달한다.
+
+```dart
+Stream<int> asynchronousNaturalsTo(int n) async* {
+  int k = 0;
+  while(k < n) yield k++;
+}
+```
+
+generator가 재귀적이라면, `yield*`를 사용하여 성능을 향상시킬 수 있다:
+
+```dart
+Iterable<int> naturalsDownFrom(int n) sync* {
+  if (n > 0) {
+    yield n;
+    yield* naturalsDownFrom(n - 1);
+  }
+}
+```
+
 ## 15. Callable classes
+
+Dart class의 instance가 함수처럼 호출되도록 하려면, `call()` method를 구현한다.
+
+다음 예제에서, `WannabeFunction` class는 세 개의 string을 가져와 연결하고, 각각을 공백으로 구분하고, 느낌표를 추가하는 call() 함수를 정의한다.
+
+```dart
+class WannabeFunction {
+  String call(String a, String b, String c) => '$a $b $c!';
+}
+
+var wf = WannabeFunction();
+var out = wf('Hi', 'there', 'gang');
+
+void main() => print(out);
+```
 
 ## 16. Isolates
 
+mobile platform을 포함한 대부분의 computer에는 multi-core CPU가 있다. 이러한 모든 core를 활용하기 위해, 개발자는 전통적으로 동시에 실행되는 shared-memory thread를 사용한다. 그러나, shared-state 동시성은 error가 발생하기 쉽고 복잡한 code로 이어질 수 있다.
+
+thread 대신, 모든 Dart code는 isolates 내부에서 실행된다. 각 Dart isolate는 단일 실행 thread를 가지며, 다른 isolate와 변경할 수 있는 객체를 공유하지 않는다.
+
 ## 17. Typedefs
+
+`typedef` keyword로 선언되기 때문에 typedef로 불리는 type alias는 type을 참조하는 간결한 방법이다. 다음은 `IntList`라는 type alias를 선언하고 사용하는 예이다:
+
+```dart
+typedef IntList = List<int>;
+IntList il = [1, 2, 3];
+```
+
+type alia에는 type parameter가 있을 수 있다.
+
+```dart
+typedef ListMapper<X> = Map<X, List<X>>;
+Map<String, List<String>> m1 = {};  // Verbase.
+ListMapper<String> m2 = {}; // Some thing but shorter and clearer.
+```
+
+> 2.13 version에는 typedef가 함수 type으로 제한되었다. 새로운 typedef를 사용하려면 최소 2.13의 language version이 필요하다.
+
+대부분의 상황에서 함수에 대한 typedef 대신 inline function type을 사용하는 것이 좋다. 그러나, 함수 typedef는 여전히 유용할 수 있다.
+
+```dart
+typedef Compare<T> = int Function(T a, T b);
+
+int sort(int a, int b) => a - b;
+
+void main() {
+  assert(sort is Compare<int>); // True!
+}
+```
 
 ## 18. Metadata
 
+metadata를 사용하여 code에 대한 추가 정보를 제공한다. metadata annotation은 문자 `@`로 시작하고, 그 뒤에 compile-time constant(such as `deprecated`)에 대한 참조 또는 constant constructor에 대한 호출이 온다.
+
+모든 Dart code에는 세 가지의 주석을 사용할 수 있다: `@Deprecated`, `@deprecated`, `@override`. 다음은 `@Deprecated` annotation을 사용하는 예이다:
+
+```dart
+class Television {
+  /// Use [turnOn] to turn the power on instead.
+  @Deprecated('Use turnOn instead')
+  void activate() {
+    turnOn();
+  }
+
+  /// Turns the TV's power on.
+  void turnOn() {...}
+  // ...
+}
+```
+
+고유한 metadata annotation을 정의할 수 있다. 다음은 두 개의 argument를 사용하는 `@Todo` annotation을 정의하는 예이다:
+
+```dart
+library todo;
+
+class Todo {
+  final String who;
+  final String what;
+
+  const Todo(this.who, this.what);
+}
+```
+
+다음은 `@Todo` annotation을 사용하는 예이다:
+
+```dart
+import 'todo.dart';
+
+@Todo('seth', 'make this do something')
+void doSomething() {
+  print('do something');
+}
+```
+
+metadata는 library, class, typedef, type parameter, constructor, factory, function, field, parameter, 변수 선언, import 또는 export 지시문 앞에 나타날 수 있다. reflection을 사용하여 runtime에 metadata를 검색할 수 있다.
+
 ## 19. Comments
+
+Dart는 single-line 주석, multi-line 주석 및 documentation 주석을 지원한다.
 
 ### A. Single-line comments
 
+한 줄 주석은 `//`로 시작한다. `//`와 줄 끝 사이의 모든 것은 Dart compiler에서 무시된다.
+
+```dart
+void main() {
+  // TODO: refactor into an AbstractLlamaGreetingFactory?
+  print('Welcome to my Llama farm!');
+}
+```
+
 ### B. Multi-line comments
+
+여러 줄 주석은 `/*`로 시작하고 `*/`로 끝난다. `/*`와 `*/` 사이의 모든 것은 (주석이 documentation 주석이 아닌 경우) Dart compiler에서 무시된다. 여러 줄 주석은 중첩될 수 있다.
+
+```dart
+void main() {
+  /*
+   * This is a lot of work. Consider raising chickens.
+
+  Llama larry = Llama();
+  larry.feed();
+  larry.exercise();
+  larry.clean();
+   */
+}
+```
 
 ### C. Documentation comments
 
-## 20. Summary
+documentation 주석은 `///` 또는 `/**`로 시작하는 여러 줄 또는 한 줄 주석이다. `///`를 사용하면 여러 줄의 documentation 주석과 같은 효과가 있다.
+
+documentation 주석 내에서 analyzer는 대괄호로 묶이지 않는 한 모든 text를 무시한다. 대괄호를 사용하여 class, method, field, top-level 변수, function, parameter를 참조할 수 있다. 괄호 안의 name은 document화된 program element의 어휘 범위에서 확인된다.
+
+다음은 다른 class 및 argument에 대한 참조가 포함된 documentation 주석의 예이다:
+
+```dart
+/// A domesticated South American camelid (lama glama).
+///
+/// Andean cultures have used llamas as meat and pack
+/// animals since pre-Hispanic times.
+///
+/// Just like any other animal, llamas need to eat,
+/// so don't forget to [feed] them some [Food].
+class Llama {
+  String? name;
+
+  /// Feeds you llama [food].
+  ///
+  /// The typical llama eats one bale of hay per week.
+  void feed(Food food) {
+    // ...
+  }
+
+  /// Exercises you llama with an [activity] for
+  /// [timeLimit] minutes.
+  void exercise(Activity activity, int timeLimit) {
+    // ...
+  }
+}
+```
+
+class의 생성된 documentation에서, `[feed]`는 `feed` method 문서에 대한 link가 되고, `[Food]`는 `Food` class 문서에 대한 link가 된다.
+
+Dart code를 구문 분석하고 HTML 문서를 생성하려면, Dart의 문서 생성 도구인 `dart doc`를 사용할 수 있다.
