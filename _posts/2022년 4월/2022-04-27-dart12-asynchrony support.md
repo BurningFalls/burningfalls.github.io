@@ -39,6 +39,53 @@ Dart library는 `Future` 또는 `Stream` 객체를 반환하는 함수로 가득
 
 `async` 및 `await` keyword는 비동기 programming을 지원하므로, 동기 code와 유사한 비동기 code를 작성할 수 있다.
 
+### 0. Example
+
+```dart
+const oneSecond = Duration(seconds: 1);
+// ...
+Future<void> printWithDelay(String message) async {
+  await Future.delayed(oneSecond);
+  print(message);
+}
+```
+
+```dart
+Future<void> printWithDelay(String message) {
+  return Future.delayed(oneSecond).then((_) {
+    print(message);
+  });
+}
+```
+
+```dart
+Future<void> createDescriptions(Iterable<String> objects) async {
+  for (final object in objects) {
+    try {
+      var file = File('$object.txt');
+      if (await file.exists()) {
+        var modified = await file.lastModified);
+        print('File for $object already exists. It was modified on $modified.');
+        continue;
+      }
+      await file.create();
+      await file.writeAsString('Start describing $object in this file.');
+    } on IOException catch (e) {
+      print('Cannot create description for $object: $e');
+    }
+  }
+}
+```
+
+```dart
+Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
+  for (final object in objects) {
+    await Future.delayed(oneSecond);
+    yield '${craft.name} flies by $object';
+  }
+}
+```
+
 ### 1. Handling Futures
 
 completed Future의 결과가 필요한 경우, 두 가지 option이 있다.

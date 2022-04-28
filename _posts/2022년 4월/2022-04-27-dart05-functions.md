@@ -63,6 +63,21 @@ bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 
 > (statement가 아닌) expression만, arrow(=>)와 semicolon(;) 사이에 나타날 수 있다. 예를 들어, if statement를 넣을 수 있지만, conditional expression을 사용할 수는 없다.
 
+### 0. Example
+
+```dart
+int fibonacci(int n) {
+  if (n == 0 || n == 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+var result = fibonacci(20);
+```
+
+```dart
+flybyObjects.where((name) => name.contains('turn')).forEach(print);
+```
+
 ### 1. Parameters
 
 함수는 required positional parameter를 원하는 만큼 가질 수 있다. 이들 뒤에는 named parameter 또는 optional positional parameter가 올 수 있다(둘 모두는 아님).

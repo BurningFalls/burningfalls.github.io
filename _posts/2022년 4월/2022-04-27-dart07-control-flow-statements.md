@@ -46,6 +46,28 @@ tags:
 
 Exception chapter에서 설명된 대로, `try-catch`와 `throw`를 사용하여 control flow에 영향을 줄 수도 있다.
 
+### 0. Example
+
+```dart
+if (year >= 2001) {
+  print('21st century');
+} else if (year >= 1901) {
+  print('20th century');
+}
+
+for (final object in flybyObjects) {
+  print(object);
+}
+
+for (int month = 1; month <= 12; month++) {
+  print(month);
+}
+
+while (year < 2016) {
+  year += 1;
+}>)
+```
+
 ### 1. If and else
 
 Dart는 다음 sample에서 볼 수 있듯이, 선택적 `else`문이 있는 `if`문을 지원한다.

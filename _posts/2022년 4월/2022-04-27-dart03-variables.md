@@ -55,6 +55,19 @@ Object name = 'Bob';
 String name = 'Bob';
 ```
 
+### 0. Example
+
+```dart
+var name = 'Voyager I';
+var year = 1977;
+var antennaDiameter = 3.7;
+var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+var image = {
+  'tags': ['saturn'],
+  'url': '//path/to/saturn.jpg'
+};
+```
+
 ### 1. Default value
 
 nullable type이 있는 초기화되지 않은 변수의 초기 값은 `null`이다. (만약 당신이 null safety를 선택하지 않았다면, 모든 변수는 nullable type이다.) Dart의 다른 모든 것과 마찬가지로 숫자는 객체이기 때문에, 숫자 type을 가진 변수도 처음에는 null이다.

@@ -37,6 +37,18 @@ tags:
 
 Dart는 single-line 주석, multi-line 주석 및 documentation 주석을 지원한다.
 
+### 0. Example
+
+```dart
+// This is a normal, one-line comment.
+
+/// This is a documentation comment, used to document libraries,
+/// classes, and their members. Tools like IDEs and dartdoc treat
+/// doc comments specially.
+
+/* Comments like these are also supported. */
+```
+
 ### 1. Single-line comments
 
 한 줄 주석은 `//`로 시작한다. `//`와 줄 끝 사이의 모든 것은 Dart compiler에서 무시된다.

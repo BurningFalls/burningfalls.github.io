@@ -41,6 +41,27 @@ Java와 달리, Dart의 모든 예외는 확인되지 않은 예외이다. metho
 
 Dart는 미리 정의된 수많은 subtype 뿐만 아니라, `Exception`과 `Error` type을 제공한다. 또한, 자신의 예외를 정의할 수 있다. 그러나, Dart program은 Exception 및 Error 객체뿐만 아니라 null이 아닌 모든 객체를 예외로 throw 할 수 있다.
 
+### 0. Example
+
+```dart
+if (astronauts == 0) {
+  throw StateError('Noi astronauts.');
+}
+```
+
+```dart
+try {
+  for (final object in flybyObjects) {
+    var description = await File('$object.txt').readAsString();
+    print(description);
+  }
+} on IOException catch (e) {
+  print('Could not describe object: $e');
+} finally {
+  flybyObjects.clear();
+}
+```
+
 ### 1. Throw
 
 다음은 예외를 throw 하거나 발생시키는 예이다:

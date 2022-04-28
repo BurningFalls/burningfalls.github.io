@@ -37,6 +37,87 @@ tags:
 
 Dart는 class와 mixin 기반 상속이 있는 객체 지향 언어이다. 모든 객체는 class의 instance이며, `Null`을 제외한 모든 class는 `Object`의 자손이다. mixin 기반 상속은 모든 class(top class인 `Object?`를 제외한)에 정확히 하나의 superclass가 있지만, class 본문은 여러 class 계층에서 재사용될 수 있음을 의미한다. `Extension method`는 class를 변경하거나 subclass를 만들지 않고 class에 기능을 추가하는 방법이다.
 
+### 0. Example
+
+```dart
+class Spacecraft {
+  String name;
+  DateTime? launchDate;
+
+  // Read-only non-final property
+  int? get launchYear => launchDate?.year;
+
+  // Constructor, with syntactic sugar for assignment to members.
+  Spacecraft(this.name, this.launchDate) {
+    // Initialization code goes here.
+  }
+
+  // Named constructor that forwards to the default one.
+  Spacecraft.unlaunched(String name) : this(name, null);
+
+  // Method.
+  void describe() {
+    print('Spacecraft: $name');
+    // Type promotion doesn't work on getters.
+    var launchDate = this.launchDate;
+    if (launchDate != null) {
+      int years = DateTime.now().difference(launchDate).inDays ~/ 365;
+    } else {
+      print('Unlaunched');
+    }
+  }
+}
+```
+
+```dart
+var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
+voyager.describe();
+
+var voyager3 = Spacecraft.unlaunched('Voyager III');
+voyager3.describe();
+```
+
+```dart
+class Orbiter extends Spacecraft {
+  double altitude;
+
+  Orbiter(String name, DateTime launchDate, this.altitude)
+      : super(name, launchDate);
+}
+```
+
+```dart
+mixin Piloted {
+  int astronauts = 1;
+
+  void describeCrew() {
+    print('Number of astronauts: $astronauts');
+  }
+}
+
+class PilotedCraft extends Spacecraft with Piloted {
+  // ...
+}
+```
+
+```dart
+class MockSpaceship implements Spacecraft {
+  // ...
+}
+```
+
+```dart
+abstract class Describable {
+  void describe();
+
+  void describeWithEmphasis() {
+    print('=========');
+    describe();
+    print('=========');
+  }
+}
+```
+
 ### 1. Using class members
 
 객체에는 함수와 data(각각 method와 instance 변수)로 구성된 member가 있다. method를 호출할 때, 객체에서 호출한다: method는 해당 객체의 함수와 data에 접근할 수 있다.

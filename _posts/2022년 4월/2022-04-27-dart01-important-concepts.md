@@ -60,3 +60,24 @@ Dart 언어에 대해 배울 때, 다음 사실을 염두에 두어야 한다.
 * Dart는 expressions(runtime 값이 있음)과 statement(runtime 값이 없음)을 모두 가지고 있다. 예를 들어, condition expression `condition ? expr1 : expr2`의 값은 `expr1` 또는 `expr2`이다. 이와 달리 if-else statement는 값이 없다. statement에는 종종 하나 이상의 expression이 포함되지만, expression은 statement를 직접 포함할 수 없다.
 
 * Dart tool은 warnings 와 errors 라는 두 가지 종류의 문제를 보고할 수 있다. Warning은 code가 작동하지 않을 수 있다는 표시일 뿐, program 실행을 막지는 않는다. Error는 compile-time 또는 run-time일 수 있다. compile-time error code는 코드 실행을 완전히 막는다. run-time-error는 code가 실행되는 동안 예외(exception)가 발생한다.
+
+### 0. Example
+
+```dart
+void main() {
+  print('Hello, World!');
+}
+```
+
+```dart
+// Define a function.
+void printInteger(int aNumber) {
+  print('The number is $aNumber.'); // Print to console.
+}
+
+// This is where the app starts executing.
+void main() {
+  var number = 42;  // Declare and initialize a variable.
+  printInteger(number); // Call a function.
+}
+```

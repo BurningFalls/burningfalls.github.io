@@ -39,6 +39,19 @@ tags:
 
 library는 package를 사용하여 배포할 수 있다.
 
+### 0. Example
+
+```dart
+// Importing core libraries
+import 'dart:math';
+
+// Importing libraries from external packages
+import 'package:test/test.dart';
+
+// Importing files
+import 'path/to/my_other_file.dart';
+```
+
 ### 1. Using libraries
 
 한 library의 namespace가 다른 library의 범위에서 사용되는 방식을 지정하는 데 `import`를 사용한다.
