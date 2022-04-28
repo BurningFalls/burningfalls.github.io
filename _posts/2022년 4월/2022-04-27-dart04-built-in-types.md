@@ -11,7 +11,6 @@ tags:
 
 |||Dart 배우기|
 |:---:|:---:|:---|
-|Dart 00||**[Install Dart SDK](https://burningfalls.github.io/flutter/dart00-install-dart-sdk/)**|
 |Dart 01||**[Important concepts](https://burningfalls.github.io/flutter/dart01-important-concepts/)**|
 |Dart 02||**[Keywords](https://burningfalls.github.io/flutter/dart02-keywords/)**|
 |Dart 03||**[Variables](https://burningfalls.github.io/flutter/dart03-variables/)**|
