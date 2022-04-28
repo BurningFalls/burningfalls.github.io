@@ -1,35 +1,35 @@
 ---
-title: "[Dart] Dart 2 - Intro to Dart for Java Developers"
+title: "[Dart] Dart-01-01: Intro to Dart for Java Developers"
 excerpt: "Samples & tutorials > Codelabs > List of Dart codelabs > Intro to Dart for Java Developers"
 date: 2022-04-19
-last_modified_at: 2022-04-22
+last_modified_at: 2022-04-28
 categories:
   - flutter
 tags:
   - dart
 ---
 
-|||Dart 배우기|
-|:---:|:---:|:---|
-|Dart 0||**[Install Dart SDK](https://burningfalls.github.io/flutter/dart0-install-dart-sdk/)**|
-|Dart 1||**[Language Samples](https://burningfalls.github.io/flutter/dart1-language-samples/)**|
-|Dart 2||**[Intro to Dart for Java Developers](https://burningfalls.github.io/flutter/dart2-intro-to-dart-for-java-developers/)**|
-|Dart 3||**[Dart Cheatsheet Codelab](https://burningfalls.github.io/flutter/dart3-dart-cheatsheet-codelab/)**|
-|Dart 4||**[Iterable Collections](https://burningfalls.github.io/flutter/dart4-iterable-collections/)**|
-|Dart 5||**[Asynchronous Programming](https://burningfalls.github.io/flutter/dart5-asynchronous-programming/)**|
-|Dart 6||**[Null Safety](https://burningfalls.github.io/flutter/dart6-null-safety/)**|
+|||[Dart-01: Codelabs](https://burningfalls.github.io/flutter/dart-01-codelabs)|
+|:---|:---|:---|
+|Dart-01-01||**[Intro to Dart for Java Developers](https://burningfalls.github.io/flutter/dart-01-01-intro-to-dart-for-java-developers/)**|
+|Dart-01-02||**[Dart Cheatsheet](https://burningfalls.github.io/flutter/dart-01-02-dart-cheatsheet/)**|
+|Dart-01-03||**[Iterable Collections](https://burningfalls.github.io/flutter/dart-01-03-iterable-collections/)**|
+|Dart-01-04||**[Asynchronous Programming](https://burningfalls.github.io/flutter/dart-01-04-asynchronous-programming/)**|
+|Dart-01-05||**[Null Safety](https://burningfalls.github.io/flutter/dart-01-05-null-safety/)**|
 
 > [Intro to Dart for Java Developers](https://developers.google.com/codelabs/from-java-to-dart#0){: target="_blank"}
 
-## 1. Introduction
+## Intro to Dart for Java Developers
+
+### 1. Introduction
 
 [DartPad](https://dartpad.dev/?id){: target="_blank"}
 
 Visual Studio Code: Dart Code extension 설치
 
-## 2. Create a simple Dart class
+### 2. Create a simple Dart class
 
-### A. public (default)
+#### A. public (default)
 
 모든 identifier는 `public`이 default이다.
 
@@ -44,7 +44,7 @@ class Bicycle {
 
 ---
 
-### B. this (constructor)
+#### B. this (constructor)
 
 constructor의 parameter list에서 `this`를 사용하는 것은 instance variable에 값을 할당하는 편리한 기능이다.
 
@@ -59,7 +59,7 @@ Bicycle(this.cadence, this.speed, this.gear);
 
 ---
 
-### C. new (option)
+#### C. new (option)
 
 'new' keyword는 Dart 2에서 옵션이 되었다.
 
@@ -71,13 +71,13 @@ var bike = Bicycle(2, 0, 1);
 
 ---
 
-### D. final
+#### D. final
 
 variable의 값이 변하지 않는다는 것을 안다면, `var` 대신 `final`을 사용할 수 있다.
 
 ---
 
-### E. print()
+#### E. print()
 
 `print()` 함수는 string 뿐만 아니라 모든 object를 허용한다. 이 함수는 object의 `toString()` method를 사용하여 `String`으로 변환한다.
 
@@ -92,7 +92,7 @@ Instance of 'Bicycle'
 
 ---
 
-### F. toString() (override) and ${expression}
+#### F. toString() (override) and ${expression}
 
 모든 Dart class에는 더 유용한 output을 제공하기 위해 override할 수 있는 `toString()` method가 있다.
 
@@ -107,7 +107,7 @@ String toString() => 'Bicycle: $speed mph';
 
 ---
 
-### G. private ('_') and getter&setter
+#### G. private ('_') and getter&setter
 
 Dart identifier를 library에서 private로 만들려면, 이름을 underscore(`_`)로 시작한다. (Make identifier a private, read-only instance variable)
 
@@ -149,7 +149,7 @@ void main() {
 }
 ```
 
-## 3. Use optional parameters (insted of overloading)
+### 3. Use optional parameters (insted of overloading)
 
 `this.origin`, `this.width`, `this.height`는 optional named parameter이다. Named parameter는 중괄호(`{}`)로 묶는다.
 
@@ -193,7 +193,7 @@ Origin: (0, 0), width: 200, height: 0
 Origin: (0, 0), width: 0, height: 0
 ```
 
-## 4. Create a factory
+### 4. Create a factory
 
 Java에서 일반적으로 사용되는 디자인 패턴인 factory는 direct object instantiation에 비해 몇 가지 장점이 있다.
 
@@ -312,7 +312,7 @@ main() {
 }
 ```
 
-## 5. Implement an interface
+### 5. Implement an interface
 
 모든 class가 interface를 정의하기 때문에, Dart 언어는 `interface` 키워드를 포함하지 않는다.
 
@@ -325,7 +325,7 @@ class CircleMock implements Circle {
 }
 ```
 
-## 6. Use Dart for functional programming
+### 6. Use Dart for functional programming
 
 functional programming에서 다음과 같은 작업을 수행할 수 있다.
 
