@@ -9,7 +9,7 @@ tags:
   - dart
 ---
 
-## Effective Dart
+# Effective Dart
 
 지난 몇 년 동안, 수많은 Dart code가 작성되었고 무엇이 잘 작동하고 무엇이 그렇지 않은지에 대해 많은 것을 배웠다. 일관성 있고, 강력하며, 빠른 code도 작성할 수 있도록, 이 정보를 공유한다. 두 가지 중요한 주제가 있다.
 
@@ -23,7 +23,7 @@ Dart analyzer에는 훌륭하고 일관된 코드를 작성하는 데 도움이 
 
 `Linter rule: prefer_collection_literals`
 
-### 1. The guides
+## 1. The guides
 
 쉽게 소화할 수 있도록 guildeline을 몇 개의 별도 page로 나누었다.
 
@@ -35,7 +35,7 @@ Dart analyzer에는 훌륭하고 일관된 코드를 작성하는 데 도움이 
 
 * Design Guide - 가장 부드럽지만, 가장 넓은 범위를 가진 guide이다. library에 대해 일관되고, 사용 가능한 API를 design하는 방법에 대해 배운 내용을 다룬다. type signature 또는 declaration에 있는 경우, 이를 무시한다.
 
-### 2. How to read the guides
+## 2. How to read the guides
 
 각 guide는 몇 개의 section으로 나뉜다. section에는 guidelines가 포함되어 있다. 각 guideline은 다음 단어들 중 하나로 시작한다.
 
@@ -53,7 +53,7 @@ Dart analyzer에는 훌륭하고 일관된 코드를 작성하는 데 도움이 
 
 끈을 제대로 묶지 않으면 경찰이 문을 두들겨 패는 것처럼 들린다. 상황이 나쁘지 않ㄴ다. 여기에 있는 대부분의 guideline은 상식이며, 우리는 모두 합리적인 사람들이다. 항상 그렇듯이, 목표는 훌륭하고 읽기 쉽고, 유지 관리 가능한 code이다.
 
-### 3. Glossary (용어 사전)
+## 3. Glossary (용어 사전)
 
 guideline을 간략하게 유지하기 위해, 몇 가지 축약 용어를 사용하여 다양한 Dart 구성을 참조한다:
 

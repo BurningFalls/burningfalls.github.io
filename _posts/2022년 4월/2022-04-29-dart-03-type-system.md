@@ -9,7 +9,7 @@ tags:
   - dart
 ---
 
-## Type System
+# Type System
 
 Dart 언어는 type safe 언어이다: static type 검사와 runtime 검사의 조합을 사용하여, 변수의 값이 항상 sound typing이라고도 하는 변수의 static type과 항상 일치하는지 확인한다. types는 필수적이지만, type 추론 때문에 type annotations는 선택 사항이다.
 
@@ -53,13 +53,13 @@ void main() {
 }
 ```
 
-### 1. What is soundness?
+## 1. What is soundness?
 
 Soundness는 program이 특정 유효하지 않은 상태에 들어갈 수 없도록 하는 것이다. sound type system은 expression이 expression의 static type과 일치하지 않는 값으로 평가되는 상태에 절대 들어갈 수 없음을 의미한다. 예를 들어, expression의 static type이 `String`인 경우, runtime 시 평가할 때만 string을 얻을 수 있다.
 
 Java 및 C#의 type system과 마찬가지로, Dart의 type system은 sound 하다. static 검사(compile-time errors)와 runtime 검사의 조합을 사용하여 soundness를 적용한다. 예를 들어, `String`에 `int`를 할당하는 것은 compile-time error이다. `as String`을 사용하여 `Object`에 `String`을 type casting 하는 것은, object가 `String`이 아니라면 runtime error와 함께 실패한다.
 
-### 2. The benefits of soundness
+## 2. The benefits of soundness
 
 sound type system은 다음과 같은 몇 가지 이점이 있다.
 
@@ -71,7 +71,7 @@ sound type system은 다음과 같은 몇 가지 이점이 있다.
 
 * AOT(Ahead of Time) compile이 더 좋다. - AOT compilation은 type 없이 가능하지만, 생성된 code는 훨씬 덜 효율적이다.
 
-### 3. Tips for passing static analysis
+## 3. Tips for passing static analysis
 
 static type에 대한 대부분의 규칙은 이해하기 쉽다. 다음은 덜 분명한 규칙 중 일부이다.
 
@@ -86,7 +86,7 @@ $\;\;\;\;\;\;\;\;\;\;$-> HoneyBadger<br>
 $\;\;\;\;\;\;\;\;\;\;$-> Cat -> Lion<br>
 $\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$-> MaineCoon
 
-#### A. Use sound return types when overriding methods
+### A. Use sound return types when overriding methods
 
 subclass에 있는 method의 return type은 superclass에 있는 method의 return type과 동일한 type이거나 subtype이어야 한다. `Animal` class의 getter method를 고려한다:
 
@@ -121,7 +121,7 @@ class HoneyBadger extends Animal {
 }
 ```
 
-#### B. Use sound parameter types when overriding methods
+### B. Use sound parameter types when overriding methods
 
 override된 method의 parameter는 superclass에 있는 해당 parameter의 type 또는 supertype이 동일해야 한다. type을 원래 parameter의 subtype으로 교체하여 parameter type을 "tighten"하게 하지 않아야 한다.
 
@@ -168,7 +168,7 @@ class Cat extends Animal {
 }
 ```
 
-#### C. Don't use a dynamic list as a typed list
+### C. Don't use a dynamic list as a typed list
 
 `dynamic` list는 다양한 종류의 list를 갖고 싶을 때 좋다. 그러나, `dynamic` list를 typed list로 사용할 수 없다.
 
@@ -188,7 +188,7 @@ void main() {
 }
 ```
 
-### 4. Runtime checks
+## 4. Runtime checks
 
 Dart VM 및 dartdevc의 runtime 검사는 analyzer가 포착할 수 없는 type safety issue를 처리한다.
 
@@ -202,7 +202,7 @@ void main() {
 }
 ```
 
-### 5. Type inference
+## 5. Type inference
 
 analyzer는 field, method, 지역 변수, generic type argument에 대한 type을 유추할 수 있다. analyzer에 특정 type을 유추할 수 있는 정보가 충분하지 않으면, `dynamic` type을 사용한다.
 
@@ -222,17 +222,17 @@ var arguments = {'argA': 'hello', 'argB': 42};  // Map<String, Object>
 
 map literal은 항목에서 type을 유추하고, 변수는 map literal의 type에서 type을 유추한다. 이 map에서 key는 둘 다 string이지만, 값은 서로 다른 type(`Object`라는 상한을 갖는 `String`과 `int`)을 갖는다. 따라서 map literal은 `Map<String, Object>`를 갖고, `arguments` 변수도 마찬가지이다.
 
-#### A. Field and method inference
+### A. Field and method inference
 
 지정된 type이 없고 superclass의 field 또는 method를 override하는 field 또는 method는, superclass method 또는 field의 type을 상속한다.
 
 선언되거나 상속된 type이 없지만 초기 값으로 선언된 field는, 초기 값을 기반으로 유추된 type을 가져온다.
 
-#### B. Static field inference
+### B. Static field inference
 
 static field와 변수는 initializer에서 유추된 type을 가져온다. cycle이 발생하면 추론이 실패한다. (즉, 변수의 type을 추론하는 것은 해당 변수의 type을 아는 것에 달려 있음.)
 
-#### C. Local variable inference
+### C. Local variable inference
 
 지역 변수 type은 initializer program에서 추론된다(있는 경우). 후속 할당은 고려되지 않는다. 이는 너무 정확한 type이 유추될 수 있음을 의미할 수 있다. 그렇다면, type annotation을 추가할 수 있다.
 
@@ -248,7 +248,7 @@ num y = 3;  // A num can be double or int.
 y = 4.0;
 ```
 
-#### D. Type argument inference
+### D. Type argument inference
 
 생성자 호출 및 generic method 호출에 대한 type argument는 발생 context의 하향 정보와 생성자 또는 generic method에 대한 argument의 상향 정보 조합을 기반으로 유추된다. 추론이 당신이 원하거나 기대하는 것을 하지 않는다면, 당신은 항상 명시적으로 type argument를 지정할 수 있다.
 
@@ -266,7 +266,7 @@ var ints = listOfDouble.map((x) => x.toInt());
 
 마지막 예에서는, `x`는 햐향 정보를 사용하여 `double`로 유추된다. Dart는 `map()` method의 type argument인 `<int>`를 유추할 때, 이 return type을 상향 정보로 사용한다.
 
-### 6. Substituting types
+## 6. Substituting types
 
 method를 override 할 때, 한 가지 type(old method에서)을 새로운 type(new method에서)을 가질 수 있는 것으로 교체한다. 마찬가지로, 함수에 argument를 전달할 때, 한 유형(선언된 유형의 parameter)이 있는 항목을 다른 type(실제 argument)이 있는 항목으로 대체한다. type이 하나인 것을 subtype이나 supertype이 있는 것으로 대체할 수 있는 경우는 언제인가?
 
@@ -276,7 +276,7 @@ consumer's type을 supertype으로 바꾸고 producer's type을 subtype으로 �
 
 generic type을 사용한 simple type assignment를 살펴보자.
 
-#### A. Simple type assignment
+### A. Simple type assignment
 
 객체에 객체를 할당할 때, type을 다른 type으로 대체할 수 있는 경우는 언제인가? 대답은 객체가 consumer인지 producer인지에 따라 다르다.
 
@@ -314,7 +314,7 @@ producing 위치에서, type(`Cat`)을 생성하는 것을 보다 구체적인 �
 Cat c = MaineCoon();
 ```
 
-#### B. Generic type assignment
+### B. Generic type assignment
 
 generic type에도 규칙이 동일한가? 그렇다. `Cat List`가 `Animal List`의 subtype이고, `MaineCoon List`의 supertype인 동물 list 계층 구조를 고려한다:
 
@@ -344,7 +344,7 @@ List<Cat> myCats = <Animal>[];
 List<Cat> myCats = <Animal>[] as List<Cat>;
 ```
 
-#### C. Methods
+### C. Methods
 
 method를 override할 때, producer와 consumer 규칙이 계속 적용된다. 예를 들어:
 
