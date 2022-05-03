@@ -29,6 +29,9 @@ posts:
     - title: "boj 24000~24999"
       tag: "boj-24000-24999"
       url: /tags/boj-24000-24999
+    - title: "boj 25000~25999"
+      tag: "boj-25000-25999"
+      url: /tags/boj-25000-25999
 - title: Blog
   category: blog
   url: categories/blog
