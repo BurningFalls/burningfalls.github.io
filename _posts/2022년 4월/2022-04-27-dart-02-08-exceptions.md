@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-08: Exceptions"
 excerpt: "A tour of the Dart language > 8. Exceptions"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Exceptions
+# Exceptions
 
 > [Dart - Exceptions](https://dart.dev/guides/language/language-tour#exceptions){: target="_blank"}
 
@@ -40,7 +40,7 @@ Java와 달리, Dart의 모든 예외는 확인되지 않은 예외이다. metho
 
 Dart는 미리 정의된 수많은 subtype 뿐만 아니라, `Exception`과 `Error` type을 제공한다. 또한, 자신의 예외를 정의할 수 있다. 그러나, Dart program은 Exception 및 Error 객체뿐만 아니라 null이 아닌 모든 객체를 예외로 throw 할 수 있다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 if (astronauts == 0) {
@@ -61,7 +61,7 @@ try {
 }
 ```
 
-### 1. Throw
+## 1. Throw
 
 다음은 예외를 throw 하거나 발생시키는 예이다:
 
@@ -83,7 +83,7 @@ throw 'Out of llamas!';
 void distanceTo(Point other) => throw UnimplementedError();
 ```
 
-### 2. Catch
+## 2. Catch
 
 예외를 catching 하거나 capturing 하면, exception을 다시 throw 하지 않는 이상 error propagating(전파)이 중지된다. 예외를 catching 하는 것은 당신에게 그것을 처리할 기회를 준다.
 
@@ -149,7 +149,7 @@ void main() {
 }
 ```
 
-### 3. Finally
+## 3. Finally
 
 예외가 발생했는지 여부에 관계없이 일부 코드가 실행되도록 하려면, `finally`절을 사용한다. 예외와 일치하는 `catch`절이 없으면, `finally`절이 실행된 후 예외가 전파된다.
 

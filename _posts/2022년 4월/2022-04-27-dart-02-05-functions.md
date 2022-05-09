@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-05: Functions"
 excerpt: "A tour of the Dart language > 5. Functions"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Functions
+# Functions
 
 > [Dart - Functions](https://dart.dev/guides/language/language-tour#functions){: target="_blank"}
 
@@ -62,7 +62,7 @@ bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 
 > (statement가 아닌) expression만, arrow(=>)와 semicolon(;) 사이에 나타날 수 있다. 예를 들어, if statement를 넣을 수 있지만, conditional expression을 사용할 수는 없다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 int fibonacci(int n) {
@@ -77,7 +77,7 @@ var result = fibonacci(20);
 flybyObjects.where((name) => name.contains('turn')).forEach(print);
 ```
 
-### 1. Parameters
+## 1. Parameters
 
 함수는 required positional parameter를 원하는 만큼 가질 수 있다. 이들 뒤에는 named parameter 또는 optional positional parameter가 올 수 있다(둘 모두는 아님).
 
@@ -85,7 +85,7 @@ flybyObjects.where((name) => name.contains('turn')).forEach(print);
 
 함수에 argument를 전달하거나 함수 parameter를 정의할 때 trailing commas를 사용할 수 있다.
 
-#### A. Named parameters
+### A. Named parameters
 
 named parameters는 `required`로 특별히 표시되지 않는 한 선택 사항이다.
 
@@ -112,7 +112,7 @@ const Scrollbar({Key? key, required Widget child})
 
 누군가가 `child` argument를 지정하지 않고 `Scrollbar`를 생성하려고 하면, analyzer가 문제를 보고한다.
 
-#### B. Optional positional parameters
+### B. Optional positional parameters
 
 함수 parameter set를 `[]`로 wrapping 하면, optional positional parameter가 된다:
 
@@ -139,7 +139,7 @@ assert(say('Bob', 'Howdy', 'smoke signal') ==
     'Bob says Howdy with a smoke signal');
 ```
 
-#### C. Default parameter values
+### C. Default parameter values
 
 함수는 `=`을 사용하여 optional named parameter와 optional positional parameter 모두에 대한 default 값을 정의할 수 있다. default 값은 compile-time constant여야 한다. default 값이 제공되지 않은 경우, default 값은 `null`이다.
 
@@ -181,7 +181,7 @@ void doStuff(
 }
 ```
 
-### 2. The main() function
+## 2. The main() function
 
 모든 app에는 app의 진입점 역할을 하는 top-level `main()` 함수가 있어야 한다. 이 `main()` 함수는 `void`를 return하고 arguments를 위한 optional `List<String>` parameter를 갖고 있다.
 
@@ -208,7 +208,7 @@ void main(List<String> arguments) {
 
 args library를 사용하여 command-line argument를 정의하고 분석할 수 있다.
 
-### 3. Functions as first-class objects
+## 3. Functions as first-class objects
 
 함수를 다른 함수에 parameter로 전달할 수 있다. 예를 들어:
 
@@ -232,7 +232,7 @@ assert(loudify('hello') == '!!! HELLO !!!');
 
 이 예제에서는 익명 함수를 사용한다. 다음 section에서 더 자세히 설명한다.
 
-### 4. Anonymous functions
+## 4. Anonymous functions
 
 `main()`이나 `printElement()`와 같이, 대부분의 함수들은 이름이 지정되어 있다. 때로는 lambda 또는 closure, anonymous function(익명 함수)라고 부르는 이름 없는 함수를 만들 수도 있다. 예를 들어 collection에서 추가하거나 제거할 수 있도록, 익명 함수를 변수에 할당할 수 있다.
 
@@ -274,7 +274,7 @@ list.forEach((item) => print('${list.indexOf(item)}: $item'));
 */
 ```
 
-### 5. Lexical scope
+## 5. Lexical scope
 
 Dart는 lexically scoped language(어휘 범위가 지정된 언어)이다. 즉, 변수의 범위는 단순히 code layout에 의해 정적으로 결정된다. 변수가 범위 내에 있는지 확인하기 위해 "밖으로 중괄호를 따라" 볼 수 있다.
 
@@ -303,7 +303,7 @@ void main() {
 
 `nestedFunction()`이 어떻게 top-level까지 모든 level의 변수를 사용할 수 있는지 볼 수 있다.
 
-### 6. Lexical closures
+## 6. Lexical closures
 
 closure는 함수가 원래 범위 외부에서 사용되는 경우에도, 어휘 범위의 변수에 접근할 수 있는 함수 객체이다.
 
@@ -328,7 +328,7 @@ void main() {
 }
 ```
 
-### 7. Testing functions for equality
+## 7. Testing functions for equality
 
 다음은 top-level 함수, static method, instance method의 equality(동등성)을 test하는 예이다:
 
@@ -367,7 +367,7 @@ void main() {
 }
 ```
 
-### 8. Return values
+## 8. Return values
 
 모든 함수는 값을 return한다. return 값을 지정하지 않으면, statement는 `return null`이 암시적으로 함수 본문에 추가된다.
 

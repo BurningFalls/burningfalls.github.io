@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-07: Control flow statements"
 excerpt: "A tour of the Dart language > 7. Control flow statements"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Control flow statements
+# Control flow statements
 
 > [Dart - Functions](https://dart.dev/guides/language/language-tour#control-flow-statements){: target="_blank"}
 
@@ -45,7 +45,7 @@ tags:
 
 Exception chapter에서 설명된 대로, `try-catch`와 `throw`를 사용하여 control flow에 영향을 줄 수도 있다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 if (year >= 2001) {
@@ -67,7 +67,7 @@ while (year < 2016) {
 }>)
 ```
 
-### 1. If and else
+## 1. If and else
 
 Dart는 다음 sample에서 볼 수 있듯이, 선택적 `else`문이 있는 `if`문을 지원한다.
 
@@ -83,7 +83,7 @@ if (isRaining()) {
 
 JavaScript와 달리, 조건은 무조건 boolean 값을 사용해야 한다.
 
-### 2. For loops
+## 2. For loops
 
 표준 `for` loop로 iterate 할 수 있다. 예를 들어:
 
@@ -121,7 +121,7 @@ var collection = [1, 2, 3];
 collection.forEach(print);
 ```
 
-### 3. While and do-while
+## 3. While and do-while
 
 `while` loop는 loop를 시작하기 전에 조건을 평가한다.
 
@@ -139,7 +139,7 @@ do {
 } while (!atEndOfPage());
 ```
 
-### 4. Break and continue
+## 4. Break and continue
 
 loop 중지에 `break`를 사용한다:
 
@@ -170,7 +170,7 @@ candidates
     .forEach((c) => c.interview());
 ```
 
-### 5. Switch and case
+## 5. Switch and case
 
 Dart의 switch 문은 `==`을 사용하여 정수, 문자열, compile-time constant를 비교한다. 비교되는 객체는 모두 동일한 class의 instance여야 하며 (해당 subtype이 아님), class는 `==`를 override 해서는 안 된다. Enumerated types는 `switch`문에서 잘 작동한다.
 
@@ -249,7 +249,7 @@ switch (command) {
 
 `case`절은 해당 절의 버위 내에서만 볼 수 있는 지역 변수가 있을 수 있다.
 
-### 6. Assert
+## 6. Assert
 
 개발하는 동안, boolean 조건이 false인 경우 정상적인 실행을 방해하기 위해 `assert(condition, ooptionalMessage)`문을 사용한다. 이 tour 전체에서 assert문의 예를 찾을 수 있다. 몇 가지 예시가 더 있다:
 

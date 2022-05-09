@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-11: Libraries and visibility"
 excerpt: "A tour of the Dart language > 11. Libraries and visibility"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Libraries and visibility
+# Libraries and visibility
 
 > [Dart - Libraries and visibility](https://dart.dev/guides/language/language-tour#libraries-and-visibility){: target="_blank"}
 
@@ -38,7 +38,7 @@ tags:
 
 library는 package를 사용하여 배포할 수 있다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 // Importing core libraries
@@ -51,7 +51,7 @@ import 'package:test/test.dart';
 import 'path/to/my_other_file.dart';
 ```
 
-### 1. Using libraries
+## 1. Using libraries
 
 한 library의 namespace가 다른 library의 범위에서 사용되는 방식을 지정하는 데 `import`를 사용한다.
 
@@ -69,7 +69,7 @@ import 'package:test/test.dart';
 
 > URI는 uniform resource identifier를 나타낸다. URLs(uniform resource locators)는 일반적인 종류의 URI이다.
 
-#### A. Specifying a library prefix
+### A. Specifying a library prefix
 
 충돌하는 식별자가 있는 두 개의 library를 import 하는 경우, 하나 또는 두 library 모두에 대해 prefix(접두사)를 지정할 수 있다. 예를 들어, library1과 library2 모두에 Element class가 있는 경우, 다음과 같은 code가 있을 수 있다:
 
@@ -84,7 +84,7 @@ Element element1 = Element();
 lib2.Element element2 = lib2.Element();
 ```
 
-#### B. Importing only part of a library
+### B. Importing only part of a library
 
 library의 일부만 사용하려는 경우, library를 선택적으로 가져올 수 있다. 예를 들어:
 
@@ -96,7 +96,7 @@ import 'package:lib1/lib1.dart' show foo;
 import 'package:lib2/lib2.dart' hide foo;
 ```
 
-#### C. Lazily loading a library
+### C. Lazily loading a library
 
 Deferred loading(지연 로딩: lazy loading이라고도 함)을 사용하면 library가 필요한 경우, web app이 요청 시 library를 load 할 수 있다. 다음은 지연 로딩을 사용할 수 있는 몇 가지 경우이다:
 
@@ -131,7 +131,7 @@ Future<void> greet() async {
 * importing file에서 지연된 library의 type을 사용할 수 없다. 대신, 지연된 library와 importing file 모두에서 가져온 library로 interface type을 이동하는 것이 좋다.
 * Dart는 `deferred as namespace`를 사용하여 정의한 namespace에 `loadLibrary()`를 암시적으로 삽입한다. `loadLibrary()` 함수는 `Future`을 반환한다.
 
-### 2. Implementing libraries
+## 2. Implementing libraries
 
 다음에서 library package를 구현하는 방법에 대한 조언을 참조할 수 있다:
 

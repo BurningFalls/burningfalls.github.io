@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-01: Important concepts"
 excerpt: "A tour of the Dart language > 1. Important Concepts"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Important concepts
+# Important concepts
 
 > [Dart - Important concepts](https://dart.dev/guides/language/language-tour#important-concepts){: target="_blank"}
 
@@ -60,7 +60,7 @@ Dart 언어에 대해 배울 때, 다음 사실을 염두에 두어야 한다.
 
 * Dart tool은 warnings 와 errors 라는 두 가지 종류의 문제를 보고할 수 있다. Warning은 code가 작동하지 않을 수 있다는 표시일 뿐, program 실행을 막지는 않는다. Error는 compile-time 또는 run-time일 수 있다. compile-time error code는 코드 실행을 완전히 막는다. run-time-error는 code가 실행되는 동안 예외(exception)가 발생한다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 void main() {

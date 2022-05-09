@@ -2,7 +2,7 @@
 title: "[Dart] Dart-00: Install Dark SDK"
 excerpt: "Flutter를 배우기 위해 chocolatey를 사용하여 Dart SDK를 설치한다."
 date: 2022-04-19
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -17,11 +17,11 @@ tags:
 
 ---
 
-## Install Dart SDK
+# Install Dart SDK
+
+## 1. Install Chocolatey
 
 > [Dart - Install Chocolatey](https://docs.chocolatey.org/en-us/choco/setup){: target="_blank"}
-
-### 1. Install Chocolatey
 
 $\;1.\;$관리자 권한으로 cmd를 실행시켜, 웹사이트에 있는 Command를 입력한다.
 
@@ -56,7 +56,7 @@ choco --version
 choco upgrade chocolatey
 ```
 
-### 2. Install Dart SDK
+## 2. Install Dart SDK
 
 > [Get the Dart SDK](https://dart.dev/get-dart#install){: target="_blank"}
 

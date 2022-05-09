@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-14: Callable classes"
 excerpt: "A tour of the Dart language > 14. Callable classes"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Callable classes
+# Callable classes
 
 > [Dart - Callable classes](https://dart.dev/guides/language/language-tour#callable-classes){: target="_blank"}
 

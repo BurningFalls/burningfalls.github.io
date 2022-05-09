@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-04: Built-in types"
 excerpt: "A tour of the Dart language > 4. Built-in types"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Built-in types
+# Built-in types
 
 > [Dart - Built-in types](https://dart.dev/guides/language/language-tour#built-in-types){: target="_blank"}
 
@@ -61,7 +61,7 @@ Dart의 모든 변수는 객체(class의 instsance)를 참조하기 때문에, �
 
 `Object`, `Object?`, `Null`, `Never` class는 class 계층 구조에서 특별한 역할을 갖는다.
 
-### 1. Numbers
+## 1. Numbers
 
 Dart numbers는 두 가지 방식으로 제공된다.
 
@@ -135,7 +135,7 @@ const secondsUntilRetry = 5;
 const msUntilRetry = secondsUntilRetry * msPerSecond;
 ```
 
-### 2. Strings
+## 2. Strings
 
 Dart string(`String` 객체)은 일련의 UTF-16 code 단위를 보유한다. 작은따옴표(single quote)나 큰따옴표(double quote)를 사용하여 string을 만들 수 있다.
 
@@ -210,7 +210,7 @@ const validConstString = '$aConstNum $aConstBool $aConstString';
 // const invalidConstString = '$aNum $aBool $aString $aConstList';
 ```
 
-### 3. Booleans
+## 3. Booleans
 
 boolean 값을 나타내기 위해, Dart에는 `bool`이라는 type이 있다. bool type이 있는 객체는 두 개뿐이다: compile constant인 boolean literals `true`와 `false`
 
@@ -234,7 +234,7 @@ var iMeanToDoThis = 0 / 0;
 assert(iMeantToDoThis.isNaN);
 ```
 
-### 4. Lists
+## 4. Lists
 
 아마 모든 프로그래밍 언어에서 가장 일반적인 collection은 array(배열) 또는 정렬된 객체 그룹일 것이다. Dart에서, 배열은 `List` 객체이며, 이를 lists라 부른다.
 
@@ -307,7 +307,7 @@ var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
 assert(listOfString[1] == '#1');
 ```
 
-### 5. Sets
+## 5. Sets
 
 Dart의 set은 고유한 항목의 정렬되지 않은 collection이다. set에 대한 Dart 지원은 set literals 및 `Set` type에 의해 제공된다.
 
@@ -361,7 +361,7 @@ final constantSet = const {
 
 set는 list와 마찬가지로, spread operators(`...`와 `...?`), collection `if`, collection `for`를 지원한다.
 
-### 6. Maps
+## 6. Maps
 
 일반적으로, map은 key와 value를 연결하는 객체이다. key와 value 모두 모든 type의 객체가 될 수 있다. 각 key는 한 번만 발생하지만, 같은 value는 여러 번 사용할 수 있다. map에 대한 Dart의 지원은 map literal과 `Map` type으로 제공된다.
 
@@ -443,7 +443,7 @@ final constantMap = const {
 
 map은 list와 마찬가지로, spread operators(`...`와 `...?`), collection `if`, collection `for`를 지원한다.
 
-### 7. Runes and grapheme clusters
+## 7. Runes and grapheme clusters
 
 Dart에서, rune은 string의 Unicode code point를 노출한다. characters package를 사용하여 Unicode(확장) grapheme라고도 하는 user-perceived characters를 보거나 조작할 수 있다.
 
@@ -469,7 +469,7 @@ The end of the string: ???
 the last character: 🇩🇰
 ```
 
-### 8. Symbols
+## 8. Symbols
 
 `Symbol` 객체는 Dart program에서 선언된 연산자 또는 식별자를 나타낸다. symbol을 사용할 필요가 없을 수도 있지만, minification은 식별자 이름을 변경하지만 식별자 symbol은 변경하지 않기 때문에, 이름으로 식별자를 참조하는 API에는 매우 중요하다.
 

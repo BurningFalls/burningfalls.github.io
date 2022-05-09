@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-12: Asynchrony support"
 excerpt: "A tour of the Dart language > 12. Asynchrony support"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Asynchrony support
+# Asynchrony support
 
 > [Dart - Asynchrony support](https://dart.dev/guides/language/language-tour#asynchrony-support){: target="_blank"}
 
@@ -38,7 +38,7 @@ Dart library는 `Future` 또는 `Stream` 객체를 반환하는 함수로 가득
 
 `async` 및 `await` keyword는 비동기 programming을 지원하므로, 동기 code와 유사한 비동기 code를 작성할 수 있다.
 
-### 0. Example
+## 0. Example
 
 ```dart
 const oneSecond = Duration(seconds: 1);
@@ -85,7 +85,7 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
 }
 ```
 
-### 1. Handling Futures
+## 1. Handling Futures
 
 completed Future의 결과가 필요한 경우, 두 가지 option이 있다.
 
@@ -140,7 +140,7 @@ void main() async {
 
 > 앞의 예제에서는 결과를 기다리지 않고 `async` 함수 (`checkVersion()`)을 사용한다. code에서 함수 실행이 완료되었다고 가정하면 문제가 발생할 수 있다. 문제를 방지하려면, unawaited_futures linter rule을 사용한다.
 
-### 2. Declaring async functions
+## 2. Declaring async functions
 
 `async` 함수는 본문이 `async` modifier로 표시된 함수이다.
 
@@ -158,7 +158,7 @@ Future<String> lookUpVersion() async => '1.0.0';
 
 함수의 본문은 Future API를 사용할 필요가 없다. Dart는 필요한 경우 Future 객체를 생성한다. 함수가 유용한 값을 return 하지 않으면, return type을 `Future<void>`로 지정한다.
 
-### 3. Handling Streams
+## 3. Handling Streams
 
 Stream에서 값을 가져와야 하는 경우, 두 가지 option이 있다.
 

@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-06: Operators"
 excerpt: "A tour of the Dart language > 6. Operators"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Operators
+# Operators
 
 > [Dart - Functions](https://dart.dev/guides/language/language-tour#operators){: target="_blank"}
 
@@ -78,7 +78,7 @@ if (n % i == 0 && d % i == 0) ...
 
 > 두 개의 피연산자를 사용하는 연산자의 경우, 맨 왼쪽 피연산자가 사용되는 방법을  결정한다. 예를 들어 `Vector` 객체와 `Point` 객체가 있는 경우, `aVector + aPoint`는 `Vector` addition(`+`)를 사용한다.
 
-### 1. Arithmetic operators
+## 1. Arithmetic operators
 
 Dart는 다음 표와 같이 일반적인 산술 연산자를 지원한다.
 
@@ -137,7 +137,7 @@ b = a--;  // Decrement a AFTER b gets its value.
 assert(a != b);  // -1 != 0
 ```
 
-### 2. Equality and relational operators
+## 2. Equality and relational operators
 
 |Operator||Meaning|
 |:---|---|:---|
@@ -164,7 +164,7 @@ assert(3 >= 3);
 assert(2 <= 3);
 ```
 
-### 3. Type test operators
+## 3. Type test operators
 
 `as`, `is`, `is!` 연산자는 runtime에 type을 확인하는 데 편리하다.
 
@@ -193,7 +193,7 @@ if (employee is Person) {
 
 > code는 동일하지 않다. `employee`가 null이거나 `Person`이 아니면, 첫 번째 예시는 예외를 throw하지만 두 번째는 그렇지 않다.
 
-### 4. Assignment operators
+## 4. Assignment operators
 
 이미 보았듯이, `=` 연산자를 사용하여 값을 할당할 수 있다. 할당 대상 변수가 null인 경우에만, 할당하려면 `??=` 연산자를 사용한다.
 
@@ -227,7 +227,7 @@ a *= 3;     // Assign and multiply: a = a * 3
 assert(a == 6);
 ```
 
-### 5. Logical operators
+## 5. Logical operators
 
 |Operator||Meaning|
 |:---|:---|:---|
@@ -243,7 +243,7 @@ if (!done && (col == 0 || col == 3)) {
 }
 ```
 
-### 6. Bitwise and shift operators
+## 6. Bitwise and shift operators
 
 |Operator||Meaning|
 |:---|:---|:---|
@@ -274,7 +274,7 @@ assert((-value >>> 4) > 0);  // Unsigned Shift left
 
 > `>>>` 연산자(triple-shift 또는 unsigned shift라고 함)에는 최소 2.14의 language version이 필요하다.
 
-### 7. Conditional expressions
+## 7. Conditional expressions
 
 Dart에는 if-else문이 필요할 수 있는 expression을 간결하게 평가할 수 있는 두 개의 연산자가 있다.
 
@@ -310,7 +310,7 @@ String playerName(String? name) {
 }
 ```
 
-### 8. Cascade notation
+## 8. Cascade notation
 
 Cascades(`..`, `?..`)는 동일한 객체에 대해 일련의 작업을 수행할 수 있게 해준다. 함수 호출 외에도 동일한 객체의 field에 접근할 수도 있다. 이렇게 하면 임시 변수를 생성하는 단계를 줄일 수 있고, 보다 유동적인 코드를 작성할 수 있다.
 
@@ -377,7 +377,7 @@ sb.write('foo')
 
 > 엄밀히 말하면, cascade에 대한 "double dot" 표기법은 연산자가 아니다. 이것은 Dart syntax의 일부일 뿐이다.
 
-### 9. Other operators
+## 9. Other operators
 
 다른 예에서 나머지 연산자의 대부분을 보았다:
 

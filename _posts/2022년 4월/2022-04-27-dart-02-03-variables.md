@@ -2,7 +2,7 @@
 title: "[Dart] Dart-02-03: Variables"
 excerpt: "A tour of the Dart language > 3. Variables"
 date: 2022-04-27
-last_modified_at: 2022-04-28
+last_modified_at: 2022-05-09
 categories:
   - flutter
 tags:
@@ -30,7 +30,7 @@ tags:
 |Dart-02-17||**[Metadata](https://burningfalls.github.io/flutter/dart-02-17-metadata/)**|
 |Dart-02-18||**[Comments](https://burningfalls.github.io/flutter/dart-02-18-comments/)**|
 
-## Variables
+# Variables
 
 > [Dart - Variables](https://dart.dev/guides/language/language-tour#variables){: target="_blank"}
 
@@ -54,7 +54,7 @@ Object name = 'Bob';
 String name = 'Bob';
 ```
 
-### 0. Example
+## 0. Example
 
 ```dart
 var name = 'Voyager I';
@@ -67,7 +67,7 @@ var image = {
 };
 ```
 
-### 1. Default value
+## 1. Default value
 
 nullable type이 있는 초기화되지 않은 변수의 초기 값은 `null`이다. (만약 당신이 null safety를 선택하지 않았다면, 모든 변수는 nullable type이다.) Dart의 다른 모든 것과 마찬가지로 숫자는 객체이기 때문에, 숫자 type을 가진 변수도 처음에는 null이다.
 
@@ -100,7 +100,7 @@ print(lineCount);
 
 Top-level 변수나 class 변수는 느리게 초기화된다. 초기화 코드는 처음에 변수가 처음 사용될 때 실행된다.
 
-### 2. Late variables
+## 2. Late variables
 
 Dart 2.12에는 두 가지 case의 `late` modifier가 추가되었다.
 
@@ -134,7 +134,7 @@ void main() {
 late String temperature = _readThermometer(); // Lazily initialized.
 ```
 
-### 3. Final and const
+## 3. Final and const
 
 변수를 변경하지 않으려면, `var` 대신 또는 type에 추가하여, `final`이나 `const`를 사용한다. final 변수는 한 번만 설정할 수 있다. const 변수는 compile-time constant이다. (const 변수는 내재적으로 final이다.)
 
