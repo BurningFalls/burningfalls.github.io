@@ -1,8 +1,8 @@
 ---
 title: "[Dart] Dart-01-02: Dart Cheatsheet Codelab"
 excerpt: "Samples & tutorials > Codelabs > Language cheatsheet"
-date: 2022-04-19
-last_modified_at: 2022-05-09
+date: 2022-04-20
+last_modified_at: 2022-05-10
 categories:
   - flutter
 tags:
@@ -64,7 +64,7 @@ print(a);   // <-- Still prints 3.
 
 ```dart
 print(1 ?? 3);      // <-- Prints 1.
-print(null ? 12);   // <-- Prints 12.
+print(null ?? 12);   // <-- Prints 12.
 ```
 
 ## 4. Conditional property access
