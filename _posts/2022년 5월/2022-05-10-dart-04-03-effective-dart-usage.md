@@ -312,3 +312,76 @@ class UploadException {
 
 ## 4. Collections
 
+### A. DO use collection literals when possible.
+
+### B. DON’T use .length to see if a collection is empty.
+
+### C. AVOID using Iterable.forEach() with a function literal.
+
+### D. DON’T use List.from() unless you intend to change the type of the result.
+
+### E. DO use whereType() to filter a collection by type.
+
+### F. DON’T use cast() when a nearby operation will do.
+
+### G. AVOID using cast().
+
+## 5. Functions
+
+### A. DO use a function declaration to bind a function to a name.
+
+### B. DON’T create a lambda when a tear-off will do.
+
+### C. DO use = to separate a named parameter from its default value.
+
+## 6. Variables
+
+### A. DO follow a consistent rule for var and final on local variables.
+
+### B. AVOID storing what you can calculate.
+
+## 7. Members
+
+### A. DON’T wrap a field in a getter and setter unnecessarily.
+
+### B. PREFER using a final field to make a read-only property.
+
+### C. CONSIDER using => for simple members.
+
+### D. DON’T use this. except to redirect to a named constructor or to avoid shadowing.
+
+### E. DO initialize fields at their declaration when possible.
+
+## 8. Constructors
+
+### A. DO use initializing formals when possible.
+
+### B. DON’T use late when a constructor initializer list will do.
+
+### C. DON’T use new.
+
+### D. DON’T use const redundantly.
+
+## 9. Error handling
+
+### A. AVOID catches without on clauses.
+
+### B. DON’T discard errors from catches without on clauses.
+
+### C. DO throw objects that implement Error only for programmatic errors.
+
+### D. DON’T explicitly catch Error or types that implement it.
+
+### E. DO use rethrow to rethrow a caught exception.
+
+## 10. Asynchrony
+
+### A. PREFER async/await over using raw futures.
+
+### B. DON’T use async when it has no useful effect.
+
+### C. CONSIDER using higher-order methods to transform a stream.
+
+### D. AVOID using Completer directly.
+
+### E. DO test for Future<T> when disambiguating a FutureOr<T> whose type argument could be Object.
