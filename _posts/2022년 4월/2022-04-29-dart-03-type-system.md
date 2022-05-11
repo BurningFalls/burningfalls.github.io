@@ -2,12 +2,20 @@
 title: "[Dart] Dart-03: Type System"
 excerpt: ""
 date: 2022-04-29
-last_modified_at: 2022-04-29
+last_modified_at: 2022-05-11
 categories:
   - flutter
 tags:
   - dart
 ---
+
+|||Dart 배우기|
+|:---|:---|:---|
+|Dart-00||**[Install Dart SDK](https://burningfalls.github.io/flutter/dart-00-install-dart-sdk/)**|
+|Dart-01||**[Codelabs](https://burningfalls.github.io/flutter/dart-01-codelabs/)**|
+|Dart-02||**[Language Tour](https://burningfalls.github.io/flutter/dart-02-language-tour/)**|
+|Dart-03||**[Type System](https://burningfalls.github.io/flutter/dart-03-type-system/)**|
+|Dart-04||**[Effective Dart](https://burningfalls.github.io/flutter/dart-04-effective-dart/)**|
 
 # Type System
 
