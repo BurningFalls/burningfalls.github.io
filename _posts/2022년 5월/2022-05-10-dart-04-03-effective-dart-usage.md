@@ -9,6 +9,13 @@ tags:
   - dart
 ---
 
+|||[Dart-04: Effective Dart](https://burningfalls.github.io/flutter/dart-04-effective-dart)|
+|:---|:---|:---|
+|Dart-04-01||**[Effective Dart - Style](https://burningfalls.github.io/flutter/dart-04-01-effective-dart-style/)**|
+|Dart-04-02||**[Effective Dart - Documentation](https://burningfalls.github.io/flutter/dart-04-02-effective-dart-documentation/)**|
+|Dart-04-03||**[Effective Dart - Usage](https://burningfalls.github.io/flutter/dart-04-03-effective-dart-usage/)**|
+|Dart-04-04||**[Effective Dart - Design](https://burningfalls.github.io/flutter/dart-04-04-effective-dart-design/)**|
+
 # Effective Dart - Usage
 
 Dart code의 body에서 이 guideline을 매일 사용할 수 있다. 당신의 library user들은 당신이 여기에서 idea를 내면화했다고 말할 수 없을지 모르지만, 그것을 '유지'하는 사람들은 확실히 할 것이다.
