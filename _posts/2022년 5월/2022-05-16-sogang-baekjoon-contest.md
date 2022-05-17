@@ -2,7 +2,7 @@
 title: "[백준 대회] 2022 서강대학교 청정수컵 Open Contest 참가 후기 및 풀이"
 excerpt: "백준 대회 '2022 서강대학교 청정수컵 Open Contest'에 참가하여 문제를 푼 후기와 간단한 풀이 작성 및 상세 풀이 링크 연결"
 date: 2022-05-16
-last_modified_at: 2022-05-16
+last_modified_at: 2022-05-17
 categories:
   - contest
 tags:
@@ -145,7 +145,7 @@ $\displaystyle\sum_{k=1}^{N}{(k \times \frac{k\times (k+1)}{2} \times 2)}$ = $\d
 
 시그마를 풀어서 하나의 식으로 정리할 수도 있지만, 그러면 mod 계산이 복잡해지고 $N\leq 100,000$이므로, 그냥 for문으로 처리하면 된다.
 
-개수는 정확한 근거를 찾지 못했지만, $N!/times N!$이 답이라는 것을 얼떨결에 알아냈다. 이에 대한 정확한 해설은 공식 해설 pdf에 나와있다.
+개수는 정확한 근거를 찾지 못했지만, $N!\times N!$이 답이라는 것을 얼떨결에 알아냈다. 이에 대한 정확한 해설은 공식 해설 pdf에 나와있다.
 
 > [상세 풀이](https://burningfalls.github.io/algorithm/boj-25182/){: target="_blank"}
 
