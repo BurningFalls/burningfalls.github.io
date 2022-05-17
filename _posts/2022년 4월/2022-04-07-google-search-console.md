@@ -2,7 +2,7 @@
 title: "[Github Blog][Minimal-Mistakes][Google Search Console] Github blog를 Google 검색 엔진에 노출시키기"
 excerpt: "Github Blog(theme: minimal-mistakes)를 Google 검색 엔진에 노출시키기 위해 Google search console에 내 블로그를 등록한다."
 date: 2022-04-07
-last_modified_at: 2022-04-24
+last_modified_at: 2022-05-17
 categories:
   - blog
 tags:
@@ -182,3 +182,25 @@ Sitemap을 성공적으로 인식했기 때문에 색인 요청이 잘 진행되
 ![sitemap](https://user-images.githubusercontent.com/30232837/164980555-bc2c6cd9-2243-433b-9b6c-e30173a70347.png "sitemap"){: width="100%" height="100%"}{: .align-center}
 
 일단 색인 등록 상황을 좀더 지켜보기로 했다.
+
+---
+
+(2022.05.17)
+
+![sitemap](https://user-images.githubusercontent.com/30232837/168701532-4786bdfb-5b4d-44c4-926d-279fec918407.png "sitemap"){: width="100%" height="100%"}{: .align-center}
+
+1달 넘게 걸려 드디어 sitemap 등록 상태가 '성공'으로 변했다. 안그래도 페이지마다 일일이 색인을 생성해야하나 고민하고 있었는데, 2022/05/17 당일인 오늘 들어가보니 성공으로 되어있었다.
+
+그런데 색인 생성 범위를 보니, 30개만 성공하고 134개가 제외되었음을 확인할 수 있었다. 유형을 확인해보니 **발견됨-현재 색인이 생성되지 않음**이었다.
+
+![index](https://user-images.githubusercontent.com/30232837/168701909-4fd10add-8df6-409c-bee4-78617c46cbaf.png "index"){: width="100%" height="100%"}{: .align-center}
+
+![image](https://user-images.githubusercontent.com/30232837/168702008-7cbf93f9-f505-4157-a33b-002917fd8f3d.png)
+
+이에 대해 Search Console 고객센터에 조사해보니, **발견됨-현재 색인이 생성되지 않음** 상태는 다음과 같이 설명이 적혀있었다.
+
+> **발견됨-현재 색인이 생성되지 않음**: Google에서 페이지를 발견했지만, 페이지가 아직 크롤링되지 않았습니다. 일반적으로 Google에서 URL을 크롤링하려고 했지만, 이로 인해 사이트가 과부하 상태가 될 수 있기 때문에 Google에서 크롤링 일정을 변경한 경우입니다. 그렇기 때문에 보고서에 마지막 크롤링 날짜가 비어 있는 것입니다.
+
+아직 크롤링되지 않았다는 의미이기 때문에 좀더 기다려야 할 것 같다. 그런데, 마지막 크롤링 날짜는 등록되어 있어서 위의 문구와는 차이점이 있기도 해서 실패한 것인지 아직 안한 것인지 애매한 점이 있기는 하다.
+
+제외되지 않은 페이지를 몇 개 골라서 URL 테스트를 해봤는데, 페이지 자체는 색인 생성 가능으로 문제가 없었다. 그냥 일일이 134개를 색인 요청할 수도 있으나, 그냥 좀더 기다려보기로 했다.
