@@ -19,7 +19,7 @@ tags:
 |**H**||**[[BOJ 25214] 크림 파스타](https://burningfalls.github.io/algorithm/boj-25214/)**|
 |**I**||**[[BOJ 25215] 타이핑](https://burningfalls.github.io/algorithm/boj-25215/)**|
 
-![baekjoon-contest](https://user-images.githubusercontent.com/30232837/168502032-dc636bb4-4627-45e2-945e-eb7f795d2a0d.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
+![baekjoon-contest](https://user-images.githubusercontent.com/30232837/169756264-3e50d8ef-36ba-4e87-a0d0-0d85df888aa9.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
 
 ## 1. 대회 후기
 
