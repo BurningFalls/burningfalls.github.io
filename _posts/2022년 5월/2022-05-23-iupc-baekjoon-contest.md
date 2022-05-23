@@ -25,7 +25,7 @@ tags:
 
 적당히 풀 수 있는 난이도의 문제들은 전부 풀어낸 것 같아서 뿌듯했다. 다만, 자잘한 실수가 좀 있어서 WA를 여러 번 받은 것에 대해서는 아쉬웠다. 
 
-> [제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC)](https://www.acmicpc.net/category/detail/3124){: target="_blank"}
+> [2022 인하대학교 프로그래밍 경진대회(IUPC)](https://www.acmicpc.net/category/detail/3124){: target="_blank"}
 
 ## 2. 공식 풀이 링크
 
