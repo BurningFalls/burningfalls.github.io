@@ -2,7 +2,7 @@
 title: "[Dart] Dart-04-04: Effective Dart - Design"
 excerpt: ""
 date: 2022-05-11
-last_modified_at: 2022-05-13
+last_modified_at: 2022-05-23
 categories:
   - flutter
 tags:
@@ -1195,18 +1195,137 @@ Dart에서 optional parameter는 positional 또는 named가 될 수 있지만, �
 
 ### A. AVOID positional boolean parameters.
 
+다른 type과 달리, boolean은 일반적으로 literal 형식으로 사용된다. 숫자와 같은 값은 일반적으로 named constant로 wrapping되지만, 일반적으로 `true`와 `false`로 직접 전달한다. boolean 값이 무엇을 나타내는지 명확하지 않으면, call site를 읽을 수 없게 만들 수 있다.
+
+```dart
+// bad
+new Task(true);
+new Task(false);
+new ListBox(false, true, true);
+new Button(false);
+```
+
+대신, 호출이 수행하는 작업을 명확히 하기 위해 named argument, named constructor, named constant를 사용하는 것을 선호한다.
+
+```dart
+// good
+Task.oneshot();
+Task.repeating();
+ListBox(scroll: true, showScrollbars: true);
+Button(ButtonState.enabled);
+```
+
+이것이 이름이 값이 나타내는 것을 명확하게 하는 setter에는 적용되지 않는다.
+
+```dart
+// good
+listBox.canScroll = true;
+button.isEnabled = false;
+```
+
 ### B. AVOID optional positional parameters if the user may want to omit earlier parameters.
+
+optional positional parameter는 이전 parameter가 나중 parameter보다 더 자주 전달되도록 논리적으로 진행되어야 한다. 사용자는 이전 positional argument를 생략하기 위해 "hole"을 명시적으로 전달할 필요가 거의 없어야 한다. named argument를 사용하는 것이 좋다.
+
+```dart
+String.fromCharCodes(Iterable<int> charCodes, [int start = 0, int? end]);
+
+DateTime(int year,
+    [int month = 1,
+    int day = 1,
+    int hour = 0,
+    int minute = 0,
+    int second = 0,
+    int millisecond = 0,
+    int microsecond = 0]);
+
+Duration(
+    {int days = 0,
+    int hours = 0,
+    int minutes = 0,
+    int seconds = 0,
+    int milliseconds = 0,
+    int microseconds = 0});
+```
 
 ### C. AVOID mandatory parameters that accept a special “no argument” value.
 
+사용자가 논리적으로 parameter를 생략하는 경우, `null`, empty string, "did not pass"를 의미하는 다른 특별한 값을 pass하도록 강제하는 것 대신, parameter를 optional로 지정하여 parameter를 생략하도록 하는 것을 선호한다.
+
+parameter를 생략하는 것이, 더 간결하고, 사용자가 실제 값을 제공한다고 생각할 때, `null`과 같은 sentinel 값이 실수로 전달되는 bug를 방지하는 데 도움이 된다.
+
+```dart
+// good
+var rest = string.substring(start);
+```
+
+```dart
+// bad
+var rest = string.substring(start, null);
+```
+
 ### D. DO use inclusive start and exclusive end parameters to accept a range.
+
+사용자가 정수 indexing된 sequence에서 element 또는 item 범위를 선택할 수 있도록 하는 method 또는 function을 정의하는 경우, 첫 번째 항목을 참조하는 start index와 마지막 항목의 index보다 하나 더 큰 (optional일 수 있는) end index를 사용한다.
+
+이것은 동일한 작업을 수행하는 핵심 library와 일치한다.
+
+```dart
+// good
+[0, 1, 2, 3].sublist(1, 3) // [1, 2]
+'abcd'.substring(1, 3) // 'bc'
+```
+
+이러한 parameter는 일반적으로 이름이 지정되지 않기 때문에, 여기에서 일관성을 유지하는 것이 특히 중요하다. API가 끝점 대신 길이를 사용하는 경우, call site에서 차이가 전혀 표시되지 않는다.
 
 ## 8. Equality
 
+class에 대한 custom equality 동작을 구현하는 것은 까다로울 수 있다. 사용자는 객체가 일치해야 하는 equality가 작동하는 방식에 대해 깊은 직관을 가지고 있으며, hash table과 같은 collection type에는 요소가 따라야 할 미묘한 계약이 있다.
+
 ### A. DO override hashCode if you override ==.
+
+기본 hash code 구현은 identity hash를 제공한다: 일반적으로 두 객체가 정확히 동일한 객체인 경우에만, 동일한 hash code를 갖는다. 마찬가지로, `==`의 default 동작은 identity이다.
+
+`==`을 override하는 경우, class에서 "equal"한 것으로 간주되는 다른 객체가 있을 수 있음을 의미한다. 동일한 두 객체는 동일한 hash code를 가져야 한다. 그렇지 않으면, map 및 hash 기반 collection이 두 객체가 동일하다는 것을 인식하지 못한다.
 
 ### B. DO make your == operator obey the mathematical rules of equality.
 
+equivalence(등가 관계)는 다음과 같아야 한다.
+
+* Reflexive(재귀): `a == a`는 항상 `true`를 return 해야 한다.
+* Symmetric(대칭): `a == b`는 항상 `b == a`와 같은 것을 return 해야 한다.
+* Transitive(타동사): `a == b`와 `b == c`가 둘 다 `true`를 return 한다면, `a == c`도 그래야만 한다.
+
+`==`을 사용하는 사용자와 코드는 이러한 모든 법률을 준수해야 한다. class가 이러한 규칙을 따를 수 없다면, `==`는 표현하려는 작업에 대한 올바른 이름이 아니다.
+
 ### C. AVOID defining custom equality for mutable classes.
 
+`==`을 정의할 때, `hashCode`도 정의해야 한다. 둘 다 객체의 field를 고려해야 한다. 해당 field가 변경되면, 객체의 hash code가 변경될 수 있음을 의미한다.
+
+대부분의 hash 기반 collection은 이를 예상하지 않는다. 객체의 hash code가 영원히 동일할 것이라고 가정하고, 그렇지 않은 경우 예측할 수 없는 동작을 할 수 있다.
+
 ### D. DON’T make the parameter to == nullable.
+
+언어는 `null`이 자기 자신과만 동일하고 우변이 `null`이 아닌 경우에만 `==` method가 호출되도록 지정한다.
+
+```dart
+// good
+class Person {
+  final String name;
+  // ...
+
+  bool operator ==(Object other) => other is Person && name == other.name;
+}
+```
+
+```dart
+// bad
+class Person {
+  final String name;
+  // ...
+
+  bool operator ==(Object? other) => other != null && other is Person && name == other.name;
+}
+```
+
+> 아직 null safety로 이동되지 않은 코드에서는, `Object` type 표기법이 `null`을 허용한다. 그럼에도 불구하고 Dart는 `==` method를 호출하지 않고 `null`을 전달하므로, method body 내부에서 `null`을 처리할 필요가 없다.
