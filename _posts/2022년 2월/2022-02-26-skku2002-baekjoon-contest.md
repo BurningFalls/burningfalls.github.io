@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 성균관대학교 프로그래밍 경진대회 Open Contest](https://burningfalls.github.io/contest/2022-skku-baekjoon-contest/) 풀이|
+|||[2022 성균관대학교 프로그래밍 경진대회 Open Contest](https://burningfalls.github.io/contest/skku2002-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24523] 내 뒤에 나와 다른 수](https://burningfalls.github.io/algorithm/boj-24523/)**|
 |**B**||**[[BOJ 24524] 아름다운 문자열](https://burningfalls.github.io/algorithm/boj-24524/)**|

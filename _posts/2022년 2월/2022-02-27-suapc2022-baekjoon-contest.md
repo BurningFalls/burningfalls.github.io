@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회](https://burningfalls.github.io/contest/2022-suapc-baekjoon-contest/) 풀이|
+|||[2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회](https://burningfalls.github.io/contest/suapc2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24542] 튜터-튜티 관계의 수](https://burningfalls.github.io/algorithm/boj-24542/)**|
 |**C**||**[[BOJ 24544] 카카오뷰 큐레이팅 효용성 분석](https://burningfalls.github.io/algorithm/boj-24544/)**|

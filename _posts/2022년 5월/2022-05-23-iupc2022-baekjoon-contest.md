@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 인하대학교 프로그래밍 경진대회(IUPC)](https://burningfalls.github.io/contest/iupc-baekjoon-contest/) 풀이|
+|||[2022 인하대학교 프로그래밍 경진대회(IUPC)](https://burningfalls.github.io/contest/iupc2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 25205] 경로당펑크 2077](https://burningfalls.github.io/algorithm/boj-25205/)**|
 |**B**||**[[BOJ 25206] 너의 평점은](https://burningfalls.github.io/algorithm/boj-25206/)**|

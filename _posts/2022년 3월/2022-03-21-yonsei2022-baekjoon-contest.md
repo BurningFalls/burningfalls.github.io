@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 연세대학교 신학기맞이 프로그래밍 경진대회](https://burningfalls.github.io/contest/yonsei-baekjoon-contest/) 풀이|
+|||[2022 연세대학교 신학기맞이 프로그래밍 경진대회](https://burningfalls.github.io/contest/yonsei2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24723] 녹색거탑](https://burningfalls.github.io/algorithm/boj-24723/)**|
 |**B**||**[[BOJ 24724] 현대모비스와 함께하는 부품 관리](https://burningfalls.github.io/algorithm/boj-24724/)**|

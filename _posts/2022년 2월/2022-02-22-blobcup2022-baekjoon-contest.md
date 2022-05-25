@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[제 1회 블롭컵](https://burningfalls.github.io/contest/blobcup1-baekjoon-contest/) 풀이|
+|||[제 1회 블롭컵](https://burningfalls.github.io/contest/blobcup2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24498] blobnom](https://burningfalls.github.io/algorithm/boj-24498/)**|
 |**B**||**[[BOJ 24499] blobyum](https://burningfalls.github.io/algorithm/boj-24499/)**|

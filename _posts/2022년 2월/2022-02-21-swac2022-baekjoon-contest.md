@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 ICPC Sinchon Winter Algorithm Camp Contest](https://burningfalls.github.io/contest/2022-swac-baekjoon-contest/) 풀이|
+|||[2022 ICPC Sinchon Winter Algorithm Camp Contest](https://burningfalls.github.io/contest/swac2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24510] 시간복잡도를 배운 도도](https://burningfalls.github.io/algorithm/boj-24510/)**|
 |**B**||**[[BOJ 24509] 상품의 주인은?](https://burningfalls.github.io/algorithm/boj-24509/)**|

@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 서강대학교 청정수컵](https://burningfalls.github.io/contest/sogang-baekjoon-contest/) 풀이|
+|||[2022 서강대학교 청정수컵](https://burningfalls.github.io/contest/sogang2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 25175] 두~~부 두부 두부](https://burningfalls.github.io/algorithm/boj-25175/)**|
 |**B**||**[[BOJ 25176] 청정수열 (Easy)](https://burningfalls.github.io/algorithm/boj-25176/)**|

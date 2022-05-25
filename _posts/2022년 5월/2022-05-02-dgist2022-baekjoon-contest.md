@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 DGIST 현풍전산배 알고리즘 대회](https://burningfalls.github.io/contest/dgist-baekjoon-contest/) 풀이|
+|||[2022 DGIST 현풍전산배 알고리즘 대회](https://burningfalls.github.io/contest/dgist2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 25044] 에어컨](https://burningfalls.github.io/algorithm/boj-25044/)**|
 |**B**||**[[BOJ 25045] 비즈마켓](https://burningfalls.github.io/algorithm/boj-25045/)**|

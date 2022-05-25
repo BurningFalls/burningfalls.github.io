@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[2022 숭고한 연합 알고리즘 콘테스트 Open Contest](https://burningfalls.github.io/contest/skh-baekjoon-contest/) 풀이|
+|||[2022 숭고한 연합 알고리즘 콘테스트 Open Contest](https://burningfalls.github.io/contest/skh2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 24883] 자동완성](https://burningfalls.github.io/algorithm/boj-24883/)**|
 |**B**||**[[BOJ 24884] 장작 넣기](https://burningfalls.github.io/algorithm/boj-24884/)**|

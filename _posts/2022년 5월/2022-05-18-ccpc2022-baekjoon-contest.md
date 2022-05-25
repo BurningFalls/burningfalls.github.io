@@ -9,7 +9,7 @@ tags:
   - baekjoon-contest
 ---
 
-|||[제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC)](https://burningfalls.github.io/contest/ccpc-baekjoon-contest/) 풀이|
+|||[제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC)](https://burningfalls.github.io/contest/ccpc2022-baekjoon-contest/) 풀이|
 |:---:|:---:|:---|
 |**A**||**[[BOJ 25165] 영리한 아리의 포탈 타기](https://burningfalls.github.io/algorithm/boj-25165/)**|
 |**B**||**[[BOJ 25166] 배고픈 아리의 샌드위치 구매하기](https://burningfalls.github.io/algorithm/boj-25166/)**|
