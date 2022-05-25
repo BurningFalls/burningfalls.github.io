@@ -1,14 +1,12 @@
 ---
-title: "[BOJ 23825] 백준 23825번 - SASA 모형을 만들어보자"
-excerpt: "SASA Programming Contest 2021 Open Contest A번 - 백준 23825번 SASA 모형을 만들어보자 풀이"
+title: "[Baekjoon Contest] SASA Programming Contest 2021 Open Contest"
+excerpt: "백준 대회 'SASA Programming Contest 2021 Open Contest' 상세 풀이 링크"
 date: 2021-12-16
 last_modified_at: 2022-05-25
 categories:
-  - algorithm
+  - contest
 tags:
-  - boj-23000-23999
-  - c++
-  - mathematics
+  - baekjoon-contest
 ---
 
 |||[SASA Programming Contest 2021](https://burningfalls.github.io/contest/sasa2021-baekjoon-contest) 풀이|
@@ -23,23 +21,10 @@ tags:
 |**G**||**[[BOJ 23832] 서로소 그래프](https://burningfalls.github.io/algorithm/boj-23832/)**|
 |**J1**||**[[BOJ 23835] 어떤 우유의 배달목록 (Easy)](https://burningfalls.github.io/algorithm/boj-23835/)**|
 
-## 1. 문제
-$23825$. SASA 모형을 만들어보자 (SASA Programming Contest 2021 Open Contest A번)
+## 1. 대회 문제
 
-> [백준 23825번 - SASA 모형을 만들어보자 (https://www.acmicpc.net/problem/23825)](https://www.acmicpc.net/problem/23825){: target="_blank"}
+> [SASA Programming Contest 2021 문제](https://www.acmicpc.net/category/detail/2891){: target="_blank"}
 
-## 2. 풀이
+## 2. 공식 풀이 링크
 
-$S$ 두 개와 $A$ 두 개로 $SASA$를 만들 수 있으므로 $N$으로는 $N/2$개, $S$로는 $S/2$개만큼 $SASA$를 만들 수 있다. 따라서, $N/2$와 $S/2$의 최솟값을 구하면 된다.
-
-## 3. 채점 결과
-
-![boj-23825](https://user-images.githubusercontent.com/30232837/160951328-543ddc2c-bba8-4a24-90f2-a27dcc0f2d39.png "boj-23825"){: width="100%" height="100%"}{: .align-center}
-
-## 4. 회고
-
-.
-
-## 5. 코드
-
-<script src="https://gist.github.com/BurningFalls/f0d083d644c4dcad13774268d7a2ac39.js"></script>
+아직 기재 안됨
