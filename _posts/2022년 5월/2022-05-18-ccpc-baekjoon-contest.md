@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC) Open Contest 참가 후기 및 풀이"
+title: "[Baekjoon Contest] 제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC) Open Contest 참가 후기 및 풀이"
 excerpt: "백준 대회 '제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC) Open Contest'에 참가하여 문제를 푼 후기와 간단한 풀이 작성 및 상세 풀이 링크 연결"
 date: 2022-05-18
-last_modified_at: 2022-05-18
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

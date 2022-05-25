@@ -2,7 +2,7 @@
 title: "[Markdown] Github blog에 Markdown으로 이미지 게시, 크기 조절, 가운데 정렬"
 excerpt: "Markdown으로 github blog에 이미지 게시, 이미지 크기 조절, 이미지 가운데 정렬을 한다."
 date: 2022-03-22
-last_modified_at: 2022-03-24
+last_modified_at: 2022-05-25
 categories:
   - blog
 tags:

@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회 (SUAPC 2022 Winter) Open Contest"
+title: "[Baekjoon Contest] 2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회 (SUAPC 2022 Winter) Open Contest"
 excerpt: "백준 대회 '2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회 (SUAPC 2022 Winter) Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-27
-last_modified_at: 2022-04-20
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

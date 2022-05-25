@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 2022 인하대학교 프로그래밍 경진대회(IUPC) Open Contest 참가 후기 및 풀이"
+title: "[Baekjoon Contest] 2022 인하대학교 프로그래밍 경진대회(IUPC) Open Contest 참가 후기 및 풀이"
 excerpt: "백준 대회 '2022 인하대학교 프로그래밍 경진대회(IUPC) Open Contest'에 참가하여 문제를 푼 후기와 간단한 풀이 작성 및 상세 풀이 링크 연결"
 date: 2022-05-23
-last_modified_at: 2022-05-23
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

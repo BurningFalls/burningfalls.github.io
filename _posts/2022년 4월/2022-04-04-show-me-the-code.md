@@ -1,8 +1,8 @@
 ---
-title: "[SHOW ME THE CODE] WANTED 주관 코딩테스트 대회 SHOW ME THE CODE 1 참가 후기"
+title: "[Show me the code] WANTED 주관 코딩테스트 대회 SHOW ME THE CODE 1 참가 후기"
 excerpt: "WANTED 주관 코딩테스트 대회 'SHOW ME THE CODE'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-04-04
-last_modified_at: 2022-04-06
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

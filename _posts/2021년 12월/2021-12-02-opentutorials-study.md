@@ -1,8 +1,8 @@
 ---
-title: "[Web][Opentutorials] 생활코딩 찍먹하기"
+title: "[Opentutorials] 생활코딩 찍먹하기"
 excerpt: "생활코딩으로 웹 기술스택 익히기"
 date: 2021-12-02
-last_modified_at: 2022-03-25
+last_modified_at: 2022-05-25
 categories:
   - essay
 tags:

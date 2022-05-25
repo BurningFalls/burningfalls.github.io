@@ -1,8 +1,8 @@
 ---
-title: "[Github Blog][Minimal-Mistakes][Google Search Console] Github blog를 Google 검색 엔진에 노출시키기"
+title: "[Github Blog] Github blog를 Google 검색 엔진에 노출시키기"
 excerpt: "Github Blog(theme: minimal-mistakes)를 Google 검색 엔진에 노출시키기 위해 Google search console에 내 블로그를 등록한다."
 date: 2022-04-07
-last_modified_at: 2022-05-17
+last_modified_at: 2022-05-25
 categories:
   - blog
 tags:

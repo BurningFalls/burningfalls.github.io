@@ -1,8 +1,8 @@
 ---
-title: "[Pygame][Sokoban] pygame으로 push push 게임 만들기"
+title: "[Pygame] pygame으로 push push 게임 만들기"
 excerpt: "pygame module을 사용해 python으로 push push(sokoban) 게임을 만들었던 경험"
 date: 2021-12-03
-last_modified_at: 2022-03-25
+last_modified_at: 2022-05-25
 categories:
   - essay
 tags:

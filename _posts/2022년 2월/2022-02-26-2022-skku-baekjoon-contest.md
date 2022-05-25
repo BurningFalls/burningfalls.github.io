@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 2022 성균관대학교 프로그래밍 경진대회 Open Contest"
+title: "[Baekjoon Contest] 2022 성균관대학교 프로그래밍 경진대회 Open Contest"
 excerpt: "백준 대회 '2022 성균관대학교 프로그래밍 경진대회 Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-26
-last_modified_at: 2022-04-20
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

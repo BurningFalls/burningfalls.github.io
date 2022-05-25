@@ -1,8 +1,8 @@
 ---
-title: "[Github Blog][Minimal-mistakes][jekyll-paginate-v2] jekyll-paginate-v2로 Github Blog 여러 페이지에 paginate 적용시키기 - 추천 X"
+title: "[Github Blog] jekyll-paginate-v2로 Github Blog 여러 페이지에 paginate 적용시키기 - 추천 X"
 excerpt: "jekyll-paginate-v2로 각 category/tag별 페이지에 paginate를 적용시키려 했으나, github blog에 지원하지 않아 실패하였다. 따라서 이 방법은 추천하지 않으며, 내가 겪은 경험을 서술하는 글이다."
 date: 2022-04-18
-last_modified_at: 2022-04-18
+last_modified_at: 2022-05-25
 categories:
   - blog
 tags:

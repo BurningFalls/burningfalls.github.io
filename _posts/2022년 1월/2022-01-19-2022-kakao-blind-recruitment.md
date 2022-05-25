@@ -1,8 +1,8 @@
 ---
-title: "[프로그래머스 대회] 2022 KAKAO BLIND RECRUITMENT 문제 풀어보기"
+title: "[Programmers] 2022 KAKAO BLIND RECRUITMENT 문제 풀어보기"
 excerpt: "프로그래머스에 있는 2022 KAKAO BLIND RECRUITMENT 문제를 풀어본 소감 및 간단한 풀이 작성"
 date: 2022-01-19
-last_modified_at: 2022-04-16
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

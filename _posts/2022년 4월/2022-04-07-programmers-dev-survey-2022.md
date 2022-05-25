@@ -1,8 +1,8 @@
 ---
-title: "[Programmers][Dev-Survey] Programmers Dev Survey 2022 읽고 느낀점"
+title: "[Dev Survey] Programmers Dev Survey 2022 읽고 느낀점"
 excerpt: "Programmers Dev Survey 2022 읽고 느낀점을 적고, 새롭게 얻어간 용어 및 개념을 정리하였다."
 date: 2022-04-07
-last_modified_at: 2022-04-07
+last_modified_at: 2022-05-25
 categories:
   - essay
 tags:

@@ -1,8 +1,8 @@
 ---
-title: "[CODE TREE] CODE TREE 쌀랑해요 효도트리 코딩 퀴즈 참가 후기"
+title: "[Code Tree] CODE TREE 쌀랑해요 효도트리 코딩 퀴즈 참가 후기"
 excerpt: "codetree 쌀랑해요 효도트리 어버이날 코딩 퀴즈를 참가한 후기"
 date: 2022-05-09
-last_modified_at: 2022-05-10
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

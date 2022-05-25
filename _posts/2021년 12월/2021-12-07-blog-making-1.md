@@ -1,8 +1,8 @@
 ---
-title: "[Github blog][Minimal-mistakes] Minimal-mistakes 테마 Github blog 만들기 1"
+title: "[Github blog] Minimal-mistakes 테마 Github blog 만들기 1"
 excerpt: "minimal-mistakes 테마를 사용하여 github blog를 만드는 과정을 서술하였다."
 date: 2021-12-07
-last_modified_at: 2022-04-04
+last_modified_at: 2022-05-25
 categories:
   - blog
 tags:

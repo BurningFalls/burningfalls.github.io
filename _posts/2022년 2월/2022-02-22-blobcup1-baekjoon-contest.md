@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 제 1회 블롭컵"
+title: "[Baekjoon Contest] 제 1회 블롭컵"
 excerpt: "백준 대회 '제 1회 블롭컵'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-02-22
-last_modified_at: 2022-04-20
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:

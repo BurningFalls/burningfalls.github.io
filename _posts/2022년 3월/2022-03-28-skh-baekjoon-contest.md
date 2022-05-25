@@ -1,8 +1,8 @@
 ---
-title: "[백준 대회] 2022 숭고한 연합 알고리즘 콘테스트 Open Contest"
+title: "[Baekjoon Contest] 2022 숭고한 연합 알고리즘 콘테스트 Open Contest"
 excerpt: "백준 대회 '2022 숭고한 연합 알고리즘 콘테스트 Open Contest'에 참가하여 문제를 푼 소감과 간단한 풀이 작성"
 date: 2022-03-28
-last_modified_at: 2022-04-20
+last_modified_at: 2022-05-25
 categories:
   - contest
 tags:
