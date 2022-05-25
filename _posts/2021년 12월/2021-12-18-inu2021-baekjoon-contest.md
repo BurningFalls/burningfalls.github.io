@@ -1,15 +1,12 @@
 ---
-title: "[BOJ 23841] 백준 23841번 - 데칼코마니"
-excerpt: "INU 코드페스티벌 2021 Open Contest A번 - 백준 23841번 데칼코마니 풀이"
+title: "[Baekjoon Contest] INU 코드페스티벌 2021 Open Contest"
+excerpt: "백준 대회 'INU 코드페스티벌 2021 Open Contest' 상세 풀이 링크"
 date: 2021-12-18
 last_modified_at: 2022-05-25
 categories:
-  - algorithm
+  - contest
 tags:
-  - boj-23000-23999
-  - c++
-  - implementation
-  - string
+  - baekjoon-contest
 ---
 
 |||[INU 코드페스티벌 2021](https://burningfalls.github.io/contest/inu2021-baekjoon-contest) 풀이|
@@ -22,23 +19,10 @@ tags:
 |**G**||**[[BOJ 23847] INU 막대기](https://burningfalls.github.io/algorithm/boj-23847/)**|
 |**H**||**[[BOJ 23848] 등비수열의 합](https://burningfalls.github.io/algorithm/boj-23848/)**|
 
-## 1. 문제
-$23841$. 데칼코마니 (INU 코드페스티벌 2021 Open Contest A번)
+## 1. 대회 문제
 
-> [백준 23841번 - 데칼코마니 (https://www.acmicpc.net/problem/23841)](https://www.acmicpc.net/problem/23841){: target="_blank"}
+> [INU 코드페스티벌 2021 문제](https://www.acmicpc.net/category/detail/2892){: target="_blank"}
 
-## 2. 풀이
+## 2. 공식 풀이 링크
 
-문제 그대로 수행하면 된다.
-
-## 3. 채점 결과
-
-![boj-23841](https://user-images.githubusercontent.com/30232837/160956283-4e880e8e-d30a-4acb-9694-a011e402a1bf.png "boj-23841"){: width="100%" height="100%"}{: .align-center}
-
-## 4. 회고
-
-.
-
-## 5. 코드
-
-<script src="https://gist.github.com/BurningFalls/8a108b2169931ad292bb0d986249c639.js"></script>
+아직 기재 안됨
