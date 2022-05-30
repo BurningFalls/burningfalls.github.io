@@ -45,7 +45,7 @@ tags:
 
 그러나, 예를 들어 다음과 같은 링크를 살펴보자. 깃헙의 커밋 url을 가져온 것이다.
 
-`https://github.com/BurningFalls/burningfalls.github.io/commit/2df07d8958303396ddb85f3786d1c90e609ec89e`
+![commit](https://user-images.githubusercontent.com/30232837/170902735-a21c8ecf-1f67-413f-af2d-697ad12785a3.png "commit"){: width="100%" height="100%"}{: .align-center}
 
 첫 번째 방식으로 작성하면 다음과 같다.
 
