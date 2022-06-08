@@ -16,9 +16,6 @@ tags:
 |**C**||**[[BOJ 25240] 가희와 파일 탐색기 2](https://burningfalls.github.io/algorithm/boj-25240/)**|
 |**D**||**[[BOJ 25243] 가희와 중부내륙선](https://burningfalls.github.io/algorithm/boj-25243/)**|
 
-![baekjoon-contest](https://user-images.githubusercontent.com/30232837/169756264-3e50d8ef-36ba-4e87-a0d0-0d85df888aa9.png "baekjoon-contest"){: width="100%" height="100%"}{: .align-center}
-사진 바꿔야 함
-
 ## 1. 대회 후기
 
 구현 난이도가 어마어마하게 높았다. string을 key로 써야하는 문제여서 c++로 구현했기 때문에 map의 사용이 필수불가결했다. 파이썬 dictionary를 사용하면 좀더 간편했을 것 같아서 python으로 푸는 것을 의도하고 낸 것 같은 느낌도 받았다. 예전에도 string을 key로 하는 python으로 풀면 편한 문제를 몇 개 만난 적 있었다.
