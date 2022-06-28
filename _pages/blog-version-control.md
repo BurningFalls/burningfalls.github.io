@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.1.0
+
+* minimal-mistakes skin을 "mint"에서 "dark"로 변경
+
 ### 1.0.0
 
 * Sitemap 등록 성공 (2022/05/17)
