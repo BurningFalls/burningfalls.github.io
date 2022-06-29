@@ -9,14 +9,14 @@
   {% assign tags_sorted = page.tags | sort_natural %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+    <span style="font-size: 14pt"><strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong></span>
     <span itemprop="keywords">
     {% assign cnt = 0 %}
     {% for tag_word in tags_sorted %}
       {% if cnt == 0 %}
-        <a href="{{ tag_word | slugify | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+        <a href="{{ tag_word | slugify | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag" style="font-size: 14pt">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
       {% else %}
-        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+        <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag" style="font-size: 14pt">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
       {% endif %}
       {% assign cnt = cnt | plus: 1 %}
     {% endfor %}
