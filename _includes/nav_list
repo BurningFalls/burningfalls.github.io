@@ -17,12 +17,12 @@
       <li>
         {% if nav.url %}
           {% if cattotal == 0 %}
-            <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+            <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title" style="font-size: 12pt">{{ nav.title }}</span></a>
           {% else %}
-            <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }} ({{cattotal}})</span></a>
+            <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title" style="font-size: 12pt">{{ nav.title }} ({{cattotal}})</span></a>
           {% endif %}
         {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
+          <span class="nav__sub-title" style="font-size: 12pt">{{ nav.title }}</span>
         {% endif %}
 
         {% if nav.children != null %}
@@ -34,7 +34,7 @@
                 {% assign tagtotal = tagtotal | plus: tag[1].size %}
               {% endif %}
             {% endfor %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }} ({{tagtotal}})</a></li>
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %} style="font-size: 10pt">{{ child.title }} ({{tagtotal}})</a></li>
           {% endfor %}
         </ul>
         {% endif %}
