@@ -14,6 +14,14 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.2.0
+
+* scrollbar 제거
+
+* navigation list 글자 크기 확대 (categories: 12pt, tags: 10pt)
+
+* category list, tag list, page date 글자 크기 확대 (14pt)
+
 ### 1.1.0
 
 * minimal-mistakes skin을 "mint"에서 "dark"로 변경
