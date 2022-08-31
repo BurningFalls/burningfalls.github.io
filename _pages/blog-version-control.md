@@ -14,6 +14,14 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.3.0
+
+* 'WEB' category 추가
+
+* 'WEB'의 'django' tag 추가
+
+* navigation과 sidebar에 해당 category, tag 추가
+
 ### 1.2.0
 
 * scrollbar 제거

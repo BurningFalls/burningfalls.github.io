@@ -12,6 +12,8 @@ main:
     url: /categories/essay
   - title: "Flutter"
     url: /categories/flutter
+  - title: "Web"
+    url: /categories/web
 
 # documentation links
 posts:
@@ -75,6 +77,13 @@ posts:
     - title: "dart"
       tag: "dart"
       url: /tags/dart
+- title: Web
+  category: web
+  url: categories/web
+  children:
+    - title: "django"
+      tag: "django"
+      url: /tags/django
 - title: Version
   url: /version
     
