@@ -22,4 +22,6 @@ tags:
 
 궁극적으로 tool 자체가 아니라, 사용 사례와 상황에 따라 결정된다. 따라서 어떤 패턴도 본질적으로 더 낫지 않지만, 당면한 문제에 어떤 패턴이 적합한지 결정해야 한다.
 
+---
+
 [참고 사이트](https://www.interviewbit.com/blog/framework-vs-library/)
