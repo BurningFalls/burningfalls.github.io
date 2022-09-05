@@ -30,19 +30,19 @@ Model과 View를 이어준다. 요청에 따라 Model에게 적절한 로직을 
 
 이와 비슷하게 Django에서는 MTV(Model, Template, View) pattern을 사용한다.
 
-1. Model (MVC - Model)
+### 1. Model (MVC - Model)
 
 database에 저장되는 데이터를 의미한다. Model은 Class로 정의되며, 하나의 Class가 하나의 DB Table이다. 
 
 Django는 SQL을 몰라도 DB작업을 가능하게 해주는 ORM(Object-Relational Mapping)을 제공한다.
 
-2. Template (MVC - View)
+### 2. Template (MVC - View)
 
 유저에게 보여지는 화면(html)을 의미한다. 
 
 Django는 자체적인 Django Template 문법을 지원하며, 이 문법 덕분에 html 파일 내에서 context로 받은 데이터를 활용할 수 있다.
 
-3. View (MVC - Controller)
+### 3. View (MVC - Controller)
 
 요청에 따라 적절한 로직을 수행하여 결과를 Template으로 rendering하며 응답한다.
 

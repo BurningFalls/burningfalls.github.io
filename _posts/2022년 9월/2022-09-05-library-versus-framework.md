@@ -20,6 +20,8 @@ tags:
 |개발자는 components, classes, methods를 사용하여 특정 작업을 수행하기 위해 library를 호출할 수 있다|framework는 이미 일반적인 작업을 수행하기 위한 코드를 제공하고, 사용자 지정 기능을 위해 개발자가 제공한 코드를 사용한다|
 |JQuery, React JS, etc.|Spring, NodeJS, AngularJS, VueJS, etc.|
 
+<br>
+
 궁극적으로 tool 자체가 아니라, 사용 사례와 상황에 따라 결정된다. 따라서 어떤 패턴도 본질적으로 더 낫지 않지만, 당면한 문제에 어떤 패턴이 적합한지 결정해야 한다.
 
 ---
