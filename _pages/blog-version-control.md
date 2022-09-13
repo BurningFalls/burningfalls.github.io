@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.3.1
+
+* sidebar "POSTS BY CATEGORY", "POSTS BY TAG" 삭제
+
 ### 1.3.0
 
 * 'WEB' category 추가

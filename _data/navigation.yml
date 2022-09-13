@@ -17,10 +17,6 @@ main:
 
 # documentation links
 posts:
-- title: Posts by Category
-  url: /categories
-- title: Posts by Tag
-  url: /tags
 - title: Algorithm
   category: algorithm
   url: /categories/algorithm
