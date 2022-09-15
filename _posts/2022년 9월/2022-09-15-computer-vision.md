@@ -11,7 +11,7 @@ tags:
 
 ## Computer Vision in Kakao Enterprise (lecturer: Jongju Shin)
 
-### KAKAO ENTERPRISE
+### 1. KAKAO ENTERPRISE
 
 MANIFESTO: CONNECT + SOLVE + CREATE + AI
 
@@ -23,7 +23,7 @@ digital transformation
 
 KAKAO I: 카카오엔터프라이즈가 보유한 AI기술의 집합체
 
-### AI Lab & Service
+### 2. AI Lab & Service
 
 서비스의 핵심이 되는 AI 기술 연구와 자체 서비스 개발을 담당함
 
@@ -35,7 +35,7 @@ KAKAO I: 카카오엔터프라이즈가 보유한 AI기술의 집합체
 
 꾸준한 R&D 투자로 현재 글로벌 최고 성능을 의미하는 SOTA 기술을 다수 보유함
 
-### 얼굴인식
+### 3. 얼굴인식
 
 detection -> alignment -> normalizatoin -> recognition
 
@@ -57,7 +57,7 @@ Service - 다음 라이브픽 서비스: 다음(Daum) 이미지 검색으로 유
 
 Service - 뉴스 클러스터링: 동시에 올라오는 다량의 뉴스에 대해서 클러스터링하여 하나의 주제로 묶어줌
 
-### 워크스루
+### 4. 워크스루
 
 얼굴 인식 기술로 마스크를 쓴 상태에서도 사내에서 출입 통제 시스템으로 사용함
 
@@ -77,7 +77,7 @@ Service - 뉴스 클러스터링: 동시에 올라오는 다량의 뉴스에 대
 
 다른 사람의 사진(사원증)으로 인식 시도(anti-spoofing)를 막아야 함
 
-### FRVT (Face Recognition Vendor Test)
+### 5. FRVT (Face Recognition Vendor Test)
 
 미국 NIST에서 주최하는 얼굴 인식 프로그램(verification)의 성능 평가
 
