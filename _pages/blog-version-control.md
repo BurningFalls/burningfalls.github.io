@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.5.0
+
+* 네이버 검색엔진 등록
+
 ### 1.4.0
 
 * minimal-mistakes skin을 "dark"에서 "mint"로 변경
