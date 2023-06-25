@@ -37,7 +37,7 @@ BERT를 사용한 감정 분석 fine-tuning을 위해, 문장과 문장의 감�
 
 아래는 Excel 데이터를 Pandas의 `read_excel` 함수를 통해 Dataframe 형태로 바꾼 데이터셋의 일부이다.
 
-![dataset_sample](https://github.com/BurningFalls/algorithm-study/assets/30232837/8d3d34f8-d754-4394-84c0-68b196e40a73){: width="70%" height="70%"}{: .align-center}
+![dataset_sample](https://github.com/BurningFalls/algorithm-study/assets/30232837/8d3d34f8-d754-4394-84c0-68b196e40a73){: width="100%" height="100%"}{: .align-center}
 
 ### 2.2 결측값 및 중복 샘플 제거
 
@@ -56,23 +56,23 @@ dataset = drop_na_and_duplilcates(dataset, dataset.colums[0])
 
 이렇게 정제한 후의 결과로는 **총 144,723개의 데이터**가 남았다. 이는 충분한 양의 데이터로, 신뢰성 있는 감정 분석 모델의 학습에 적합하다고 할 수 있다. 데이터의 품질을 향상시키고 정확한 분석 결과를 얻기 위해, 결측값과 중복 샘플을 처리한 과정은 매우 중요했다.
 
-![dataset_count](https://github.com/BurningFalls/algorithm-study/assets/30232837/655c9bdf-ed20-481f-bf5f-f79fc79ade92){: width="70%" height="70%"}{: .align-center}
+![dataset_count](https://github.com/BurningFalls/algorithm-study/assets/30232837/655c9bdf-ed20-481f-bf5f-f79fc79ade92){: width="100%" height="100%"}{: .align-center}
 
 ### 2.3 라벨링 데이터와의 조인
 
 `sub_sentiment`, 즉, 감정 소분류는 총 **58개의 감정을 포함**하고 있다. 이 58개의 감정은 아래 사진에 나와 있는 것과 동일하다. 각각의 감정은 1,500~2,500개의 데이터로 골고루 분포되어 있다.
 
-![sentiment_count](https://github.com/BurningFalls/algorithm-study/assets/30232837/473c682e-fbd7-405f-a99f-2ad53c335c83){: width="70%" height="70%"}{: .align-center}
+![sentiment_count](https://github.com/BurningFalls/algorithm-study/assets/30232837/473c682e-fbd7-405f-a99f-2ad53c335c83){: width="100%" height="100%"}{: .align-center}
 
-![sentiments](https://github.com/BurningFalls/algorithm-study/assets/30232837/a60eeabe-54f0-454d-9539-70eb74844eef){: width="70%" height="70%"}{: .align-center}
+![sentiments](https://github.com/BurningFalls/algorithm-study/assets/30232837/a60eeabe-54f0-454d-9539-70eb74844eef){: width="100%" height="100%"}{: .align-center}
 
 BERT Classification을 위해 분류를 숫자로 변환해야 했다. 따라서, 감정을 숫자로 라벨링하기 위해, 0부터 57까지의 라벨로 지정한 labeling Dataframe과 앞서 만든 dataset Dataframe을 Join 했다. dataset의 sub_sentiment 열과 labeling의 sentiment 열을 기준으로 조인해서, **[sentiment, label] 데이터프레임을 완성**시켰다. 아래는 데이터셋의 일부이다.
 
-![dataset_sample](https://github.com/BurningFalls/algorithm-study/assets/30232837/b59db656-1471-42af-be20-13e8b82c6429){: width="70%" height="70%"}{: .align-center}
+![dataset_sample](https://github.com/BurningFalls/algorithm-study/assets/30232837/b59db656-1471-42af-be20-13e8b82c6429){: width="100%" height="100%"}{: .align-center}
 
 ### 2.4 최대 문장 길이 설정
 
-![max_seq_len](https://github.com/BurningFalls/algorithm-study/assets/30232837/b8e7e770-5f86-42e3-9fa8-8d4b924742b5){: width="70%" height="70%"}{: .align-center}
+![max_seq_len](https://github.com/BurningFalls/algorithm-study/assets/30232837/b8e7e770-5f86-42e3-9fa8-8d4b924742b5){: width="100%" height="100%"}{: .align-center}
 
 BERT에서는 `최대 문장 길이(max sequence length: max_seq_len)`를 일반적으로 64, 128, 256 등으로 설정한다. 이 데이터셋에서 가장 긴 문장의 길이는 156이다. 그러나, 길이가 128 초과 256 미만인 문장은 세 개로 매우 적다. 이에 따라, max_seq_len을 256으로 설정하면 padding이 많아져 메모리 사용량이 증가하고 성능도 저하될 수 있다. 그래서 **적절하게 128로 설정**했다. 
  
@@ -107,7 +107,7 @@ BERT fine-tuning에 사용할 데이터셋은 총 144,723개의 데이터로 구
 
 데이터가 감정별로 정렬되어 있었기 때문에 데이터를 무작위로 섞는 작업이 필요했다. 따라서, 특정 하이퍼파라미터 값을 변경하면서 최적의 값을 찾는 실험을 수행하고 일관성 있는 실험 결과를 얻기 위해 `random_state = 0`으로 설정했다.
 
-![dataset_split](https://github.com/BurningFalls/algorithm-study/assets/30232837/8dfd7afa-89e2-436e-8c30-7bd59f49a16c){: width="70%" height="70%"}{: .align-center}
+![dataset_split](https://github.com/BurningFalls/algorithm-study/assets/30232837/8dfd7afa-89e2-436e-8c30-7bd59f49a16c){: width="100%" height="100%"}{: .align-center}
 
 ### 2.6 데이터셋 토크나이즈
 
@@ -161,43 +161,43 @@ model.fit(
 
 최종적으로 전처리를 거친 train_dataset과 val_dataset, 불러온 모델, 정의한 callback을 활용하여 **model.fit()으로 모델을 훈련했다. epoch은 3으로 설정하고, batch size는 64로 설정했다.** epoch와 batch에 따른 결과 분석은 후술할 예정이다. 아래는 모델 훈련 결과 중 하나의 예시이다.
 
-![model_training](https://github.com/BurningFalls/algorithm-study/assets/30232837/e164303f-e760-49f6-9207-8214628272c8){: width="70%" height="70%"}{: .align-center}
+![model_training](https://github.com/BurningFalls/algorithm-study/assets/30232837/e164303f-e760-49f6-9207-8214628272c8){: width="100%" height="100%"}{: .align-center}
 
 아래 내용은 **최적의 하이퍼파라미터 설정을 위해 값을 조정하면서 모델을 학습**시켰을 때의 분석 결과이다. `validation loss`가 감소하다가 증가하기 시작하는 시점에서 `overfitting`이 발생하므로, 해당 지점의 `validation accuracy`를 결과값으로 설정했다.
 
 ### 3.1 학습률 설정
 
-![01-graph-bs-64-lr-5e3](https://github.com/BurningFalls/algorithm-study/assets/30232837/5cbd33d7-c9ab-4bd8-acd4-332e9a6c0fb6){: width="70%" height="70%"}{: .align-center}
+![01-graph-bs-64-lr-5e3](https://github.com/BurningFalls/algorithm-study/assets/30232837/5cbd33d7-c9ab-4bd8-acd4-332e9a6c0fb6){: width="100%" height="100%"}{: .align-center}
 
-![02-graph-bs-64-lr-1e3](https://github.com/BurningFalls/algorithm-study/assets/30232837/5807fe41-c834-40bc-95ff-321774c457ec){: width="70%" height="70%"}{: .align-center}
+![02-graph-bs-64-lr-1e3](https://github.com/BurningFalls/algorithm-study/assets/30232837/5807fe41-c834-40bc-95ff-321774c457ec){: width="100%" height="100%"}{: .align-center}
 
-![03-graph-bs-64-lr-1e4](https://github.com/BurningFalls/algorithm-study/assets/30232837/5d59aa05-d5cb-4351-9ae0-5351549e711f){: width="70%" height="70%"}{: .align-center}
+![03-graph-bs-64-lr-1e4](https://github.com/BurningFalls/algorithm-study/assets/30232837/5d59aa05-d5cb-4351-9ae0-5351549e711f){: width="100%" height="100%"}{: .align-center}
 
-![04-graph-bs-64-lr-5e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/93a6924c-0300-4dcd-815e-156d99df85f9){: width="70%" height="70%"}{: .align-center}
+![04-graph-bs-64-lr-5e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/93a6924c-0300-4dcd-815e-156d99df85f9){: width="100%" height="100%"}{: .align-center}
 
-![05-graph-bs-64-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/3a712d4f-71c4-4063-a206-128c6e74aaa8){: width="70%" height="70%"}{: .align-center}
+![05-graph-bs-64-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/3a712d4f-71c4-4063-a206-128c6e74aaa8){: width="100%" height="100%"}{: .align-center}
 
-![06-graph-bs-64-lr-1e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/ef9426c8-536a-4e4f-b830-0f7727a542bc){: width="70%" height="70%"}{: .align-center}
+![06-graph-bs-64-lr-1e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/ef9426c8-536a-4e4f-b830-0f7727a542bc){: width="100%" height="100%"}{: .align-center}
 
-![07-graph-bs-64-lr-5e6](https://github.com/BurningFalls/algorithm-study/assets/30232837/da78490e-0f78-4eeb-9322-dc2e1ad4ac20){: width="70%" height="70%"}{: .align-center}
+![07-graph-bs-64-lr-5e6](https://github.com/BurningFalls/algorithm-study/assets/30232837/da78490e-0f78-4eeb-9322-dc2e1ad4ac20){: width="100%" height="100%"}{: .align-center}
 
-![08-graph-bs-64-lr-1e6](https://github.com/BurningFalls/algorithm-study/assets/30232837/e1db206b-4701-4c9f-8dc4-86f3d80e111b){: width="70%" height="70%"}{: .align-center}
+![08-graph-bs-64-lr-1e6](https://github.com/BurningFalls/algorithm-study/assets/30232837/e1db206b-4701-4c9f-8dc4-86f3d80e111b){: width="100%" height="100%"}{: .align-center}
 
-![10-graph-bs-64](https://github.com/BurningFalls/algorithm-study/assets/30232837/d852c64e-adc7-4dff-a80a-566624af67be){: width="70%" height="70%"}{: .align-center}
+![10-graph-bs-64](https://github.com/BurningFalls/algorithm-study/assets/30232837/d852c64e-adc7-4dff-a80a-566624af67be){: width="100%" height="100%"}{: .align-center}
 
 다른 모든 파라미터를 고정시킨채로 `learning rate`만 변화시켜서 `epoch=10`으로 모델을 학습시켰다. 결과적으로 **learning rate가 2e-5일 때 accuracy가 0.2341로 가장 높음을 확인**할 수 있었다. 이를 토대로 최종적으로 `learning rate` 값을 `2e-5`로 설정했다. 추가적으로, 10 이후의 epoch에서는 유의미한 변화가 발견되지 않았으므로, 최대 epoch을 10으로 설정했다.
 
 ### 3.2 배치 사이즈 설정
 
-![11-graph-bs-16-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/abaae11a-c988-4aeb-abc2-36002943e0ce){: width="70%" height="70%"}{: .align-center}
+![11-graph-bs-16-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/abaae11a-c988-4aeb-abc2-36002943e0ce){: width="100%" height="100%"}{: .align-center}
 
-![12-graph-bs-32-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/2ea0ab87-cc1a-4085-9c34-1efd1f2bb297){: width="70%" height="70%"}{: .align-center}
+![12-graph-bs-32-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/2ea0ab87-cc1a-4085-9c34-1efd1f2bb297){: width="100%" height="100%"}{: .align-center}
 
-![13-graph-bs-64-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/6c8ea17a-56a5-4499-9498-8735aaaac4d0){: width="70%" height="70%"}{: .align-center}
+![13-graph-bs-64-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/6c8ea17a-56a5-4499-9498-8735aaaac4d0){: width="100%" height="100%"}{: .align-center}
 
-![14-graph-bs-128-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/d989201a-7ada-4410-b6f0-ab1ff7459a4e){: width="70%" height="70%"}{: .align-center}
+![14-graph-bs-128-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/d989201a-7ada-4410-b6f0-ab1ff7459a4e){: width="100%" height="100%"}{: .align-center}
 
-![15-graph-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/ab8fd8ae-2f0a-4de0-bcf9-288ac83f659c){: width="70%" height="70%"}{: .align-center}
+![15-graph-lr-2e5](https://github.com/BurningFalls/algorithm-study/assets/30232837/ab8fd8ae-2f0a-4de0-bcf9-288ac83f659c){: width="100%" height="100%"}{: .align-center}
 
 다른 모든 파라미터를 고정시킨채로 `batch size`만 변화시켜서 `epoch=10`으로 모델을 학습시켰다. 결과적으로 **batch size가 64일 때 accuracy가 0.2341로 가장 높음을 확인**할 수 있었다. 이를 바탕으로 최종적으로 `batch size` 값을 `64`로 설정했다. 추가적으로, 10 이후의 epoch에서는 유의미한 변화가 발견되지 않았으므로, 최대 epoch을 10으로 설정했다.
 
@@ -211,7 +211,7 @@ model.fit(
 
 이에 따라, **실제로 결과 값을 확인해본 결과, BERT 모델이 상당히 합리적인 감정 출력을 제공함을 확인할 수 있었다.** 아래는 최종 모델을 사용하여 도출해낸 결과 값인, 문장에서 추출한 감정의 예시이다.
 
-![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/1b2c5595-9b87-4abc-aec1-5c286de8bcb3){: width="70%" height="70%"}{: .align-center}
+![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/1b2c5595-9b87-4abc-aec1-5c286de8bcb3){: width="100%" height="100%"}{: .align-center}
 
 위 내용을 종합해보면, fine-tuning한 BERT 모델이 다양한 감정 분류 작업에서 상당히 신뢰할만한 성능을 보여주었다고 할 수 있다.
 
@@ -224,7 +224,7 @@ tokenizer.save_pretrained(MODEL_SAVE_PATH)
 
 모델을 저장하기 위해 `model.save_pretrained()`와 `tokenizer.save_pretrained()` 함수를 사용했다. **저장한 모델은 다음과 같은 형태로 저장되었다.**
 
-![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/13c39ec2-ea4c-4980-a7d1-a5998add0809){: width="70%" height="70%"}{: .align-center}
+![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/13c39ec2-ea4c-4980-a7d1-a5998add0809){: width="100%" height="100%"}{: .align-center}
 
 1. `vocab.txt`: 이 파일은 BERT 모델이 이해하고 처리할 수 있는 모든 단어와 토큰들의 목록을 담고 있다. 모델 학습 과정에서 사용된 어휘와 인덱스 매핑 정보가 포함되어 있다.
 
@@ -267,7 +267,7 @@ predicted_score = result[0]['score']
 
 앞서 분리해서 만든 테스트 데이터셋(28945개)을 입력으로 사용해서, 이전에서 생성한 파이프라인을 사용하여 모델의 예측을 수행한다. 아래는 일부 예시이다.
 
-![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/737d3693-59a6-4560-b037-36b9f48aca6e){: width="70%" height="70%"}{: .align-center}
+![predict_examples](https://github.com/BurningFalls/algorithm-study/assets/30232837/737d3693-59a6-4560-b037-36b9f48aca6e){: width="100%" height="100%"}{: .align-center}
 
 위와 같이 **텍스트를 입력으로 주고, 모델은 해당 문장의 클래스 레이블과 예측 점수를 출력한다. 이를 통해, 모델이 주어진 문장에 대해 어떤 감정을 예측하는지 확인할 수 있다.**
 
@@ -275,7 +275,7 @@ predicted_score = result[0]['score']
 
 모델을 평가하기 위해 `sklearn.metric` 라이브러리의 `classification_report` 함수를 사용했다. 이 함수를 사용하여 이전에서 도출된 결과를 각각 `y_true`와 `y_pred`에 대입시켜 평가 결과를 측정했다. 측정값은 다음과 같다.
 
-![evaluate_result](https://github.com/BurningFalls/algorithm-study/assets/30232837/18c59692-2f3e-4f6b-be4f-79575e7ece8c){: width="70%" height="70%"}{: .align-center}
+![evaluate_result](https://github.com/BurningFalls/algorithm-study/assets/30232837/18c59692-2f3e-4f6b-be4f-79575e7ece8c){: width="100%" height="100%"}{: .align-center}
 
 1. `precision`(정밀도): 정밀도는 “양성”으로 예측한 샘플 중에서 실제로 “양성”인 샘플의 비율을 나타낸다. 즉, 모델이 “양성” 클래스를 얼마나 정확하게 예측하는지를 나타내는 지표이다. 정밀도 공식은 다음과 같다. ‘(정밀도)=TP/(TP+FP)’. 여기서 TP는 “양성”으로 예측하고 실제로 “양성”인 샘플의 수이고, FP는 “양성”으로 예측했지만 실제로는 “음성”인 샘플의 수이다.
 
@@ -303,7 +303,7 @@ predicted_score = result[0]['score']
 
 이를 통해, 로컬에 딥러닝 모델 파일을 보유하지 않고도, 몇 줄의 코드로 모델을 로드하고 사용할 수 있게 되었다.
 
-![huggingface](https://github.com/BurningFalls/algorithm-study/assets/30232837/74d26e29-9cba-43e3-b63d-7b70e3e422f1){: width="70%" height="70%"}{: .align-center}
+![huggingface](https://github.com/BurningFalls/algorithm-study/assets/30232837/74d26e29-9cba-43e3-b63d-7b70e3e422f1){: width="100%" height="100%"}{: .align-center}
 
 BERT 모델을 로드하는 방식도 약간 변경되었다. 이전에는 로컬에 저장된 모델 위치인 `MODEL_SAVE_PATH`에서 가져왔지만, 현재는 서버에서 직접 가져온다. 변경된 방법은 다음과 같다.
 
