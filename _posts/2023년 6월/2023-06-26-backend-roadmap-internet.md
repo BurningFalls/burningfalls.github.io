@@ -134,7 +134,7 @@ SSL/TLS를 사용하여 인터넷 통신을 보호할 때, 이해해야 할 몇 
 * 인터넷의 핵심은 서로 다른 장치와 시스템 간에 트래픽을 전달하는 상호 연결된 라우터의 글로벌 네트워크이다.
 * 숙지해야 하는 기본 개념과 용어에는 packets, routers, IP addresses, domain names, DNS, HTTP, HTTPS, SSL/TLS가 포함된다.
 
-## References
+## 11. References
 
-[How does the Internet Work?](https://cs.fyi/guide/how-does-internet-work)
+* [How does the Internet Work?](https://cs.fyi/guide/how-does-internet-work)
 
