@@ -13,6 +13,12 @@ tags:
   - sentiment-analysis
 ---
 
+## 0. 사용 코드 및 완성 모델
+
+[Github link - burningfalls/fine-tuned-bert](https://github.com/BurningFalls/fine-tuned-bert)
+
+[Hugging Face - burningfalls/my-fine-tuned-bert](https://huggingface.co/burningfalls/my-fine-tuned-bert) 
+
 ## 1. 모델 소개
 
 이 글은 **BERT를 활용한 감정 분석 모델의 구현과 평가 결과**를 제시한다. 
