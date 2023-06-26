@@ -15,9 +15,9 @@ tags:
 
 ## 0. 사용 코드 및 완성 모델
 
-[Github link - burningfalls/fine-tuned-bert](https://github.com/BurningFalls/fine-tuned-bert){: target="_blank"}
+[Github link - burningfalls/fine-tuned-bert](https://github.com/BurningFalls/fine-tuned-bert)
 
-[Hugging Face - burningfalls/my-fine-tuned-bert](https://huggingface.co/burningfalls/my-fine-tuned-bert){: target="_blank"}
+[Hugging Face - burningfalls/my-fine-tuned-bert](https://huggingface.co/burningfalls/my-fine-tuned-bert)
 
 ## 1. 모델 소개
 
@@ -305,7 +305,7 @@ predicted_score = result[0]['score']
 
 훈련한 BERT 모델을 웹 서버에 배포하는 것이 목표였지만, 대용량의 딥러닝 모델 파일을 로컬에 보유하고 있는 것은 어려움이 있었다. 또한, Github에 업로드하기 어려운 큰 파일이었다. 이러한 이유로 Hugging Face의 방식을 사용하여 모델을 업로드하기로 결정했다. **모델은 Hugging Face의 모델 저장소에 업로드되었다.**
 
-[Hugging Face - burningfalls/my-fine-tuned-bert](https://huggingface.co/burningfalls/my-fine-tuned-bert){: target="_blank"}
+[Hugging Face - burningfalls/my-fine-tuned-bert](https://huggingface.co/burningfalls/my-fine-tuned-bert)
 
 이를 통해, 로컬에 딥러닝 모델 파일을 보유하지 않고도, 몇 줄의 코드로 모델을 로드하고 사용할 수 있게 되었다.
 
