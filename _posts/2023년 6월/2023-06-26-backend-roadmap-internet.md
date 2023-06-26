@@ -13,7 +13,7 @@ tags:
 
 |Backend Roadmap|Link|
 |:---|:---:|
-|0. Roadmap|[Roadmap](https://roadmap.sh/backend)|
+|0. Roadmap|[Roadmap](https://roadmap.sh/backend){: target="_blank"}|
 |1. Internet|[Internet](https://burningfalls.github.io/essay/backend-roadmap-internet/)|
 |2. Operating System|[Operating System](https://burningfalls.github.io/essay/backend-roadmap-os/)|
 
@@ -136,5 +136,5 @@ SSL/TLS를 사용하여 인터넷 통신을 보호할 때, 이해해야 할 몇 
 
 ## References
 
-[How does the Internet Work?](https://cs.fyi/guide/how-does-internet-work)
+[How does the Internet Work?](https://cs.fyi/guide/how-does-internet-work){: target="_blank"}
 
