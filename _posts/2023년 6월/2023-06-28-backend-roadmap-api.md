@@ -56,7 +56,7 @@ API가 생성된 시기와 이유에 따라 API는 네 가지 방식으로 작�
 |PATCH|Update/Modify|NO|NO|
 |DELETE|delete|YES|NO|
 
-### 4.1 POST
+### 4.1. POST
 
 **`POST` verb는 새 리소스를 "create"하는 데 가장 자주 사용된다.** 특히, 하위 리소스를 만드는 데 사용된다. 즉, 다른(ex. 상위) 리소스에 종속된다. 다른 말로, 새 리소스를 생성할 때 상위에 POST를 수행하고 서비스는 새 리소스를 상위에 연결하고 ID(새 리소스 URI:Uniform Resource Identifier)를 할당하는 등의 작업을 처리한다.
 
@@ -67,7 +67,7 @@ POST는 안전하지도 않고 idempotent(멱등성: 같은 연산을 여러번 
 * POST `http://www.example.com/customers`
 * POST `http://www.example.com/customers/12345/orders`
 
-### 4.2 GET
+### 4.2. GET
 
 **HTTP `GET` 메서드는 리소스 표현을 "read"(또는 retrieve:검색)하는 데 사용된다.** "happy"(non-error) 경로에서 GET은 XML 또는 JSON의 표현과, `200(OK)`의 HTTP response 코드를 반환한다. 오류의 경우 대부분 `404(NOT FOUND)` 또는 `400(BAD REQUEST)`을 반환한다.
 
@@ -79,7 +79,7 @@ GET을 통해 안전하지 않은 작업을 노출하면 안된다. (ex. 서버�
 * GET `http://www.example.com/customers/12345/orders`
 * GET `http://www.example.com/buckets/sample`
 
-### 4.3 PUT
+### 4.3. PUT
 
 **`PUT`은 원래 리소스의 새로 업데이트된 표현을 포함하는 request body와 함께 알려진 리소스 URI에 PUT하는 "update" 기능에 가장 자주 사용된다.**
 
@@ -97,7 +97,7 @@ PUT은 서버에서 상태를 수정(또는 생성)한다는 점에서 안전한
 * PUT `http://www.example.com/customers/12345/98765`
 * PUT `http://www.example.com/buckets/secret_stuff`
 
-### 4.4 PATCH
+### 4.4. PATCH
 
 **`PATCH`는 "modify" 기능에 사용된다. PATCH request는 전체 리소스가 아닌, 리소스에 대한 변경 사항만 포함하면 된다.**
 
@@ -109,7 +109,7 @@ PATCH는 안전하지도 멱등성도 아니다. 그러나 PATCH reqeust는 멱�
 * PATCH `http://www.example.com/customers/12345/orders/98765`
 * PATCH `http://www.example.com/buckets/secret_stuff`
 
-### 4.5 DELETE
+### 4.5. DELETE
 
 **`DELETE`는 URI로 식별되는 리소스를 "delete"하는 데 사용된다.**
 
