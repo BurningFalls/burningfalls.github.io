@@ -17,6 +17,7 @@ tags:
 |1. Internet|[Internet](https://burningfalls.github.io/essay/backend-roadmap-internet/)|
 |2. Operating System|[Operating System](https://burningfalls.github.io/essay/backend-roadmap-os/)|
 |3. Relational Database|[Relational Database](https://burningfalls.github.io/essay/backend-roadmap-relational-database/)|
+|4. API|[API](https://burningfalls.github.io/essay/backend-roadmap-api/)|
 
 ## 0. What is API?
 
@@ -95,7 +96,7 @@ API는 아키텍처와 사용 범위에 따라 분류된다. API 아키텍처의
 
 (1) 인증 토큰
 
-인증 토큰은 사용자에게서 API 홏출을 수행할 수 있는 권한으 ㄹ부여하는 데 사용된다. 인증 토큰은 사용자가 자신이 누구인지 확인하고, 해당 특정 API 호출에 대한 액세스 권한이 있는지 확인한다. 예를 들어, 이메일 서버에 로그인하면, 이메일 클라이언트는 보안 액세스를 위해 인증 토큰을 사용한다.
+인증 토큰은 사용자에게서 API 호출을 수행할 수 있는 권한을 부여하는 데 사용된다. 인증 토큰은 사용자가 자신이 누구인지 확인하고, 해당 특정 API 호출에 대한 액세스 권한이 있는지 확인한다. 예를 들어, 이메일 서버에 로그인하면, 이메일 클라이언트는 보안 액세스를 위해 인증 토큰을 사용한다.
 
 (2) API key
 
