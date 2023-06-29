@@ -1,5 +1,5 @@
 ---
-title: "[Roadmap] Backend Developer Roadmap: Internet"
+title: "[Roadmap] Backend Developer Roadmap: 1. Internet"
 excerpt: "백엔드 개발자 로드맵 분석 - Internet에 대하여"
 date: 2023-6-26
 last_modified_at: 2023-6-26

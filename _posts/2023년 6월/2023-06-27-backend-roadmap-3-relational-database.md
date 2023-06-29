@@ -1,5 +1,5 @@
 ---
-title: "[Roadmap] Backend Developer Roadmap: Relational Database"
+title: "[Roadmap] Backend Developer Roadmap: 3. Relational Database"
 excerpt: "백엔드 개발자 로드맵 분석 - Relational Database에 대하여"
 date: 2023-6-27
 last_modified_at: 2023-6-27

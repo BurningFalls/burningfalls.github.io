@@ -1,5 +1,5 @@
 ---
-title: "[Roadmap] Backend Developer Roadmap: OS"
+title: "[Roadmap] Backend Developer Roadmap: 2. OS"
 excerpt: "백엔드 개발자 로드맵 분석 - Operating System에 대하여"
 date: 2023-6-26
 last_modified_at: 2023-6-26
