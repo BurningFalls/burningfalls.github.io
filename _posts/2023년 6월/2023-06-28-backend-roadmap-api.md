@@ -266,3 +266,5 @@ AWS AppSync는 AWS DynamoDB, AWS Lambda 등의 데이터 소스에 안전하게 
 ## 19. References
 
 [API란 무엇입니까?](https://aws.amazon.com/ko/what-is/api/)
+
+[Using HTTP Methods for RESTful Services](https://www.restapitutorial.com/lessons/httpmethods.html)
