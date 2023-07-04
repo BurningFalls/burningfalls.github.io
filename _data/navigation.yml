@@ -80,6 +80,13 @@ posts:
     - title: "dart"
       tag: "dart"
       url: /tags/dart
+- title: Git
+  category: git
+  url: categories/git
+  children:
+    - title: "git flow"
+      tag: "git-flow"
+      url: /tags/git-flow
 - title: Web
   category: web
   url: categories/web
