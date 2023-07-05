@@ -86,7 +86,6 @@ Featur branch는 일반적으로 `origin`이 아닌 개발 레포에만 존재�
 
 ```console
 $ git checkout -b myfeature develop
-Swithched to a new branch "myfeature"
 ```
 
 * 완성된 feature를 develop에 통합
@@ -95,12 +94,11 @@ Swithched to a new branch "myfeature"
 
 ```console
 $ git checkout develop
-Switched to branch 'develop'
+
 $ git merge --no-ff myfeature
-Updating ea1b82a..05e9557
-(Summary of changes)
+
 $ git branch -d myfeature
-Deleted branch myfeature(was 05e9557)
+
 $ git push origin develop
 ```
 
@@ -126,12 +124,10 @@ release branch는 `develop` branch에서 생성된다. 예를 들어, 버전 1.1
 
 ```console
 $ git checkout -b release-1.2 develop
-Switched to a new branch "release-1.2"
+
 $ ./bump-version.sh 1.2
-Files modified successfully, version bumped to 1.2.
+
 $ git commit -a -m "Bumped version number to 1.2"
-[release-1.2 74d9424] Bumped version number to 1.2
-1 files changed, 1 insertions(+), 1 deletions(-)
 ```
 
 새 branch를 만들고 전환한 후, 버전 번호를 bump한다. 여기에서 `bump-version.sh`는 새 버전을 반영하기 위해 작업 복사본의 일부 파일을 변경하는 가상의 shell script이다.(물론 이것은 수동 변경일 수 있다. 요점은 일부 파일이 변경된다는 것이다.) 그런 다음, bump된 버전 번호가 commit된다.
@@ -144,10 +140,9 @@ release branch의 상태가 실제 release가 될 준비가 되면, 몇 가지 �
 
 ```console
 $ git checkout main
-Switched to branch 'main'
+
 $ git merge --no-ff release-1.2
-Merge mad by recursive.
-(Summary of changes)
+
 $ git tag -a 1.2
 ```
 
@@ -157,10 +152,8 @@ $ git tag -a 1.2
 
 ```console
 $ git checkout develop
-Switched to branch 'develop'
+
 $ git merge --no-ff release-1.2
-Merge mad by recursive
-(Summary of changes)
 ```
 
 이 단계는 merge conflict로 이어질 수 있다. (버전 번호를 변경했음에도 불구하고). 그렇다면 수정하고 commit한다. 
@@ -169,7 +162,6 @@ Merge mad by recursive
 
 ```console
 $ git branch -d release-1.2
-Deleted branch release-1.2 (was ff452fe).
 ```
 
 ### 4.3 Hotfix branches
@@ -188,12 +180,10 @@ hotfix branch는 `main` branch에서 생성된다. 예를 들어, 버전 1.2가 
 
 ```console
 $ git checkout -b hotfix-1.2.1 master
-Switched to a new branch "hotfix-1.2.1"
+
 $ ./bump-version.sh 1.2.1
-Files modified successfully, version bumped to 1.2.1.
+
 $ git commit -a -m "Bumped version number to 1.2.1"
-[hotfix-1.2.1 41e61bb] Bumped version number to 1.2.1
-1 files changed, 1 insertions(+), 1 deletions(-)
 ```
 
 branch off 후 버전 번호를 bump하는 것을 잊지 않아야 한다.
@@ -202,8 +192,6 @@ branch off 후 버전 번호를 bump하는 것을 잊지 않아야 한다.
 
 ```console
 $ git commit -m "Fixed severe production problem"
-[hotfix-1.2.1 abbe5d6] Fixed severe production probelm
-5 files changed, 32 insertions(+), 17 deletions(-)
 ```
 
 * hotfix branch 완료하기
@@ -214,10 +202,9 @@ $ git commit -m "Fixed severe production problem"
 
 ```console
 $ git checkout main
-Switched to branch 'main'
+
 $ git merge --no-ff hotfix-1.2.1
-Merge made by recursive.
-(Summary of changes)
+
 $ git tag -a 1.2.1
 ```
 
@@ -227,10 +214,8 @@ $ git tag -a 1.2.1
 
 ```console
 $ git checkout develop
-Switched to branch 'develop'
+
 $ git merge --no-ff hotfix-1.2.1
-Merge made by recursive.
-(Summary of changes)
 ```
 
 여기서 규칙의 한 가지 예외는, release branch가 현재 존재하는 경우, hotfix 변경 사항을 `develop` 대신 해당 release branch에 merge 해야 한다는 것이다. bugfix를 release branch로 다시 merge하면, 결국 release branch가 완료되면, bugfix도 `develop`에 병합된다. (`develop` 작업에 즉시 이 bugfix가 필요하고 release branch가 완료될 때까지 기다릴 수 없는 경우, bugfix를 `develop`에 merge 하는 것이 안전하다.)
@@ -239,5 +224,8 @@ Merge made by recursive.
 
 ```console
 $ git branch -d hotfix-1.2.1
-Deleted branch hotfix-1.2.1 (was abbe5d6).
 ```
+
+## 5. References
+
+[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
