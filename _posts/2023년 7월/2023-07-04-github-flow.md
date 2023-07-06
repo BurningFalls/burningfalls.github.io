@@ -21,7 +21,7 @@ tags:
 
 결론적으로 만병통치약은 존재하지 않는다는 점을 기억해야 한다. 자신의 상황을 고려하고 스스로 결정해야 한다.
 
-![git-flow](https://github.com/BurningFalls/nlp-study/assets/30232837/6b657271-0d60-46d6-bfde-21d47a28de14)
+![git-flow](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/aaba2c81-d731-4524-bbb1-1f1ad7276e1a)
 
 ## 1. Why git?
 
