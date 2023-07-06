@@ -1,5 +1,5 @@
 ---
-title: "[Roadmap] Backend Developer Roadmap: 10. Search Engines"
+title: "[Roadmap] Backend Developer Roadmap: 11. Search Engines"
 excerpt: "백엔드 개발자 로드맵 분석 - Search Engines에 대하여"
 date: 2023-7-2
 last_modified_at: 2023-7-2
