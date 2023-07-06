@@ -80,7 +80,7 @@ Feature branches(or topic branches)는 향후 또는 먼 미래 release할 새 f
 
 Featur branch는 일반적으로 `origin`이 아닌 개발 레포에만 존재한다.
 
-* feature branch 만들기
+#### 4.1.1 feature branch 만들기
 
 새 feature에 대한 작업을 시작할 때, `develop` branch`에서 branch off를 한다.
 
@@ -88,7 +88,7 @@ Featur branch는 일반적으로 `origin`이 아닌 개발 레포에만 존재�
 $ git checkout -b myfeature develop
 ```
 
-* 완성된 feature를 develop에 통합
+#### 4.1.2 완성된 feature를 develop에 통합
 
 완성된 feature는 다음 release에 확실히 추가하기 위해, `develop` branch에 merge될 수 있다.
 
@@ -118,7 +118,7 @@ release branch는 새 production release 준비를 지원한다. 마지막 순�
 
 다음 release에 버전 번호가 할당되는 것은 release branch의 이전 부분이 아니라 시작 부분이다. 그 순간까지 `develop` branch는 "next release"에 대한 변경 사항을 반영했지만, release branch가 시작되기 전까지는 "next release"가 결국 0.3이 될지 1.0이 될지 확실하지 않다. 이 결정은 release branch 시작 시 이루어지며, 버전 번호 bumping에 대한 프로젝트의 규칙에 따라 수행된다.
 
-* release branch 만들기
+#### 4.2.1 release branch 만들기
 
 release branch는 `develop` branch에서 생성된다. 예를 들어, 버전 1.1.5가 현재 production release이고, 향후 큰 release가 있다고 가정한다. `develop` 상태는 "next release"에 대한 준비가 되어 있으며, 이것이 버전 1.2(1.1.6 또는 2.0이 아닌)가 되기로 결정했다. 따라서 우리는 branch off를 하고, release branch에 새 버전 번호를 반영하는 이름을 지정한다.
 
@@ -134,7 +134,7 @@ $ git commit -a -m "Bumped version number to 1.2"
 
 이 새로운 branch는 release가 확실히 출시될 때까지 잠시 동안 존재할 수 있다. 그 시간 동안, `develop` branch가 아닌 이 branch에 bug fix가 적용될 수 있다. 여기에 대규모 새 feature을 추가하는 것은 엄격히 금지된다. `develop`에 merge 해야 하므로, 다음 큰 release를 기다려야 한다.
 
-* release branch 완료하기
+#### 4.2.2 release branch 완료하기
 
 release branch의 상태가 실제 release가 될 준비가 되면, 몇 가지 작업을 수행해야 한다. 먼저, release branch가 `main`으로 merge 된다.(`main`의 모든 commit은 정의상 새 release이다.) 다음으로, 이 기록 버전을 나중에 쉽게 참조할 수 있도록, `main`에 대한 해당 commit에 tag를 지정해야 한다. 마지막으로, release branch의 변경 사항을 다시 `develop`에 merge 해야, 향후 release에도 이러한 bug fix가 포함된다.
 
@@ -174,7 +174,7 @@ hotfix branch는 비록 계획되지는 않았지만, 새로운 production relea
 
 핵심은 다른 사람이 빠른 production 수정을 준비하는 동안, 팀 구성원(`develop` branch)에서 작업을 계속할 수 있다는 것이다.
 
-* hotfix branch 만들기
+#### 4.3.1 hotfix branch 만들기
 
 hotfix branch는 `main` branch에서 생성된다. 예를 들어, 버전 1.2가 live로 실행되고 심각한 bug로 인해 문제를 일으키는 현재 production release라고 가정해 본다. 그러나, `develop`에 대한 변경 사항은 아직 불안정하다. 그러면, hotfix branch를 branch off하고 문제 해결을 시작할 수 있다.
 
@@ -194,7 +194,7 @@ branch off 후 버전 번호를 bump하는 것을 잊지 않아야 한다.
 $ git commit -m "Fixed severe production problem"
 ```
 
-* hotfix branch 완료하기
+#### 4.3.2 hotfix branch 완료하기
 
 완료되면, bug fix를 `main`에 다시 merge 해야 하지만, bug fix가 다음 release에도 포함되도록 보호하기 위해, 다시 `develop`에 merge 해야 한다. 이것은 release branch가 완료되는 방식과 완전히 유사하다. 
 
