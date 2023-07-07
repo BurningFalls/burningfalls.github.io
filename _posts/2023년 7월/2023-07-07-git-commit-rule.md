@@ -7,6 +7,7 @@ categories:
   - git
 tags:
   - git
+  - git-commit
 ---
 
 ## 0. Introduction
@@ -99,7 +100,7 @@ commit 유형에는 다음이 포함될 수 있다:
 
 * `feat`: 변경 사항과 함께 새로운 기능 도입
 * `fix`: 버그 수정
-* `chore`: 수정 또는 기능과 관련이 없고, src나 test 파일을 수정하지 않는 변경(ex. 종속성 업데이트)
+* `chore`: fix 또는 기능과 관련이 없고, src나 test 파일을 수정하지 않는 변경(ex. 종속성 업데이트)
 * `refactor`: 버그를 수정하거나 기능을 추가하지 않는, 코드 리팩토링
 * `docs`: README 또는 기타 markdown 파일과 같은 문서 업데이트
 * `style`: 공백, 세미콜론 누락 등과 같은 코드 서식과 관련되어, 코드의 의미에 영향을 미치지 않는 변경
