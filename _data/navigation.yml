@@ -84,9 +84,9 @@ posts:
   category: git
   url: categories/git
   children:
-    - title: "git flow"
-      tag: "git-flow"
-      url: /tags/git-flow
+    - title: "git"
+      tag: "git"
+      url: /tags/git
 - title: Web
   category: web
   url: categories/web
