@@ -6,6 +6,7 @@ last_modified_at: 2023-7-4
 categories:
   - git
 tags:
+  - git
   - git-flow
 ---
 
