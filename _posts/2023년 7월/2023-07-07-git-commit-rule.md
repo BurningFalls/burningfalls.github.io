@@ -12,7 +12,7 @@ tags:
 
 ## 0. Introduction
 
-`Git`을 처음 접했을 때, 개발자는 프로세스에 대해 불편함을 느끼는 것이 일반적이다..
+`Git`을 처음 접했을 때, 개발자는 프로세스에 대해 불편함을 느끼는 것이 일반적이다.
 
 Git commit message를 볼 때 불확실성을 느낄 수 있으며, 변경 사항을 적절하게 요약하는 방법과 변경 이유를 확신할 수 없다. 그러나, 경력 초기에 좋은 commit 습관을 개발할 수록 더 좋다.
 
@@ -67,8 +67,8 @@ Git commit message를 어떻게 개선할 수 있는지 궁금한 적이 있는�
 
 아래의 차이점을 참조한다:
 
-* `git commit -m "Add margin"
-* `git commit -m "Add margin to nav items to prevent them from overlapping the logo"
+* `git commit -m "Add margin"`
+* `git commit -m "Add margin to nav items to prevent them from overlapping the logo"`
 
 이들 중 어느 것이 미래의 독자들에게 더 유용할지는 분명하다.
 
