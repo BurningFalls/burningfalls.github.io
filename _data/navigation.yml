@@ -12,6 +12,8 @@ main:
     url: /categories/essay
   - title: "Flutter"
     url: /categories/flutter
+  - title: "Git"
+    url: /categories/git
   - title: "Web"
     url: /categories/web
 
