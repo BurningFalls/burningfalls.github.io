@@ -20,7 +20,7 @@ tags:
 |3. R-DB|[Relational Database](https://burningfalls.github.io/essay/backend-roadmap-3-relational-database/)|
 |4. API|[API](https://burningfalls.github.io/essay/backend-roadmap-4-api/)|
 |5. Caching|[Caching](https://burningfalls.github.io/essay/backend-roadmap-5-caching/)|
-|6. Security|[Web Security](https://burningfalls.github.io/essay/backend-roadmap-6-caching/)|
+|6. Security|[Web Security](https://burningfalls.github.io/essay/backend-roadmap-6-web-security/)|
 |7. Testing|[Testing](https://burningfalls.github.io/essay/backend-roadmap-7-testing/)|
 |8. CI/CD|[CI/CD](https://burningfalls.github.io/essay/backend-roadmap-8-ci-cd/)|
 |9. Design|[Design and Development Principles](https://burningfalls.github.io/essay/backend-roadmap-9-design/)|
