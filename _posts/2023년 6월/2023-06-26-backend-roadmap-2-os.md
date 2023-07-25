@@ -14,11 +14,19 @@ tags:
 |Backend Roadmap|Link|
 |:---|:---:|
 |0. Roadmap|[Roadmap](https://roadmap.sh/backend)|
-|1. Internet|[Internet](https://burningfalls.github.io/essay/backend-roadmap-internet/)|
-|2. Operating System|[Operating System](https://burningfalls.github.io/essay/backend-roadmap-os/)|
-|3. Relational Database|[Relational Database](https://burningfalls.github.io/essay/backend-roadmap-relational-database/)|
-|4. API|[API](https://burningfalls.github.io/essay/backend-roadmap-api/)|
-|5. Caching|[Caching](https://burningfalls.github.io/essay/backend-roadmap-caching/)|
+|1. Internet|[Internet](https://burningfalls.github.io/essay/backend-roadmap-1-internet/)|
+|2. OS|[Operating System](https://burningfalls.github.io/essay/backend-roadmap-2-os/)|
+|3. R-DB|[Relational Database](https://burningfalls.github.io/essay/backend-roadmap-3-relational-database/)|
+|4. API|[API](https://burningfalls.github.io/essay/backend-roadmap-4-api/)|
+|5. Caching|[Caching](https://burningfalls.github.io/essay/backend-roadmap-5-caching/)|
+|6. Security|[Web Security](https://burningfalls.github.io/essay/backend-roadmap-6-web-security/)|
+|7. Testing|[Testing](https://burningfalls.github.io/essay/backend-roadmap-7-testing/)|
+|8. CI/CD|[CI/CD](https://burningfalls.github.io/essay/backend-roadmap-8-ci-cd/)|
+|9. Design|[Design and Development Principles](https://burningfalls.github.io/essay/backend-roadmap-9-design/)|
+|10. Architecture|[Architectural Patterns](https://burningfalls.github.io/essay/backend-roadmap-10-architecture/)|
+|11. Search Engines|[Search Engines](https://burningfalls.github.io/essay/backend-roadmap-11-search-engines/)|
+|12. OAuth|[OAuth](https://burningfalls.github.io/essay/backend-roadmap-12-oauth/)|
+|13. Docker/K8s|[Docker and Kubernetes](https://burningfalls.github.io/essay/backend-roadmap-13-docker-and-k8s/)|
 
 ## 0. Operating System
 
