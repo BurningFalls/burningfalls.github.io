@@ -75,6 +75,9 @@ posts:
     - title: "tech stack"
       tag: "tech-stack"
       url: /tags/tech-stack
+    - title: "woowacourse"
+      tag: "woowacourse"
+      url: /tags/woowacourse
 - title: Flutter
   category: flutter
   url: categories/flutter
