@@ -12,7 +12,9 @@ tags:
   - baseball-game
 ---
 
-[1주차 프리코스 GitHub(https://github.com/woowacourse-precourse/java-baseball-6)](https://github.com/woowacourse-precourse/java-baseball-6)
+[1주차 프리코스 Github (https://github.com/woowacourse-precourse/java-baseball-6)](https://github.com/woowacourse-precourse/java-baseball-6)
+
+[1주차 내 코드 Github (https://github.com/BurningFalls/java-baseball-6/tree/BurningFalls)](https://github.com/BurningFalls/java-baseball-6/tree/BurningFalls)
 
 ## 1. 10월 18일
 
