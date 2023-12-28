@@ -9,6 +9,16 @@ tags:
   - woowacourse
 ---
 
+|우아한테크코스 6기 회고록|
+|:---|
+|0. [우아한테크코스 6기 신청](https://burningfalls.github.io/essay/woowacourse-0-apply/)|
+|1. [프리코스 1주차 - 야구게임](https://burningfalls.github.io/essay/woowacourse-1-baseball-game/)|
+|2. [프리코스 2주차 - 자동차경주게임](https://burningfalls.github.io/essay/woowacourse-2-racingcar-game/)|
+|3. [프리코스 3주차 - 로또게임](https://burningfalls.github.io/essay/woowacourse-3-lotto-game/)|
+|4. [프리코스 4주차 - 크리스마스 프로모션](https://burningfalls.github.io/essay/woowacourse-4-christmas/)|
+|5. [최종 코딩 테스트 준비](https://burningfalls.github.io/essay/woowacourse-5-oncall1/)|
+|6. [최종 코딩 테스트 - oncall](https://burningfalls.github.io/essay/woowacourse-6-oncall2/)|
+
 ## 1. 우아한테크코스 사이트
 
 [우아한테크코스(https://www.woowacourse.io/)](https://www.woowacourse.io/)

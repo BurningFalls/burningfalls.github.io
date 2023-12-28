@@ -12,6 +12,16 @@ tags:
   - oncall
 ---
 
+|우아한테크코스 6기 회고록|
+|:---|
+|0. [우아한테크코스 6기 신청](https://burningfalls.github.io/essay/woowacourse-0-apply/)|
+|1. [프리코스 1주차 - 야구게임](https://burningfalls.github.io/essay/woowacourse-1-baseball-game/)|
+|2. [프리코스 2주차 - 자동차경주게임](https://burningfalls.github.io/essay/woowacourse-2-racingcar-game/)|
+|3. [프리코스 3주차 - 로또게임](https://burningfalls.github.io/essay/woowacourse-3-lotto-game/)|
+|4. [프리코스 4주차 - 크리스마스 프로모션](https://burningfalls.github.io/essay/woowacourse-4-christmas/)|
+|5. [최종 코딩 테스트 준비](https://burningfalls.github.io/essay/woowacourse-5-oncall1/)|
+|6. [최종 코딩 테스트 - oncall](https://burningfalls.github.io/essay/woowacourse-6-oncall2/)|
+
 ## 1. 1차 심사 합격 (12/11)
 
 자기소개서와 프리코스 4주차에 정말 많은 시간을 투자했고, 이것보다 더 잘하기 힘들다고 생각이 들 정도로 노력했음에도 불구하고 합격이 될지 안될지 전혀 예상되지 않았다. 누구나 나만큼 간절하고 열심히 했을 것이기 때문이다. 최선을 다했으니 나머지는 운에 맡기는 수밖에 없었고, 그렇게 1차 결과 발표를 기다렸다.
