@@ -9,6 +9,14 @@ tags:
   - java
 ---
 
+:question:
+
+:heavy_check_mark:
+
+:heavy_plus_sign:
+
+:book:
+
 ## Ⅰ. Question
 
 `JDK(Java Development Kit)`란 무엇인가?
