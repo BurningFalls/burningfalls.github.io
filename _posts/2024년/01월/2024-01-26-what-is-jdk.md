@@ -9,15 +9,14 @@ tags:
   - java
 ---
 
-## Question
+## Ⅰ. Question
 
 `JDK(Java Development Kit)`란 무엇인가?
 
-## Answer
-
+## Ⅱ. Answer
 `JDK`는 `Java Development Kit`의 약어로, 자바 프로그램 개발을 위한 핵심 도구와 라이브러리를 포함하는 소프트웨어 개발 키트이다. `JDK`는 자바 프로그래머가 자바 언어로 애플리케이션을 개발하고 실행하기 위해 필요한 모든 도구를 제공한다.
 
-## Detail
+## Ⅲ. Detail
 
 ### 1. JDK 구성 요소
 
@@ -61,6 +60,6 @@ tags:
 
 > `Java` version < `JDK` version
 
-## Reference
+## Ⅳ. Reference
 
 None
