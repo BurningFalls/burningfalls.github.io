@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.7.0
+
+* `JAVA` category 추가
+
 ### 1.6.0
 
 * `GIT` category 추가
