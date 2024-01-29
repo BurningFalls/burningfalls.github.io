@@ -6,7 +6,7 @@ last_modified_at: 2024-01-26
 categories:
   - java
 tags:
-  - java
+  - java-study
 ---
 
 ## 1. Question

@@ -99,8 +99,8 @@ posts:
   url: categories/java
   children:
     - title: "java"
-      tag: "java"
-      url: /tags/java
+      tag: "java-study"
+      url: /tags/java-study
 - title: Web
   category: web
   url: categories/web
