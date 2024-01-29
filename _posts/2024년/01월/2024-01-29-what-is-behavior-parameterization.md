@@ -77,9 +77,7 @@ public interface(Comparator<T>) {
 
 // 자바 8의 List에는 sort 메서드가 포함되어 있다. (sort의 동작을 파라미터화)
 inventory.sort((Apple a1, Apple a2) -> al.getWeight().compareTo(a2.getWeight()));
-```
-
-<br>
+```  
 
 * **Runnable로 코드 블록 실행하기**
 
