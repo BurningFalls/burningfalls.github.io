@@ -29,6 +29,8 @@ public interface Predicate<T> {
 }
 ```
 
+<br>
+
 * **메서드 작성**: 동작을 받아들이는 메서드를 작성한다. 이 메서드는 함수적 인터페이스를 파라미터로 받아서 해당 동작을 실행하고, 조건에 따라 결과를 반환한다.
 
 ```java
@@ -42,6 +44,8 @@ public static <T> List<T> filter(List<T> list, Predicate<T> p) {
   return result;
 }
 ```
+
+<br>
 
 * **사용**: 이제 동작 파라미터화를 사용하여 필터링 조건을 정의하고 메서드에 전달할 수 있다. 이는 `람다 표현식`을 활용하여 간결하게 동작을 표현할 수 있다.
 
@@ -75,6 +79,8 @@ public interface(Comparator<T>) {
 inventory.sort((Apple a1, Apple a2) -> al.getWeight().compareTo(a2.getWeight()));
 ```
 
+<br>
+
 * **Runnable로 코드 블록 실행하기**
 
 ```java
@@ -87,6 +93,8 @@ public interface Runnable {
 Thread t = new Thread(() -> System.out.println("Hello world"));
 ```
 
+<br>
+
 * **Callable을 결과로 반환하기**
 
 ```java
@@ -98,6 +106,8 @@ public interface Callable<V> {
 // 결과를 반환하는 태스크를 만든다. (태스크를 실행하는 스레드의 이름을 반환한다.)
 Future<String> threadName = executorService.submit(() -> Thread.currentThread().getName());
 ```
+
+<br>
 
 * **GUI 이벤트 처리하기**
 
