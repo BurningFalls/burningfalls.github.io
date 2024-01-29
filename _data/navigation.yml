@@ -98,7 +98,7 @@ posts:
   category: java
   url: categories/java
   children:
-    - title: "java"
+    - title: "java-study"
       tag: "java-study"
       url: /tags/java-study
 - title: Web
