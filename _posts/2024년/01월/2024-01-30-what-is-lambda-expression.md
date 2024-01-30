@@ -36,7 +36,21 @@ tags:
 
 * **실행 코드 블록**: 람다 표현식의 주요 부분은 실행 코드 블록이다. 이 코드 블록은 메서드의 본문 역할을 하며, 원하는 동작을 정의한다.
 
-### B. 사용 예시
+### B. 람다 예제
+
+* **불리언 표현식** - `(List<String> list) -> list.isEmpty()`
+
+* **객체 생성** - `() -> new Apple(10)`
+
+* **객체에서 소비** - `(Apple a) -> { System.out.println(a.getWeight()); }`
+
+* **객체에서 선택/추출** - `(String s) -> s.length()`
+
+* **두 값을 조합** - `(int a, int b) -> a * b`
+
+* **두 객체 비교** - `(Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight())`
+
+### C. 사용 예시
 
 ```java
 // 기존 코드
@@ -50,7 +64,7 @@ Comparator<Apple> byWeight = new Comparator<Apple>() {
 Comparator<Apple> byWeight = (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
 ```
 
-### C. 장점
+### D. 장점
 
 * **간결성**: 람다 표현식을 사용하면 코드가 훨씬 간결해진다. 작은 함수 또는 간단한 동작을 한 줄로 표현할 수 있어 가독성이 향상된다.
 
