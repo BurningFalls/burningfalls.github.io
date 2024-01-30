@@ -1,6 +1,6 @@
 ---
 title: "[Java] 람다 표현식(lambda expression)이란 무엇인가?"
-excerpt: "람다 표현식이란?"
+excerpt: "람다 표현식이란? 람다 표현식의 주요 구성 요소는? 람다 표현식의 예제는 어떤 것이 있는가? 람다 표현식의 사용 예시는? 람다 표현식의 장점은?"
 date: 2024-01-30
 last_modified_at: 2024-01-30
 categories:
