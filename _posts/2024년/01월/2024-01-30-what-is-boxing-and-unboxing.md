@@ -1,6 +1,6 @@
 ---
 title: "[Java] 박싱(boxing)과 언박싱(unboxing)이란?"
-excerpt: "박싱과 언박싱이란?"
+excerpt: "박싱과 언박싱이란? 박싱과 언박싱의 예시는 무엇이 있는가? 박싱과 언박싱의 단점은? 오토박싱의 단점을 해결하기 위한 방법은?"
 date: 2024-01-30
 last_modified_at: 2024-01-30
 categories:
