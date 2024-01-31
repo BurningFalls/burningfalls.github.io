@@ -1,5 +1,5 @@
 ---
-title: "[Java] 스트림 처리 연산 1. 필터링"
+title: "[Java] 스트림 처리 연산 1 - 필터링"
 excerpt: "스트림 처리 연산 필터링이란? .filter란? .distinct란?"
 date: 2024-01-31
 last_modified_at: 2024-01-31
