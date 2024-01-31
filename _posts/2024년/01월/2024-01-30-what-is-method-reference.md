@@ -17,11 +17,11 @@ tags:
 
 Java에서 `메서드 참조(Method Reference)`는 람다 표현식의 한 형태로, 이미 정의된 메서드의 이름을 사용하여 람다 표현식을 더 간결하게 표현할 수 있는 방법이다. 메서드 참조는 특정 메서드만을 호출하는 람다 표현식을 단순화시키기 위해 사용된다. `Java 8`부터 사용할 수 있다. 다음은 자바 8에서 사용할 수 있는 다양한 메서드 참조 예제이다.
 
-* `(Apple apple) -> apple.getWeight()`: `Apple::getWeight`
-* `() -> Thread.currentThread().dumpStack()`: `Thread.currentThread()::dumpStack`
-* `(str, i) -> str.substring(i)`: `String::substring`
-* `(String s) -> System.out.println(s)`: `System.out::println`
-* `(String s) -> this.isValidName(s)`: `this::isValidName`
+* `(Apple apple) -> apple.getWeight()` **=>** `Apple::getWeight`
+* `() -> Thread.currentThread().dumpStack()` **=>** `Thread.currentThread()::dumpStack`
+* `(str, i) -> str.substring(i)` **=>** `String::substring`
+* `(String s) -> System.out.println(s)` **=>** `System.out::println`
+* `(String s) -> this.isValidName(s)` **=>** `this::isValidName`
 
 ## 3. Detail
 
