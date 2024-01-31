@@ -57,7 +57,7 @@ Java의 `Stream API`와 `Collection Framework` 모두 연속된 요소 형식의
 
 ### F. 외부 반복 vs 내부 반복
 
-
+[[Java] 외부 반복 VS 내부 반복](https://burningfalls.github.io/java/external-iteration-vs-internal-iteration/)
 
 ## 4. Reference
 
