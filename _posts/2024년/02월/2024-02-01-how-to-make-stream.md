@@ -71,7 +71,7 @@ try(Stream<String> lines = Files.lines(Paths.get("data.txt"), Charset.defaultCha
 
 ### F. 함수로 무한 스트림 만들기
 
-> []()
+> [[Java] 무한 스트림을 어떻게 만들 수 있는가?](https://burningfalls.github.io/java/create-infinite-streams-with-functions/)
 
 ## 3. Detail
 
