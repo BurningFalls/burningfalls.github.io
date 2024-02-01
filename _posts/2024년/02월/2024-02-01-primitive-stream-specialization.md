@@ -15,10 +15,9 @@ tags:
 
 ## 2. Answer
 
-`Java 8`에서는 세 가지 `기본형 특화 스트림`을 제공한다. `Stream API`는 **`박싱(boxing)`** 비용을 피할 수 있도록 `int` 요소에 특화된 `IntStream`, `double` 요소에 특화된 `DoubleStream`, `long` 요소에 특화된 `LongStream`을 제공한다. 각각의 인터페이스는 숫자 스트림의 합계를 계산하는 `sum`, 최댓값 요소를 검색하는 `max` 같이 자주 사용하는 숫자 관련 **`리듀싱`** 연산 수행 메서드를 제공한다. 또한, 필요할 때 다시 객체 스트림으로 복원하는 기능도 제공한다. 특화 스트림은 오직 박싱 과정에서 일어나는 효율성과 관련 있으며, 스트림에 추가 기능을 제공하지는 않는다.
+`Java 8`에서는 세 가지 `기본형 특화 스트림`을 제공한다. `Stream API`는 `박싱(boxing)` 비용을 피할 수 있도록 `int` 요소에 특화된 `IntStream`, `double` 요소에 특화된 `DoubleStream`, `long` 요소에 특화된 `LongStream`을 제공한다. 각각의 인터페이스는 숫자 스트림의 합계를 계산하는 `sum`, 최댓값 요소를 검색하는 `max` 같이 자주 사용하는 숫자 관련 `리듀싱` 연산 수행 메서드를 제공한다. 또한, 필요할 때 다시 객체 스트림으로 복원하는 기능도 제공한다. 특화 스트림은 오직 박싱 과정에서 일어나는 효율성과 관련 있으며, 스트림에 추가 기능을 제공하지는 않는다.
 
 > [[Java] 박싱(boxing)과 언박싱(unboxing)이란?](https://burningfalls.github.io/java/what-is-boxing-and-unboxing/)
-
 > [[Java] 스트림 처리 연산 5 - 리듀싱](https://burningfalls.github.io/java/stream-operation-5-reducing/)
 
 ## 3. Detail
