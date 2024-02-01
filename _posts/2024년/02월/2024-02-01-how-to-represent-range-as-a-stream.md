@@ -24,7 +24,7 @@ IntStream evenNumbers =
 System.out.println(evenNumbers.count());  // 1부터 100까지에는 50개의 짝수가 있다.
 ```
 
-> **`IntStream`** => [[Java] 기본형 특화 스트림이란?](https://burningfalls.github.io/java/primitive-stream-specialization/)
+> `IntStream` => [[Java] 기본형 특화 스트림이란?](https://burningfalls.github.io/java/primitive-stream-specialization/)
 
 ## 3. Detail
 

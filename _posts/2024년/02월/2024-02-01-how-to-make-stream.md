@@ -43,7 +43,7 @@ Stream<String> values =
     .flatMap(key -> Stream.ofNullable(System.getProperty(key)));
 ```
 
-> **`flatMap`** => [[Java] 스트림 처리 연산 3 - 매핑](https://burningfalls.github.io/java/stream-operation-3-mapping/)
+> `flatMap` => [[Java] 스트림 처리 연산 3 - 매핑](https://burningfalls.github.io/java/stream-operation-3-mapping/)
 
 ### D. 배열로 스트림 만들기 - Arrays.stream
 
