@@ -15,7 +15,7 @@ tags:
 
 ## 2. Answer
 
-예를 들어 1에서 100 사이의 숫자를 생성하려 한다고 가정하면, `Java 8`의 `IntStream`(`기본형 특화 스트림`)과 `LongStream`에서는 `range`와 `rangeClosed`라는 두 가지 정적 메서드를 제공한다. 두 메서드 모두 첫 번째 인수로 시작값을, 두 번째 인수로 종료값을 갖는다. `range` 메서드는 종료값이 결과에 포함되지 않는 반면, `rangeClosed`는 종료값이 결과에 포함된다는 점이 다르다.
+예를 들어 1에서 100 사이의 숫자를 생성하려 한다고 가정하면, `Java 8`의 `IntStream`과 `LongStream`에서는 `range`와 `rangeClosed`라는 두 가지 정적 메서드를 제공한다. 두 메서드 모두 첫 번째 인수로 시작값을, 두 번째 인수로 종료값을 갖는다. `range` 메서드는 종료값이 결과에 포함되지 않는 반면, `rangeClosed`는 종료값이 결과에 포함된다는 점이 다르다.
 
 ```java
 IntStream evenNumbers = 
@@ -24,7 +24,7 @@ IntStream evenNumbers =
 System.out.println(evenNumbers.count());  // 1부터 100까지에는 50개의 짝수가 있다.
 ```
 
-> [[Java] 기본형 특화 스트림이란?](https://burningfalls.github.io/java/primitive-stream-specialization/)
+> **`IntStream`** => [[Java] 기본형 특화 스트림이란?](https://burningfalls.github.io/java/primitive-stream-specialization/)
 
 ## 3. Detail
 
