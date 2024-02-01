@@ -1,6 +1,6 @@
 ---
 title: "[Java] 스트림 처리 연산 5 - 리듀싱"
-excerpt: "스트림 처리 연산 리듀싱이란? .reduce란? 리듀싱 연산에 초기값이 없는 경우는 어떻게 처리하는가? 리듀싱 연산으로 요소의 합, 최댓값, 최솟값을 계산하는 방법은 무엇인가?"
+excerpt: "스트림 처리 연산 리듀싱이란? .reduce란? 리듀싱 연산에 초기값이 없는 경우는 어떻게 처리하는가? 리듀싱 연산으로 요소의 합, 최댓값, 최솟값을 계산하는 방법은 무엇인가? reduce 병렬화란?"
 date: 2024-02-01
 last_modified_at: 2024-02-01
 categories:
@@ -45,7 +45,19 @@ Optional<Integer> max = numbers.stream().reduce(Integer::max);
 
 ## 3. Detail
 
-None
+### A. reduce 병렬화
+
+`reduce` 연산은 병렬 처리에도 매우 적합하다. `stream API`는 `.parallel()` 메서드를 통해 스트림을 병렬 스트림으로 쉽게 변환할 수 있으며, `reduce`는 이러한 병렬 스트림과 잘 동작한다.
+
+```java
+int sum = numbers.parallelStream().reduce(0, Integer::sum);
+```
+
+* **분할 정복**: 병렬 스트림은 데이터를 여러 부분으로 분할하고, 각 부분을 별도의 스레드에서 처리한 후, 결과를 하나로 결합한다. `reduce` 연산은 이러한 분할 정복 방식에 잘 맞는다.
+
+* **성능 향상**: 병렬 스트림과 `reduce`를 사용하면, 특히 데이터가 많고 CPU 코어가 여러 개인 환경에서 성능을 크게 향상시킬 수 있다.
+
+* **스레드 안정성**: `reduce`는 불변성을 유지하므로, 병렬 처리 시에도 데이터의 일관성과 스레드 안전성을 보장한다.
 
 ## 4. Reference
 
