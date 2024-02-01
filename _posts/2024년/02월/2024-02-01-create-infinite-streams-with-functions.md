@@ -1,6 +1,6 @@
 ---
 title: "[Java] 무한 스트림을 어떻게 만들 수 있는가?"
-excerpt: "무한 스트림을 만드는 방법은?"
+excerpt: "무한 스트림을 만드는 방법은? iterate란? generate란?"
 date: 2024-02-01
 last_modified_at: 2024-02-01
 categories:
