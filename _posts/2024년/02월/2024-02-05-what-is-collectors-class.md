@@ -30,6 +30,10 @@ List<Transaction> transactions =
 * 요소 그룹화
 * 요소 분할
 
+> `리듀싱과 요약` => [[Java] Collectors 1 - 리듀싱과 요약](https://burningfalls.github.io/java/collectors-1-reducing-and-summarizing/)
+> `그룹화` => [[Java] Collectors 2 - 그룹화](https://burningfalls.github.io/java/collectors-2-grouping/)
+> `분할` => [[Java] Collectors 3 - 분할](https://burningfalls.github.io/java/collectors-3-partitioning/)
+
 ## 3. Detail
 
 ### A. 장점
