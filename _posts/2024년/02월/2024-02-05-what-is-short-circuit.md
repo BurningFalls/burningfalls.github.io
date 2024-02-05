@@ -1,6 +1,6 @@
 ---
-title: "[Java] 쇼트서킷(short circuiting)이란?"
-excerpt: "쇼트서킷이란?"
+title: "[Java] 쇼트서킷(short-circuit)이란?"
+excerpt: "쇼트서킷이란? 쇼트서킷의 예시는? anyMatch, findAny, findFirst, limit에서의 쇼트서킷은? 쇼트서킷의 장점은? findAny와 findFirst의 차이점은?"
 date: 2024-02-05
 last_modified_at: 2024-02-05
 categories:
