@@ -17,6 +17,13 @@ tags:
 
 Java의 `Collectors` 클래스는 `java.util.stream.Collectors` 패키지에 포함된 유틸리티 메서드들의 모음으로, `Stream API`의 강력한 수집(collecting) 연산을 제공한다. 이 클래스는 스트림의 요소들을 다양한 방식으로 수집하고 집계하는 기능을 통해 데이터 처리의 복잡성을 크게 줄여준다. 또한, 프로그래머가 선언적으로 즉 어떻게(How)가 아닌 무엇을(What) 수행할 것인지에 대해서만 명시함으로써 코드의 가독성과 유지보수성을 크게 향상시킬 수 있다.
 
+`Collectors` 유틸리티 클래스는 자주 사용하는 컬렉터 인스턴스를 손쉽게 생성할 수 있는 정적 팩토리 메서드를 제공한다. 예를 들어 가장 많이 사용하는 직관적인 정적 메서드로 `toList`를 꼽을 수 있다. `toList`는 스트림의 모든 요소를 리스트로 수집한다.
+
+```java
+List<Transaction> transactions =
+  transactionStream.collect(Collectors.toList());
+```
+
 `Collectors`에서 제공하는 메서드의 기능은 크게 세 가지로 구분할 수 있다.
 
 * 스트림 요소를 하나의 값으로 리듀스하고 요약
