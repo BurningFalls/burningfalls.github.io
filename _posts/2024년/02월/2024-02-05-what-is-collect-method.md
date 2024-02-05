@@ -52,7 +52,7 @@ Map<Gender, List<Student>> groupedByGender = students.stream()
   .collect(Collectors.groupingBy(Student::getGender));
 ```
 
-### 사용 예시 - partitioningBy
+### D. 사용 예시 - partitioningBy
 
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
