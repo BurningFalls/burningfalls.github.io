@@ -1,6 +1,6 @@
 ---
 title: "[Java] 자바 프로그램의 성능을 측정하는 방법은? (JMH: Java Microbenchmark Harness)"
-excerpt: "자바 프로그램의 성능을 측정하는 방법은?"
+excerpt: "자바 프로그램의 성능을 측정하는 방법은? JMH란? JMH의 주요 특징은? JMH의 사용 방법은?"
 date: 2024-02-06
 last_modified_at: 2024-02-06
 categories:
