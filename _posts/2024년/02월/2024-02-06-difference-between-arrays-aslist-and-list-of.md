@@ -1,5 +1,5 @@
 ---
-title: "[Java] Arrays.asList VS List.of?"
+title: "[Java] Arrays.asList VS List.of"
 excerpt: "Arrays.asList와 List.of의 차이점은? 특징에서의 차이점은? 가변성에서의 차이점은? 주의사항에서의 차이점은? 사용 예시에서의 차이점은?"
 date: 2024-02-06
 last_modified_at: 2024-02-06
