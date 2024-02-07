@@ -1,6 +1,6 @@
 ---
 title: "[Java] 작은 컬렉션(리스트, 집합, 맵) 객체를 만드는 간단한 방법은?"
-excerpt: "작은 리스트(list) 객체를 만드는 방법은? 작은 집합(set) 객체를 만드는 방법은? 작은 맵(map) 객체를 만드는 방법은?"
+excerpt: "작은 리스트(list) 객체를 만드는 방법은? 작은 집합(set) 객체를 만드는 방법은? 작은 맵(map) 객체를 만드는 방법은? List.of란? Set.of란? Map.of란? Map.ofEntries란?"
 date: 2024-02-07
 last_modified_at: 2024-02-07
 categories:
