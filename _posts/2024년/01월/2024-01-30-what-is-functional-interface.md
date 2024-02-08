@@ -25,6 +25,14 @@ public interface Predicate<T> {
 }
 ```
 
+`Java 8` 라이브러리 설계자들은 `java.util.function` 패키지로 여러 가지 새로운 함수형 인터페이스를 제공한다. 대표적으로는 다음과 같은 인터페이스가 있다.
+
+* `Predicate<T>`
+* `Consumer<T>`
+* `Function<T, R>`
+* `Supplier<T>`
+* `UnaryOperator<T>`
+
 ## 3. Detail
 
 ### A. 함수 디스크립터
@@ -51,78 +59,7 @@ process(() -> System.out.println("Hello World"));
 
 `@FunctionalInterface`는 함수형 인터페이스임을 가리키는 어노테이션(annotation)이다. `@FunctionalInterface`로 인터페이스를 선언했지만 실제로 함수형 인터페이스가 아니라면(예를 들어 추상 메서드가 두 개 이상이라면), 컴파일러가 에러를 발생시킨다.
 
-### C. Predicate
-
-`java.util.funciton.Predicate<T>` 인터페이스는 `test`라는 추상 메서드를 정의하며, `test`는 제네릭 형식 `T`의 객체를 인수로 받아 `boolean`을 반환한다. 따라서, `T` 형식의 객체를 사용하는 불리언 표현식이 필요한 상황에서 `Predicate` 인터페이스를 사용할 수 있다.
-
-```java
-@FunctionalInterface
-public interface Predicate<T> {
-  boolean test(T t);
-}
-
-public <T> List<T> filter(List<T> list, Predicate<T> p) {
-  List<T> results = new ArrayList<>();
-  for(T t: list) {
-    if (p.test(t)) {
-      results.add(t);
-    }
-  }
-  return results;
-}
-
-Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
-List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
-```
-
-### D. Consumer
-
-`java.util.function.Consumer<T>` 인터페이스는 제네릭 형식 `T` 객체를 받아서 `void`를 반환하는 `accept`라는 추상 메서드를 정의한다. 따라서, `T` 형식의 객체를 인수로 받아서 어떤 동작을 수행하고 싶을 때, `Consumer` 인터페이스를 사용할 수 있다.
-
-```java
-@FunctionalInterface
-public interface Consumer<T> {
-  void accept(T t);
-}
-
-public <T> void forEach(List<T> list, Consumer<T> c) {
-  for(T t: list) {
-    c.accept(t);
-  }
-}
-
-forEach(
-  Arrays.asList(1,2,3,4,5),
-  (Integer i) -> Systemm.out.println(i)
-);
-```
-
-### E. Function
-
-`java.util.function.Function<T, R>` 인터페이스는 제네릭 형식 `T`를 인수로 받아서 제네릭 형식 `R` 객체를 반환하는 추상 메서드 `apply`를 정의한다. 따라서, 입력을 출력으로 매핑하는 람다를 정의할 때, `Function` 인터페이스를 활용할 수 있다.
-
-```java
-@FunctionalInterface
-public interface Function<T, R> {
-  R apply(T t);
-}
-
-public <T, R> List<R> map(List<T> list, Function<T, R> f) {
-  List<R> result = new ArrayList<>();
-  for(T t: list) {
-    results.add(f.apply(t));
-  }
-  return result;
-}
-
-// [7, 2, 6]
-List<Integer> l = map(
-  Arrays.asList("lambdas", "in", "action"),
-  (String s) -> s.length()
-);
-```
-
-### F. 디폴트 메서드
+### C. 디폴트 메서드
 
 인터페이스는 `디폴트 메서드(default method)`를 포함할 수 있다. 디폴트 메서드는 인터페이스의 메서드를 구현하지 않은 클래스를 위해 기본 구현을 제공하는 역할을 한다. 많은 디폴트 메서드가 있더라도 추상 메서드가 오직 하나면 함수형 인터페이스다.
 
