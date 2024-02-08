@@ -27,11 +27,11 @@ public interface Predicate<T> {
 
 `Java 8` 라이브러리 설계자들은 `java.util.function` 패키지로 여러 가지 새로운 함수형 인터페이스를 제공한다. 대표적으로는 다음과 같은 인터페이스가 있다.
 
-* `Predicate<T>`
-* `Consumer<T>`
-* `Function<T, R>`
-* `Supplier<T>`
-* `UnaryOperator<T>`
+* `Predicate<T>` => [[Java] 프레디케이트(Predicate) 함수형 인터페이스란?](https://burningfalls.github.io/java/what-is-predicate-functional-interface/)
+* `Consumer<T>` => [[Java] Consumer 함수형 인터페이스란?](https://burningfalls.github.io/java/what-is-consumer-functional-interface/)
+* `Function<T, R>` => [[Java] Function 함수형 인터페이스란?](https://burningfalls.github.io/java/what-is-function-functional-interface/)
+* `Supplier<T>` => [[Java] Supplier 함수형 인터페이스란?](https://burningfalls.github.io/java/what-is-supplier-functional-interface/)
+* `UnaryOperator<T>` => [[Java] UnaryOperator 함수형 인터페이스란?](https://burningfalls.github.io/java/what-is-unaryoperator-functional-interface/)
 
 ## 3. Detail
 
