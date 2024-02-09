@@ -16,8 +16,8 @@ main:
     url: /categories/git
   - title: "Java"
     url: /categories/java
-  - title: "Web"
-    url: /categories/web
+  - title: "Woowa Course"
+    url: /categories/woowa-course
 
 # documentation links
 posts:
