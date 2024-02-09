@@ -4,9 +4,9 @@ excerpt: "python과 sql 간의 통역사인 ORM에 대하여"
 date: 2022-09-05
 last_modified_at: 2022-09-05
 categories:
-  - web
+  - essay
 tags:
-  - django
+  - question
   - orm
 ---
 

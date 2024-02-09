@@ -4,9 +4,9 @@ excerpt: "python Django framework에 쓰이는 MTV pattern에 대하여"
 date: 2022-09-05
 last_modified_at: 2022-09-05
 categories:
-  - web
+  - essay
 tags:
-  - django
+  - question
   - mtv-pattern
 ---
 

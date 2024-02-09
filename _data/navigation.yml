@@ -71,6 +71,9 @@ posts:
     - title: "handy function"
       tag: "handy-function"
       url: /tags/handy-function
+    - title: "question"
+      tag: "question"
+      url: /tags/question
     - title: "roadmap"
       tag: "roadmap"
       url: /tags/roadmap

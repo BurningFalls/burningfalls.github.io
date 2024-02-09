@@ -4,9 +4,9 @@ excerpt: "비슷하게 느낄 수 있는 library와 framework의 구분을 위�
 date: 2022-09-05
 last_modified_at: 2022-09-05
 categories:
-  - web
+  - essay
 tags:
-  - django
+  - question
   - framework
 ---
 
