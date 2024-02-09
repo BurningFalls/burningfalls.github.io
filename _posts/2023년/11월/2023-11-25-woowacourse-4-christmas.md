@@ -1,13 +1,12 @@
 ---
-title: "[essay] 우아한테크코스 6기 프리코스 4주차 크리스마스 프로모션 회고"
+title: "[woowacourse] 우아한테크코스 6기 프리코스 4주차 크리스마스 프로모션 회고"
 excerpt: "우아한테크코스 6기 프리코스 4주차 과제 크리스마스 프로모션 구현하고 배운 점 및 느낀 점"
 date: 2023-11-25
 last_modified_at: 2023-11-25
 categories:
-  - essay
+  - woowa-course
 tags:
-  - woowacourse
-  - freecourse
+  - pre-course
   - java
   - christmas-promotion
 ---

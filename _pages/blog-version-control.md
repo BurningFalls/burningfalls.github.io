@@ -14,6 +14,12 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.8.0
+
+* `WEB` category 삭제
+* `Woowa Course` category 추가
+* `pre-course`, `woowa-diary` tag 추가
+
 ### 1.7.0
 
 * `JAVA` category 추가

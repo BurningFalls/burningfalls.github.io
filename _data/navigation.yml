@@ -101,16 +101,16 @@ posts:
     - title: "java-study"
       tag: "java-study"
       url: /tags/java-study
-- title: Web
-  category: web
-  url: categories/web
+- title: Woowa Course
+  category: woowa-course
+  url: categories/woowa-course
   children:
-    - title: "django"
-      tag: "django"
-      url: /tags/django
-    - title: "spring"
-      tag: "spring"
-      url: /tags/spring
+    - title: "pre-course"
+      tag: "pre-course"
+      url: /tags/pre-course
+    - title: "woowa-diary"
+      tag: "woowa-diary"
+      url: /tags/woowa-diary
 - title: Version
   url: /version
     

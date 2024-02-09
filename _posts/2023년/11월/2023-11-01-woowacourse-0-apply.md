@@ -1,12 +1,12 @@
 ---
-title: "[essay] 우아한테크코스 6기 신청"
+title: "[woowacourse] 우아한테크코스 6기 신청"
 excerpt: "우아한테크코스 6기 신청하기까지의 과정"
 date: 2023-11-01
 last_modified_at: 2023-11-01
 categories:
-  - essay
+  - woowa-course
 tags:
-  - woowacourse
+  - pre-course
 ---
 
 |우아한테크코스 6기 회고록|

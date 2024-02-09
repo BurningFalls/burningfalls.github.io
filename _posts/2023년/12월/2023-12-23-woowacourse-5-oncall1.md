@@ -1,13 +1,12 @@
 ---
-title: "[essay] 우아한테크코스 6기 최종 코딩 테스트 준비과정 및 oncall 회고 1"
+title: "[woowacourse] 우아한테크코스 6기 최종 코딩 테스트 준비과정 및 oncall 회고 1"
 excerpt: "우아한테크코스 6기 최종 코딩 테스트 준비과정 및 oncall 구현하고 배운 점 및 느낀 점"
 date: 2023-12-23
 last_modified_at: 2023-12-23
 categories:
-  - essay
+  - woowa-course
 tags:
-  - woowacourse
-  - freecourse
+  - pre-course
   - java
   - oncall
 ---
