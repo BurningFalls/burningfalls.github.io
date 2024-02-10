@@ -1,6 +1,6 @@
 ---
 title: "[Java] Java에서 값이 없는 상황(null)을 처리하는 방법은? (null vs Optional)"
-excerpt: "Java에서 값이 없는 상황(null)을 처리하는 방법은? 전통적인 null을 사용하는 방법은? Optional 클래스를 사용하는 방법은? null 사용의 문제점은? Optional 클래스의 세부적인 사항들은 어떤 것들이 있는가?"
+excerpt: "Java에서 값이 없는 상황(null)을 처리하는 방법은? Optional이란?"
 date: 2024-02-10
 last_modified_at: 2024-02-10
 categories:
