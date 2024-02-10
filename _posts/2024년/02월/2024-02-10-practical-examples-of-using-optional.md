@@ -1,6 +1,6 @@
 ---
 title: "[Java] Optional을 사용한 실용 예제에는 어떤 것들이 있는가?"
-excerpt: "Optional을 사용한 실용 예제에는 어떤 것들이 있는가?"
+excerpt: "Optional을 사용한 실용 예제에는 어떤 것들이 있는가? 잠재적으로 null이 될 수 있는 대상을 Optional로 감싸는 방법은? 예외와 Optional 클래스는? Optional 클래스를 응용하는 방법은?"
 date: 2024-02-10
 last_modified_at: 2024-02-10
 categories:
@@ -76,7 +76,9 @@ public int readDuration(Properties props, String name) {
 
 ## 3. Detail
 
-None
+> [[Java] Java에서 값이 없는 상황(null)을 처리하는 방법은? (null vs Optional)](https://burningfalls.github.io/java/how-to-handle-null-values/)
+> [[Java] Optional 클래스란?](https://burningfalls.github.io/java/what-is-optional-class/)
+> [[Java] Optional 클래스 사용 방법은?](https://burningfalls.github.io/java/how-to-use-optional-class/)
 
 ## 4. Reference
 

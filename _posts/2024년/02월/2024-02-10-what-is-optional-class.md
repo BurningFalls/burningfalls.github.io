@@ -1,6 +1,6 @@
 ---
 title: "[Java] Optional 클래스란?"
-excerpt: "Optional 클래스란? Optional 클래스의 예시는? Optional 클래스의 상세 설명은? Optional 클래스 사용 방법은?"
+excerpt: "Optional 클래스란? Optional 클래스의 예시는? Optional 클래스의 상세 설명은?"
 date: 2024-02-10
 last_modified_at: 2024-02-10
 categories:
@@ -68,9 +68,11 @@ public class OptionalExample {
 
 `Optional`의 등장은 자바 프로그래밍에서 `null` 처리를 개선하는 중요한 단계이다. 이는 선택적 값의 존재를 명확하게 하고, 코드의 안전성과 가독성을 향상시키며, 개발자가 예상치 못한 `null` 관련 에러에 대처할 수 있도록 돕는다.
 
-### B. 사용 방법
+### B. 추가 설명
 
-
+> [[Java] Java에서 값이 없는 상황(null)을 처리하는 방법은? (null vs Optional)](https://burningfalls.github.io/java/how-to-handle-null-values/)
+> [[Java] Optional 클래스 사용 방법은?](https://burningfalls.github.io/java/how-to-use-optional-class/)
+> [[Java] Optional을 사용한 실용 예제에는 어떤 것들이 있는가?](https://burningfalls.github.io/java/practical-examples-of-using-optional/)
 
 ## 4. Reference
 

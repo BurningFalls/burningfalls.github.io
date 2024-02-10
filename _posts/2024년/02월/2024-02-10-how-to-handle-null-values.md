@@ -1,6 +1,6 @@
 ---
 title: "[Java] Java에서 값이 없는 상황(null)을 처리하는 방법은? (null vs Optional)"
-excerpt: "Java에서 값이 없는 상황(null)을 처리하는 방법은? Optional이란?"
+excerpt: "Java에서 값이 없는 상황(null)을 처리하는 방법은? 전통적인 null을 사용한 코드와 Optional 클래스를 사용한 코드의 차이점은? null 사용의 문제점은?"
 date: 2024-02-10
 last_modified_at: 2024-02-10
 categories:
@@ -59,7 +59,9 @@ public String getUsername(Optional<User> user) {
 
 ### B. Optional 클래스 세부 설명
 
-
+> [[Java] Optional 클래스란?](https://burningfalls.github.io/java/what-is-optional-class/)
+> [[Java] Optional 클래스 사용 방법은?](https://burningfalls.github.io/java/how-to-use-optional-class/)
+> [[Java] Optional을 사용한 실용 예제에는 어떤 것들이 있는가?](https://burningfalls.github.io/java/practical-examples-of-using-optional/)
 
 ## 4. Reference
 

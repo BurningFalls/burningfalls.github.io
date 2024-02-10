@@ -1,6 +1,6 @@
 ---
 title: "[Java] Optional 클래스 사용 방법은?"
-excerpt: "Optional 클래스 사용 방법은?"
+excerpt: "Optional 클래스 사용 방법은? Optional 객체를 만드는 방법은? map으로 Optional의 값을 추출하고 변환하는 방법은? flatMap으로 Optional 객체를 연결하는 방법은? Optional 스트림을 조작하는 방법은? 디폴트 액션과 Optional을 언랩하는 방법은? 두 Optional을 합치는 방법은? 필터로 특정값을 거르는 방법은?"
 date: 2024-02-10
 last_modified_at: 2024-02-10
 categories:
@@ -163,7 +163,9 @@ optInsurance.filter(insurance ->
 
 ## 3. Detail
 
-None
+> [[Java] Java에서 값이 없는 상황(null)을 처리하는 방법은? (null vs Optional)](https://burningfalls.github.io/java/how-to-handle-null-values/)
+> [[Java] Optional 클래스란?](https://burningfalls.github.io/java/what-is-optional-class/)
+> [[Java] Optional을 사용한 실용 예제에는 어떤 것들이 있는가?](https://burningfalls.github.io/java/practical-examples-of-using-optional/)
 
 ## 4. Reference
 
