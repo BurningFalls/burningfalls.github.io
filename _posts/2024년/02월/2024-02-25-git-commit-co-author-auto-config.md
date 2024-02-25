@@ -19,14 +19,16 @@ tags:
 
 * `.gitmessage.txt` 파일 생성
 
-```txt
+```bash
 >
 >
 >
 Co-authored-by: NAME <NAME@EXAMPLE.COM>
 ```
 
-![git template create](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/212e826c-1634-485e-98a0-abc382b1949c){: width="70%" height="70%"}
+![git template create](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/212e826c-1634-485e-98a0-abc382b1949c)
+
+<br>
 
 ### 2. 템플릿 설정
 
@@ -34,17 +36,21 @@ Co-authored-by: NAME <NAME@EXAMPLE.COM>
 git config --local commit.template .gitmessage.txt
 ```
 
-![git template config](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/5540c67b-52d3-4038-bf0a-0a447fa6670c){: width="70%" height="70%"}
+![git template config](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/5540c67b-52d3-4038-bf0a-0a447fa6670c)
+
+<br>
 
 ### 3. IDE 재실행
 
 * 사용 IDE 재실행
 
+<br>
+
 ### 4. 설정 완료
 
 * 커밋 메시지를 작성할 때는 반드시 커밋 설명의 끝과 `Co-authored-by: ` 사이에 **두 개의 줄 바꿈**이 있어야 한다.
 
-![git config complete](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/bff7e0e4-4db4-46c9-9bad-14a6647b0555){: width="70%" height="70%"}
+![git config complete](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/bff7e0e4-4db4-46c9-9bad-14a6647b0555)
 
 ## 3. Detail
 
