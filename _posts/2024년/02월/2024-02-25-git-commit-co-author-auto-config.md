@@ -28,8 +28,6 @@ Co-authored-by: NAME <NAME@EXAMPLE.COM>
 
 ![git template create](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/212e826c-1634-485e-98a0-abc382b1949c)
 
-<br>
-
 ### 2. 템플릿 설정
 
 ```bash
@@ -38,13 +36,9 @@ git config --local commit.template .gitmessage.txt
 
 ![git template config](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/5540c67b-52d3-4038-bf0a-0a447fa6670c)
 
-<br>
-
 ### 3. IDE 재실행
 
 * 사용 IDE 재실행
-
-<br>
 
 ### 4. 설정 완료
 
