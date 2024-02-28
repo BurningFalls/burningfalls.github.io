@@ -15,7 +15,7 @@ tags:
 
 ## 2. Answer
 
-### 1. 템플릿 생성
+### A. 템플릿 생성
 
 * `.gitmessage.txt` 파일 생성
 
@@ -28,7 +28,7 @@ Co-authored-by: NAME <NAME@EXAMPLE.COM>
 
 ![git template create](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/212e826c-1634-485e-98a0-abc382b1949c)
 
-### 2. 템플릿 설정
+### B. 템플릿 설정
 
 ```bash
 git config --local commit.template .gitmessage.txt
@@ -36,11 +36,11 @@ git config --local commit.template .gitmessage.txt
 
 ![git template config](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/5540c67b-52d3-4038-bf0a-0a447fa6670c)
 
-### 3. IDE 재실행
+### C. IDE 재실행
 
 * 사용 IDE 재실행
 
-### 4. 설정 완료
+### D. 설정 완료
 
 * 커밋 메시지를 작성할 때는 반드시 커밋 설명의 끝과 `Co-authored-by: ` 사이에 **두 개의 줄 바꿈**이 있어야 한다.
 
@@ -48,7 +48,7 @@ git config --local commit.template .gitmessage.txt
 
 ## 3. Detail
 
-### 1. 템플릿 설정 해제
+### A. 템플릿 설정 해제
 
 * 마찬가지로 명령어 입력 후, 사용 IDE 재실행
 
@@ -56,7 +56,7 @@ git config --local commit.template .gitmessage.txt
 git config --unset commit.template
 ```
 
-### 2. 템플릿 설정 확인
+### B. 템플릿 설정 확인
 
 ```bash
 git config --list
