@@ -1,6 +1,6 @@
 ---
 title: "[Java] TDD의 장점과 단점은?"
-excerpt: "TDD의 장점과 단점은?"
+excerpt: "TDD란? TDD의 장점과 단점은?"
 date: 2024-02-28
 last_modified_at: 2024-02-28
 categories:

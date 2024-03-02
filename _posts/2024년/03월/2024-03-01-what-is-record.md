@@ -1,6 +1,6 @@
 ---
 title: "[Java] record란?"
-excerpt: "record란?"
+excerpt: "record란? record의 기본 구조는? record에 커스텀 로직을 추가하는 방법은? record의 제한 사항은? record 사용 시 고려 사항은?"
 date: 2024-03-01
 last_modified_at: 2024-03-01
 categories:

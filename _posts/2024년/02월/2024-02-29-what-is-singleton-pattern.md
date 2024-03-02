@@ -1,6 +1,6 @@
 ---
 title: "[Java] 싱글턴(Singleton) 패턴이란?"
-excerpt: "싱글턴 패턴이란?"
+excerpt: "싱글턴 패턴이란? 싱글턴 패턴의 이른 초기화 방법은? 싱글턴 패턴의 느린 초기화 방법은?"
 date: 2024-02-29
 last_modified_at: 2024-02-29
 categories:
