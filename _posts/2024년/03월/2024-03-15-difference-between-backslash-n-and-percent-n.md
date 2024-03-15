@@ -1,5 +1,5 @@
 ---
-title: "[Java] \n과 %n의 차이점은?"
+title: "[Java] \\n과 %n의 차이점은?"
 excerpt: "Java에서 \n과 %n의 차이점은? 플랫폼 독립적인 줄바꿈 처리를 하는 방법은? \n과 %n을 사용하는 예시는? %n의 장점은?"
 date: 2024-03-15
 last_modified_at: 2024-03-15
