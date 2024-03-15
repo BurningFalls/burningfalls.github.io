@@ -1,5 +1,5 @@
 ---
-title: "[Java] 유틸리티 클래스의 생성자를 privated으로 만들어야 하는 이유는?"
+title: "[Java] 유틸리티 클래스의 생성자를 private으로 만들어야 하는 이유는?"
 excerpt: "Java에서 유틸리티 클래스의 생성자를 private으로 만들어야 하는 이유는?"
 date: 2024-03-15
 last_modified_at: 2024-03-15
