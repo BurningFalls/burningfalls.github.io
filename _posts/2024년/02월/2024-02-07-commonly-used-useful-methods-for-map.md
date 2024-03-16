@@ -15,6 +15,79 @@ tags:
 
 ## 2. Answer
 
+```java
+// put(K key, V value)
+// 지정된 키와 값을 맵에 연결하여 저장한다. 키가 이미 존재한다면, 그 키에 대한 기존 값을 새로운 값으로 대체한다.
+Map<String, Integer> map = new HashMap<>();
+map.put("Apple", 3);
+map.put("Banana", 5);
+```
+
+```java
+// get(Object key)
+// 지정된 키와 연결된 값을 반환한다. 키가 맵에 존재하지 않는 경우 null을 반환한다.
+Integer appleCount = map.get("Apple");
+System.out.println("Apple count: " + appleCount); // Apple count: 3
+```
+
+```java
+// remove(Object key)
+// 지정된 키와 그에 연결된 값을 맵에서 제거한다. 키가 맵에 존재하면 그 값이 반환되고, 그렇지 않으면 null이 반환된다.
+map.remove("Apple");
+```
+
+```java
+// containsKey(Object key)
+// 맵이 지정된 키를 포함하고 있는지 여부를 반환한다.
+if (map.containsKey("Banana")) {
+  System.out.println("Map contains key 'Banana'.");
+}
+```
+
+```java
+// containsValue(Object value)
+// 맵이 하나 이상의 키에 대해 지정된 값을 가지고 있는지 여부를 확인한다.
+if (map.containsValue(5)) {
+  System.out.println("Map contains the value 5.");
+}
+```
+
+```java
+// keySet()
+// 맵의 모든 키를 포함하는 `Set`을 반환한다.
+Set<String> keys = map.keySet();
+System.out.println("Keys: " + keys);
+```
+
+```java
+// values()
+// 맵의 모든 값을 컬렉션 형태로 반환한다.
+Collection<Integer> values = map.values();
+System.out.println("Values: " + values);
+```
+
+```java
+// entrySet()
+// 맵의 모든 '키-값' 쌍을 Set 형태로 반환한다. 이는 맵의 요소를 순회할 때 사용된다.
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+  System.out.println(entry.getKey() + " => " + entry.getValue());
+}
+```
+
+```java
+// putAll(Map<? extends K, ? extends V> m)
+// 다른 맵의 모든 '키-값' 쌍을 현재 맵에 추가한다.
+Map<String, Integer> anotherMap = new HashMap<>();
+anotherMap.put("Cherry", 2);
+map.putAll(anotherMap);
+```
+
+```java
+// clear()
+// 맵의 모든 요소를 제거한다.
+map.clear();
+```
+
 ### A. forEach
 
 `forEach` 메서드는 맵의 모든 키(key)-값(value) 쌍에 대해 주어진 액션(일반적으로 람다 표현식)을 수행한다.
