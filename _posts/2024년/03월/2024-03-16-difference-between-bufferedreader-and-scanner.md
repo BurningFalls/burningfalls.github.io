@@ -1,5 +1,5 @@
 ---
-title: "[Java] BufferedReader VS Scanner?"
+title: "[Java] BufferedReader VS Scanner"
 excerpt: "Java에서 BufferedReader와 Scanner의 차이는 BufferedReader와 Scanner 각각의 예시는?"
 date: 2024-03-16
 last_modified_at: 2024-03-16
