@@ -35,34 +35,7 @@ Java에서 `BufferedReader`와 `Scanner`의 차이는?
 
 ## 3. Detail
 
-### A. BufferedReader 예시 - 파일에서 텍스트 읽기
-
-```java
-try (BufferedReader reader = new BufferedReader(new FileReader("example.txt"))) {
-  String line;
-  while ((line = reader.readLine()) != null) {
-    System.out.println(line);
-  }
-} catch (IOException e) {
-  e.printStackTrace();
-}
-```
-
-### B. BufferedReader 예시 - 소켓에서 데이터 읽기
-
-```java
-try (Socket socket = new Socket("example.com", 80);
-  BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
-    String line;
-    while ((line = reader.readLine()) != null) {
-      system.out.println(line);
-    }
-} catch (IOException e) {
-  e.printStackTrace();
-}
-```
-
-### C. Scanner 예시 - 사용자 입력 읽기
+### A. Scanner 예시 - 사용자 입력 읽기
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -74,7 +47,7 @@ System.out.println("Hello, " + name + ". You are " + age + " years old.");
 scanner.close();
 ```
 
-### D. Scanner 예시 - 파일에서 토큰화된 데이터 읽기
+### B. Scanner 예시 - 파일에서 토큰화된 데이터 읽기
 
 ```java
 try (Scanner scanner = new Scanner(new File("data.txt"))) {
@@ -87,7 +60,7 @@ try (Scanner scanner = new Scanner(new File("data.txt"))) {
 }
 ```
 
-### E. Scanner 예시 - 정규 표현식을 사용한 텍스트 파싱
+### C. Scanner 예시 - 정규 표현식을 사용한 텍스트 파싱
 
 ```java
 String input = "1 fish 2 fish red fish blue fish";
@@ -95,6 +68,33 @@ Scanner s = new Scanner(input).useDelimiter("\\s*fish\\s*");
 System.out.println(s.nextInt());  // 1
 System.out.println(s.nextInt());  // 2
 s.close();
+```
+
+### D. BufferedReader 예시 - 파일에서 텍스트 읽기
+
+```java
+try (BufferedReader reader = new BufferedReader(new FileReader("example.txt"))) {
+  String line;
+  while ((line = reader.readLine()) != null) {
+    System.out.println(line);
+  }
+} catch (IOException e) {
+  e.printStackTrace();
+}
+```
+
+### E. BufferedReader 예시 - 소켓에서 데이터 읽기
+
+```java
+try (Socket socket = new Socket("example.com", 80);
+  BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
+    String line;
+    while ((line = reader.readLine()) != null) {
+      system.out.println(line);
+    }
+} catch (IOException e) {
+  e.printStackTrace();
+}
 ```
 
 ### F. Scanner의 다양한 메서드
