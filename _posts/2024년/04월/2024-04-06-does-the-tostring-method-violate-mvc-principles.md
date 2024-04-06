@@ -1,6 +1,6 @@
 ---
 title: "[Java] toString() 메서드는 MVC 원칙을 어기는가?"
-excerpt: "Java의 toString() 메서드는 MVC 원칙을 어기는가?"
+excerpt: "Java의 toString() 메서드는 MVC 원칙을 어기는가? toString() 메서드의 MVC 위반 여부는? toString() 메서드란? toString() 오버라이딩이란? toString() 구현 예제는?"
 date: 2024-04-06
 last_modified_at: 2024-04-06
 categories:
