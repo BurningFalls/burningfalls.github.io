@@ -101,6 +101,9 @@ posts:
     - title: "java-study"
       tag: "java-study"
       url: /tags/java-study
+    - title: "spring-study"
+      tag: "spring-study"
+      url: /tags/spring-study
 - title: Woowa Course
   category: woowa-course
   url: categories/woowa-course
