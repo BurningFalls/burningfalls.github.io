@@ -33,21 +33,21 @@ tags:
 
 아래 링크에서 Spring Core에 대해 자세히 알아볼 수 있다.
 
-* [Official website](https://spring.io/)
-* [Official Documentation](https://spring.io/why-spring)
-* [Getting Started with Spring](https://spring.io/guides/gs/spring-boot)
-* [Spring Core Tutorial](https://www.tutorialspoint.com/spring/index.htm)
-* [Spring Framework](https://www.youtube.com/playlist?list=PLC97BDEFDCDD169D7)
+* [Official website](https://spring.io/){: target="_blank"}
+* [Official Documentation](https://spring.io/why-spring){: target="_blank"}
+* [Getting Started with Spring](https://spring.io/guides/gs/spring-boot){: target="_blank"}
+* [Spring Core Tutorial](https://www.tutorialspoint.com/spring/index.htm){: target="_blank"}
+* [Spring Framework](https://www.youtube.com/playlist?list=PLC97BDEFDCDD169D7){: target="_blank"}
 
 ### B. Detail about Spring Boot
 
 아래 링크에서 Spring Boot에 대해 자세히 알아볼 수 있다.
 
-* [Spring Boot - Introduction](https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm)
-* [Introduction to Spring Boot](https://medium.com/adessoturkey/introduction-to-spring-boot-458cb814ec14)
-* [Spring Boot](https://spring.io/projects/spring-boot)
-* [What-is-Spring-Boot?](https://www.ibm.com/topics/java-spring-boot)
+* [Spring Boot - Introduction](https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm){: target="_blank"}
+* [Introduction to Spring Boot](https://medium.com/adessoturkey/introduction-to-spring-boot-458cb814ec14){: target="_blank"}
+* [Spring Boot](https://spring.io/projects/spring-boot){: target="_blank"}
+* [What-is-Spring-Boot?](https://www.ibm.com/topics/java-spring-boot){: target="_blank"}
 
 ## 4. Reference
 
-* [Spring Boot Developer Roadmap](https://roadmap.sh/spring-boot)
+* [Spring Boot Developer Roadmap](https://roadmap.sh/spring-boot){: target="_blank"}
