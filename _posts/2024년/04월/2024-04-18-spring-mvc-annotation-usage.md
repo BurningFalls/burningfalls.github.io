@@ -1,6 +1,6 @@
 ---
 title: "[Spring] Spring MVC에서 주로 사용하는 annotation의 용도는? (@Controller, @RestController, @RequestMapping, @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PathVariable, @RequestParam, @RequestBody, @ResponseBody)"
-excerpt: ""
+excerpt: "@Controller, @RestController, @RequestMapping, @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PathVariable, @RequestParam, @RequestBody, @ResponseBody"
 date: 2024-04-18
 last_modified_at: 2024-04-18
 categories:
