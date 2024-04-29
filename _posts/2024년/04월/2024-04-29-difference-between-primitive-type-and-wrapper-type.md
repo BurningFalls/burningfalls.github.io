@@ -1,5 +1,5 @@
 ---
-title: "[Java] 기본 타입(primitive types) VS 래퍼 타입(wrapper types)?"
+title: "[Java] 기본 타입(primitive types) VS 래퍼 타입(wrapper types)"
 excerpt: "기본 타입이란? 래퍼 타입이란? 자바에서 기본 타입(primitive types)과 래퍼 타입(wrapper types)의 차이점은? 오토 박싱과 언박싱이란?"
 date: 2024-04-29
 last_modified_at: 2024-04-29
