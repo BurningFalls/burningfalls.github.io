@@ -6,7 +6,7 @@ last_modified_at: 2024-04-29
 categories:
   - java
 tags:
-  - spring-study
+  - java-study
 ---
 
 ## 1. Question
