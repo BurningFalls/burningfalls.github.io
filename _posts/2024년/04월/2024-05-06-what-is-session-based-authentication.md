@@ -1,6 +1,6 @@
 ---
 title: "[Spring] 세션 기반 인증(Session-Based Authentication)이란?"
-excerpt: "웹에서의 세션 기반 인증(Session-Based Authentication)이란? 기본 인증의 절차는? 기본 인증의 보안적 측면은? 기본 인증 사용 시 고려사항은?"
+excerpt: "웹에서의 세션 기반 인증(Session-Based Authentication)이란? 세션 인증의 절차는? 세션 인증의 보안적 측면은? 세션 인증 사용 시 고려사항은?"
 date: 2024-05-06
 last_modified_at: 2024-05-06
 categories:
@@ -25,7 +25,7 @@ tags:
 ### B. 세션 ID 생성 및 쿠키 설정
 
 * 세션 생성 시, 서버는 유니크한 세션 ID를 생성하고 이를 쿠키에 저장하여 클라이언트(브라우저)에 전달한다.
-* 클라이언트는 이후 서버로 요청ㅇ르 보낼 때마다 이 쿠키를 HTTP request와 함께 전송한다.
+* 클라이언트는 이후 서버로 요청을 보낼 때마다 이 쿠키를 HTTP request와 함께 전송한다.
 
 ### C. 서버의 세션 검증
 
