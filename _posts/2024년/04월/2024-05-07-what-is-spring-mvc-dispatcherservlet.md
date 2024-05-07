@@ -15,6 +15,8 @@ tags:
 
 ## 2. Answer
 
+![RequestLifecycle](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/c77eed9f-dc14-4625-aa04-69b3e99d9431)
+
 ### A. 구성 요소 - HandlerMapping
 
 `HandlerMapping`은 들어오는 요청 URL을 처리할 핸들러(컨트롤러 메서드)로 라우팅하는 역할을 한다. 요청의 URL 패턴이나 HTTP 메서드 타입 등의 정보를 기반으로 적절한 핸들러를 결정한다. 대표적인 구현체로는 `RequestMappingHandlerMapping`이 있으며, 이는 `@RequestMapping` annotation을 사용하여 request를 매핑한다.
@@ -49,4 +51,4 @@ None
 
 ## 4. Reference
 
-None
+* [Overview of Spring MVC Architecture](https://terasolunaorg.github.io/guideline/5.0.1.RELEASE/en/Overview/SpringMVCOverview.html#overview-of-spring-mvc-processing-sequence)
