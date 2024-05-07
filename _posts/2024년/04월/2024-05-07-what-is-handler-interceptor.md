@@ -23,19 +23,25 @@ tags:
 
 `HandlerInterceptor` 인터페이스는 주로 세 가지 메서드를 정의하며, 이를 구현하여 원하는 기능을 실행할 수 있다.
 
-`preHandle(HttpServletRequest request, HttpServletResponse response, Object handler):`
+```java
+preHandle(HttpServletRequest request, HttpServletResponse response, Object handler):
+```
 
 * 컨트롤러 메서드가 실행되기 전에 호출된다.
 * 이 메서드는 `boolean` 값을 반환하며, `true`를 반환하면 request 처리가 계속되고, `false`를 반환하면 request 처리가 중단된다.
 * 인증 체크, 로깅, request 정보의 사전 처리 등에 사용할 수 있다.
 
-`postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView):`
+```java
+postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView):
+```
 
 * 컨트롤러 메서드가 실행된 후, 그러나 뷰가 렌더링되기 전에 호출된다.
 * Response 데이터를 수정하거나 추가 로직을 실행하는 데 사용할 수 있다.
 * `ModelAndView` 객체를 조작하여 컨트롤러에서 생성된 모델 데이터를 변경하거나, 다른 뷰를 선택할 수 있다.
 
-`afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex):`
+```java
+afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex):
+```
 
 * Request 처리의 전체 과정이 완료된 후에 호출된다(뷰 렌더링 포함).
 *  예외 발생 유무에 관계없이 실행되며, 리소스 정리나 후처리 로직을 수행하는 데 사용된다.
