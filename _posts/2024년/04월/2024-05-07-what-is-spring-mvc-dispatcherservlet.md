@@ -15,6 +15,8 @@ tags:
 
 ## 2. Answer
 
+Spring Framework의 `DispatcherServlet`은 `Spring MVC`의 핵심 컴포넌트로, 프론트 컨트롤러 패턴을 구현한다. 이 패턴에서 하나의 Servlet이 모든 클라이언트 request를 받아 처리하고, 적절한 리소스(컨트롤러)에 request를 전달하는 역할을 한다.
+
 ![RequestLifecycle](https://github.com/BurningFalls/burningfalls.github.io/assets/30232837/c77eed9f-dc14-4625-aa04-69b3e99d9431)
 
 ### A. 구성 요소 - HandlerMapping
