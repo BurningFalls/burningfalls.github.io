@@ -9,7 +9,7 @@ tags:
   - spring-study
 ---
 
-## 1. Questㄴion
+## 1. Question
 
 Spring에서 `@Entity` annotation을 사용하면 왜 빈 생성자가 필요할까?
 
