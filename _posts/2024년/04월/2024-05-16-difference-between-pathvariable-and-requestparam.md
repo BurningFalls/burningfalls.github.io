@@ -19,7 +19,7 @@ Spring에서 `@PathVariable`과 `@RequestParam`의 차이는?
 
 `@PathVariable`은 URL 경로의 일부를 변수로 추출할 때 사용된다. 이는 주로 RESTful 서비스에서 자원을 식별하기 위해 사용된다. URL 경로 내의 데이터를 직접 변수로 매핑하여 메서드의 파라미터로 전달할 수 있다.
 
-아래는 사용자의 ID를 URL 경로에서 추출하여 메서드 파라미터로 전달하는 예시이다.
+아래는 사용자의 ID를 URL 경로에서 추출하여 메서드 파라미터로 전달하는 예시이다. 이 예시에서 URL `/users/123`은 `userId`로 `123`을 전달한다.
 
 ```java
 @GetMapping("/users/{userId}")
@@ -33,7 +33,7 @@ public String getUserById(@PathVariable("userId") Long userId) {
 
 `@RequestParam`은 쿼리 파라미터를 메서드의 파라미터로 전달할 때 사용된다. 이는 주로 URL에 추가적인 정보를 제공하거나 옵션을 설정할 때 사용된다. 특히, 검색이나 필터링과 같은 기능을 구현할 때 유용하다.
 
-아래는 사용자가 제출한 쿼리 파라미터를 메서드 파라미터로 전달받는 예시이다.
+아래는 사용자가 제출한 쿼리 파라미터를 메서드 파라미터로 전달받는 예시이다. 이 예시에서 URL `/users?name=John`은 `userName` 파라미터로 `John`을 전달한다.
 
 ```java
 @GetMapping("/users")
