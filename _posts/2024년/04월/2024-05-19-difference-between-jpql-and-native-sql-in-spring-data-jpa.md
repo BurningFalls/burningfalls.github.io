@@ -40,8 +40,7 @@ public class Course {
 
 ### A. JPQL
 
-`JPQL(Java Persistence Query Language)`는 `JPA`의 일부로, 데이터베이스 테이블이 아닌 엔티티 모델을 대상으로 쿼리를 작성한다. 이는 `SQL`과 비슷하지만, 엔티티 클래스와 그 속성을 기반으로 작동하므로 데이터베이스 구조와 독립적이다. `JPQL`은 데이터베이스의 구현 세부사항을 추상화하여, 어
-떠한 특정 데이터베이스 시스템에도 적용될 수 있는 크로스 플랫폼 쿼리를 가능하게 한다.
+`JPQL(Java Persistence Query Language)`는 `JPA`의 일부로, 데이터베이스 테이블이 아닌 엔티티 모델을 대상으로 쿼리를 작성한다. 이는 `SQL`과 비슷하지만, 엔티티 클래스와 그 속성을 기반으로 작동하므로 데이터베이스 구조와 독립적이다. `JPQL`은 데이터베이스의 구현 세부사항을 추상화하여, 어떠한 특정 데이터베이스 시스템에도 적용될 수 있는 크로스 플랫폼 쿼리를 가능하게 한다.
 
 * **객체 중심**: JPQL은 엔티티 클래스와 그 속성을 기준으로 쿼리를 작성한다. 이는 객체 지향 프로그래밍 패러다임에 잘 부합하며, 엔티티 간의 관계를 쉽게 활용할 수 있게 해준다.
 
@@ -59,7 +58,7 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 }
 ```
 
-### B. Native SQL Query
+### B. Native SQL
 
 `Native SQL` Query를 사용하면, 데이터베이스에 직접 작성된 `SQL` 쿼리를 실행할 수 있다. 이 방법은 데이터베이스의 특정 기능을 최대한 활용하고자 할 때 유용하며, `JPQL`에서 지원하지 않는 특정 `SQL` 기능이나 구문을 사용해야 할 때 필요하다.
 
@@ -81,7 +80,7 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
 ## 3. Detail
 
-
+None
 
 ## 4. Reference
 
