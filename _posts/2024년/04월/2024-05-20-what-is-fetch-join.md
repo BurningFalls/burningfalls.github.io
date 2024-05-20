@@ -35,6 +35,15 @@ SELECT u FROM User u JOIN FETCH u.orders
 
 `Spring Data JPA`에서는 `@EntityGraph` annotation을 사용하여 `fetch join`을 수행할 수 있다. 이 annotation을 통해 `JPQL`을 작성하지 않고도 엔티티의 특정 속성을 `Eager Loading` 방식으로 가져올 수 있다.
 
+```java
+public interface UserRepository extends JpaRepository<User, Long> {
+  @EntityGraph(attributePaths = {"orders"})
+  List<User> findAllWithOrders();
+}
+```
+
+이 메서드를 사용하면 `User` 객체들을 조회할 때 자동으로 `orders` 컬렉션을 `Eager Loading`으로 가져온다. 이렇게 하면 별도의 쿼리 없이 연관된 주문들을 한 번에 로드할 수 있어, 성능 최적화에 도움이 된다.
+
 ## 3. Detail
 
 ### A. N+1 문제
