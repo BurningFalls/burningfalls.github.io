@@ -14,6 +14,10 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 
 ## Version
 
+### 1.9.0
+
+* `AWS` category 추가
+
 ### 1.8.0
 
 * `WEB` category 삭제
