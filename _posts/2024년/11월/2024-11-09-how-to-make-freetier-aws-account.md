@@ -13,7 +13,6 @@ tags:
 
 AWS 프리티어 계정은 어떻게 만들까?
 
-> [!CAUTION]
 > **AWS 프리티어 계정**은 다양한 서비스를 무료로 제공하지만, 리소스에는 제한이 있다. 각 서비스마다 사용 가능한 한도와 기간(일반적으로 12개월)이 있으므로, 이를 명확히 이해하고 활용하는 것이 중요하다. 아래 사이트에서 자세한 내용을 확인할 수 있다.<br> [AWS 프리티어 시작하기](https://docs.aws.amazon.com/ko_kr/whitepapers/latest/how-aws-pricing-works/get-started-with-the-aws-free-tier.html){: target="_blank"}
 
 ## B. Answer
