@@ -4,9 +4,9 @@ excerpt: "백준 대회 'GBS Coding Contest 2021 Open' 상세 풀이 링크"
 date: 2022-01-02
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[GBS Coding Contest 2021](https://burningfalls.github.io/contest/gbs2021-baekjoon-contest) 풀이|

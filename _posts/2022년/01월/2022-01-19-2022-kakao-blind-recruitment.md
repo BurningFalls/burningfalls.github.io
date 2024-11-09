@@ -4,9 +4,9 @@ excerpt: "프로그래머스에 있는 2022 KAKAO BLIND RECRUITMENT 문제를 �
 date: 2022-01-19
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - contest-etc
+  - contest
   - programmers
   - kakao_blind_recruitment
 ---

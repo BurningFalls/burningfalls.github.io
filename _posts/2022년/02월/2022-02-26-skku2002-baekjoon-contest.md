@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 성균관대학교 프로그래밍 경진대회 Op
 date: 2022-02-26
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 성균관대학교 프로그래밍 경진대회 Open Contest](https://burningfalls.github.io/contest/skku2002-baekjoon-contest/) 풀이|

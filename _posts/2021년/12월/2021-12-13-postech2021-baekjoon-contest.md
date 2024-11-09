@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2021 POSTECH Programming Open Contest' 상세 풀이 �
 date: 2021-12-13
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2021 POSTECH Programming Open Contest](https://burningfalls.github.io/contest/postech2021-baekjoon-contest) 풀이|

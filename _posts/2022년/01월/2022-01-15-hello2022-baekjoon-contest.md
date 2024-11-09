@@ -4,9 +4,9 @@ excerpt: "백준 대회 'Hello, BOJ 2022!' 상세 풀이 링크"
 date: 2022-01-15
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[Hello, BOJ 2022!](https://burningfalls.github.io/contest/hello2022-baekjoon-contest) 풀이|

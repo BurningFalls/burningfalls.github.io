@@ -4,9 +4,9 @@ excerpt: "2021년 Softeer 모의 알고리즘 코딩 대회에 참가한 소감"
 date: 2021-12-03
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - contest-etc
+  - contest
   - softeer
 ---
 

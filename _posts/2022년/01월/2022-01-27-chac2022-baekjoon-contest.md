@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 중앙대학교 CHAC Open Contest' 상세 풀이 �
 date: 2022-01-27
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 중앙대학교 CHAC](https://burningfalls.github.io/contest/chac2022-baekjoon-contest) 풀이|

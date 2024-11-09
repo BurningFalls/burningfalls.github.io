@@ -4,9 +4,9 @@ excerpt: "백준 대회 '제4회 가톨릭대학교 프로그래밍 경진대회
 date: 2022-05-18
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[제4회 가톨릭대학교 프로그래밍 경진대회 (CCPC)](https://burningfalls.github.io/contest/ccpc2022-baekjoon-contest/) 풀이|

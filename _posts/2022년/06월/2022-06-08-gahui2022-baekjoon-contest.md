@@ -4,9 +4,9 @@ excerpt: "백준 대회 '가희와 함께 하는 코딩테스트 4회'에 참가
 date: 2022-06-08
 last_modified_at: 2022-06-08
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[가희와 함께 하는 코딩테스트 4회](https://burningfalls.github.io/contest/gahui2022-baekjoon-contest/) 풀이|

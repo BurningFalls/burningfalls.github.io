@@ -4,8 +4,8 @@ main:
     url: /categories/algorithm
   - title: "Blog"
     url: /categories/blog
-  - title: "Contest"
-    url: /categories/contest
+  - title: "CS"
+    url: /categories/cs
   - title: "Deep Learning"
     url: /categories/deep-learning
   - title: "Essay"
@@ -27,6 +27,9 @@ posts:
   category: algorithm
   url: /categories/algorithm
   children:
+    - title: "contest"
+      tag: "contest"
+      url: /tags/contest
     - title: "boj 23000~23999"
       tag: "boj-23000-23999"
       url: /tags/boj-23000-23999
@@ -46,16 +49,9 @@ posts:
     - title: "markdown"
       tag: "markdown"
       url: /tags/markdown
-- title: Contest
-  category: contest
-  url: categories/contest
-  children:
-    - title: "baekjoon contest"
-      tag: "baekjoon-contest"
-      url: /tags/baekjoon-contest
-    - title: "contest etc"
-      tag: "contest-etc"
-      url: /tags/contest-etc
+- title: CS
+  category: cs
+  url: categories/cs
 - title: Deep learning
   category: deep-learning
   url: categories/deep-learning

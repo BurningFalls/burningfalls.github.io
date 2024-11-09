@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 DGIST 현풍전산배 알고리즘 대회 Open Con
 date: 2022-05-02
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 DGIST 현풍전산배 알고리즘 대회](https://burningfalls.github.io/contest/dgist2022-baekjoon-contest/) 풀이|

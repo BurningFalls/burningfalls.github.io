@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2021 경인지역 6개대학 연합 프로그래밍 경
 date: 2022-01-16
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2021 경인지역 6개대학 연합 프로그래밍 경시대회 shake!](https://burningfalls.github.io/contest/shake2021-baekjoon-contest) 풀이|

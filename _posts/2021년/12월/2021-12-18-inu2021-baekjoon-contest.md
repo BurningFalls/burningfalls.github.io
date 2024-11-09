@@ -4,9 +4,9 @@ excerpt: "백준 대회 'INU 코드페스티벌 2021 Open Contest' 상세 풀이
 date: 2021-12-18
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[INU 코드페스티벌 2021](https://burningfalls.github.io/contest/inu2021-baekjoon-contest) 풀이|

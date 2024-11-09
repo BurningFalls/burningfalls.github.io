@@ -4,9 +4,9 @@ excerpt: "백준 대회 'Good Bye, BOJ 2021!' 상세 풀이 링크"
 date: 2021-12-31
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[Good Bye, BOJ 2021!](https://burningfalls.github.io/contest/goodbye2021-baekjoon-contest) 풀이|

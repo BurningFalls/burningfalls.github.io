@@ -4,9 +4,9 @@ excerpt: "백준 대회 '제 1회 블롭컵'에 참가하여 문제를 푼 소�
 date: 2022-02-22
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[제 1회 블롭컵](https://burningfalls.github.io/contest/blobcup2022-baekjoon-contest/) 풀이|

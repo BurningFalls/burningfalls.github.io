@@ -4,9 +4,9 @@ excerpt: "codetree 나무랄 데 없는 코드트리 식목일 코딩 퀴즈를 
 date: 2022-04-06
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - contest-etc
+  - contest
   - code-tree
 ---
 

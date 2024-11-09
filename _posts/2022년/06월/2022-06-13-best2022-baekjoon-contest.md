@@ -4,9 +4,9 @@ excerpt: "백준 대회 '제6회 천하제일 코딩대회 예선 Open Contest'�
 date: 2022-06-13
 last_modified_at: 2022-06-13
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[제6회 천하제일 코딩대회 예선](https://burningfalls.github.io/contest/best2022-baekjoon-contest/) 풀이|

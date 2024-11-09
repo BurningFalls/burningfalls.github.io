@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 신촌지역 대학생 프로그래밍 대회 동�
 date: 2022-02-27
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 신촌지역 대학생 프로그래밍 대회 동아리 연합 겨울 대회](https://burningfalls.github.io/contest/suapc2022-baekjoon-contest/) 풀이|

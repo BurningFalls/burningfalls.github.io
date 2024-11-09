@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 ICPC Sinchon Winter Algorithm Camp Contest'에 참
 date: 2022-02-21
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 ICPC Sinchon Winter Algorithm Camp Contest](https://burningfalls.github.io/contest/swac2022-baekjoon-contest/) 풀이|

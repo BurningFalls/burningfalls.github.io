@@ -4,9 +4,9 @@ excerpt: "WANTED 주관 코딩테스트 대회 'SHOW ME THE CODE'에 참가하�
 date: 2022-04-04
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - contest-etc
+  - contest
   - show-me-the-code
 ---
 

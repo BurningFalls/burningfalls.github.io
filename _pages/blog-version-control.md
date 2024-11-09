@@ -17,6 +17,8 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 ### 1.9.0
 
 * `AWS` category 추가
+* `Contest` category 삭제 -> `Algorithm` category의 하위 tag로 들어감
+* `CS` category 생성
 
 ### 1.8.0
 

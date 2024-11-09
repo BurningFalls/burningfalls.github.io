@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 숭고한 연합 알고리즘 콘테스트 Open Co
 date: 2022-03-28
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 숭고한 연합 알고리즘 콘테스트 Open Contest](https://burningfalls.github.io/contest/skh2022-baekjoon-contest/) 풀이|

@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 연세대학교 미래캠퍼스 슬기로운 코�
 date: 2022-06-26
 last_modified_at: 2022-06-26
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 연세대학교 미래캠퍼스 슬기로운 코딩생활](https://burningfalls.github.io/contest/yonseifuture2022-baekjoon-contest/) 풀이|

@@ -4,9 +4,9 @@ excerpt: "codetree 쌀랑해요 효도트리 어버이날 코딩 퀴즈를 참�
 date: 2022-05-09
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - contest-etc
+  - contest
   - code-tree
 ---
 

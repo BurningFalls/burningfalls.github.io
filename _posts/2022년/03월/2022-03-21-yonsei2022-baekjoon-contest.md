@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 연세대학교 신학기맞이 프로그래밍 �
 date: 2022-03-21
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 연세대학교 신학기맞이 프로그래밍 경진대회](https://burningfalls.github.io/contest/yonsei2022-baekjoon-contest/) 풀이|

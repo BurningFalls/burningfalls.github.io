@@ -4,9 +4,9 @@ excerpt: "백준 대회 '2022 서강대학교 청정수컵 Open Contest'에 참�
 date: 2022-05-16
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[2022 서강대학교 청정수컵](https://burningfalls.github.io/contest/sogang2022-baekjoon-contest/) 풀이|

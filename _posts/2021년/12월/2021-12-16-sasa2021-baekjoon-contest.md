@@ -4,9 +4,9 @@ excerpt: "백준 대회 'SASA Programming Contest 2021 Open Contest' 상세 풀�
 date: 2021-12-16
 last_modified_at: 2022-05-25
 categories:
-  - contest
+  - algorithm
 tags:
-  - baekjoon-contest
+  - contest
 ---
 
 |||[SASA Programming Contest 2021](https://burningfalls.github.io/contest/sasa2021-baekjoon-contest) 풀이|
