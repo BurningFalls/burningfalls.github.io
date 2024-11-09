@@ -9,14 +9,14 @@ tags:
   - aws
 ---
 
-## Question
+## A. Question
 
 AWS 프리티어 계정은 어떻게 만들까?
 
 > [!CAUTION]
 > **AWS 프리티어 계정**은 다양한 서비스를 무료로 제공하지만, 리소스에는 제한이 있다. 각 서비스마다 사용 가능한 한도와 기간(일반적으로 12개월)이 있으므로, 이를 명확히 이해하고 활용하는 것이 중요하다. 아래 사이트에서 자세한 내용을 확인할 수 있다.<br> [AWS 프리티어 시작하기](https://docs.aws.amazon.com/ko_kr/whitepapers/latest/how-aws-pricing-works/get-started-with-the-aws-free-tier.html){: target="_blank"}
 
-## Answer
+## B. Answer
 
 ### 1. AWS 홈페이지에 접속한다.
 
@@ -79,7 +79,7 @@ AWS 프리티어 계정은 어떻게 만들까?
 
 ![screencapture-ap-northeast-2-console-aws-amazon-console-home-2024-11-09-15_53_00](https://github.com/user-attachments/assets/ba61fa0d-5824-4fc6-8ec8-d232779f4a88)
 
-## Detail - AWS 프리티어 비용 알림 설정
+## C. Detail - AWS 프리티어 비용 알림 설정
 
 * AWS 계정에 가입하면 계정(AWS 계정 루트 사용자)을 생성할 때 사용한 이메일 주소로 프리 티어 알림이 전송된다. 이러한 알림은 AWS 서비스 사용량이 AWS 프리 티어 사용량 한도에 근접하거나 한도를 초과할 때 전송된다.
 
@@ -99,6 +99,6 @@ AWS 프리티어 계정은 어떻게 만들까?
 
 ![aws](https://github.com/user-attachments/assets/3937f447-0230-4def-ae69-3850534567a4)
 
-## Reference
+## D. Reference
 
 * [AWS](https://aws.amazon.com/ko/)
