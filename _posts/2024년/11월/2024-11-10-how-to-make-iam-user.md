@@ -61,6 +61,10 @@ IAM 사용자 생성은 어떻게 할까?
 
 ![aws](https://github.com/user-attachments/assets/97cb304f-2200-486a-acee-3cfc5d398bad)
 
+### 11. IAM 계정에도 MFA를 추가해준다.
+
+![aws](https://github.com/user-attachments/assets/f0646f35-1200-40a1-85ad-1425d008b615)
+
 ## 3. Detail
 
 None
