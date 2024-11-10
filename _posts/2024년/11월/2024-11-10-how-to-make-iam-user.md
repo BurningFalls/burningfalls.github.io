@@ -63,6 +63,8 @@ IAM 사용자 생성은 어떻게 할까?
 
 ### 11. IAM 계정에도 MFA를 추가해준다.
 
+* [MFA 설정하기](https://burningfalls.github.io/infra/how-to-make-freetier-aws-account/#d-detail---mfa-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0) 글을 참고한다.
+
 ![aws](https://github.com/user-attachments/assets/f0646f35-1200-40a1-85ad-1425d008b615)
 
 ## 3. Detail
