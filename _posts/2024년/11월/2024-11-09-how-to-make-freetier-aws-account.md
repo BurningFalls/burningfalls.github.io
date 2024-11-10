@@ -74,9 +74,11 @@ AWS 프리티어 계정은 어떻게 만들까?
 
 ![screencapture-aws-amazon-ko-registration-confirmation-2024-11-09-15_49_01](https://github.com/user-attachments/assets/797445f2-5ac4-4527-88ad-242ad32251ff)
 
-   * `AWS Management Console로 이동`을 클릭해서 시작할 수 있다.
+* `AWS Management Console로 이동`을 클릭해서 시작할 수 있다.
 
 ![screencapture-ap-northeast-2-console-aws-amazon-console-home-2024-11-09-15_53_00](https://github.com/user-attachments/assets/ba61fa0d-5824-4fc6-8ec8-d232779f4a88)
+
+> 보안상의 안전을 위해 루트 계정은 반드시 MFA를 추가로 설정해주어야 한다. 아래의 `D. Detail - MFA 설정하기` 챕터에서 확인할 수 있다.
 
 ## C. Detail - 로그인하기
 
@@ -96,7 +98,27 @@ AWS 프리티어 계정은 어떻게 만들까?
 
 ![aws](https://github.com/user-attachments/assets/a8a0e0d2-1048-4239-9ee1-dd6058acc603)
 
-## D. Detail - AWS 프리티어 비용 알림 설정
+## D. Detail - MFA 설정하기
+
+### 1. IAM을 입력해서 들어간다.
+
+![aws](https://github.com/user-attachments/assets/ca2f4ab6-d323-40d5-9486-adb9b6385689)
+
+### 2. `MFA 추가` 클릭
+
+![aws](https://github.com/user-attachments/assets/b8d9c4a3-39a6-4be3-8863-6fa5308367d3)
+
+### 3. 디바이스 이름을 입력하고 `인증 관리자 앱` 선택
+
+![aws](https://github.com/user-attachments/assets/36b77539-b712-48b1-82a4-07f087058c9f)
+
+### 4. QR 코드 표시를 누르고 `Authenticator` 애플리케이션으로 스캔. 두 개의 연속된 MFA 코드 입력. `MFA 추가` 클릭
+
+* 휴대폰에 `Authenticator` 애플리케이션을 설치해야 한다.
+
+![aws](https://github.com/user-attachments/assets/a542d260-5b99-48d8-b649-634dcdad2859)
+
+## E. Detail - AWS 프리티어 비용 알림 설정
 
 * AWS 계정에 가입하면 계정(AWS 계정 루트 사용자)을 생성할 때 사용한 이메일 주소로 프리 티어 알림이 전송된다. 이러한 알림은 AWS 서비스 사용량이 AWS 프리 티어 사용량 한도에 근접하거나 한도를 초과할 때 전송된다.
 
