@@ -1,8 +1,8 @@
 ---
 title: "[AWS] AWS 프리티어 계정 만들기"
-excerpt: "AWS 프리티어 계정 만들기"
+excerpt: "AWS 프리티어 계정 만들기, AWS 로그인하기, AWS 프리티어 비용 알림 설정하기"
 date: 2024-11-09
-last_modified_at: 2024-11-09
+last_modified_at: 2024-11-10
 categories:
   - infra
 tags:
@@ -78,7 +78,25 @@ AWS 프리티어 계정은 어떻게 만들까?
 
 ![screencapture-ap-northeast-2-console-aws-amazon-console-home-2024-11-09-15_53_00](https://github.com/user-attachments/assets/ba61fa0d-5824-4fc6-8ec8-d232779f4a88)
 
-## C. Detail - AWS 프리티어 비용 알림 설정
+## C. Detail - 로그인하기
+
+### 1. `루트 사용자 이메일을 사용하여 로그인` 클릭
+
+![aws](https://github.com/user-attachments/assets/47bdc7a2-ec93-4457-974a-b905729c9bbf)
+
+### 2. 이메일 & 보안 코드 & 암호 입력
+
+![aws](https://github.com/user-attachments/assets/835ee935-3aa2-45e4-9110-2d080c77aced)
+
+![aws](https://github.com/user-attachments/assets/585fcfce-3752-4cc7-a617-28ab2852f8d6)
+
+![aws](https://github.com/user-attachments/assets/3c85fe2f-a931-489f-8b6b-2dc6b26ef079)
+
+### 3. 완료
+
+![aws](https://github.com/user-attachments/assets/a8a0e0d2-1048-4239-9ee1-dd6058acc603)
+
+## D. Detail - AWS 프리티어 비용 알림 설정
 
 * AWS 계정에 가입하면 계정(AWS 계정 루트 사용자)을 생성할 때 사용한 이메일 주소로 프리 티어 알림이 전송된다. 이러한 알림은 AWS 서비스 사용량이 AWS 프리 티어 사용량 한도에 근접하거나 한도를 초과할 때 전송된다.
 
