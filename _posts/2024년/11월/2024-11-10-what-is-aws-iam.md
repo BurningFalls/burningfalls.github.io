@@ -2,7 +2,7 @@
 title: "[AWS] AWS IAM이란?"
 excerpt: "AWS IAM이란? IAM의 구성 요소는?"
 date: 2024-11-10
-last_modified_at: 2024-11-10
+last_modified_at: 2024-11-11
 categories:
   - infra
 tags:

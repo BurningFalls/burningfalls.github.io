@@ -2,7 +2,7 @@
 title: "[AWS] AWS 프리티어 계정 만들기"
 excerpt: "AWS 프리티어 계정 만들기, AWS 로그인하기, AWS 프리티어 비용 알림 설정하기"
 date: 2024-11-09
-last_modified_at: 2024-11-10
+last_modified_at: 2024-11-11
 categories:
   - infra
 tags:

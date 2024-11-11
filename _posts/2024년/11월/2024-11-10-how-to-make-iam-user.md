@@ -2,7 +2,7 @@
 title: "[AWS] IAM 사용자 생성하기"
 excerpt: "IAM 사용자 생성하기"
 date: 2024-11-10
-last_modified_at: 2024-11-10
+last_modified_at: 2024-11-11
 categories:
   - infra
 tags:
