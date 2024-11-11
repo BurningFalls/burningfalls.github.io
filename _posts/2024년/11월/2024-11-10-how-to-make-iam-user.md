@@ -9,11 +9,11 @@ tags:
   - aws
 ---
 
-## 1. Question
+## A. Question
 
 IAM 사용자 생성은 어떻게 할까?
 
-## 2. Answer
+## B. Answer
 
 ### 1. 루트 사용자로 접속한다.
 
@@ -57,20 +57,36 @@ IAM 사용자 생성은 어떻게 할까?
 
 ![aws](https://github.com/user-attachments/assets/5a52f7cc-554a-4698-9316-fc1e65bc0cf0)
 
-### 10. 새로운 AWS 계정 이름 & 비밀번호 입력해서 변경
+### 10. 새로운 비밀번호 입력해서 변경
 
 ![aws](https://github.com/user-attachments/assets/97cb304f-2200-486a-acee-3cfc5d398bad)
 
-### 11. IAM 계정에도 MFA를 추가해준다.
+## C. Detail - 계정 별칭 변경
+
+* 로그인할 때 편리하게 입력하기 위해서 계정 별칭을 변경한다.
+
+### 1. `IAM` 입력해서 클릭
+
+![aws](https://github.com/user-attachments/assets/5dbaf1b3-a931-4bc7-9c05-ff9173179671)
+
+### 2. `AWS 계정` > `계정 별칭` > `생성` 클릭
+
+![aws](https://github.com/user-attachments/assets/1f6a88f4-f1bb-43e0-8615-15dcc81ca037)
+
+### 3. 계정 별칭을 입력하고 `별칭 생성` 클릭
+
+![aws](https://github.com/user-attachments/assets/c4e4f5ad-6c7b-4dbb-ac15-18bf83412e23)
+
+### 4. 완료
+
+![aws](https://github.com/user-attachments/assets/590d4d89-1ed8-4e22-a192-2909a7f68b8f)
+
+### D. MFA 추가
 
 * [MFA 설정하기](https://burningfalls.github.io/infra/how-to-make-freetier-aws-account/#d-detail---mfa-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0) 글을 참고한다.
 
 ![aws](https://github.com/user-attachments/assets/f0646f35-1200-40a1-85ad-1425d008b615)
 
-## 3. Detail
-
-None
-
-## 4. Reference
+## E. Reference
 
 * [AWS - IAM 사용자 생성](https://docs.aws.amazon.com/ko_kr/filegateway/latest/filefsxw/setting-up-create-iam-user.html)
