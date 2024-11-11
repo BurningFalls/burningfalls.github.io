@@ -81,12 +81,38 @@ IAM 사용자 생성은 어떻게 할까?
 
 ![aws](https://github.com/user-attachments/assets/590d4d89-1ed8-4e22-a192-2909a7f68b8f)
 
-### D. MFA 추가
+## D. MFA 추가
 
 * [MFA 설정하기](https://burningfalls.github.io/infra/how-to-make-freetier-aws-account/#d-detail---mfa-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0) 글을 참고한다.
 
 ![aws](https://github.com/user-attachments/assets/f0646f35-1200-40a1-85ad-1425d008b615)
 
-## E. Reference
+## E. 결제 정보 액세스 허용
+
+AWS 계정의 IAM 사용자와 역할은 기본적으로 `Billing and Cost Management` 콘솔에 엑세스할 수 없다. 이는 특정 `Billing` 기능에 대한 액세스를 허용하는 IAM 정책이 있는 경우에도 마찬가지이다. 액세스를 허용하려면 AWS 계정 루트 사용자가 먼저 IAM 액세스를 활성화해야 한다.
+
+### 1. 루트 권한 사용자로 로그인
+
+![aws](https://github.com/user-attachments/assets/974c9936-1c5b-4393-a887-9139c2bbfb66)
+
+### 2. 오른쪽의 `계정` 클릭
+
+![aws](https://github.com/user-attachments/assets/54ec68b6-454a-40df-84a6-610cf2092da3)
+
+### 3. 스크롤을 아래로 내려서 `결제 정보에 대한 IAM 사용자 및 역할 액세스` 찾기
+
+![aws](https://github.com/user-attachments/assets/cdfbb552-4364-4785-9b55-19465427459f)
+
+### 4. `편집` > `IAM 액세스 활성화` > `업데이트` 클릭
+
+![aws](https://github.com/user-attachments/assets/5863cfe0-bcb0-408b-9dbf-81d84afbd4b6)
+
+### 5. 완료
+
+![aws](https://github.com/user-attachments/assets/3f70d6f5-4d84-4742-ab24-921f635768d2)
+
+## F. Reference
 
 * [AWS - IAM 사용자 생성](https://docs.aws.amazon.com/ko_kr/filegateway/latest/filefsxw/setting-up-create-iam-user.html)
+
+* [AWS - AWS 계정 설정](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-account-iam.html#billing-access)
