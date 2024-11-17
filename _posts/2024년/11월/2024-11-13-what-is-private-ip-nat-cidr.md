@@ -2,7 +2,7 @@
 title: "[AWS] Private IP & NAT & CIDR"
 excerpt: "Private IP란? NAT란? CIDR이란?"
 date: 2024-11-13
-last_modified_at: 2024-11-13
+last_modified_at: 2024-11-17
 categories:
   - infra
 tags:
@@ -79,7 +79,30 @@ CIDR는 IP 주소 뒤에 `/`와 함께 네트워크 Prefix 길이를 붙여 표�
 
 이 표기법은 더 작은 단위의 네트워크(서브넷)를 설계할 수 있어, 네트워크 자원의 낭비를 줄이고 효율성을 높인다.
 
-## C. Reference
+## C. Detail - NAT Gateway 비용 지불 방식
+
+* 시간당 사용 요금
+  * NAT Gateway는 활성화되어 있는 동안 시간당 사용 요금이 발생한다. 이는 NAT Gateway가 설정된 시간만큼 청구되며, 요금은 리전에 따라 다를 수 있다.
+  * `아시아 태평양(서울)`의 경우, 비용은 아래 사진과 같다.
+* 데이터 처리 요금
+  * NAT Gateway를 통해 전송된 아웃바운드 트래픽에 대해 GB 단위의 데이터 처리 요금이 추가로 발생한다.
+* `아시아 태평양(서울)` 기준 금액은 아래 사진과 같다.
+
+![aws](https://github.com/user-attachments/assets/078a3c2e-4618-46f5-9dd3-d478795df414)
+
+## D. Detail - NAT Gateway에 탄력적 IP 사용
+
+NAT Gateway를 사용하려면 `탄력적 IP(EIP)`를 할당해야 한다. NAT Gateway는 인터넷을 통해 지속적으로 아웃바운드 트래픽을 처리해야 하기 때문에, 고정된 Public IP Address가 필요하다.
+
+* 탄력적 IP 필수: NAT Gateway를 생성할 때 반드시 하나의 탄력적 IP를 연결해야 한다. 이 탄력적 IP는 NAT Gateway가 외부와 통신할 때 사용된다.
+* 탄력적 IP 비용: 탄력적 IP는 NAT Gateway에 연결된 상태에서는 별도의 비용이 청구되지 않는다. 그러나 NAT Gateway에 연결되지 않은 탄력적 IP는 사용하지 않는 상태로 간주되며, 이에 대해 시간당 요금이 발생할 수 있다.
+
+NAT Gateway 구성 시의 주의사항은 아래와 같다.
+
+* 가용성 영역: NAT Gateway는 특정 가용성 영역(AZ)에 생성되며, Private Subnet의 리소스가 이 NAT Gateway를 통해 인터넷에 접근하려면 동일한 가용성 영역 내에 있어야 한다. 각 가용성 영역에 대해 NAT Gateway를 생성하여 고가용성을 보장할 수도 있다.
+* 탄력적 IP 재사용: NAT Gateway에 연결된 탄력적 IP는 고정된 Public IP Address로 사용할 수 있으므로, 특정 외부 리소스에서 아웃바운드 트래픽을 식별할 때 유용하다.
+
+## E. Reference
 
 * [AWS - NAT 게이트웨이](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat-gateway.html)
 * [AWS - NAT Gateway 사용 사례](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/nat-gateway-scenarios.html#public-nat-internet-access)
