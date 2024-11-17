@@ -39,11 +39,9 @@ AWS VPC를 편리하게 설정하는 방법은?
 
 ![aws](https://github.com/user-attachments/assets/15d6e0c3-e0e4-4c47-85eb-7bb0383e51e1)
 
-![aws](https://github.com/user-attachments/assets/e121f80d-7f10-4092-bd08-64dc7323dde4)
+![aws](https://github.com/user-attachments/assets/d59dd124-2780-4430-b655-e0ea958bc79a)
 
-![aws](https://github.com/user-attachments/assets/667210d5-0d43-4515-a0aa-2af2d60b4b70)
-
-![aws](https://github.com/user-attachments/assets/9b6d4888-988d-4b4f-9a9d-24c7005c7bad)
+![aws](https://github.com/user-attachments/assets/d9a31f0b-19f0-4362-8f44-54068aef2630)
 
 ### 6. 완료
 
