@@ -25,7 +25,12 @@ tags:
 
 ### 3. 세부 정보 입력
 
+* 모든 IP로부터 `HTTP(80)`, `HTTPS(443)`, `SSH(22)` 포트의 트래픽을 허용한다.
+
 ![aws](https://github.com/user-attachments/assets/3d1ab5d6-d867-4efc-abc8-7f244228c1df)
+
+* 모든 IP로부터 `SSH(22)` 포트의 트래픽을 허용한다.
+* 애플리케이션 서버의 보안 그룹 `staccato-AppServer-PublicSG`에 속한 인스턴스에서만 `MySQL(3306)` 포트로 접근할 수 있도록 설정한다. 이는 애플리케이션 서버가 DB 서버에 접근하여 데이터를 읽고 쓸 수 있도록 허용한다.
 
 ![aws](https://github.com/user-attachments/assets/8237fa30-5d9b-4df3-a4c1-11be63e3ff55)
 
