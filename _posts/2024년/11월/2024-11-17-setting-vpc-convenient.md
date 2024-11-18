@@ -19,6 +19,8 @@ AWS VPC를 편리하게 설정하는 방법은?
 
 ## B. Answer
 
+* 만들고자 하는 InFra Structure
+
 ![aws](https://github.com/user-attachments/assets/f694c58c-532f-40f1-a5bd-8cd4afc5b2f6)
 
 ### 1. VPC 검색
@@ -38,6 +40,20 @@ AWS VPC를 편리하게 설정하는 방법은?
 ![aws](https://github.com/user-attachments/assets/7676aa0b-bb69-4692-a64d-3f4512a5b8b9)
 
 ### 5. 정보 입력
+
+* VPC CIDR: `10.0.0.0/16`
+
+![aws](https://github.com/user-attachments/assets/08642b81-d141-439d-a5f7-4c0ddc5e8c47)
+
+* Public Subnet CIDR: `10.0.0.0/20`
+
+![aws](https://github.com/user-attachments/assets/49dc4762-166f-4340-a800-766599b4d089)
+
+* Private Subnet CIDR: `10.0.128.0/20`
+
+![aws](https://github.com/user-attachments/assets/15ea803e-6496-40b1-b23a-5b7c769d7327)
+
+* 정보 입력
 
 ![aws](https://github.com/user-attachments/assets/15d6e0c3-e0e4-4c47-85eb-7bb0383e51e1)
 
