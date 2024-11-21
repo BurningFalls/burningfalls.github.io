@@ -2,7 +2,7 @@
 title: "[AWS] S3와 CloudFront 생성하기"
 excerpt: "S3와 CloudFront를 생성하는 방법은? S3와 CloudFront 요금 산정 방식은?"
 date: 2024-11-20
-last_modified_at: 2024-11-20
+last_modified_at: 2024-11-21
 categories:
   - infra
 tags:
@@ -143,11 +143,70 @@ AWS S3와 CloudFront를 설정하는 방법은?
 * CNAME 설정 후 DNS 설정이 반드시 필요: 커스텀 도메인에 대한 CNAME 레코드가 DNS에서 올바르게 구성되지 않으면 연결이 작동하지 않는다.
 * SSL 설정 확인: CNAME을 설정한 후 HTTPS 연결을 원활히 하기 위해 SSL/TLS 인증서를 반드시 설정해야 한다.
 
-#### 3.6. 완료
+#### 3.7. 완료
 
 ![aws](https://github.com/user-attachments/assets/9763de8b-ab90-41af-ad7b-f0fd94a6aa02)
 
-## D. Detail - 요금
+## D. Answer - S3 버킷 정책 업데이트
+
+### 1. `정책 복사` 클릭
+
+![aws](https://github.com/user-attachments/assets/8e31541a-97b7-4912-b975-1e95d7c1021b)
+
+* `정책 복사`를 클릭하면, 아래 코드가 복사된다.
+* CloudFront 전용 접근 허용
+  * CloudFront가 S3 객체에 접근할 수 있는 권한을 부여한다.
+  * 다른 경로(예: 인터넷 또는 다른 서비스)를 통한 접근은 차단된다.
+* 특정 CloudFront 배포에만 허용
+  * 특정 CloudFront 배포({cloudfront_distribution_id})에서 오는 요청만 허용된다.
+  * 이를 통해 S3 버킷과 CloudFront 배포 간의 연결이 보안적으로 보호된다.
+* 퍼블릭 액세스 차단 기능
+  * 이 정책과 함께 S3 버킷의 퍼블릭 액세스를 차단하면, S3 객체는 오직 CloudFront를 통해서만 접근할 수 있다.
+
+```json
+{
+        "Version": "2008-10-17",
+        "Id": "PolicyForCloudFrontPrivateContent",
+        "Statement": [
+            {
+                "Sid": "AllowCloudFrontServicePrincipal",
+                "Effect": "Allow",
+                "Principal": {
+                    "Service": "cloudfront.amazonaws.com"
+                },
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::{s3_bucket_name}/*",
+                "Condition": {
+                    "StringEquals": {
+                      "AWS:SourceArn": "arn:aws:cloudfront::{aws_account_id}:distribution/{cloudfront_distribution_id}"
+                    }
+                }
+            }
+        ]
+}
+```
+
+### 2. `정책을 업데이트하려면 S3 버킷 권한으로 이동합니다.` 클릭 
+
+![aws](https://github.com/user-attachments/assets/c890d93b-6219-4119-b106-6b58e2b26e7e)
+
+### 3. `권한` 클릭
+
+![aws](https://github.com/user-attachments/assets/7429a9be-5841-4bb7-8a61-ec2ec3099b43)
+
+### 4. `편집` 클릭
+
+![aws](https://github.com/user-attachments/assets/5d1b27e7-a69f-4881-ad6f-04d589e11779)
+
+### 5. 복사한 내용 붙여넣기 + `변경 사항 저장` 클릭
+
+![aws](https://github.com/user-attachments/assets/4a1e7bb9-cea0-4642-9560-a4eaa560267e)
+
+### 6. 완료
+
+![aws](https://github.com/user-attachments/assets/3c96250d-aa98-44da-b3b1-af32ca8dcd8d)
+
+## E. Detail - 요금
 
 * [Amazon S3 요금](https://aws.amazon.com/ko/s3/pricing/?p=pm&c=s3&z=4)
 * [Amazon CloudFront 요금](https://aws.amazon.com/ko/cloudfront/pricing/)
@@ -229,7 +288,7 @@ AWS S3와 CloudFront를 설정하는 방법은?
   * 10,000,000건의 HTTP 또는 HTTPS 요청
   * 2,000,000건의 CloudFront 함수 호출
 
-## E. Reference
+## F. Reference
 
 * [클라우드 객체 스토리지 - Amazon S3](https://aws.amazon.com/ko/pm/serv-s3/)
 * [Amazon CloudFront](https://aws.amazon.com/ko/cloudfront/)
