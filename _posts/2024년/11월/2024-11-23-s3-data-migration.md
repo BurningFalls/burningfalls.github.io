@@ -2,7 +2,7 @@
 title: "[AWS] S3 데이터 마이그레이션하기 (S3TransferManager의 CopyObject 사용)"
 excerpt: "AWS S3 데이터 마이그레이션하는 방법은?"
 date: 2024-11-23
-last_modified_at: 2024-11-23
+last_modified_at: 2024-11-24
 categories:
   - infra
 tags:
