@@ -192,6 +192,30 @@ public void copyFolderBetweenBuckets() {
 * 폴더 구조 유지
   * S3는 실제 폴더 구조를 가지지 않지만, `sourceKey`와 `targetKey`를 조작하여 폴더 구조를 유지한다.
 
+#### 3.5. 복사한 객체를 확인하는 로직
+
+```java
+private void copyObject(String sourceKey, String targetKey) {
+    if (doesObjectExist(targetKey)) {
+        return;
+    }
+    // ...
+}
+
+
+private boolean doesObjectExist(String key) {
+    try {
+        s3Client.headObject(b -> b.bucket(TARGET_BUCKET).key(key));
+        return true;
+    } catch (Exception e) {
+        return false;
+    }
+}
+```
+
+* 복사 도중 작업이 중단되거나 실패한 상황에서 코드를 재실행하더라도, 이미 복사된 객체는 다시 복사하지 않도록 하기 위해 이 로직을 작성했다.
+* 이 로직은 `TARGET_BUCKET`에 객체가 이미 존재하는지 확인한 후, 존재할 경우 복사를 건너뛰도록 동작한다. 이를 통해 중복 복사로 인한 오버헤드를 방지하고, 실패한 작업을 효율적으로 복구할 수 있도록 한다.
+
 ### 4. 코드 실행
 
 ![aws](https://github.com/user-attachments/assets/df94dfa4-dae3-4998-864f-472e8ea6a0fb)
