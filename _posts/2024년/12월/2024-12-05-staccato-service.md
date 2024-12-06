@@ -9,8 +9,12 @@ tags:
   - essay
 ---
 
-[ 🙋서비스 소개 ]
+## [ 🙋서비스 소개 ]
 
+* [STACCATO APP 다운로드 링크](https://play.google.com/store/apps/details?id=com.on.staccato&pcampaignid=web_share)
+* [STACCATO APP 다운로드 링크](https://play.google.com/store/apps/details?id=com.on.staccato&pcampaignid=web_share)
+* [STACCATO APP 다운로드 링크](https://play.google.com/store/apps/details?id=com.on.staccato&pcampaignid=web_share)
+* [STACCATO APP 다운로드 링크](https://play.google.com/store/apps/details?id=com.on.staccato&pcampaignid=web_share)
 * [STACCATO APP 다운로드 링크](https://play.google.com/store/apps/details?id=com.on.staccato&pcampaignid=web_share)
 
 ‘일기, 써야지!’ 생각만 하고 미루진 않으셨나요? 막상 필요할 때 떠오르지 않아 아쉽진 않으셨나요?
