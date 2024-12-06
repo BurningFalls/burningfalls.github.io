@@ -30,28 +30,28 @@ GIT 병합 전략에는 어떤 것들이 있는가?
 
 (3) 예시
 
-**Before Merge**
+* **Before Merge**
 
-```
-main:    C0 → C1 → C2
-feature:              → C3
-```
+  ```
+  main:    C0 → C1 → C2
+  feature:              → C3
+  ```
 
-**After Fast-Forward Merge**
+* **After Fast-Forward Merge**
 
-```
-main:    C0 → C1 → C2 → C3
-```
+  ```
+  main:    C0 → C1 → C2 → C3
+  ```
 
 (4) 명령어
 
-```bash
-# main 브랜치로 이동
-git checkout main
-
-# feature 브랜치를 Fast-Forward 방식으로 병합
-git merge feature
-```
+  ```bash
+  # main 브랜치로 이동
+  git checkout main
+  
+  # feature 브랜치를 Fast-Forward 방식으로 병합
+  git merge feature
+  ```
 
 (5) 장단점
 
@@ -75,9 +75,9 @@ git merge feature
 
 * `--no-ff` 옵션을 사용하면 Fast-Forward Merge 대신 병합 커밋이 생성된다.
 
-```bash
-git merge --no-ff feature
-```
+  ```bash
+  git merge --no-ff feature
+  ```
 
 ### 2. Recursive Merge (3-Way Merge)
 
@@ -94,33 +94,33 @@ git merge --no-ff feature
 
 (3) 예시
 
-**Before Merge**
+* **Before Merge**
 
-```
-main:    C0 → C1 → C2 → C3
-feature:              → C4
-```
+  ```
+  main:    C0 → C1 → C2 → C3
+  feature:              → C4
+  ```
 
-**After Recursive Merge**
+* **After Recursive Merge**
 
-```
-main:    C0 → C1 → C2 → C3 → M (merge commit)
-                       ↘       ↗
-                         → C4
-```
+  ```
+  main:    C0 → C1 → C2 → C3 → M (merge commit)
+                         ↘       ↗
+                           → C4
+  ```
 
 * `C2`는 두 브랜치의 공통 조상 커밋이다.
 * `C3(main)`과 `C4(feature)`의 변경 사항을 병합하여 병합 커밋 `M`을 생성한다.
 
 (4) 명령어
 
-```bash
-# main 브랜치로 이동
-git checkout main
-
-# feature 브랜치를 병합 (Recursive Merge 자동 수행)
-git merge feature
-```
+  ```bash
+  # main 브랜치로 이동
+  git checkout main
+  
+  # feature 브랜치를 병합 (Recursive Merge 자동 수행)
+  git merge feature
+  ```
 
 (5) 장단점
 
@@ -136,26 +136,26 @@ git merge feature
 
 * 충돌 확인: 병합 도중 충돌이 발생하면, Git은 이를 감지하고 충돌 파일을 표시한다.
 
-    ```bash
-    git status
-    ```
+  ```bash
+  git status
+  ```
   
 * 충돌 파일 수정: 충돌이 발생한 파일에 다음과 같은 표시가 나타난다. 충돌 부분을 수동으로 수정한다.
 
-```text
-<<<<<<< HEAD
-(main 브랜치의 변경 사항)
-=======
-(feature 브랜치의 변경 사항)
->>>>>>> feature
-```
+  ```text
+  <<<<<<< HEAD
+  (main 브랜치의 변경 사항)
+  =======
+  (feature 브랜치의 변경 사항)
+  >>>>>>> feature
+  ```
 
 * 병합 완료: 충돌을 해결한 뒤, 수정한 파일을 스테이징하고 병합을 완료한다.
 
-```bash
-git add <file>
-git commit
-````
+  ```bash
+  git add <file>
+  git commit
+  ````
 
 ### 3. Squash Merge
 
@@ -172,34 +172,34 @@ git commit
 
 (3) 예시
 
-**Before Merge**
+* **Before Merge**
 
-```
-main:    C0 → C1 → C2
-feature:              → F1 → F2 → F3
-```
+  ```
+  main:    C0 → C1 → C2
+  feature:              → F1 → F2 → F3
+  ```
 
-**After Squash Merge**
+* **After Squash Merge**
 
-```
-main:    C0 → C1 → C2 → S1
-```
+  ```
+  main:    C0 → C1 → C2 → S1
+  ```
 
 * `S1`은 `feature` 브랜치의 모든 커밋 `F1`, `F2`, `F3`을 하나로 압축한 커밋이다.
 * 병합 브랜치 `feature`의 개별 커밋은 대상 브랜치 `main`에 남지 않는다.
 
 (4) 명령어
 
-```bash
-# main 브랜치로 이동
-git checkout main
-
-# feature 브랜치를 Squash 방식으로 병합
-git merge --squash feature
-
-# Squash된 변경 사항을 커밋
-git commit -m "Squash feature branch into main"
-```
+  ```bash
+  # main 브랜치로 이동
+  git checkout main
+  
+  # feature 브랜치를 Squash 방식으로 병합
+  git merge --squash feature
+  
+  # Squash된 변경 사항을 커밋
+  git commit -m "Squash feature branch into main"
+  ```
 
 (5) 장단점
 
@@ -226,33 +226,33 @@ git commit -m "Squash feature branch into main"
 
 (3) 예시
 
-**Before Merge**
+* **Before Merge**
 
-```
-main:    C0 → C1 → C2
-feature:              → F1 → F2
-```
+  ```
+  main:    C0 → C1 → C2
+  feature:              → F1 → F2
+  ```
 
-**After Rebase and Merge**
+* **After Rebase and Merge**
 
-```
-main:    C0 → C1 → C2 → F1 → F2
-```
+  ```
+  main:    C0 → C1 → C2 → F1 → F2
+  ```
 
 * 병합 브랜치 `featuer`의 커밋 `F1`, `F2`가 대상 브랜치 `main`의 최신 커밋 `C2` 위에 재배치된다.
 * 별도의 병합 커밋이 생성되지 않고, 히스토리가 직선형으로 정리된다.
 
 (4) 명령어
 
-```bash
-# feature 브랜치를 대상으로 Rebase 수행
-git checkout feature
-git rebase main
-
-# main 브랜치로 이동 후 병합
-git checkout main
-git merge feature
-```
+  ```bash
+  # feature 브랜치를 대상으로 Rebase 수행
+  git checkout feature
+  git rebase main
+  
+  # main 브랜치로 이동 후 병합
+  git checkout main
+  git merge feature
+  ```
 
 (5) 장단점
 
