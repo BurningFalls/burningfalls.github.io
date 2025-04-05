@@ -4,9 +4,9 @@ excerpt: "Spring의 테스트 전략에는 어떤 것들이 있는가? 단위 �
 date: 2024-12-05
 last_modified_at: 2024-12-06
 categories:
-  - git
+  - java
 tags:
-  - git
+  - spring
 ---
 
 ## A. Question
