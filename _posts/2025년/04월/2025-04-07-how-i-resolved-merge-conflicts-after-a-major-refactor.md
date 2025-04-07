@@ -53,6 +53,41 @@ tags:
 3. `C`에서 충돌을 해결
 4. `C`를 최종적으로 `develop`에 병합
 
+👉 아래는 전체 흐름을 시각화한 브랜치 병합 다이어그램입니다:
+
+```mermaid
+gitGraph
+    branch develop
+    checkout develop
+    commit id: "Start: develop"
+
+    branch featureA
+    checkout featureA
+    commit id: "Start A"
+    commit id: "Massive Refactor in A"
+
+    checkout develop
+    branch featureB
+    checkout featureB
+    commit id: "Start B"
+    commit id: "Feature Added in B"
+
+    checkout featureA
+    checkout develop
+    merge featureA id: "A merged to develop"
+
+    commit id: "Preparing for B merge"
+    branch featureC
+    checkout featureC
+    commit id: "Start C"
+
+    merge featureB id: "B merged to C"
+    commit id: "Conflict resolved in C"
+
+    checkout develop
+    merge featureC id: "C merged to develop"
+```
+
 ### 📈 브랜치 흐름 시각화
 
 ```plaintext
