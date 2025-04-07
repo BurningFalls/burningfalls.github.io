@@ -38,76 +38,25 @@ tags:
 
 특히 다음과 같은 문제가 있었다:
 
-- 동일한 파일에 대한 양쪽의 수정 충돌
-- 파일/클래스 이름 변경에 따른 경로 충돌
-- 삭제/이동된 파일로 인한 merge 충돌
+| 충돌 유형           | 설명 |
+|--------------------|------|
+| 동일 파일 수정 충돌 | `feature/B`와 `develop` 양쪽에서 같은 파일을 수정함 |
+| 경로 충돌          | A에서 파일 구조/이름이 변경되어 B와 충돌 발생 |
+| 삭제된 파일 충돌    | A에서 삭제된 파일을 B는 참조하고 있어서 병합 불가 |
 
 ## 🧭 해결 전략: 중간 브랜치 C의 도입
 
-복잡한 충돌을 직접 `develop`에서 처리하기보다, **새로운 중간 브랜치 `C`를 생성하여 충돌을 선제적으로 해결**하는 전략을 선택했다.
-
-### 💡 전략 요약
+복잡한 충돌을 직접 `develop`에서 처리하기보다, **새로운 중간 브랜치 `C`를 생성하여 충돌을 미리 해결**하는 전략을 선택했다.
 
 1. `develop`을 기준으로 새로운 브랜치 `feature/C` 생성
 2. `feature/B`를 `feature/C`에 병합
 3. `C`에서 충돌을 해결
 4. `C`를 최종적으로 `develop`에 병합
 
-👉 아래는 전체 흐름을 시각화한 브랜치 병합 다이어그램입니다:
+👉 아래는 전체 흐름을 시각화한 브랜치 병합 다이어그램입니다
 
-![Image](https://github.com/user-attachments/assets/4e64fba3-19c1-4bf0-9d66-48601d4d4901)
+![branch-merge-diagram](images/2025-04-07-01-branch-merge-diagram.png)
 
-```mermaid
-gitGraph
-    branch develop
-    checkout develop
-    commit id: "Start: develop"
-
-    branch featureA
-    checkout featureA
-    commit id: "Start A"
-    commit id: "Massive Refactor in A"
-
-    checkout develop
-    branch featureB
-    checkout featureB
-    commit id: "Start B"
-    commit id: "Feature Added in B"
-
-    checkout featureA
-    checkout develop
-    merge featureA id: "A merged to develop"
-
-    commit id: "Preparing for B merge"
-    branch featureC
-    checkout featureC
-    commit id: "Start C"
-
-    merge featureB id: "B merged to C"
-    commit id: "Conflict resolved in C"
-
-    checkout develop
-    merge featureC id: "C merged to develop"
-```
-
-### 📈 브랜치 흐름 시각화
-
-```plaintext
-초기 브랜치 분기
-develop
-   ├── feature/A
-   └── feature/B
-
-A 병합 이후
-feature/A ─▶ develop (구조 전체 변경)
-                    \
-                     \
-                   feature/C (develop 기준에서 새로 생성)
-                        \
-                         └─── Merge feature/B
-                                  ↓
-                           충돌 해결 후 C를 develop에 병합
-```
 
 ## ✅ 병합 전략의 효과와 실질적인 이점
 
