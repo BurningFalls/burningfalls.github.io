@@ -55,7 +55,7 @@ tags:
 
 👉 아래는 전체 흐름을 시각화한 브랜치 병합 다이어그램입니다
 
-![branch-merge-diagram](./images/2025-04-07-01-branch-merge-diagram.png)
+![branch-merge-diagram](../../../assets/images/2025-04-07-01-branch-merge-diagram.png)
 
 ## ✅ 병합 전략의 효과와 실질적인 이점
 
