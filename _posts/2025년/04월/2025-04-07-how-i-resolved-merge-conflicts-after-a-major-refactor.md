@@ -55,6 +55,8 @@ tags:
 
 👉 아래는 전체 흐름을 시각화한 브랜치 병합 다이어그램입니다:
 
+![Image](https://github.com/user-attachments/assets/4e64fba3-19c1-4bf0-9d66-48601d4d4901)
+
 ```mermaid
 gitGraph
     branch develop
