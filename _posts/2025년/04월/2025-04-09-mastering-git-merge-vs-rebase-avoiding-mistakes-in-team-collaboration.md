@@ -66,6 +66,7 @@ feature:          C---D
 ```
 
 ✅ 장점: 충돌을 한 번에 해결
+
 ⚠️ 단점: 병합 커밋이 남고 히스토리가 복잡해질 수 있음
 
 ### 🔄 Git Rebase 결과
@@ -85,6 +86,7 @@ feature:              C'---D'
 ```
 
 ✅ 장점: 커밋 히스토리가 일직선으로 정리됨
+
 ⚠️ 단점: 충돌을 커밋마다 여러 번 처리해야 할 수 있음
 
 ### 🔀 Rebase 이후 병합
@@ -114,8 +116,7 @@ main:     A---B---E---C'---D'
 > 💡 Rebase (squash)란? <br>
 squash는 여러 개의 커밋을 하나로 압축하는 작업으로, git rebase -i 명령어를 통해 수행된다. <br>
 작업 중 자주 커밋한 내용을 리뷰 전에 하나의 의미 있는 커밋으로 정리할 때 유용하다. <br>
-예:
-•	fix typo, change color, adjust spacing → Refactor login form layout <br>
+예: fix typo, change color, adjust spacing → Refactor login form layout <br>
 ✅ 커밋 수를 줄여 리뷰와 기록이 깔끔해진다. <br>
 ⚠️ 단, 커밋 ID가 바뀌므로 공유된 브랜치에서는 사용에 주의가 필요하다.
 
