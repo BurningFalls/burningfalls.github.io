@@ -20,7 +20,7 @@ HTTP는 **텍스트 기반의 프로토콜**로, 사람이 읽을 수 있는 형
 
 ## 2. HTTP 요청의 구성
 
-```http request
+```
 GET /index.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0
@@ -35,7 +35,7 @@ Accept: text/html
 
 ## 3. HTTP 응답의 구성
 
-```http request
+```
 HTTP/1.1 200 OK
 Content-Type: text/html
 Content-Length: 1234

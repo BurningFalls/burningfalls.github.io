@@ -25,7 +25,7 @@ tags:
 
 서버는 응답 시 다음과 같은 `Set-Cookie` 헤더를 이용하여 쿠키를 생성한다:
 
-```http request
+```
 HTTP/1.1 200 OK
 Set-Cookie: sessionId=abc123; Path=/; HttpOnly; Max-Age=3600
 ```
@@ -37,7 +37,7 @@ Set-Cookie: sessionId=abc123; Path=/; HttpOnly; Max-Age=3600
 
 이후 브라우저가 동일한 도메인과 경로로 다시 요청을 보낼 경우:
 
-```http request
+```
 GET /dashboard HTTP/1.1
 Host: example.com
 Cookie: sessionId=abc123
@@ -96,7 +96,7 @@ Cookie: sessionId=abc123
 
 🧩 예시
 
-```http request
+```
 응답 헤더:
 Set-Cookie: JSESSIONID=abcd1234; Path=/; HttpOnly
 
@@ -170,12 +170,12 @@ Cookie: JSESSIONID=abcd1234
 
 🔹 예시
 
-```http request
+```
 POST /login HTTP/1.1
 → Set-Cookie: JSESSIONID=abc123; HttpOnly; Secure
 ```
 
-```http request
+```
 GET /mypage HTTP/1.1
 → Cookie: JSESSIONID=abc123
 → 서버: 세션 조회 → 사용자 정보 확인 → 응답
@@ -235,7 +235,7 @@ GET /mypage HTTP/1.1
 
 🔹 예시
 
-```http request
+```
 Set-Cookie: visitId=xyz789; Max-Age=2592000; Path=/
 ```
 
@@ -253,7 +253,7 @@ Set-Cookie: visitId=xyz789; Max-Age=2592000; Path=/
 * 비회우너 사용자도 환경 설정 유지 가능
 * UX 향상 + 서버 리소스 절약
 
-```http request
+```
 Set-Cookie: theme=dark; Max-Age=31536000
 ```
 
@@ -300,7 +300,7 @@ JWT는 세 부분으로 구성된 문자열이다. `.`으로 구분된다.
 
 * 클라이언트가 API 호출 시 HTTP 헤더에 토큰 포함:
 
-```http request
+```
 Authorization: Bearer <JWT>
 ```
 
