@@ -212,3 +212,35 @@ src/main/resources/templates/hello.html
 ▶ 5단계: 브라우저에 완성된 HTML 응답
 
 * 브라우저는 서버로부터 **이미 완성된 HTML**을 받아 렌더링 -> SSR 완료
+
+> Spring Boot가 실행되면, 내부적으로 Tomcat(WAS)이 올라가고
+> `DispatcherServlet`이 `/` 경로에 기본으로 매핑되어 모든 요청을 가로챈다.
+> 즉, 브라우저 요청은 항상 DispatcherServlet부터 시작된다.
+>
+> 전체 요청 처리 흐름은 아래와 같다.
+> ```text
+> 클라이언트 요청
+> ↓
+> DispatcherServlet (서블릿)
+> ↓
+> HandlerMapping (어떤 컨트롤러가 처리할지 결정)
+> ↓
+> Controller (@Controller, @RestController)
+> ↓
+> HandlerAdapter (컨트롤러 실행)
+> ↓
+> ModelAndView 반환 (또는 ResponseBody 변환)
+> ↓
+> ViewResolver (뷰 파일 결정)
+> ↓
+> View 렌더링 (Thymeleaf, JSP 등)
+> ↓
+> HTTP 응답 반환
+> ```
+
+> 덧붙여 JSP 내부 동작 흐름은 다음과 같다.
+> 1. 클라이언트가 `hello.jsp` 요청
+> 2. WAS(Tomcat 등)가 `hello.jsp`를 `hello_jsp.java`라는 서블릿 코드로 변환
+> 3. `hello_jsp.java`를 컴파일하여 `hello_jsp.class` 생성
+> 4. 해당 클래스가 실행되며 HTML 응답 생성
+> 5. 브라우저에 완성된 HTML 반환
