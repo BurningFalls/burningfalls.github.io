@@ -219,5 +219,3 @@ public void transferMoney(Long fromId, Long toId, int amount) {
    → checked 예외까지 rollback 하려면 `rollbackFor = Exception.class` 지정 필요
 
 > Deadlock: 데이터베이스나 운영체제에서 여러 트랜잭션(또는 쓰레드)이 **서로 자원을 점유하고 있으면서, 동시에 상대방의 자원을 기다리느라 영원히 진행되지 못하는 상태**를 말한다.
-
-
