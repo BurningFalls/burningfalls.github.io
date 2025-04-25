@@ -1,16 +1,13 @@
 ---
-title: "[BERT] BERT fine-tuning: Multiclass Classification (Segment Analysis)"
+title: "[DEEP-LEARNING] BERT fine-tuning: Multiclass Classification (Segment Analysis)"
 excerpt: "BERT에게 58개의 감정 분류를 학습시키기 위해 fine-tuning을 수행한다."
 date: 2023-6-25
 last_modified_at: 2023-6-25
 categories:
-  - deep-learning
+  - essay
 tags:
-  - nlp
-  - bert
-  - fine-tuning
-  - multiclass-classification
-  - sentiment-analysis
+  - essay
+  - deep-learning
 ---
 
 ## 0. 사용 코드 및 완성 모델

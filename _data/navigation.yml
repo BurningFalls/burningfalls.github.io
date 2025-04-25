@@ -56,13 +56,13 @@ posts:
     - title: "network"
       tag: "network"
       url: /tags/network
-- title: Deep learning
-  category: deep-learning
-  url: categories/deep-learning
+- title: Database
+  category: database
+  url: categories/database
   children:
-    - title: "nlp"
-      tag: "nlp"
-      url: /tags/nlp
+    - title: "database"
+      tag: "database"
+      url: /tags/database
 - title: Essay
   category: essay
   url: categories/essay
