@@ -1,12 +1,12 @@
 ---
-title: "[woowacourse] 우아한테크코스 6기 프리코스 1주차 야구게임 회고"
+title: "[woowa-course] 우아한테크코스 6기 프리코스 1주차 야구게임 회고"
 excerpt: "우아한테크코스 6기 프리코스 1주차 과제 야구게임 구현하고 배운 점 및 느낀 점"
 date: 2023-11-01
 last_modified_at: 2023-11-01
 categories:
-  - woowa-course
+  - essay
 tags:
-  - pre-course
+  - woowa-course
   - java
   - baseball-game
 ---

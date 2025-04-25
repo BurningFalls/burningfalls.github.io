@@ -18,8 +18,6 @@ main:
     url: /categories/infra
   - title: "Java"
     url: /categories/java
-  - title: "Woowa Course"
-    url: /categories/woowa-course
 
 # documentation links
 posts:
@@ -82,6 +80,9 @@ posts:
     - title: "tech stack"
       tag: "tech-stack"
       url: /tags/tech-stack
+    - title: "woowa-course"
+      tag: "woowa-course"
+      url: /tags/woowa-course
 - title: Flutter
   category: flutter
   url: categories/flutter
@@ -113,16 +114,6 @@ posts:
     - title: "spring-study"
       tag: "spring-study"
       url: /tags/spring-study
-- title: Woowa Course
-  category: woowa-course
-  url: categories/woowa-course
-  children:
-    - title: "pre-course"
-      tag: "pre-course"
-      url: /tags/pre-course
-    - title: "woowa-diary"
-      tag: "woowa-diary"
-      url: /tags/woowa-diary
 - title: Version
   url: /version
     

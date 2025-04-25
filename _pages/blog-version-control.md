@@ -17,6 +17,7 @@ Google Search Console에서 sitemap.xml을 인식하여 구글 검색이 가능�
 ### 1.10.0
 
 * `Deep Learning` category를 `Database` category로 변경
+* `Woowa Course` category 없애고, `Essay` category 밑의 tag로 변경
 
 ### 1.9.0
 
