@@ -6,8 +6,8 @@ main:
     url: /categories/blog
   - title: "CS"
     url: /categories/cs
-  - title: "Deep Learning"
-    url: /categories/deep-learning
+  - title: "Database"
+    url: /categories/database
   - title: "Essay"
     url: /categories/essay
   - title: "Flutter"
